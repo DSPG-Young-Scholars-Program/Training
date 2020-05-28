@@ -1,0 +1,40 @@
+---
+title: "Read .csv files with base, readr (tidyverse) & data.table"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# base
+```{r base}
+pigeon_racing_df <- read.csv("pigeon-racing.csv", stringsAsFactors = FALSE)
+system.time(read.csv("ticket_cleint.csv", stringsAsFactors = FALSE))
+```
+
+# readr (need to assign to new data.frame)
+```{r readr}
+library(readr)
+pigeon_racing_tbl <- read_csv("pigeon-racing.csv", col_types = "c")
+system.time(read_csv("ticket_cleint.csv"))
+```
+
+# data.table
+```{r data.table}
+library(data.table)
+pigeon_racing_dt <- fread("pigeon-racing.csv")
+system.time(fread("ticket_cleint.csv"))
+```
+
+
+# more advanced data.table
+```{r}
+fread("pigeon-racing.csv", drop = 4:11)
+fread("pigeon-racing.csv", select = c(1, 2, 3))
+fread("pigeon-racing.csv", drop = c("Name", "Arrival"))
+fread("pigeon-racing.csv", select = c("Breeder", "Speed"))
+```
+

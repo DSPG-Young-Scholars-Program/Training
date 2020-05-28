@@ -1,0 +1,91 @@
+---
+title: "Piping (chaining) with magrittr & data.table"
+output:
+  html_document: 
+    keep_md: yes
+---
+
+## Nested Option:
+```{r}
+library(dplyr)
+library(data.table)
+
+arrange(
+  summarize(
+    group_by(
+      filter(mtcars, carb > 1),cyl), Avg_mpg = mean(mpg)), desc(Avg_mpg)
+  )
+```
+
+
+
+## Multiple Object Option
+```{r}
+a <- filter(mtcars, carb > 1) 
+b <- group_by(a, cyl) 
+c <- summarise(b, Avg_mpg = mean(mpg)) 
+d <- arrange(c, desc(Avg_mpg)) 
+print(d)
+```
+
+
+
+## %>% Option:
+```{r}
+library(magrittr) 
+library(dplyr) 
+mtcars %>% 
+  filter(carb > 1) %>% 
+  group_by(cyl) %>% 
+  summarise(Avg_mpg = mean(mpg)) %>% 
+  arrange(desc(Avg_mpg))
+```
+
+
+## . is assumed first
+```{r}
+mtcars %>% 
+  filter(carb > 1) %>% 
+  lm(mpg ~ cyl + hp, data = .) %>% 
+  summary()
+```
+
+
+
+##  data.table piping
+```{r make-data}
+set.seed(123)
+dt <- data.table(a = sample(letters, 1e5, replace = TRUE),
+                 b = abs(rnorm(1e5)))
+
+dt
+```
+
+##  one line
+```{r dt-piping}
+# adding columns in dt uses :=, $ will still work as well but not for piping
+dt[, x := sqrt(b)][, y := b^2][, z := paste0(a , b)]
+
+dt
+```
+
+# multiple lines - ewwwww
+```{r dt-piping-multiple-lines}
+# multiline dt piping is hard to read
+dt[, x := sqrt(b)][
+  , y := b^2][
+    , z := paste0(a , b)]
+
+dt
+```
+
+# using magrittr pipes with data.table :-)
+```{r dt-with-magrittr-piping}
+# Best of both worlds!
+dt[, x := sqrt(b)] %>%
+  .[, y := b^2] %>%
+  .[, z := paste0(a , b)]
+
+dt
+```
+

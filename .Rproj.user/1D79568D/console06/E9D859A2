@@ -1915,3 +1915,696 @@ Saved working directory and index state WIP on master: c00b814 Merge pull reques
 warning: unable to rmdir '14_data_presentation/03_dashboard-examples/acpd': Directory not empty
 warning: unable to rmdir '14_data_presentation/03_dashboard-examples/dspg19broadband': Directory not empty
 ]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   .Rproj.user/1D79568D/console06/E9D859A2[m
+	[32mnew file:   .Rproj.user/1D79568D/console06/E9D859A2.env[m
+	[32mnew file:   .Rproj.user/1D79568D/console06/INDEX001[m
+	[32mnew file:   .Rproj.user/1D79568D/sources/prop/2C959B18[m
+	[32mnew file:   .Rproj.user/1D79568D/sources/prop/INDEX[m
+	[32mnew file:   .Rproj.user/1D79568D/sources/s-123b2334/40D809AB-contents[m
+	[32mnew file:   .Rproj.user/1D79568D/sources/s-123b2334/4DECBDFF-contents[m
+	[32mnew file:   .Rproj.user/1D79568D/sources/s-123b2334/8BAF9866-contents[m
+	[32mnew file:   .Rproj.user/1D79568D/sources/s-123b2334/lock_file[m
+	[32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   .Rproj.user/shared/notebooks/paths[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rhistory[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/console06/INDEX001[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/graphics-r3/empty.png[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/pcs/files-pane.pper[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/pcs/source-pane.pper[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/pcs/windowlayoutstate.pper[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/pcs/workbench-pane.pper[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/persistent-state[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/rmd-outputs[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/saved_source_markers[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sdb/per/t/381FCC48[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sdb/prop/860DE53B[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sdb/prop/INDEX[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/session-persistent-state[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/prop/39F6E23F[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/prop/860DE53B[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/prop/INDEX[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/s-123b2334/381FCC48-contents[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/s-123b2334/F4AD48F9[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/s-123b2334/F4AD48F9-contents[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/s-123b2334/lock_file[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/.Rproj.user/shared/notebooks/paths[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rhistory[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/console06/100472E9[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/console06/100472E9.env[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/console06/INDEX001[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/pcs/files-pane.pper[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/pcs/source-pane.pper[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/pcs/windowlayoutstate.pper[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/pcs/workbench-pane.pper[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/persistent-state[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/saved_source_markers[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/6223C338[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/964FE43B[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/AAA05273[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/CD41E013[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/D071417B[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/EAA91C2B[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/INDEX[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/2577BCD9[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/2577BCD9-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/29B929C9[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/29B929C9-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/5260BF10[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/5260BF10-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/69AC1A71[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/69AC1A71-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/70B275AF[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/70B275AF-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/87F0BF31[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/87F0BF31-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/C02DA892[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/C02DA892-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/lock_file[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/shared/notebooks/paths[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/console06/INDEX001[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/graphics-r3/empty.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/pcs/files-pane.pper[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/pcs/packages-pane.pper[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/pcs/source-pane.pper[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/pcs/windowlayoutstate.pper[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/pcs/workbench-pane.pper[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/persistent-state[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/rmd-outputs[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/saved_source_markers[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sdb/per/t/F86BA2CB[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sdb/prop/11537498[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sdb/prop/INDEX[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/session-persistent-state[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/11537498[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/29003649[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/4CB01D06[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/A0BC28F2[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/D406AA8A[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/FE4F0009[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/INDEX[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/32B6A0F0[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/32B6A0F0-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/34544DA2-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/5C31DAD9-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/78463F5C-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/AC1D7CEA[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/AC1D7CEA-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/C1E9B8FC[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/C1E9B8FC-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/D0F81CC3[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/D0F81CC3-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/D8C8E920-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/E6A168FC[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/E6A168FC-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/F86BA2CB-contents[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/lock_file[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/shared/notebooks/paths[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.ipynb_checkpoints/README-checkpoint.md[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/.ipynb_checkpoints/acpd-checkpoint.Rproj[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/README.md[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/acpd.Rproj[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/data/README.md[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/data/acpd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/docs/_config.yml[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/docs/index.html[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/01_raw-data/raw-data.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/02_pre-processing/preprocessing.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/.ipynb_checkpoints/Untitled-checkpoint.ipynb[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/.ipynb_checkpoints/Untitled1-checkpoint.ipynb[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/.ipynb_checkpoints/app-checkpoint.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/.ipynb_checkpoints/db_connection-checkpoint.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/Untitled.ipynb[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/Untitled1.ipynb[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/app.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/census_blocks.RDS[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/crime_hours.RDS[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/crimes.RDS[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/datatable.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/db_connection.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/heatmap.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/leaflet.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/map_pnts_sf.RDS[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/ARI_circle.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/Proj4Leaflet-1.0.1/proj4-compressed.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/Proj4Leaflet-1.0.1/proj4.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/Proj4Leaflet-1.0.1/proj4leaflet.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/bootstrap-theme.min.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/bootstrap.min.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/bootstrap.min.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/font-awesome.min.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/FontAwesome.otf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/fontawesome-webfont.eot[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/fontawesome-webfont.svg[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/fontawesome-webfont.ttf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/fontawesome-webfont.woff[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/glyphicons-halflings-regular.eot[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/glyphicons-halflings-regular.svg[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/glyphicons-halflings-regular.ttf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/glyphicons-halflings-regular.woff[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/ionicons.eot[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/ionicons.svg[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/ionicons.ttf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/ionicons.woff[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-matte.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-matte@2x.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-plain.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-shadow.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-shadow@2x.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-soft.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-soft@2x.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/ionicons.min.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/leaflet.awesome-markers.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/leaflet.awesome-markers.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/leaflet.awesome-markers.min.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/htmlwidgets-1.2.1/htmlwidgets.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/jquery-1.12.4/jquery.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/jquery-1.12.4/jquery.min.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/images/layers-2x.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/images/layers.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/images/marker-icon-2x.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/images/marker-icon.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/images/marker-shadow.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/leaflet-src.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/leaflet-src.js.map[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/leaflet.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/leaflet.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/leaflet.js.map[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/bootstrap-theme.min.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/bootstrap.min.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/bootstrap.min.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/font-awesome.min.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/FontAwesome.otf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/fontawesome-webfont.eot[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/fontawesome-webfont.svg[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/fontawesome-webfont.ttf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/fontawesome-webfont.woff[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/glyphicons-halflings-regular.eot[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/glyphicons-halflings-regular.svg[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/glyphicons-halflings-regular.ttf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/glyphicons-halflings-regular.woff[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/ionicons.eot[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/ionicons.svg[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/ionicons.ttf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/ionicons.woff[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-matte.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-matte@2x.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-plain.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-shadow.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-shadow@2x.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-soft.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-soft@2x.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/ionicons.min.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-binding-2.0.1.9000/leaflet.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/MIT-LICENCE.txt[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/MarkerCluster.Default.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/MarkerCluster.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster-src.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster.freezable-src.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster.freezable.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport-src.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport-src.js.map[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport.js[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/package.json[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leafletfix-1.0.0/leafletfix.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/rstudio_leaflet-1.3.1/images/1px.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd/src/README.md[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/.whitesource[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/BroadbandPoster.pdf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/FCC_Manipulation.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/README.md[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/dashboard/app.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/dashboard/www/bootstrap.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/dashboard/www/logo.eps[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/dashboard/www/logo.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/data[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/1-report.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_all_discr_imp.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_all_discr_imp_compare_lol.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_all_discr_imp_impur.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_all_discr_imp_perm.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_all_discr_preds.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_rural_discr_imp.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_rural_discr_imp_impur.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_rural_discr_imp_perm.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_rural_discr_preds.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_urban_discr_imp.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_urban_discr_imp_impur.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_urban_discr_imp_perm.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_urban_discr_preds.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/dspg19broadband.Rproj[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/01_bbnow_cities.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/02_bbnow_scrape_code.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/03_exploring_bbnow.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/04_exploring_bbnow_midterm.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_25mbps.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_25mbps_bg.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_25mbps_county.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_25mbps_county_2017.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_25mbps_tract.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_Manipulation.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_Tract.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_county.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_county_take2.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_data_import.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/Plot_FCC.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/acs_transform.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/app_trial.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/bband_test_viz.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/corelogic/01_getacs.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/corelogic/02_explore.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/corelogic/03_regress.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/county_discrepancy_aland.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/acs_models.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/agreement_fcc_acs.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/agreement_fcc_acs_intervals.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/agreement_fcc_acs_model.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/agreementapp/app.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/discr_getacs_county.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/discr_getacs_tract.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/discr_regress_blockgrp.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/discr_regress_county_all.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/ms_descriptives.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/ms_importance.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/ms_models.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/ms_models_discr.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/predictFCC_ACS.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/eligibility/eligibleCommunityConnect.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/fcc_25mbps_block.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/fcc_acs_merge_plot_bl.Rmd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/get_broadband_com.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/merge_all.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/merge_rural_urban.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/plot_acs/plot_acs.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/plot_acs/sp2.csv[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/all.pdf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/all.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/all_update.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/correlation_update.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/correlations.pdf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/correlations.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/discrepancy.pdf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/discrepancy.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/discrepancy_update.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/metro.pdf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/metro.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/metro_update.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/rucc.pdf[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/rucc.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/rucc_update.png[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/rucc_explore.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/sample_VA_data.rds[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B02001.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B03003.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B15003.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B17026.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B23025.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B28002.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B28003.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_cities.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/summary_acs/ruralurbancodes2013 (2).xls[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/summary_acs/summary_acs.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/summary_acs/summary_acs_census_tract.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/summary_acs/summary_acs_county.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/va_zips.csv[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/www/bootstrap.css[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband/src/www/ers_logo.png[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   .Rproj.user/1D79568D/console06/E9D859A2[m
+
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git commit -m "initial commit 2"
+[master 54bf02f] initial commit 2
+ 321 files changed, 305908 insertions(+)
+ create mode 100644 .Rproj.user/1D79568D/console06/E9D859A2
+ create mode 100644 .Rproj.user/1D79568D/console06/E9D859A2.env
+ create mode 100644 .Rproj.user/1D79568D/console06/INDEX001
+ create mode 100644 .Rproj.user/1D79568D/sources/prop/2C959B18
+ create mode 100644 .Rproj.user/1D79568D/sources/prop/INDEX
+ create mode 100644 .Rproj.user/1D79568D/sources/s-123b2334/40D809AB-contents
+ create mode 100644 .Rproj.user/1D79568D/sources/s-123b2334/4DECBDFF-contents
+ create mode 100644 .Rproj.user/1D79568D/sources/s-123b2334/8BAF9866-contents
+ create mode 100644 .Rproj.user/1D79568D/sources/s-123b2334/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rhistory
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/console06/INDEX001
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/graphics-r3/empty.png
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/pcs/files-pane.pper
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/pcs/source-pane.pper
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/pcs/windowlayoutstate.pper
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/pcs/workbench-pane.pper
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/persistent-state
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/rmd-outputs
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/saved_source_markers
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sdb/per/t/381FCC48
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sdb/prop/860DE53B
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sdb/prop/INDEX
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/session-persistent-state
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/prop/39F6E23F
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/prop/860DE53B
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/prop/INDEX
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/s-123b2334/381FCC48-contents
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/s-123b2334/F4AD48F9
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/s-123b2334/F4AD48F9-contents
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/1D79568D/sources/s-123b2334/lock_file
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/.Rproj.user/shared/notebooks/paths
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rhistory
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/console06/100472E9
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/console06/100472E9.env
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/console06/INDEX001
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/pcs/files-pane.pper
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/pcs/source-pane.pper
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/pcs/windowlayoutstate.pper
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/pcs/workbench-pane.pper
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/persistent-state
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/saved_source_markers
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/6223C338
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/964FE43B
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/AAA05273
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/CD41E013
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/D071417B
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/EAA91C2B
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/prop/INDEX
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/2577BCD9
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/2577BCD9-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/29B929C9
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/29B929C9-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/5260BF10
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/5260BF10-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/69AC1A71
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/69AC1A71-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/70B275AF
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/70B275AF-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/87F0BF31
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/87F0BF31-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/C02DA892
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/C02DA892-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/1D79568D/sources/s-123b2334/lock_file
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/.Rproj.user/shared/notebooks/paths
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/console06/INDEX001
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/graphics-r3/empty.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/pcs/files-pane.pper
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/pcs/packages-pane.pper
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/pcs/source-pane.pper
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/pcs/windowlayoutstate.pper
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/pcs/workbench-pane.pper
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/persistent-state
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/rmd-outputs
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/saved_source_markers
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sdb/per/t/F86BA2CB
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sdb/prop/11537498
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sdb/prop/INDEX
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/session-persistent-state
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/11537498
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/29003649
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/4CB01D06
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/A0BC28F2
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/D406AA8A
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/FE4F0009
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/prop/INDEX
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/32B6A0F0
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/32B6A0F0-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/34544DA2-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/5C31DAD9-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/78463F5C-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/AC1D7CEA
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/AC1D7CEA-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/C1E9B8FC
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/C1E9B8FC-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/D0F81CC3
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/D0F81CC3-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/D8C8E920-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/E6A168FC
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/E6A168FC-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/F86BA2CB-contents
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/1D79568D/sources/s-123b2334/lock_file
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.Rproj.user/shared/notebooks/paths
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.ipynb_checkpoints/README-checkpoint.md
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/.ipynb_checkpoints/acpd-checkpoint.Rproj
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/README.md
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/acpd.Rproj
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/data/README.md
+ create mode 120000 14_data_presentation/03_dashboard-examples/acpd/data/acpd
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/docs/_config.yml
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/docs/index.html
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/01_raw-data/raw-data.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/02_pre-processing/preprocessing.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/.ipynb_checkpoints/Untitled1-checkpoint.ipynb
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/.ipynb_checkpoints/app-checkpoint.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/.ipynb_checkpoints/db_connection-checkpoint.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/Untitled.ipynb
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/Untitled1.ipynb
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/app.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/census_blocks.RDS
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/crime_hours.RDS
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/crimes.RDS
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/datatable.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/db_connection.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/heatmap.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/leaflet.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/map_pnts_sf.RDS
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/ARI_circle.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/Proj4Leaflet-1.0.1/proj4-compressed.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/Proj4Leaflet-1.0.1/proj4.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/Proj4Leaflet-1.0.1/proj4leaflet.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/bootstrap-theme.min.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/bootstrap.min.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/bootstrap.min.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/font-awesome.min.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/FontAwesome.otf
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/fontawesome-webfont.eot
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/fontawesome-webfont.svg
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/fontawesome-webfont.ttf
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/fontawesome-webfont.woff
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/glyphicons-halflings-regular.eot
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/glyphicons-halflings-regular.svg
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/glyphicons-halflings-regular.ttf
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/glyphicons-halflings-regular.woff
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/ionicons.eot
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/ionicons.svg
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/ionicons.ttf
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/fonts/ionicons.woff
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-matte.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-matte@2x.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-plain.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-shadow.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-shadow@2x.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-soft.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/images/markers-soft@2x.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/ionicons.min.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/leaflet.awesome-markers.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/leaflet.awesome-markers.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/fontawesome-4.7.0/leaflet.awesome-markers.min.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/htmlwidgets-1.2.1/htmlwidgets.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/jquery-1.12.4/jquery.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/jquery-1.12.4/jquery.min.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/images/layers-2x.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/images/layers.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/images/marker-icon-2x.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/images/marker-icon.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/images/marker-shadow.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/leaflet-src.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/leaflet-src.js.map
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/leaflet.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/leaflet.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-1.3.1/leaflet.js.map
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/bootstrap-theme.min.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/bootstrap.min.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/bootstrap.min.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/font-awesome.min.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/FontAwesome.otf
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/fontawesome-webfont.eot
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/fontawesome-webfont.svg
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/fontawesome-webfont.ttf
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/fontawesome-webfont.woff
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/glyphicons-halflings-regular.eot
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/glyphicons-halflings-regular.svg
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/glyphicons-halflings-regular.ttf
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/glyphicons-halflings-regular.woff
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/ionicons.eot
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/ionicons.svg
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/ionicons.ttf
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/fonts/ionicons.woff
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-matte.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-matte@2x.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-plain.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-shadow.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-shadow@2x.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-soft.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/images/markers-soft@2x.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/ionicons.min.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-binding-2.0.1.9000/leaflet.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/MIT-LICENCE.txt
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/MarkerCluster.Default.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/MarkerCluster.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster-src.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster.freezable-src.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster.freezable.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport-src.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport-src.js.map
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport.js
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leaflet-markercluster-1.0.5/package.json
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/leafletfix-1.0.0/leafletfix.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/rstudio_leaflet-1.3.1/images/1px.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/03_dashboard/www/m_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/acpd/src/README.md
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/.whitesource
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/BroadbandPoster.pdf
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/FCC_Manipulation.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/README.md
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/dashboard/app.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/dashboard/www/bootstrap.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/dashboard/www/logo.eps
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/dashboard/www/logo.png
+ create mode 120000 14_data_presentation/03_dashboard-examples/dspg19broadband/data
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/1-report.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_all_discr_imp.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_all_discr_imp_compare_lol.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_all_discr_imp_impur.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_all_discr_imp_perm.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_all_discr_preds.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_rural_discr_imp.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_rural_discr_imp_impur.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_rural_discr_imp_perm.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_rural_discr_preds.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_urban_discr_imp.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_urban_discr_imp_impur.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_urban_discr_imp_perm.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/doc/discrepancies/counties_urban_discr_preds.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/dspg19broadband.Rproj
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/01_bbnow_cities.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/02_bbnow_scrape_code.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/03_exploring_bbnow.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/04_exploring_bbnow_midterm.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_25mbps.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_25mbps_bg.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_25mbps_county.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_25mbps_county_2017.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_25mbps_tract.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_Manipulation.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_Tract.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_county.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_county_take2.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/FCC_data_import.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/Plot_FCC.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/acs_transform.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/app_trial.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/bband_test_viz.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/corelogic/01_getacs.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/corelogic/02_explore.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/corelogic/03_regress.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/county_discrepancy_aland.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/acs_models.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/agreement_fcc_acs.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/agreement_fcc_acs_intervals.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/agreement_fcc_acs_model.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/agreementapp/app.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/discr_getacs_county.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/discr_getacs_tract.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/discr_regress_blockgrp.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/discr_regress_county_all.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/ms_descriptives.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/ms_importance.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/ms_models.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/ms_models_discr.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/discrepancies/predictFCC_ACS.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/eligibility/eligibleCommunityConnect.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/fcc_25mbps_block.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/fcc_acs_merge_plot_bl.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/get_broadband_com.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/merge_all.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/merge_rural_urban.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/plot_acs/plot_acs.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/plot_acs/sp2.csv
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/all.pdf
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/all.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/all_update.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/correlation_update.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/correlations.pdf
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/correlations.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/discrepancy.pdf
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/discrepancy.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/discrepancy_update.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/metro.pdf
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/metro.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/metro_update.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/rucc.pdf
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/rucc.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/poster_visuals/rucc_update.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/rucc_explore.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/sample_VA_data.rds
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B02001.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B03003.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B15003.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B17026.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B23025.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B28002.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_acs/scrape_acs_B28003.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/scrape_cities.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/summary_acs/ruralurbancodes2013 (2).xls
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/summary_acs/summary_acs.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/summary_acs/summary_acs_census_tract.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/summary_acs/summary_acs_county.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/va_zips.csv
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/www/bootstrap.css
+ create mode 100644 14_data_presentation/03_dashboard-examples/dspg19broadband/src/www/ers_logo.png
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git push
+error: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': dads2busy
+error: cannot run rpostback-askpass: No such file or directory
+Password for 'https://dads2busy@github.com': 
+[KEnumerating objects: 350, done.
+[KCounting objects:   0% (1/350)[KCounting objects:   1% (4/350)[KCounting objects:   2% (7/350)[KCounting objects:   3% (11/350)[KCounting objects:   4% (14/350)[KCounting objects:   5% (18/350)[KCounting objects:   6% (21/350)[KCounting objects:   7% (25/350)[KCounting objects:   8% (28/350)[KCounting objects:   9% (32/350)[KCounting objects:  10% (35/350)[KCounting objects:  11% (39/350)[KCounting objects:  12% (42/350)[KCounting objects:  13% (46/350)[KCounting objects:  14% (49/350)[KCounting objects:  15% (53/350)[KCounting objects:  16% (56/350)[KCounting objects:  17% (60/350)[KCounting objects:  18% (63/350)[KCounting objects:  19% (67/350)[KCounting objects:  20% (70/350)[KCounting objects:  21% (74/350)[KCounting objects:  22% (77/350)[KCounting objects:  23% (81/350)[KCounting objects:  24% (84/350)[KCounting objects:  25% (88/350)[KCounting objects:  26% (91/350)[KCounting objects:  27% (95/350)[KCounting objects:  28% (98/350)[KCounting objects:  29% (102/350)[KCounting objects:  30% (105/350)[KCounting objects:  31% (109/350)[KCounting objects:  32% (112/350)[KCounting objects:  33% (116/350)[KCounting objects:  34% (119/350)[KCounting objects:  35% (123/350)[KCounting objects:  36% (126/350)[KCounting objects:  37% (130/350)[KCounting objects:  38% (133/350)[KCounting objects:  39% (137/350)[KCounting objects:  40% (140/350)[KCounting objects:  41% (144/350)[KCounting objects:  42% (147/350)[KCounting objects:  43% (151/350)[KCounting objects:  44% (154/350)[KCounting objects:  45% (158/350)[KCounting objects:  46% (161/350)[KCounting objects:  47% (165/350)[KCounting objects:  48% (168/350)[KCounting objects:  49% (172/350)[KCounting objects:  50% (175/350)[KCounting objects:  51% (179/350)[KCounting objects:  52% (182/350)[KCounting objects:  53% (186/350)[KCounting objects:  54% (189/350)[KCounting objects:  55% (193/350)[KCounting objects:  56% (196/350)[KCounting objects:  57% (200/350)[KCounting objects:  58% (203/350)[KCounting objects:  59% (207/350)[KCounting objects:  60% (210/350)[KCounting objects:  61% (214/350)[KCounting objects:  62% (217/350)[KCounting objects:  63% (221/350)[KCounting objects:  64% (224/350)[KCounting objects:  65% (228/350)[KCounting objects:  66% (231/350)[KCounting objects:  67% (235/350)[KCounting objects:  68% (238/350)[KCounting objects:  69% (242/350)[KCounting objects:  70% (245/350)[KCounting objects:  71% (249/350)[KCounting objects:  72% (252/350)[KCounting objects:  73% (256/350)[KCounting objects:  74% (259/350)[KCounting objects:  75% (263/350)[KCounting objects:  76% (266/350)[KCounting objects:  77% (270/350)[KCounting objects:  78% (273/350)[KCounting objects:  79% (277/350)[KCounting objects:  80% (280/350)[KCounting objects:  81% (284/350)[KCounting objects:  82% (287/350)[KCounting objects:  83% (291/350)[KCounting objects:  84% (294/350)[KCounting objects:  85% (298/350)[KCounting objects:  86% (301/350)[KCounting objects:  87% (305/350)[KCounting objects:  88% (308/350)[KCounting objects:  89% (312/350)[KCounting objects:  90% (315/350)[KCounting objects:  91% (319/350)[KCounting objects:  92% (322/350)[KCounting objects:  93% (326/350)[KCounting objects:  94% (329/350)[KCounting objects:  95% (333/350)[KCounting objects:  96% (336/350)[KCounting objects:  97% (340/350)[KCounting objects:  98% (343/350)[KCounting objects:  99% (347/350)[KCounting objects: 100% (350/350)[KCounting objects: 100% (350/350), done.
+Delta compression using up to 40 threads
+[KCompressing objects:   0% (1/316)[KCompressing objects:   1% (4/316)[KCompressing objects:   2% (7/316)[KCompressing objects:   3% (10/316)[KCompressing objects:   4% (13/316)[KCompressing objects:   5% (16/316)[KCompressing objects:   6% (19/316)[KCompressing objects:   7% (23/316)[KCompressing objects:   8% (26/316)[KCompressing objects:   9% (29/316)[KCompressing objects:  10% (32/316)[KCompressing objects:  11% (35/316)[KCompressing objects:  12% (38/316)[KCompressing objects:  13% (42/316)[KCompressing objects:  14% (45/316)[KCompressing objects:  15% (48/316)[KCompressing objects:  16% (51/316)[KCompressing objects:  17% (54/316)[KCompressing objects:  18% (57/316)[KCompressing objects:  19% (61/316)[KCompressing objects:  20% (64/316)[KCompressing objects:  21% (67/316)[KCompressing objects:  22% (70/316)[KCompressing objects:  23% (73/316)[KCompressing objects:  24% (76/316)[KCompressing objects:  25% (79/316)[KCompressing objects:  26% (83/316)[KCompressing objects:  27% (86/316)[KCompressing objects:  28% (89/316)[KCompressing objects:  29% (92/316)[KCompressing objects:  30% (95/316)[KCompressing objects:  31% (98/316)[KCompressing objects:  32% (102/316)[KCompressing objects:  33% (105/316)[KCompressing objects:  34% (108/316)[KCompressing objects:  35% (111/316)[KCompressing objects:  36% (114/316)[KCompressing objects:  37% (117/316)[KCompressing objects:  38% (121/316)[KCompressing objects:  39% (124/316)[KCompressing objects:  40% (127/316)[KCompressing objects:  41% (130/316)[KCompressing objects:  42% (133/316)[KCompressing objects:  43% (136/316)[KCompressing objects:  44% (140/316)[KCompressing objects:  45% (143/316)[KCompressing objects:  46% (146/316)[KCompressing objects:  47% (149/316)[KCompressing objects:  48% (152/316)[KCompressing objects:  49% (155/316)[KCompressing objects:  50% (158/316)[KCompressing objects:  51% (162/316)[KCompressing objects:  52% (165/316)[KCompressing objects:  53% (168/316)[KCompressing objects:  54% (171/316)[KCompressing objects:  55% (174/316)[KCompressing objects:  56% (177/316)[KCompressing objects:  57% (181/316)[KCompressing objects:  58% (184/316)[KCompressing objects:  59% (187/316)[KCompressing objects:  60% (190/316)[KCompressing objects:  61% (193/316)[KCompressing objects:  62% (196/316)[KCompressing objects:  63% (200/316)[KCompressing objects:  64% (203/316)[KCompressing objects:  65% (206/316)[KCompressing objects:  66% (209/316)[KCompressing objects:  67% (212/316)[KCompressing objects:  68% (215/316)[KCompressing objects:  69% (219/316)[KCompressing objects:  70% (222/316)[KCompressing objects:  71% (225/316)[KCompressing objects:  72% (228/316)[KCompressing objects:  73% (231/316)[KCompressing objects:  74% (234/316)[KCompressing objects:  75% (237/316)[KCompressing objects:  76% (241/316)[KCompressing objects:  77% (244/316)[KCompressing objects:  78% (247/316)[KCompressing objects:  79% (250/316)[KCompressing objects:  80% (253/316)[KCompressing objects:  81% (256/316)[KCompressing objects:  82% (260/316)[KCompressing objects:  83% (263/316)[KCompressing objects:  84% (266/316)[KCompressing objects:  85% (269/316)[KCompressing objects:  86% (272/316)[KCompressing objects:  87% (275/316)[KCompressing objects:  88% (279/316)[KCompressing objects:  89% (282/316)[KCompressing objects:  90% (285/316)[KCompressing objects:  91% (288/316)[KCompressing objects:  92% (291/316)[KCompressing objects:  93% (294/316)[KCompressing objects:  94% (298/316)[KCompressing objects:  95% (301/316)[KCompressing objects:  96% (304/316)[KCompressing objects:  97% (307/316)[KCompressing objects:  98% (310/316)[KCompressing objects:  99% (313/316)[KCompressing objects: 100% (316/316)[KCompressing objects: 100% (316/316), done.
+[KWriting objects:   0% (1/349)[KWriting objects:   1% (4/349)[KWriting objects:   2% (8/349)[KWriting objects:   3% (11/349)[KWriting objects:   4% (14/349)[KWriting objects:   5% (18/349)[KWriting objects:   6% (21/349)[KWriting objects:   7% (25/349)[KWriting objects:   8% (28/349)[KWriting objects:   9% (32/349)[KWriting objects:  10% (35/349)[KWriting objects:  11% (39/349)[KWriting objects:  12% (42/349)[KWriting objects:  13% (46/349)[KWriting objects:  14% (49/349)[KWriting objects:  15% (53/349)[KWriting objects:  16% (56/349)[KWriting objects:  17% (60/349)[KWriting objects:  18% (63/349)[KWriting objects:  19% (67/349)[KWriting objects:  20% (70/349)[KWriting objects:  21% (74/349)[KWriting objects:  22% (77/349)[KWriting objects:  23% (81/349)[KWriting objects:  24% (87/349)[KWriting objects:  25% (88/349)[KWriting objects:  26% (91/349)[KWriting objects:  27% (95/349)[KWriting objects:  28% (98/349)[KWriting objects:  29% (102/349)[KWriting objects:  30% (105/349)[KWriting objects:  31% (109/349)[KWriting objects:  32% (112/349)[KWriting objects:  33% (116/349)[KWriting objects:  34% (119/349)[KWriting objects:  35% (123/349)[KWriting objects:  36% (126/349)[KWriting objects:  37% (130/349)[KWriting objects:  38% (133/349)[KWriting objects:  39% (137/349)[KWriting objects:  40% (140/349)[KWriting objects:  41% (144/349)[KWriting objects:  42% (147/349)[KWriting objects:  43% (151/349)[KWriting objects:  44% (154/349)[KWriting objects:  45% (158/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  46% (161/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  47% (165/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  48% (169/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  49% (172/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  50% (175/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  51% (178/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  52% (182/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  53% (185/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  54% (189/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  55% (192/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  56% (196/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  57% (199/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  58% (203/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  59% (206/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  60% (210/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  61% (213/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  62% (217/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  63% (220/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  64% (224/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  65% (227/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  66% (231/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  67% (234/349), 1.73 MiB | 3.37 MiB/s[KWriting objects:  67% (237/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  68% (238/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  69% (243/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  70% (245/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  71% (248/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  72% (252/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  73% (255/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  74% (259/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  75% (262/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  76% (266/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  77% (269/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  78% (273/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  79% (277/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  80% (280/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  81% (283/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  82% (287/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  83% (290/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  84% (294/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  85% (297/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  86% (301/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  87% (304/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  88% (308/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  89% (311/349), 4.63 MiB | 4.53 MiB/s[KWriting objects:  89% (312/349), 7.81 MiB | 2.00 MiB/s[KWriting objects:  89% (313/349), 7.81 MiB | 2.00 MiB/s[KWriting objects:  90% (315/349), 19.06 MiB | 4.32 MiB/s[KWriting objects:  91% (318/349), 19.06 MiB | 4.32 MiB/s[KWriting objects:  92% (322/349), 19.06 MiB | 4.32 MiB/s[KWriting objects:  93% (325/349), 19.06 MiB | 4.32 MiB/s[KWriting objects:  94% (329/349), 19.06 MiB | 4.32 MiB/s[KWriting objects:  95% (332/349), 19.06 MiB | 4.32 MiB/s[KWriting objects:  96% (336/349), 19.06 MiB | 4.32 MiB/s[KWriting objects:  97% (339/349), 19.06 MiB | 4.32 MiB/s[KWriting objects:  98% (343/349), 19.06 MiB | 4.32 MiB/s[KWriting objects:  99% (346/349), 19.06 MiB | 4.32 MiB/s[KWriting objects: 100% (349/349), 19.06 MiB | 4.32 MiB/s[KWriting objects: 100% (349/349), 24.06 MiB | 5.08 MiB/s, done.
+Total 349 (delta 43), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/43)[Kremote: Resolving deltas:   2% (1/43)[Kremote: Resolving deltas:   4% (2/43)[Kremote: Resolving deltas:   9% (4/43)[Kremote: Resolving deltas:  13% (6/43)[Kremote: Resolving deltas:  18% (8/43)[Kremote: Resolving deltas:  20% (9/43)[Kremote: Resolving deltas:  32% (14/43)[Kremote: Resolving deltas:  34% (15/43)[Kremote: Resolving deltas:  46% (20/43)[Kremote: Resolving deltas:  48% (21/43)[Kremote: Resolving deltas:  51% (22/43)[Kremote: Resolving deltas:  53% (23/43)[Kremote: Resolving deltas:  55% (24/43)[Kremote: Resolving deltas:  72% (31/43)[Kremote: Resolving deltas:  74% (32/43)[Kremote: Resolving deltas:  76% (33/43)[Kremote: Resolving deltas:  79% (34/43)[Kremote: Resolving deltas:  81% (35/43)[Kremote: Resolving deltas:  83% (36/43)[Kremote: Resolving deltas:  86% (37/43)[Kremote: Resolving deltas: 100% (43/43)[Kremote: Resolving deltas: 100% (43/43), done.[K
+To https://github.com/DSPG-Young-Scholars-Program/Training.git
+   c00b814..54bf02f  master -> master
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ cp -R ../training/* ./
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ cd 14_data_presentation/03_dashboard-examples/acpd/
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[00m$ l -a
+total 44K
+drwxr-sr-x 8 ads7fg users 4.5K May 28 16:34 [0m[01;34m.[0m
+drwxr-sr-x 5 ads7fg users 1.5K May 28 16:15 [01;34m..[0m
+-rw-r--r-- 1 ads7fg users  272 May 28 16:34 acpd.Rproj
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:34 [01;34mdata[0m
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:15 [01;34mdocs[0m
+drwxr-sr-x 7 ads7fg users 5.0K May 28 16:34 [01;34m.git[0m
+-rw-r--r-- 1 ads7fg users  797 May 28 16:34 .gitignore
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:15 [01;34m.ipynb_checkpoints[0m
+-rw-r--r-- 1 ads7fg users   54 May 28 16:34 README.md
+drwxr-sr-x 4 ads7fg users 1.0K May 28 16:15 [01;34m.Rproj.user[0m
+drwxr-sr-x 5 ads7fg users 2.0K May 28 16:15 [01;34msrc[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[00m$ rm -rf .git*
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[00m$ cd ../dspg19broadband/
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband[00m$ rm -rf .git*
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband[00m$ cd ../Measuring-STW-App/
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[00m$ rm -rf .git*
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[00m$ cd ../../../
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .

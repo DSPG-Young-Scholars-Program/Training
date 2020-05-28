@@ -1,0 +1,63 @@
+---
+title: "Rstudio DB Querying"
+output: html_notebook
+---
+
+## CREATE REUSABLE CONNECTION TO DATABASE
+```{r}
+my_db_con <- sdalr::con_db("aschroed")
+```
+
+
+
+
+## QUERY DATABASE WITH CONNECTION USING DBI
+```{r}
+DBI::dbGetQuery(
+  my_db_con, "
+  SELECT customer_type, COUNT(customer_type) AS TypeCount 
+  FROM \"Customers\" 
+  GROUP By customer_type
+  "
+  )
+```
+
+
+## QUERY DATABASE WITH CONNECTION USING RNOTEBOOK (SQL Chunk)
+```{sql connection=my_db_con, output.var=chunk_result}
+SELECT customer_type, COUNT(customer_type) AS TypeCount 
+FROM "Customers"
+WHERE era = '80s'
+GROUP By customer_type
+```
+
+
+
+
+## QUERY DATABASE WITH CONNECTION USING DPLYER
+```{r}
+library(dplyr)
+result <- 
+tbl(my_db_con, "Customers") %>% 
+  #select(customer_type, era) %>%
+  #filter(era == "80s")
+  group_by(customer_type) %>%
+  summarise(count = count(customer_type))
+  #select(customer_no, customer_notes, last_name) %>%
+
+
+```
+
+
+```{r}
+my_data <- DBI::dbGetQuery(
+  my_db_con, "
+  SELECT * 
+  FROM \"Customers\" 
+  "
+  )
+data.table::setDT(my_data)
+my_data[era == "80s", .(customer_no, customer_notes, customer_type)]
+my_data[era == "80s", .(type_count=.N), customer_type]
+```
+

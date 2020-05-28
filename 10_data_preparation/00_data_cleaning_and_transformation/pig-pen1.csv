@@ -1,0 +1,12 @@
+customerID,MonthlyCharges,TotalCharges,PaymentMethod,Churn,Gender,CustomerSince,NetworkPerf
+7590-VHVEG,29.85,109.9,Electronic check,yes,Male,5/23/2013,1
+5575-GNVDE,56.95,na,Mailed check,yes,M,10/14/2018,10
+3668-QPYBK,,108.15,--,yes,Female,Mar 05 2012,21
+7795-CFOCW,42.3,1840.75,Bank transfer,no, F,15-Feb-13,9
+9237-HQITU,70.7,NA,Electronic check,no,Male,April 15 2000,8
+9305-CDSKC,Nan,820.5,--,yes, Male,11/29/2014,6
+1452-KIOVK,89.1,1949.4,Credit card,no,Female,1/23/2019,1
+6713-OKOMC,,N/A,,yes,M,17-Aug-02,3
+7892-POOKP,104.8,3046.05,Electronic check,no,M,17-Jul-17,5
+8451-AJOMK,54.1,354.95,Electronic check,no,F,7/21/2005,2
+1452-KIOVK,89.1,1949.4,Credit card,no,Female,1/23/2019,1

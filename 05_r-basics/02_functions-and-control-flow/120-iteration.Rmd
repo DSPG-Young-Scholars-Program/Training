@@ -1,0 +1,172 @@
+# Iteration
+
+## Broadcasting
+
+```{r}
+f_values <- c(0, 32, 212, -40)
+```
+
+```{r}
+f_values * 10
+```
+
+```{r}
+f_values * c(10, 100)
+```
+
+## For loops
+
+Temp conversion functions
+
+```{r}
+f_k <- function(f_temp) {
+    ((f_temp - 32) * (5 / 9)) + 273.15
+}
+
+
+k_c <- function(temp_k) {
+    if (is.na(temp_k)) {
+        return(NA)
+    } else if (temp_k < 0) {
+        warning('you passed in a negative Kelvin number')
+        # stop()
+        return(NA)
+    } else {
+        temp_c <- temp_k - 273.15
+        return(temp_c)
+    }
+}
+
+f_c <- function(temp_f) {
+    temp_k <- f_k(temp_f)
+    temp_c <- k_c(temp_k)
+    return(temp_c)
+}
+```
+
+
+
+```{r}
+for (pizza in f_values) {
+    print(pizza)
+    converted <- f_c(pizza)
+    print(converted)
+}
+```
+
+```{r}
+# 1:length(f_values)
+# seq_along(f_values)
+for (i in seq_along(f_values)) {
+    print(i)
+    val <- f_values[i]
+    print(val)
+    
+    converted <- f_c(val)
+    print(converted)
+}
+```
+
+### Pre allocating in a loop
+
+```{r}
+# prepopulate an empty vector
+converted_values <- vector("double", length(f_values))
+for (to_be_converted_position in seq_along(f_values)) {
+    converted <- f_c(to_be_converted_position)
+    converted_values[to_be_converted_position] <- converted
+}
+```
+
+
+```{r}
+converted_values
+```
+
+## purrr (map)
+
+```{r}
+library(purrr)
+```
+
+```{r}
+map(f_values, f_c)
+```
+
+```{r}
+map_dbl(f_values, f_c)
+```
+
+```{r}
+mtcars
+```
+
+```{r}
+map(mtcars, class)
+```
+
+```{r}
+map_chr(mtcars, class)
+```
+
+
+```{r}
+map_dbl(mtcars, mean)
+```
+
+```{r}
+map(mtcars, summary)
+```
+
+## Apply (in base R)
+
+apply family of functions
+
+
+### lapply
+
+```{r}
+lapply(f_values, f_c)
+```
+
+### sapply
+
+```{r}
+sapply(f_values, f_c)
+```
+
+```{r}
+v1 <- c(1, 2, 3, 4)
+v2 <- c(100, 200, 300, 400)
+```
+
+### mapply
+
+```{r}
+my_mean <- function(x, y){
+    return((x + y) / 2)
+}
+```
+
+```{r}
+# sapply(v1, v2, my_mean)
+```
+
+```{r}
+mapply(my_mean, v1, v2)
+# this is the same as purrr::map2
+```
+
+### apply (2-dimensions)
+
+```{r}
+apply(mtcars, MARGIN = 1, mean)
+```
+
+```{r}
+apply(mtcars, MARGIN = 2, mean)
+```
+
+
+
+

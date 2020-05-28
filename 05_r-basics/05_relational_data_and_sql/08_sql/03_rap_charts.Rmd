@@ -1,0 +1,117 @@
+---
+title: "R and SQL, Billboard Rap Charts"
+output:
+  html_document:
+    df_print: paged
+---
+
+
+```{r}
+rap_chart_artists <- readxl::read_excel("~/Rap_Charts.xlsx", sheet = "Artists")
+rap_chart_singles <- readxl::read_excel("~/Rap_Charts.xlsx", sheet = "Singles")
+```
+
+## CREATE REUSABLE CONNECTION TO DATABASE
+```{r warning=FALSE}
+my_db_con <- sdalr::con_db("aschroed", pass=sdalr::get_my_password())
+```
+
+## WRITE DATA TO DATABASE TABLES
+```{r}
+DBI::dbWriteTable(my_db_con, "rap_chart_artists", rap_chart_artists, row.names=F)
+DBI::dbWriteTable(my_db_con, "rap_chart_singles", rap_chart_singles, row.names=F)
+```
+
+## JOIN TABLES IN SQL WITH DBI
+```{r}
+DBI::dbGetQuery(my_db_con, 
+                "SELECT * 
+                 FROM rap_chart_artists a 
+                 JOIN rap_chart_singles b ON a.\"Artist_ID\" = b.\"Artist_ID\"")
+```
+
+## JOIN TABLES IN SQL IN SQL CHUNK
+```{sql connection=my_db_con}
+SELECT *
+FROM rap_chart_artists a
+JOIN rap_chart_singles s ON a."Artist_ID" = s."Artist_ID"
+```
+
+## JOIN TABLES IN SQL IN SQL CHUNK WITH OUTPUT VARIABLE
+```{sql connection=my_db_con, output.var="rap_artist_singles"}
+SELECT *
+FROM rap_chart_artists a
+JOIN rap_chart_singles s ON a."Artist_ID" = s."Artist_ID"
+```
+
+```{r}
+rap_artist_singles[, c("First_Name", "Last_Name")]
+```
+
+## JOIN TABLES IN SQL IN SQL CHUNK APPLY WHERE CLAUSE AND FUZZY SEARCH
+```{sql connection=my_db_con}
+SELECT *
+FROM rap_chart_artists a
+JOIN rap_chart_singles s ON a."Artist_ID" = s."Artist_ID"
+WHERE "Psuedonym" LIKE '%LL%'
+```
+
+## JOIN TABLES IN SQL IN SQL CHUNK APPLY WHERE CLAUSE WITH 'AND' AND FUZZY SEARCH
+```{sql connection=my_db_con}
+SELECT *
+FROM rap_chart_artists a
+JOIN rap_chart_singles s ON a."Artist_ID" = s."Artist_ID"
+WHERE "Psuedonym" LIKE '%LL%'
+AND "Top_US_Rap_Chart" IS NOT NULL
+```
+
+## JOIN TABLES IN SQL IN SQL CHUNK APPLY SELECT AND WHERE CLAUSE WITH 'AND' AND FUZZY SEARCH AND ORDER
+```{sql connection=my_db_con}
+SELECT "Psuedonym", "Single", "Year", "Top_US_Rap_Chart"
+FROM rap_chart_artists a
+JOIN rap_chart_singles s ON a."Artist_ID" = s."Artist_ID"
+WHERE "Psuedonym" LIKE '%LL%'
+AND "Top_US_Rap_Chart" IS NOT NULL
+ORDER BY "Top_US_Rap_Chart", "Year"
+```
+
+
+## JOIN TABLES IN SQL IN SQL CHUNK APPLY SELECT AND WHERE CLAUSE AND FUZZY SEARCH AND ORDER AND GROUP BY WITH AGGREGATE FUNCTION
+```{sql connection=my_db_con, max.print = 15}
+SELECT "Psuedonym", "Top_US_Rap_Chart", COUNT("Top_US_Rap_Chart") chart_position_cnt
+FROM rap_chart_artists a
+JOIN rap_chart_singles s ON a."Artist_ID" = s."Artist_ID"
+WHERE "Psuedonym" LIKE '%M.C.%'
+AND "Top_US_Rap_Chart" IS NOT NULL
+GROUP BY "Psuedonym", "Top_US_Rap_Chart"
+ORDER BY "Psuedonym", "Top_US_Rap_Chart"
+```
+
+
+
+## SAME THING USING DATA.TABLE
+```{r}
+library(data.table)
+rap_artist_singles_dt <- setDT(rap_artist_singles)
+```
+
+```{r}
+rap_artist_singles_dt[Psuedonym %like% "LL"]
+```
+
+```{r}
+rap_artist_singles_dt[Psuedonym %like% "LL", .(Psuedonym, Single, Top_US_Rap_Chart)]
+```
+
+```{r}
+rap_artist_singles_dt[Psuedonym %like% "LL" & !is.na(Top_US_Rap_Chart), .(Psuedonym, Single, Top_US_Rap_Chart)]
+```
+
+```{r}
+rap_artist_singles_dt[Psuedonym %like% "LL" & !is.na(Top_US_Rap_Chart), .(.N), c("Psuedonym", "Top_US_Rap_Chart")]
+```
+
+```{r}
+rap_artist_singles_dt[Psuedonym %like% "LL" & !is.na(Top_US_Rap_Chart), .(.N), c("Psuedonym", "Top_US_Rap_Chart")][order(Top_US_Rap_Chart)]
+```
+

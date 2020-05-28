@@ -1,0 +1,276 @@
+---
+title: "Spatial R with SF Intro"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Code repository: git@devlab.vbi.vt.edu:sdal/sf_spatial_intro.git
+
+
+## Install Latest ggplot
+```{r}
+devtools::install_github("tidyverse/ggplot2")
+```
+
+## Load Libraries
+```{r}
+library(sf)
+library(dplyr)
+library(ggplot2) # latest github version
+library(magrittr)
+```
+
+## Load Some Geography (in this case a shapefile)
+```{r}
+cd <- st_read("data/shapefiles/congressional_districts.shp", stringsAsFactors = FALSE)
+head(cd)
+```
+
+## Plot the Geography
+```{r}
+plot(cd)
+```
+
+## Plot just One Column
+```{r}
+plot(cd[, "state"])
+```
+
+
+## Load Some Data (in this case, a csv file)
+```{r}
+cts <- read.csv('data/congressional_trump_scores.csv', stringsAsFactors = FALSE)[ , -1] %>%
+  mutate(district = as.character(district))
+head(cts)
+```
+
+
+## Combine Geography and Data
+```{r}
+dat <- left_join(cd, cts)
+head(dat)
+```
+
+
+## Plot just One Column
+```{r}
+plot(dat[, "trump_score"])
+```
+
+
+## Fancy Plot with ggplot - first define a theme function (a set of layout/design parameters to re-use in each map)
+```{r}
+mapTheme <- function() {
+  theme_void() + 
+    theme(
+      text = element_text(size = 7),
+      plot.title = element_text(size = 11, color = "#1c5074", hjust = 0, vjust = 2, face = "bold"), 
+      plot.subtitle = element_text(size = 8, color = "#3474A2", hjust = 0, vjust = 0),
+      axis.ticks = element_blank(), 
+      legend.direction = "vertical", 
+      legend.position = "right",
+      plot.margin = margin(1, 1, 1, 1, 'cm'),
+      legend.key.height = unit(1, "cm"), legend.key.width = unit(0.2, "cm")
+    ) 
+}
+```
+
+
+## Fancy Plot with ggplot - create ggplot and apply theme
+```{r}
+ggplot(dat) + 
+  # plot a map with ggplot
+  geom_sf(aes(fill = trump_score), color = NA) +
+  # specify the projection to use
+  coord_sf(crs = st_crs(102003)) +
+  scale_fill_gradient2('Trump Score \n', low='#0099ff', mid = '#ffffff', high = '#ff6666', midpoint = 0.5) +
+  labs(
+    title = 'Where have U.S. Representatives voted with and against President Trump?',
+    subtitle = "Mapping FiveThirtyEight's 'Trump Score' of House of Representative's voting records",
+    caption = "Source: Azavea, Data: FiveThirtyEight"
+  ) +
+  mapTheme()
+```
+
+
+## Filter to Smaller Data Set
+```{r}
+upper_mw <- dat %>%
+  # select a few states using dplyr::filter
+  filter(state %in% c('MN', 'IA', 'WI')) %>%
+  # re-project to an appropriate coordinate system
+  st_transform(2289) 
+upper_mw_coords <- upper_mw %>%
+  # find polygon centroids (sf points object)
+  st_centroid %>%
+  # extract the coordinates of these points as a matrix
+  st_coordinates
+# insert centroid long and lat fields as attributes of polygons
+upper_mw$long <- upper_mw_coords[,1]
+upper_mw$lat <- upper_mw_coords[,2]
+
+head(upper_mw)
+```
+
+
+## Fancy Plot with ggplot - create ggplot and apply theme
+```{r}
+ggplot(upper_mw) + 
+  # map districts by Trump Score
+  geom_sf(aes(fill = trump_score), color = 'white') +
+  # add labels according to locations of each polygon centroid
+  geom_label(aes(long, lat, color = party, label = name), alpha = 0.75, size = 2) +
+  scale_fill_gradient2('Trump Score \n', low='#0099ff', mid = '#ffffff', high = '#ff6666', midpoint = 0.5) +
+  scale_color_manual('Political Party', values = c('Blue', 'Red')) +
+  labs(
+    title = "Congressional support for President Trump's policies in the Upper Midwest",
+    subtitle = "Mapping FiveThirtyEight's 'Trump Score' of House of Representative's voting records",
+    caption = "Source: Azavea, Data: FiveThirtyEight"
+  ) +
+  mapTheme()
+```
+
+
+## Filter to a different Smaller Data Set
+```{r}
+by_state <- dat %>%
+  group_by(state) %>%
+  summarise(avg_trump_score = mean(na.omit(trump_score)), 
+            districts = n_distinct(district))
+head(by_state)
+```
+
+
+## Fancy Plot with ggplot - create ggplot and apply theme
+```{r}
+ggplot(by_state) + 
+  geom_sf(aes(fill = avg_trump_score), color = 'white') +
+  scale_fill_gradient2('Average \nTrump Score \nby State \n', low='#0099ff', mid = '#ffffff', high = '#ff6666', midpoint = 0.5) +
+  coord_sf(crs = st_crs(102003)) +
+  labs(
+    title = "Which states' congressional delegations have supported President Trump's policies?",
+    subtitle = "Mapping FiveThirtyEight's 'Trump Score' of House of Representative's voting records",
+    caption = "Source: Azavea, Data: FiveThirtyEight"
+  ) +
+  mapTheme()
+```
+
+
+## Load Data from SDAL Database
+```{r}
+con <- sdalr::con_db("sdal", pass = sdalr::get_my_password())
+evictions <- st_read(con, c("apps$dashboard", "va_bg_evictions_00_16"))
+evictions <- evictions[evictions$item_geoparent=="Arlington County" & evictions$item_year=="2016",]
+
+head(evictions)
+```
+
+
+## Change geometry column name and re-establish as the geometry column (BUG)
+```{r}
+colnames(evictions)[colnames(evictions)=="wkb_geometry"] <- "geometry"
+st_geometry(evictions) <- "geometry"
+```
+
+```{r}
+ggplot(evictions) + 
+  geom_sf(aes(fill = item_value), color = 'white') +
+  #scale_fill_gradient(low = "white", high = "black") +
+  coord_sf(crs = st_crs(102003)) +
+  labs(
+    title = "Female Population by Block Group",
+    subtitle = "Arlington County, VA",
+    caption = "Source: American Community Survey"
+  ) +
+  mapTheme()
+```
+
+
+## Getting Data from a GIS API
+### sf can read geographic files directly from a url! 
+
+#### go to: https://hub.arcgis.com/pages/open-data
+#### search for Hospitals
+#### select from GeoPlatform.gov Source on the left side menu
+#### select the first data set (should bring you to: https://hub.arcgis.com/datasets/geoplatform::hospitals-4)
+#### from the API dropdown menu (on the right), copy the GeoJSON link
+```{r}
+hospitals <- st_read("https://opendata.arcgis.com/datasets/c56882e5caaa4ebd8e90a29adfaf24d0_0.geojson")
+hospitals_va <- hospitals[hospitals$STATE=="VA",]
+head(hospitals_va)
+# plot(hospitals_va[,"TRAUMA"])
+```
+
+```{r}
+ggplot(hospitals_va) + 
+  geom_sf(aes(color = TRAUMA, size = POPULATION)) +
+  #scale_fill_gradient(low = "white", high = "black") +
+  coord_sf(crs = st_crs(102003)) +
+  mapTheme()
+
+# size bug
+```
+
+
+
+# Leaflet Example (Web Page Interactive Javascript)
+## Prepare Data
+```{r cache=TRUE, echo=FALSE, message=FALSE}
+VABG <- readRDS("data/va_blockgroups_simplified_spdf.RDS")
+cu12 <- readRDS("data/cu12.RDS")
+cu12_cast <- data.table::dcast(cu12, NAMELSAD + ST_SUBST_FIPS ~ YEAR, value.var = c("VALUE", "MOE"))
+map_data <- tmaptools::append_data(VABG, cu12_cast, key.shp = "GEOID", key.data = "ST_SUBST_FIPS")
+map_data <- map_data[!is.na(map_data@data$NAMELSAD.data),]
+max_value <- max(cu12$VALUE)
+min_value <- min(cu12$VALUE)
+```
+
+## District Map (Census Block Groups)
+```{r echo=FALSE, message=FALSE}
+library(magrittr)
+
+# pal <- leaflet::colorNumeric(
+#   palette = "RdYlBu",
+#   domain = min_value:max_value)
+
+binpal <- leaflet::colorBin("viridis", min_value:max_value, 9, pretty = TRUE)
+
+# labels <- sprintf("%s: %s", map_data_2015$NAMELSAD, map_data$VALUE)
+years <- c("2015", "2014", "2013", "2012", "2011")
+map <- leaflet::leaflet(width = "900px", data = map_data)
+map <- leaflet::addProviderTiles(map = map, "CartoDB.Positron")
+for (y in years) {
+  col_name <- paste0("VALUE_", y)
+  map <- leaflet::addPolygons(map = map,
+                       smoothFactor = 0.2,
+                       weight = 1,
+                       fillOpacity = 0.7,
+                       color = "white",
+                       dashArray = "3",
+                       fillColor = ~binpal(map_data@data[, c(col_name)]),
+                       highlight = leaflet::highlightOptions(
+                         weight = 5,
+                         color = "#666",
+                         dashArray = "",
+                         fillOpacity = 0.7,
+                         bringToFront = TRUE),
+                       label = sprintf("Cnty: %s %s: %s", map_data$COUNTYFP, map_data$NAMELSAD, map_data@data[, c(col_name)]),
+                       group = y
+                       )
+}
+map <- leaflet::addLayersControl(map = map,
+    baseGroups = years,
+    position = "topleft",
+    options = leaflet::layersControlOptions(collapsed = FALSE)
+  )
+map <- leaflet::addLegend(map = map, "topright", pal = binpal, values = ~map_data@data[, c(col_name)],
+            title = "Households with Children < 12",
+            opacity = 1
+)
+map
+```
+
+
+# To DataCamp! Spatial Analysis in R with sf and raster
+# Go through Chapter 2: Plot vector and raster together

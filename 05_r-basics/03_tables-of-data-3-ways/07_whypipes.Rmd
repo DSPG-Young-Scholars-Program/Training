@@ -1,0 +1,158 @@
+---
+title: "Why Pipes?"
+author: "Steve Simon"
+date: "February 11, 2017"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+I've recently started using the magrittr package a lot in my R programs. This package implements the pipe operator %>%. A very simple explanation of how the pipe operator works is found in the [README file](https://cran.r-project.org/web/packages/magrittr/README.html) of the package. .
+
+
+x %>% f is equivalent to f(x)
+
+x %>% f(y) is equivalent to f(x, y)
+
+x %>% f %>% g %>% h is equivalent to h(g(f(x)))
+
+The first time I saw this, I was scratching my head and wondering "Why?". It turns out that there are two very good reasons for using the pipe operator.
+
+1. It avoids the mess of parentheses that you have with nested functions.
+
+2. It reduces the number of times that you have to type in the name of a data frame.
+
+First a historical note. The name "magrittr" is a play on the name of a famous surrealist artist, [Rene Magritte](https://en.wikipedia.org/wiki/Ren%C3%A9_Magritte), who included a quote "Ceci n'est pas une pipe" (This is not a pipe) in one of his [paintings](https://en.wikipedia.org/wiki/The_Treachery_of_Images).
+
+## Nested parentheses.
+
+There's a [cute joke about LISP](http://www.netfunny.com/rhf/jokes/90q2/lispcode.html) that emphasizes the problems with nested parentheses in that language. the code." R is not quite that bad, but it can have a lot of parentheses. Here's an example.
+
+You want to get a vector listing all the possible values of a column in a data frame, but with the values listed in order from the one that occurs most frequently to the one that appears least frequently. Let's do this in steps.
+
+First, create an artificial data frame.
+
+```{r create_data_frame}
+tst <- data.frame(i=1:10, x=rep(letters[1:4], c(2,1,4,3)), stringsAsFactors=FALSE)
+tst
+```
+
+You can get a list of values with the unique function
+
+```{r unique}
+unique(tst$x)
+```
+
+but it's in the wrong order. To get the items in frequency order, you start with the table command.
+
+```{r table}
+table(tst$x)
+```
+
+Then you sort the table.
+
+```{r sort}
+sort(table(tst$x))
+```
+
+Almost there. The sort command goes from low to high. You want to go from high to low. Use rhe rev command to do this.
+
+```{r rev}
+rev(sort(table(tst$x)))
+```
+
+One last thing. The table is the frequency counts, but we want the actual values. Use the names command.
+
+```{r names}
+names(rev(sort(table(tst$x))))
+```
+
+There are several problems with this. First the mass of parentheses makes it easy to end up with mismatched parentheses. Second, it is modify this code. Third, the code is hard to read. Here's how you would do this with pipes.
+
+```{r pipes_table}
+library(magrittr)
+tst$x %>% table
+```
+
+You could have written this as tst$x %>% table() but the parentheses are not needed. To add a second function, just add a second pipe operator. With multiple pipe operators, you can make the code a bit easier to read by splitting the command onto multiple lines.
+
+```{r pipes_sort}
+tst$x   %>%
+  table %>%
+  sort
+```
+
+Add a third pipe.
+
+```{r pipes_rev}
+tst$x   %>%
+  table %>%
+  sort  %>%
+  rev
+```
+
+And a fourth pipe.
+
+```{r pipes_names}
+tst$x   %>%
+  table %>%
+  sort  %>%
+  rev   %>%
+  names
+```
+
+If you need to takek the results of a series of pipes and store it in a vector for later use, I have found that the alternate assignment operator -> to be very useful.
+
+```{r pipes_assignment}
+tst$x   %>%
+  table %>%
+  sort  %>%
+  rev   %>%
+  names  -> top_values
+top_values
+```
+
+## Avoiding repeat typing of data frame names
+
+One commonly offered advice for new R programmers is to keep the names of your data frames very short. The reason for this is that you often end up typing the data frame names multiple times even within a single command. Here is an example. Suppose you want to change the values of "c" in the data frame to "e" but keep everything else the same. The R code to do this is
+
+```{r substitute}
+tst1 <- tst[tst$x=="c", ]
+tst1
+```
+
+There are various workarounds for this, such as the attach and with commmands, but these have issues. Here's a solution using magrittr. It relies on a function in the dply library, filter.
+
+```{r filter}
+library(dplyr)
+tst %>% filter(x=="c") -> tst1
+tst1
+```
+
+Now you might think, Big Deal, one less tst. But it is a big deal when you have to do this multiple times.
+ 
+Another time when data frame names get in the way is when you need to compute a transformation.
+
+```{r log}
+tst2 <- tst
+tst2$i_squared=tst2$i^2
+tst2
+```
+
+With pipes and the mutate function in dplyr, this becomes a lot easier.
+
+```{r mutate}
+tst %>% mutate(i_squared=i^2) -> tst2
+tst2
+```
+
+Of course, the biggest advantage of pipes is when you need to combine several operations. So let's filter the data set and then mutate it.
+
+```{r combine}
+tst                     %>%
+  filter(x=="c")        %>%
+  mutate(i_squared=i^2) -> tst2
+tst2
+```
+
+These are all very simple examples, but I have found that using pipes has shortened my code and made it more readable at the same time. It is also easier to maintain and modify my code. To learn more, read the [magirttr vignette](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html) or the [Revolutions blog posting](http://blog.revolutionanalytics.com/2014/07/magrittr-simplifying-r-code-with-pipes.html) or [Chapter 18](http://r4ds.had.co.nz/pipes.html) of the R for Data Science book. I have written about the [sort by frequency example](http://blog.pmean.com/pipes-in-r/) and showed a [a second example](http://blog.pmean.com/pipes-in-r-2/) on my [blog](http://blog.pmean.com).

@@ -1,0 +1,41 @@
+---
+title: "Merge data sets with base, dplyr (tidyverse) & data.table"
+output:
+  html_document: 
+    keep_md: yes
+---
+
+```{r make-data}
+library(data.table) # 1.11.5, 2018-06-02 00:09:06 UTC
+library(dplyr) # 0.7.5.9000, 2018-06-12 01:41:40 UTC
+set.seed(1L)
+names = paste0("V", 1:200)
+cols = 200L
+foo <- function() {
+    data = as.data.frame(setDT(lapply(1:cols, function(x) sample(10))))
+    setnames(data, sample(names))
+}
+n = 10e3L
+ll = vector("list", n)
+for (i in 1:n) {
+    .Call("Csetlistelt", ll, i, foo())
+}
+
+```
+
+```{r base}
+system.time(ans3 <- do.call("rbind", ll))
+```
+
+```{r dplyr}
+system.time(ans4 <- dplyr::bind_rows(ll))
+```
+
+```{r data.table}
+system.time(ans1 <- rbindlist(ll))
+```
+
+```{r data.table-names}
+system.time(ans2 <- rbindlist(ll, use.names=TRUE))
+```
+

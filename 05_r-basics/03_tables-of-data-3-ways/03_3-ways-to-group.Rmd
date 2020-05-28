@@ -1,0 +1,39 @@
+---
+title: "Group with base, dplyr (tidyverse) & data.table"
+output:
+  html_document: 
+    keep_md: yes
+---
+
+```{r load-data}
+library(data.table)
+library(dplyr)
+pg <- fread("pigeon-racing.csv")
+```
+
+
+```{r base}
+aggregate(Ent ~ Breeder, pg, length)
+
+table(pg$Breeder)
+
+data.frame(table(pg$Breeder))
+```
+
+
+```{r dplyr}
+count(pg, Breeder)
+
+#or with magrittr piping
+pg %>% count(Breeder)
+```
+
+
+```{r data.table}
+#dt[filter, select, group]
+pg[, .N, Breeder]
+```
+
+```{r data.table-complete-with-piping}
+pg[Color == "BBWF", .(Sex, Speed), .(Breeder)][, .N, .(Breeder)][order(-N)]
+```

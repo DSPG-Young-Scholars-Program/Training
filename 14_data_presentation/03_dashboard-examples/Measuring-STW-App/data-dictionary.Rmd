@@ -1,0 +1,189 @@
+---
+output: html_document
+---
+### Data Dictionary
+
+__Data Source:__ An organization collecting the data and link to the organization.
+
+__Credentials:__ Indicates if the dataset includes information on credentials.
+
+  - _Yes_
+  
+  - _No_
+
+__Skills:__ Indicates if the dataset includes information on skills.
+
+  - _Yes_
+  
+  - _No_
+
+__Jobs:__ Indicates if the dataset includes information on jobs.
+
+  - _Yes_
+  
+  - _No_
+
+__Employers:__ Indicates if the dataset includes information on employers.
+
+  - _Yes_
+  
+  - _No_
+
+__STW Relevant:__ A description of how the data source can be used to describe the STW.
+
+__Dataset Name:__ An organization's name for the dataset and link to the dataset.
+
+__Dataset Link:__ A link, if available, to the dataset.
+
+__Dataset Subject:__ The main topic(s) addressed in the dataset.
+
+  - _Education/Training_
+  
+  - _Licenses/Certifications_
+  
+  - _Jobs/Employment_
+  
+  - _Industry_
+  
+__Organization Type:__ Indicates if the organization providing the dataset is for-profit, non-profit, or federal.
+
+  - _For-Profit_
+  
+  - _Non-Profit_
+  
+  - _Federal_
+  
+__Data Type:__ Describes the data by broad method(s) used for collection.
+
+  - _Administrative:_ Statistically designed data collections, such as surveys and experiments, and intentional data collections such as astronomical observaations, remote sensing, and health registeries.
+  
+  - _Designed (Survey):_  Collected for the administration of an organization or program by entities, such as government agencies, as they provide services, companies to track orders, and universities to record registered students.
+  
+  - _Opportunity:_ Derived from internet-based information, such as websites and social media and captured through APIs and web scraping.
+  
+  - _Procedural:_ Focus on processes and policies such as a change in health care coverage or a data repository policy that outlines procedures and metadata required to store data.
+
+__Purpose:__ A brief explanation of the purpose and history of the dataset.
+
+__Audience:__ Lists the main users of the dataset, or for whom the dataset was compiled. 
+
+__Population Coverage:__ Description of the target population and observations in the sample or population.
+
+__Unit of Analysis:__ The smallest unit in the dataset on which information is provided.
+
+__Geographic Unit:__ A list of all geographic variables contained in the dataset.
+
+__Time Coverage:__ The start and end date of the dataset.
+
+__Collection Frequency:__ Indicates how often the data is collected.
+
+__When does the data become available?:__ Indicates how frequently new data are made available.
+
+__Can this data be trended?:__ Indicates if the dataset can be trended.
+
+  - _Yes_
+  
+  - _No_
+
+__Methodology Report Link:__ A link, if available, to the methodology report for the dataset.
+
+__Data Dictionary Link:__ A link, if available, to the data dictionary for the dataset.
+
+__Data Quality Assessments:__ A description including biases and issues of the dataset and if the dataset can be benchmarked against an existing survey.
+
+__Cost/Price:__ Lists any fees for using the dataset.
+
+__Funding amount to support R&D:__ Lists any funding provided by the organization for uses of the dataset that support R&D. 
+
+__Licensing or Training Required?:__ Indicates if licensing or training is required for use of the dataset.
+
+  - _Yes_
+  
+  - _No_
+
+__Accessibility:__ Method(s) of acquiring data.
+
+ - _Download_
+ 
+ - _FTP_
+ 
+ - _Portal_
+ 
+ - _Webscraping_
+ 
+__Data Format:__ The format(s) in which the data is available.
+
+  - _CSV_
+  
+  - _Excel_
+  
+  - _SAS_
+  
+  - _SPSS_
+  
+  - _R_
+  
+  - _JSON_
+  
+  - _TXT_
+  
+  - _PDF_
+
+__Individuals Identifiable?:__ Indicates if personally identifiable information is included in the dataset.
+
+  - _Yes_
+  
+  - _No_
+
+__Gender:__ Indicates if information on gender is included in the dataset.
+
+  - _Yes_
+  
+  - _No_
+
+__Race/Ethnicity:__ Indicates if information on race or ethnicity is included in the dataset.
+
+  - _Yes_
+  
+  - _No_
+
+__Persons with Disabilities:__ Indicates if information on persons with disabilities is included in the dataset.
+
+  - _Yes_
+  
+  - _No_
+
+__Veterans:__ Indicates if information on veterans is included in the dataset.
+
+  - _Yes_
+  
+  - _No_
+
+__Active Military:__ Indicates if information on active military is included in the dataset.
+
+  - _Yes_
+  
+  - _No_
+
+__Persons who live on tribal lands?:__ Indicates if information on tribal lands is included in the dataset.
+
+  - _Yes_
+  
+  - _No_
+
+__Fields of Study/Types of Training:__ Indicates if information on field of study or types of training is included in the dataset.
+
+  - _Yes_
+  
+  - _No_
+
+__Types of Employment/Occupations:__ Indicates if information on employment or occupations is included in the dataset.
+
+  - _Yes_
+  
+  - _No_
+
+__Notes:__ Any additional information relevant to the data source.
+                
+
+

@@ -1,0 +1,9 @@
+---
+title: "Profile Consistency with base, dplyr & data.table"
+output:
+  html_document: default
+---
+
+# Does any property have multiple values for Year Built?
+
+final_dt[, .N, .(`Parcel ID`, `Year Built`)][, .N, .(`Parcel ID`)][N > 1][order(-N)]

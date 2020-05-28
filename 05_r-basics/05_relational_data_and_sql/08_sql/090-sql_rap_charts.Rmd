@@ -1,0 +1,162 @@
+<!--
+Message to anyone editing this page
+Note that most of the chunks are not being evaluated,
+you need to pass in eval=TRUE into the chunk to evaluate the code chunk
+-->
+# SQL Databases
+
+R4ds chapter (relational data): http://r4ds.had.co.nz/relational-data.html
+
+Software-Carpentry SQL Lesson
+
+- http://swcarpentry.github.io/sql-novice-survey/
+
+DataCamp Courses
+
+- https://www.datacamp.com/courses/intro-to-sql-for-data-science
+- https://www.datacamp.com/courses/joining-data-in-postgresql
+
+## Databases in R
+
+```{r, eval=TRUE, echo=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+
+```{r, eval = TRUE}
+rap_chart_artists <- readxl::read_excel("data/Rap_Charts.xlsx", sheet = "Artists")
+rap_chart_singles <- readxl::read_excel("data/Rap_Charts.xlsx", sheet = "Singles")
+```
+
+```{r, eval = TRUE}
+head(rap_chart_artists)
+```
+
+```{r, eval = TRUE}
+head(rap_chart_singles)
+```
+
+### CREATE REUSABLE CONNECTION TO DATABASE
+
+```{r warning=FALSE, eval=FALSE}
+# by default this will open up your own database (e.g., aschroed)
+my_db_con <- sdalr::con_db(pass = sdalr::get_my_password())
+```
+
+### WRITE DATA TO DATABASE TABLES
+```{r, eval=FALSE}
+DBI::dbWriteTable(my_db_con, "rap_chart_artists", rap_chart_artists, row.names = FALSE)
+DBI::dbWriteTable(my_db_con, "rap_chart_singles", rap_chart_singles, row.names = FALSE)
+```
+
+## Joins
+
+
+### JOIN TABLES IN SQL WITH DBI
+```{r, eval=FALSE}
+DBI::dbGetQuery(my_db_con, 
+                "SELECT * 
+                 FROM rap_chart_artists a 
+                 JOIN rap_chart_singles b ON a.\"Artist_ID\" = b.\"Artist_ID\"")
+```
+
+### JOIN TABLES IN SQL IN SQL CHUNK
+
+<pre><code>```{sql connection=my_db_con}
+SELECT *
+FROM rap_chart_artists a
+JOIN rap_chart_singles s ON a."Artist_ID" = s."Artist_ID"
+```</code></pre>
+
+### JOIN TABLES IN SQL IN SQL CHUNK WITH OUTPUT VARIABLE
+
+<pre><code>```{sql connection=my_db_con, output.var="rap_artist_singles"}
+SELECT *
+FROM rap_chart_artists a
+JOIN rap_chart_singles s ON a."Artist_ID" = s."Artist_ID"
+```</code></pre>
+
+```{r, eval=FALSE}
+rap_artist_singles[, c("First_Name", "Last_Name")]
+```
+
+### JOIN TABLES IN SQL IN SQL CHUNK APPLY WHERE CLAUSE AND FUZZY SEARCH
+
+<pre><code>```{sql connection=my_db_con}
+SELECT *
+FROM rap_chart_artists a
+JOIN rap_chart_singles s ON a."Artist_ID" = s."Artist_ID"
+WHERE "Psuedonym" LIKE '%LL%'
+```</code></pre>
+
+### JOIN TABLES IN SQL IN SQL CHUNK APPLY WHERE CLAUSE WITH 'AND' AND FUZZY SEARCH
+
+<pre><code>```{sql connection=my_db_con}
+SELECT *
+FROM rap_chart_artists a
+JOIN rap_chart_singles s ON a."Artist_ID" = s."Artist_ID"
+WHERE "Psuedonym" LIKE '%LL%'
+AND "Top_US_Rap_Chart" IS NOT NULL
+```</code></pre>
+
+### JOIN TABLES IN SQL IN SQL CHUNK APPLY SELECT AND WHERE CLAUSE WITH 'AND' AND FUZZY SEARCH AND ORDER
+
+<pre><code>```{sql connection=my_db_con}
+SELECT "Psuedonym", "Single", "Year", "Top_US_Rap_Chart"
+FROM rap_chart_artists a
+JOIN rap_chart_singles s ON a."Artist_ID" = s."Artist_ID"
+WHERE "Psuedonym" LIKE '%LL%'
+AND "Top_US_Rap_Chart" IS NOT NULL
+ORDER BY "Top_US_Rap_Chart", "Year"
+```</code></pre>
+
+### JOIN TABLES IN SQL IN SQL CHUNK APPLY SELECT AND WHERE CLAUSE AND FUZZY SEARCH AND ORDER AND GROUP BY WITH AGGREGATE FUNCTION
+
+<pre><code>```{sql connection=my_db_con, max.print = 15}
+SELECT "Psuedonym", "Top_US_Rap_Chart", COUNT("Top_US_Rap_Chart") chart_position_cnt
+FROM rap_chart_artists a
+JOIN rap_chart_singles s ON a."Artist_ID" = s."Artist_ID"
+WHERE "Psuedonym" LIKE '%M.C.%'
+AND "Top_US_Rap_Chart" IS NOT NULL
+GROUP BY "Psuedonym", "Top_US_Rap_Chart"
+ORDER BY "Psuedonym", "Top_US_Rap_Chart"
+```</code></pre>
+
+
+## dplyr and data.table
+
+```{r, eval = TRUE}
+library(dplyr)
+library(data.table)
+
+rap_chart_artists <- readxl::read_excel("data/Rap_Charts.xlsx", sheet = "Artists")
+rap_chart_singles <- readxl::read_excel("data/Rap_Charts.xlsx", sheet = "Singles")
+
+(rap_artist_singles <- rap_chart_artists %>%
+    dplyr::full_join(rap_chart_singles, by = "Artist_ID"))
+```
+
+```{r, eval = TRUE}
+rap_artist_singles_dt <- setDT(rap_artist_singles)
+```
+
+```{r, eval = TRUE}
+rap_artist_singles_dt[Psuedonym %like% "LL"]
+```
+
+```{r, eval = TRUE}
+rap_artist_singles_dt[Psuedonym %like% "LL", .(Psuedonym, Single, Top_US_Rap_Chart)]
+```
+
+```{r, eval = TRUE}
+rap_artist_singles_dt[Psuedonym %like% "LL" & !is.na(Top_US_Rap_Chart), .(Psuedonym, Single, Top_US_Rap_Chart)]
+```
+
+```{r, eval = TRUE}
+rap_artist_singles_dt[Psuedonym %like% "LL" & !is.na(Top_US_Rap_Chart), .(.N), c("Psuedonym", "Top_US_Rap_Chart")]
+```
+
+```{r, eval = TRUE}
+rap_artist_singles_dt[Psuedonym %like% "LL" & !is.na(Top_US_Rap_Chart), .(.N), c("Psuedonym", "Top_US_Rap_Chart")][order(Top_US_Rap_Chart)]
+```
+

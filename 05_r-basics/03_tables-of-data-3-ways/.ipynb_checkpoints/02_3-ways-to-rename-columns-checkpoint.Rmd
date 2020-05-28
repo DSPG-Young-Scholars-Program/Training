@@ -1,0 +1,35 @@
+---
+title: "Rename with base, dplyr & data.table"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# renaming column base
+```{r base}
+
+df <- data.frame(column_1 = c(1, 2, 3), column_b = c("A", "B", "C"))
+print(df)
+names(df)[names(df) == 'column_b'] <- 'column_2'
+print(df)
+```
+
+# renaming column dplyr
+```{r dplyr}
+library(dplyr)
+df <- data.frame(column_1 = c(1, 2, 3), column_b = c("A", "B", "C"))
+print(df)
+df <- dplyr::rename(df, "column_2" = column_b)
+print(df)
+```
+
+# renaming column data.table
+```{r data.table}
+library(data.table)
+df <- data.frame(column_1 = c(1, 2, 3), column_b = c("A", "B", "C"))
+print(df)
+setnames(df, "column_b", "column_2")
+print(df)
+```

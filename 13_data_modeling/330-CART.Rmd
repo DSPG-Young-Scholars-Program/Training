@@ -1,0 +1,475 @@
+# Random Forests
+
+DataCamp:
+
+- https://www.datacamp.com/courses/machine-learning-with-tree-based-models-in-r
+- https://campus.datacamp.com/courses/kaggle-r-tutorial-on-machine-learning/chapter-2-from-icebergs-to-trees?ex=1
+
+Articles:
+
+- https://www.datacamp.com/community/tutorials/decision-trees-R
+
+## CART
+
+
+```{r}
+library(ggplot2)
+library(tree)
+```
+
+```{r}
+# Data
+summary(iris)
+```
+
+```{r}
+ggplot(data = iris) + geom_point(aes(x = Petal.Length, y = Petal.Width, col = Species))
+```
+
+
+The idea behind CART is to divide the predictor space (petal width and length) with a straight line and fit simple models on either side of the line. 
+
+Mathematically, consider predictors $X_j$ and some split point $s$ that splits the predictor space into two half-spaces $$L_{j, s} = \lbrace X |X_j \le s \rbrace \text{ and } R_{j, s} = \lbrace X |X_j > s\rbrace$$. 
+
+The idea is to split on the varible and at the location which minimizes some loss function: $$min_{j, s}\lbrace loss(R_{j, s}) + loss(L_{j, s}) \rbrace$$
+For classification problems, the easiest model is ``majority wins'' and the loss function is the number of misclassificed observations. For regression, the easiest model is the mean model, and the loss function is squared error loss.
+
+
+```{r}
+# Grow a tree
+classTree = tree(Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width, data = iris)
+```
+
+```{r}
+summary(classTree)
+```
+
+```{r}
+plot(classTree)
+text(classTree)
+```
+
+```{r}
+table(predict(classTree, type = 'class'), iris$Species)
+```
+
+
+Trees, left unattended, can easily overfit. Loss can always be reduced to zero by cutting the predictor space up enough. The two major ways to hadle this is the Bayesian approach of putting priors on trees, or a penalized loss function approach, which adds a penalty for more complex trees (mode leaves).
+
+It's common practice to grow a tree too large and then prune it back, rather than just stop growing the tree when it gets too complex. This explores tree space more thoroughly. Once we have our overgrown tree we remove terminal nodes and try to minimize a penalized loss function. For a tree with $T$ nodes labelled $N_t$ for $t \in 1, \ldots, T$ we want to minimize
+
+$$k T + \sum_{t = 1}^{T}loss(N_t)$$
+where k is a parameter controlling the penalty on the tree size. Harsher penalties lead to smaller trees.
+
+```{r}
+# Prune that tree!
+prune = prune.tree(classTree, method = 'misclass')
+prune
+```
+
+```{r}
+plot(prune$size, prune$dev, main = "Scree/Elbow Plot", xlab = "Number of Leaves", ylab = "Misclassifications")
+```
+
+
+```{r}
+# Cross validation
+cvTree = cv.tree(classTree, method = 'misclass')
+cvTree
+```
+
+```{r}
+plot(prune$size, prune$dev, main = "Scree/Elbow Plot", xlab = "Number of Leaves", ylab = "Misclassifications", type = 'b')
+points(cvTree$size, cvTree$dev, type = 'b', pch = 2)
+legend("topright", pch = 1:2, legend = c("Pruned", "Cross Validated"), bty = 'n')
+```
+
+Other methods use a significance test approach to determining whether or not to split. For each variable, the model performs a univariate hypothesis test and splits on the variable with the lowest p-value. If no null hypotheses can be rejected, the tree stops splitting.
+
+```{r}
+library(party)
+```
+
+```{r}
+ciTree = ctree(Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width, data = iris)
+ciTree
+```
+
+```{r}
+plot(ciTree)
+```
+
+A main advantage of trees is their ease of interpretability and use. 
+```{r}
+library(DAAG)
+data(spam7)
+head(spam7)
+```
+
+```{r}
+spamTree = ctree(yesno ~., data = spam7)
+spamTree
+```
+
+```{r}
+plot(spamTree)
+```
+
+
+Let's predict an email!
+
+How well does it predict?
+```{r}
+spamTreeConfusionMatrix = table(predict(spamTree, spam7), spam7$yesno)
+spamTreeConfusionMatrix
+```
+
+```{r}
+sum(diag(spamTreeConfusionMatrix))/sum(spamTreeConfusionMatrix) #86.7%
+```
+
+
+```{r}
+# Let's do a simple cross validation
+inSampleProp = .85
+inSampleIndicator = sample(c(TRUE, FALSE), size = nrow(spam7), replace = TRUE, prob = c(inSampleProp, 1 - inSampleProp))
+trainingSet = spam7[inSampleIndicator,]
+testingSet = spam7[!inSampleIndicator,]
+trainingTree = ctree(yesno ~., data = trainingSet)
+trainingTree
+```
+
+```{r}
+plot(trainingTree)
+```
+
+Now we can do a more fair out of sample calculation
+```{r}
+# In-sample
+inSampleMat = table(predict(trainingTree, trainingSet), trainingSet$yesno)
+inSampleMat
+```
+
+```{r}
+sum(diag(inSampleMat))/sum(inSampleMat)
+```
+
+```{r}
+# Out of sample
+outSampleMat = table(predict(trainingTree, testingSet), testingSet$yesno)
+outSampleMat
+```
+
+```{r}
+sum(diag(outSampleMat))/sum(outSampleMat)
+```
+
+
+## Bootstrapping
+
+How can we estimate the variability in a statistic? Let's say we want a probability interval for the mean of some data.
+```{r}
+n = 100
+simData = rgamma(n, 2, 1)
+# True mean: 2
+hist(simData)
+```
+
+```{r}
+mean(simData)
+```
+
+One option is to rely on normal theory and write,
+
+$$var(\bar{x}) = \frac{1}{n}var(x),$$
+then use the right normal score to get the ``confidence interval'' you want:
+
+```{r}
+xbar = mean(simData)
+xsd = sd(simData)
+# 95% interval
+confInt = xbar + c(-1.96, 1.96) * (xsd/sqrt(n))
+confInt
+```
+The accuracy of this estimate depends on the extent to which the data are normal. We know the data are from a rather skewed gamma, how much does that skewness affect the interval? How could we find out?
+
+What if we had some large number of samples, say m,  of the mean computed from $n$ samples of this population? This is an awful idea in practice, but bear with me.
+```{r}
+m = 2000
+simulatedMeans = numeric(m)
+# don't need for loop for this
+for (i in 1:m) simulatedMeans[i] = mean(rgamma(n, 2, 1))
+```
+
+```{r}
+quantile(simulatedMeans, c(.025, .975))
+```
+
+```{r}
+confInt
+```
+
+
+We can visualize this:
+
+```{r}
+plotSequence = seq(min(simulatedMeans), max(simulatedMeans), length = 1000)
+hist(simulatedMeans, prob = TRUE, sub = "Line is the normal approximation density")
+lines(plotSequence, dnorm(plotSequence, mean = xbar, sd = xsd/sqrt(n)))
+```
+
+Obviously, we can't just get a thousand means to estimate its variability, but we can do something close by resampling from our original data. This is called bootstrapping.
+
+```{r}
+# b represents the number of bootstrap samples
+b = 2000
+bootstrapMeans = numeric(b)
+for(i in 1:b){
+  resample = sample(simData, n, replace = TRUE)
+  bootstrapMeans[i] = mean(resample)
+} 
+```
+
+```{r}
+quantile(simulatedMeans, c(.025, .975))
+```
+
+```{r}
+quantile(bootstrapMeans, c(.025, .975))
+```
+
+```{r}
+confInt
+```
+
+
+
+```{r}
+hist(simulatedMeans, prob = TRUE, sub = "Line is the normal approximation density", col = rgb(1, 0, 0, .2))
+hist(bootstrapMeans, prob = TRUE, col = rgb(0, 0, 1, .2), add = TRUE)
+lines(plotSequence, dnorm(plotSequence, mean = xbar, sd = xsd/sqrt(n)))
+legend("topright", bty = 'n', fill = c("red", "blue"), legend = c("True Mean Dist", "Bootstrap Dist"))
+```
+
+We see that this strange resampling technique seems to work well when we want to find a mean, at least as well as the normal approximation. Its true strength lies in estimating variability in more exotic statistics. For example, what is the variability in the width of the 95\% confidence probability interval for our gamma data?
+
+```{r}
+confintWidth = function(data){
+  upperAndLowerBounds = quantile(data, c(.025, .095))
+  width = diff(upperAndLowerBounds)
+  names(width) = NULL
+  return(width)
+}
+```
+
+```{r}
+confintWidth(simData)
+```
+
+```{r}
+m = 2000
+simulatedWidths = numeric(m)
+for (i in 1:m) simulatedWidths[i] = confintWidth(rgamma(n, 2, 1))
+
+quantile(simulatedWidths, c(.025, .975))
+```
+
+```{r}
+hist(simulatedWidths)
+```
+
+```{r}
+b = 2000
+bootstrapWidths = numeric(b)
+for(i in 1:b){
+  resample = sample(simData, n, replace = TRUE)
+  bootstrapWidths[i] = confintWidth(resample)
+} 
+```
+
+```{r}
+quantile(simulatedWidths, c(.025, .975))
+```
+
+
+```{r}
+quantile(bootstrapWidths, c(.025, .975))
+```
+
+
+```{r}
+hist(simulatedWidths, prob = TRUE, col = rgb(1, 0, 0, .2))
+hist(bootstrapWidths, prob = TRUE, col = rgb(0, 0, 1, .2), add = TRUE)
+legend("topright", bty = 'n', fill = c("red", "blue"), legend = c("True Mean Dist", "Bootstrap Dist"))
+```
+We can do this with any function at all!
+
+```{r}
+compareBootstrapToTruth = function(functionToCompare, sampleSize = 100, resamples = 1000, plot = FALSE, ret = FALSE){
+  
+  data = rgamma(sampleSize, 2, 1)
+  trueSamples = numeric(resamples)
+  bootstrapSamples = numeric(resamples)
+  if(class(functionToCompare(data)) != "numeric") stop("Function must return a scalar.")
+  
+  for(i in 1:m){
+    trueSamples[i] = functionToCompare(rgamma(sampleSize, 2, 1))
+    resample = sample(data, sampleSize, replace = TRUE)
+    bootstrapSamples[i] = functionToCompare(resample)
+  } 
+  
+  if(plot){
+    trueHist = hist(trueSamples, plot = FALSE)
+    bootHist = hist(bootstrapSamples, plot = FALSE)
+    hist(trueSamples, prob = TRUE, col = rgb(1, 0, 0, .2), main = "", xlab = "Sample Values", ylim = c(0, max(trueHist$density, bootHist$density)))
+    hist(bootstrapSamples, prob = TRUE, col = rgb(0, 0, 1, .2), add = TRUE)
+    legend("topright", bty = 'n', fill = c("red", "blue"), legend = c("True Dist", "Bootstrap Dist"))
+  }
+  out = list(trueSamples = trueSamples, bootstrapSamples = bootstrapSamples)
+  if(ret) return(out)
+}
+```
+
+```{r}
+compareBootstrapToTruth(mean, plot = TRUE)
+```
+
+```{r}
+compareBootstrapToTruth(confintWidth, plot = TRUE)
+```
+
+## Bagging
+
+Just as bootstrapping can estimate variability for statistics, it can also do so for predictions. This process is known as Bootstrap AGGrigation, or bagging. It turns out that, when doing bootstrap sampling, about 1/3 of the entries don't make it into the resampled data set. These points are called out-of-bag (oob), and the rest are in-bag. We can use oob data like a free testing set. First a simple example to illustrate, then a non-trivial one.
+
+```{r}
+mpgLm = lm(mpg ~ hp + wt, data = mtcars)
+summary(mpgLm)
+```
+
+```{r}
+b = 2000
+oobPredictions = matrix(NA, nrow = nrow(mtcars), ncol = b)
+for(i in 1:b){
+  resampleIndices = sample(1:nrow(mtcars), nrow(mtcars), replace = TRUE)
+  # use the set difference to find the out of bag indices
+  oobIndices = setdiff(1:nrow(mtcars), resampleIndices)
+  
+  bootstrapMtcars = mtcars[resampleIndices, ]
+  oobMtcars = mtcars[oobIndices,]
+  bootstrapLm = lm(mpg ~ hp + wt, data = bootstrapMtcars)
+  oobPreds = predict(bootstrapLm, oobMtcars)
+  oobPredictions[oobIndices, i] = oobPreds
+} 
+```
+
+```{r}
+oobPredictions[, 1:5]
+```
+
+```{r}
+predict(mpgLm, mtcars[1,], interval = "confidence")
+```
+
+```{r}
+quantile(oobPredictions[1,], c(.025, .975), na.rm = TRUE)
+```
+
+We see the bootstrap confidence interval is very close to the normal theory interval, as was the case above. This isn't super useful for linear models, but gives us a way to measure uncertainty for models which don't have a probability model to give us error bars, such as CART.
+
+Now, we bag cart. We'll use the very first example.
+
+```{r}
+classTree = tree(Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width, data = iris)
+```
+
+```{r}
+summary(classTree)
+```
+
+```{r}
+plot(classTree)
+text(classTree)
+```
+
+```{r}
+table(predict(classTree, type = 'class'), iris$Species)
+```
+
+```{r}
+b = 2000
+oobPredictions = matrix(NA, nrow = nrow(iris), ncol = b)
+for(i in 1:b){
+  resampleIndices = sample(1:nrow(iris), nrow(iris), replace = TRUE)
+  # use the set difference to find the out of bag indices
+  oobIndices = setdiff(1:nrow(iris), resampleIndices)
+  
+  bootstrapIris= iris[resampleIndices, ]
+  oobIris = iris[oobIndices,]
+  bsTree = tree(Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width, data = bootstrapIris)
+  oobPreds = predict(bsTree, oobIris, type = 'class')
+  oobPredictions[oobIndices, i] = oobPreds
+} 
+```
+
+Let's look at some results!
+```{r}
+oobPredictions[, 1:5]
+```
+
+```{r}
+bsPreds = cbind(prob1 = apply(oobPredictions, 1, function(x) sum(x == 1, na.rm = TRUE)),
+                prob2 = apply(oobPredictions, 1, function(x) sum(x == 2, na.rm = TRUE)),
+                prob3 = apply(oobPredictions, 1, function(x) sum(x == 3, na.rm = TRUE)))
+bsPreds = bsPreds / rowSums(bsPreds)
+bsPreds = cbind(bsPreds, Species = iris$Species)
+bsPreds[c(1:10, 51:60, 101:110), ]
+```
+
+Congratulations, we just fit a random forest!
+
+Let's see where the model is uncertain.
+```{r}
+uncertainty = apply(bsPreds[,1:3], 1, function(x) 1/var(x))
+ggplot(data = iris) + geom_point(aes(x = Petal.Length, y = Petal.Width, col = Species, size = uncertainty))
+```
+
+As expected, the model is perfectly sure about setosa, but uncertain on the boundary between versicolo and virginica.
+
+## Viewing Random Forests
+
+The last part of the course will introduce you to the random forest package, some nifty things you can do with it, and some visuals.
+IMPORTANT NOTE!!! This implementation of random forest can't handle catgegorical predictors directly. You need to convert them to a model matrix. This isn't that hard, but if you're not aware of it you can get spurious results
+
+```{r}
+library(randomForest)
+```
+
+```{r}
+mtcarsRf = randomForest(mpg ~ ., data=mtcars, importance=TRUE, proximity=TRUE, mtry = 4)
+mtcarsRf
+```
+
+```{r}
+plot(mtcarsRf)
+```
+
+Variable importance.
+```{r}
+varImportance = importance(mtcarsRf, type = 2)
+varImportance
+```
+
+```{r}
+layout(matrix(c(1,1,2,1,1,3,1, 1, 4), nrow = 3, ncol = 3, byrow = TRUE))
+varImpPlot(mtcarsRf, type = 2)
+impvar = rownames(varImportance)[order(varImportance[, 1], decreasing=TRUE)]
+colors = c("black", "blue", "red")
+for(j in 1:3){
+  partialPlot(mtcarsRf, mtcars, impvar[j], main = "",xlab = impvar[j], lwd= 3, cex.lab = 2, n.pt = 100)
+}
+```
+
+A neat output of an RF model is a measure of proximity between rows. Proximity is the proportion of times two observations appear in the same leaf node. This can be very useful in cases where rows contain both continuous and categorical data, a typically difficult situation for most metrics.
+
+If we do 1 - proximity we can turn this into a distance matrix and do things like multidimensional scaling.

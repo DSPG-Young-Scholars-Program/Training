@@ -1,0 +1,106 @@
+---
+title: "Subset data sets with base, dplyr (tidyverse) & data.table"
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load Libraries
+```{r libraries, message=FALSE}
+library(dplyr)
+library(data.table)
+```
+
+## A data frame, the basic tabular representation of data in R
+```{r}
+n = c(2, 3, 5) 
+s = c("aa", "bb", "cc") 
+b = c(TRUE, FALSE, TRUE) 
+df = data.frame(n, s, b)       # df is a data frame
+df
+```
+
+
+## Create Sample Data Frame
+```{r dataset}
+df <- data.frame(column_1 = c(1, 2, 3),
+                 column_2 = c("A", "B", "C"),
+                 column_3 = c("D", "E", "F"),
+                 stringsAsFactors = F)
+df
+
+#pg <- fread("pigeon-racing.csv")
+```
+
+# Subset Rows
+## base R
+```{r base.rows}
+df[df$column_1 == 2,] # have to include df$ before column name and don't forget the comma!
+df[df$column_1 == 2,]
+```
+
+## dplyr
+```{r dplyr.rows}
+library(dplyr)
+filter(df, column_1 == 2)
+filter(df, column_1 == 2)
+```
+
+## data.table
+```{r data.table.rows}
+library(data.table)
+setDT(df) # needs to be a data.table first
+df[column_1 == 2]
+df[column_1 == 2]
+```
+
+# Subset Columns
+## base R
+```{r base.columns}
+df[, c("column_2", "column_3")]
+```
+
+## dplyr
+```{r dplyr.columns}
+select(df, c("column_2", "column_3"))
+```
+
+## data.table
+```{r data.table.columns}
+setDT(df) # needs to be a data.table first
+df[, .(column_2, column_3)] # the dot . is a shortcut for list()
+df[, .(column_2, column_3)]
+# or just like a data.frame
+df[, c("column_2", "column_3")]
+```
+
+# Subset Rows & Columns
+## base R
+```{r base.rows.and.columns}
+df[df$column_1 == 2, c("column_2", "column_3")]
+```
+
+## dplyr
+```{r dplyr.rows.and.columns}
+library(dplyr)
+
+# two steps using the magrittr "pipe"
+df %>%
+  filter(column_1 == 2) %>%
+  select(c("column_2", "column_3")) # don't need to specifcy data.frame in second step
+```
+
+## data.table
+```{r data.table.rows.and.columns}
+setDT(df) # needs to be a data.table first
+
+df[column_1 == 2, .(column_2, column_3)] # the dot . is a shortcut for list()
+
+# or just like a data.frame
+df[df$column_1 == 2, c("column_2", "column_3")]
+```
+
+

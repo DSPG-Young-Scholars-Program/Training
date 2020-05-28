@@ -1,0 +1,319 @@
+---
+title: "Introduction to R"
+author: "José Bayoán Santiago Calderón"
+date: "2019-06-06"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction to R markdown
+
+What is [Literate programming](https://en.wikipedia.org/wiki/Literate_programming)?
+
+> “Programs are meant to be read by humans and only incidentally for computers to execute.” ― Donald Knuth
+
+R markdowns are programs that mix a markup language (i.e., markdown) with programming languages (e.g., R) to best communicate compared to having either one in isolation. Many markdown features are implemented such as **bold**, *italics*, ***bold and italics*** or hyperlinks such as the previous example. It is easily integrated withing [RStudio](https://www.rstudio.com/) the flagship integrated development environment ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)) for R.
+
+## Setting up RStudio
+
+- Global options for RStudio
+
+Many newcomers and advanced users alike can benefit from customizing their RStudio global options. For example, I personally like a dark dark mode theme such as Tomorrow Night 80. Many options under the Code menu can help you adhere to best practices, catch issues, or follow a standard coding style.
+
+- The `.Rprofile` in the HOME directory can be used to modify startup behavior
+
+For example, my `.Rprofile` file has the following code
+
+```{r cars}
+Sys.setenv(TZ = 'EST')
+if (interactive()) {
+  try(expr = fortunes::fortune(), silent = TRUE)
+  }
+cat("Welcome, Nosferican.\nLogged at: ", as.character(Sys.time()))
+```
+
+which displays an R fortune cookie, my username and current time when I start a session.
+The fortune cookie is a random piece of R history/culture very useful to understand the
+philosophy behind the project.
+
+- The `.Renviron` file can be used to define variables accessible during your session
+
+For example, rather than writing my database credentials and making those avaiable in the code
+I can specify these as environmental variables I can access without compromising these
+
+```{r}
+db_userid = "[your computing ID]"
+db_pwd = "[your database pwd]"
+```
+
+## Setting up your environment (Housekeeping)
+
+For the following lesson, we will be using various functionality available in
+R packages. The following code will make the namespace (e.g., functions) available
+for us to use.
+
+The next block of code will provide all the functionality we will be using during
+this lesson
+
+```{r}
+library(magrittr)
+library(stringr)
+library(forcats)
+library(lubridate)
+library(ggplot2)
+```
+
+## Atomic data types
+
+R has six atomic data types:
+
+- `logical`
+- `integer`
+- `numeric` (alias for double precision)
+- `complex`
+- `character`
+- `raw`
+
+### Logical
+
+```{r}
+x <- c(NA, FALSE, TRUE)
+names(x = x) <- as.character(x = x)
+x
+```
+
+`&` Table
+
+```{r &}
+outer(X = x, Y = x, FUN = "&")
+```
+
+`|` Table
+
+```{r |}
+outer(X = x, Y = x, FUN = "|")
+```
+
+`xor` Table
+
+```{r xor}
+outer(X = x, Y = x, FUN = "xor")
+```
+
+Negation
+
+```{r !}
+!TRUE
+!FALSE
+```
+
+Logical interpretation of integers/numeric
+
+```{r}
+TRUE & 0 # (TRUE & (0 != 0))
+FALSE | -2 # (FALSE | (-2 != 0))
+```
+
+### Integer
+
+```{r}
+x = 2L
+y = 3L
++x # Positive sign
+-x # Negative sign
+abs(x = x)
+x + y
+x - y
+x * y
+x / y
+x^y
+sqrt(x = x)
+x %% y # Modulus
+x %/% y # Integer division
+log(x = x)
+exp(x = x)
+factorial(x = x)
+```
+
+### Numeric
+
+```{r}
+x = 2.5
+y = 3.2
+```
+
+```{r}
++x # Positive sign
+-x # Negative sign
+abs(x = x)
+x + y
+x - y
+x * y
+x / y
+x^y
+sqrt(x = x)
+x %% y # Modulus
+x %/% y # Integer division
+log(x = x) # Log (defaults to natural log)
+exp(x = x)
+factorial(x = x)
+round(x = x, digits = 2L)
+floor(x = x)
+ceiling(x = x)
+```
+
+### Complex
+```{r}
+x = 2 + 1i
+y = 3 + 1i
+```
+
+```{r}
++x # Positive sign
+-x # Negative sign
+abs(x = x)
+x + y
+x - y
+x * y
+x / y
+x^y
+sqrt(x = x)
+log(x = x) # Log (defaults to natural log)
+exp(x = x)
+x == y
+is.complex(x = x)
+Re(z = x)
+Im(z = x)
+Mod(z = x)
+Arg(z = x)
+Conj(z = x)
+```
+
+### Character
+
+```{r}
+x <- "\"R doesn't like emojis :(, Julia does.\" - Bayoán (史志鼎)"
+str_detect(string = x, pattern = "Bayoán")
+str_detect(string = x, pattern = "Nosferican")
+str_extract(string = x, pattern = "(?<=\" - ).*")
+str_sub(string = x, start = 28L, end = 32L)
+str_replace(string = x, pattern = "(?<=\" - ).*", "Me")
+str_remove(string = x, pattern = "e")
+str_replace_all(string = x, pattern = "e", replace = "E")
+str_c("This a fine quote.", x, sep = "  ")
+```
+
+## Collections
+
+### Arrays
+
+Arrays are collections of homogeneous data types. The most common types are the
+one dimensional array (`vector`) and the two dimensional array (`matrix`).
+
+```{r vector_init}
+vector(mode = "logical", length = 2L)
+vector(mode = "character", length = 5L)
+vector(mode = "numeric", length = 3L)
+vector(mode = "integer", length = 4L)
+```
+
+```{r vector}
+x <- 1:10
+str(object = x)
+summary(object = x)
+table(origininal_object = x)
+x[2:5] <- 1L
+table(modified_object = x)
+x[11] <- NA
+typeof(x)
+sort(x = x, decreasing = TRUE, na.last = TRUE) # default values TRUE and NA
+x[13] <- "A"
+x
+is.vector(x = x)
+```
+
+Matrices
+
+```{r matrix}
+x <- matrix(data = 1:16,
+            nrow = 4L,
+            ncol = 4L,
+            dimnames = list(LETTERS[1:4], letters[1:4]))
+x
+x + 2 * x
+t(x) %*% x
+str(object = x)
+summary(object = x)
+table(x)
+x[3, 2] <- NA
+x
+```
+
+Arrays
+
+```{r array}
+x <- array(data = 1:3, dim = c(2L, 4L, 3L))
+x
+str(object = x)
+dim(x = x)
+```
+
+### Lists
+
+```{r}
+x = list(x = 1:5, y = TRUE, z = c("A", "Z"))
+str(object = x)
+x$z
+x$A <- 23L
+x
+x[1L]
+x[[1L]]
+x[[4]] <- list(a = 3, b = 2)
+x
+x$A$b
+```
+
+## Structs
+
+Date time objects are structs can wrap an atomic data element for special functionality
+
+```{r}
+x <- now()
+year(x = x)
+month(x = x)
+day(x = x)
+hour(x = x)
+minute(x = x)
+second(x = x)
+seconds(x = x)
+x %m+% months(x = 1L, abbreviate = TRUE)
+```
+
+Named vectors are an example of a struct with more than one atomic data type element
+
+```{r}
+x <- c(a = 1, b = 2)
+str(object = x)
+names(x = x)
+```
+
+One last example includes categorical or factor variables
+
+```{r}
+set.seed(seed = 0L)
+x <- as_factor(x = sample(x = letters[1:5], size = 100L, replace = TRUE))
+str(x)
+x[10L]
+levels(x = x)
+ggplot(mapping = aes(x = x)) +
+  geom_bar() +
+  labs(title = "Histogram",
+       x = "Category",
+       y = "Count") +
+  theme(plot.title = element_text(hjust = 0.5))
+```

@@ -1,0 +1,61 @@
+.countdown {
+  background: #FFFFFF;
+  position: absolute;
+  cursor: pointer;
+  font-size: 70px;
+  line-height: 1.2;
+  border-color: #ddd;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.4);
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.4);
+  margin: 0.6em;
+  padding: 0 15px;
+  text-align: center;
+}
+code.countdown-time {
+  vertical-align: middle;
+}
+.countdown-digits {
+  color: #23373B;
+}
+.countdown.running {
+  border-color: #E5E5E5;
+  background-color: #FFFFFF;
+}
+.countdown.running .countdown-digits {
+  color: #23373B;
+}
+.countdown.finished {
+  border-color: #E5E5E5;
+  background-color: #FFFFFF;
+}
+.countdown.finished .countdown-digits {
+  color: #23373B;
+}
+.countdown.running.warning {
+  border-color: #CFAE24;
+  background-color: #E6C229;
+}
+.countdown.running.warning .countdown-digits {
+  color: #39300A;
+}
+
+@-webkit-keyframes blink {
+	from {opacity: 1}
+	50%  {opacity: 0.1}
+	to   {opacity: 1}
+}
+
+@keyframes blink {
+	from {opacity: 1}
+	50%  {opacity: 0.1}
+	to   {opacity: 1}
+}
+
+.countdown.running.blink-colon .countdown-digits.colon {
+  -webkit-animation: blink 2s steps(1, end) 0s infinite;
+          animation: blink 2s steps(1, end) 0s infinite;
+}

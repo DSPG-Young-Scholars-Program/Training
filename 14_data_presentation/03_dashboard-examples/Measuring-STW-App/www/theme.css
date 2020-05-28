@@ -1,0 +1,87 @@
+h1 {
+   font-family: bodoni-urw, serif;
+   font-weight: 900;
+   font-style: italic;
+   font-size: 36px;
+   text-transform: uppercase;
+}
+
+.BII-logo {
+  width: 70%;
+  height:30%;
+}
+
+.NSF-logo{
+  width: 50%;
+  height: 20%;
+}
+
+
+.container-fluid{
+  border-top-color: #F17E1D;
+  border-top-style: solid;
+  border-top-width: 5px;
+}
+
+.blue {
+  border-color: #F17E1D; 
+  border-style: solid;
+  border-width: 5px; 
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+
+h2 {
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-family: franklin-gothic-urw-comp, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: franklin-gothic-urw;
+  font-weight: bold;
+  font-size: 24px;
+  color: #F17E1D;
+}
+
+body {
+  font-family: franklin-gothic-urw;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.test {
+   font-family: bodoni-urw, serif;
+   font-weight: 900;
+   font-style: italic;
+   font-size: 24px;
+   text-transform: uppercase;
+}
+
+
+.update{
+  font-family: franklin-gothic-urw;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.tabbable{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+

@@ -1,0 +1,51 @@
+---
+output:
+  html_document:
+    css: www/theme.css
+---
+<script src="//use.typekit.net/tgy5tlj.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+### Welcome
+This application was created by the Social and Decision Analytics Division of the Biocomplexity Institute and Initiative at the University of Virginia, in partnership with the National Science Foundation's [National Center for Science and Engineering Statistics](https://www.nsf.gov/statistics/). The purpose is to assess the fitness-for-use of federal, for profit, and not-for-profit  data sources for describing the skilled technical workforce. While this application does not provide datasets, it provides links to respective organization websites and/or datasets if available.
+
+<div class = "blue">
+<h3> What is the Skilled Technical Workforce?</h3>
+<p>A job in the Skill Technical Workforce (STW) requires</p> 
+
+<p><span class = "test";> 1. </span> a high level of knowledge in a technical domain; but</p>
+
+<p><span class = "test"> 2. </span> does not require a bachelor's degree for entry.</p> 
+<p style= "white-space: pre;">     
+</p>
+<p>There are numerous data gaps in describing the STW. They include:</p>
+
+<p><span class = "test"> 1. </span> Non-degree credential attainment;</p>
+  
+<p><span class = "test"> 2. </span> STW demographic variables, such as gender, race, ethnicity, age, and disability;</p>
+  
+<p><span class = "test"> 3. </span> STW skills and non-degree credentials demanded by employers for STW occupations;</p>
+  
+<p><span class = "test"> 4. </span> Skills and non-degree credentials supplied by the jobs seekers; and</p>
+
+<p><span class = "test"> 5. </span> STW job environment variables, including employer size, self-employed work, full and part-time work, salary, and benefits.</p>
+
+</div>
+
+### Instructions
+A data table with information about each data source is included on the <span style="color:#F17E1D; font-weight: bold">Data Sources</span> tab. You may filter the variables displayed in the data table by checking the boxes on the left-hand side. You may also search within columns using the search bars directly below the column name, or search the entire data sheet by using the search bar at the top of the tab.
+
+Variables may be selected on the <span style="color:#F17E1D; font-weight: bold">Plot</span> tab to display charts describing various categorical variables from the data sources table. 
+
+The <span style="color:#F17E1D; font-weight: bold">Data Dictionary</span> tab includes definitions of all variables included in the data sources table.
+
+If you see a data source missing from our table, you may fill out the <span style="color:#F17E1D; font-weight: bold">Form</span>. We will review the proposed addition or change and update the data sources table.
+
+Any additional feedback can be submitted through the <span style="color:#F17E1D; font-weight: bold">Contact</span> tab.
+
+***
+
+### Who We Are
+The Social and Decision Analytics division (SDAD) is one of three research divisions within the Biocomplexity Institute at the University of Virginia. SDAD combines expertise in statistics and social and behavioral sciences to develop evidence-based research and quantitative methods to inform policy decision-making and evaluation. The researchers at SDAD span many disciplines including statistics, economics, sociology, psychology, political science, policy, health IT, public health, program evaluation, and data science. The SDAD office is located near our nation's capital in Arlington, VA. Learn more about us at [biocomplexity.virginia.edu](https://biocomplexity.virginia.edu/). 
+
+***
+<span class = "update">Last updated: February 4th, 2020</span>

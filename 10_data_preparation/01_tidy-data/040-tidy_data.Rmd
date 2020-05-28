@@ -1,0 +1,108 @@
+# Tidy data
+
+Tidy data chapter is r4ds:
+
+- http://r4ds.had.co.nz/tidy-data.html
+
+Hadley Wickham's Tidy data paper
+
+- http://vita.had.co.nz/papers/tidy-data.html
+
+DataCamp Courses:
+
+- https://www.datacamp.com/courses/cleaning-data-in-r
+- https://www.datacamp.com/courses/importing-cleaning-data-in-r-case-studies
+
+Resources
+
+- http://tidyr.tidyverse.org/
+
+
+## tidyr
+
+```{r}
+library(tidyr)
+```
+
+
+```{r}
+table4a
+```
+
+## Gather
+
+```{r}
+table4a_tidy <- gather(table4a, '2000', '1999', key = "year", value = 'cases')
+```
+
+
+```{r}
+library(ggplot2)
+
+ggplot(table4a_tidy) +
+    geom_histogram(aes(x = cases, fill = country))
+```
+
+```{r}
+(table4a_tidy <- table4a %>%
+    gather('2000', '1999', key = "year", value = 'cases'))
+```
+
+```{r}
+library(magrittr) # this is what actuallly gives you the pipe
+```
+
+```{r}
+(table4b_tidy <- table4b %>%
+    gather('1999':'2000', key = 'year', value = 'population'))
+```
+
+## Primer to joins
+
+```{r}
+library(dplyr)
+
+# use double colon to specify which library you are getting a function from
+# base::union()
+```
+
+```{r}
+table4a_tidy
+```
+
+```{r}
+table4b_tidy
+```
+
+```{r}
+left_join(x = table4a_tidy, y = table4b_tidy)
+```
+
+## Spread
+
+```{r}
+table2
+```
+
+
+```{r}
+spread(table2, key = type, value = count)
+```
+
+## Separate
+
+```{r}
+table3
+```
+
+
+```{r}
+table3 %>%
+    separate(rate, into = c('cases', 'population'))
+```
+
+
+```{r}
+table3 %>%
+    separate(rate, into = c('cases', 'population'), sep = '/')
+```

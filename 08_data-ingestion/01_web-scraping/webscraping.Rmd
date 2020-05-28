@@ -1,0 +1,153 @@
+---
+title: "Web Scraping"
+author: "José Bayoán Santiago Calderón"
+date: "2019-09-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+for (pkg in c("DT", "leaflet")) {
+  suppressMessages(expr = library(package = pkg, character.only = TRUE))
+}
+rm(list = "pkg");
+```
+
+```{r env}
+for (pkg in c("rvest", "httr", "ghql", "RSelenium", "jsonlite", "sf", "rio", "stringr", "maditr")) {
+  suppressMessages(expr = library(package = pkg, character.only = TRUE))
+}
+rm(list = "pkg");
+```
+
+## Static Website
+
+We will be using the [Data Camp](https://www.datacamp.com/community/tutorials/r-web-scraping-rvest) tutorial for rvest.
+
+## Dynamic Website
+
+Reference: [OSS-Universe](https://github.com/uva-bi-sdad/OSS-Universe/blob/master/src/copyright/01_copyright.Rmd)
+
+```{r}
+# Initiate Web Driver ----
+# remDr <- remoteDriver(remoteServerAddr = "selenium_chrome", browserName = "chrome")
+# remDr$open()
+# remDr$close()
+```
+
+## REST API
+
+[REST](https://restfulapi.net/) API are the most common and usual API
+
+REST API work with endpoints which tells the server what kind of data you want.
+
+REST API alway return tabular data.
+
+We will be practicing with the [jsonplaceholder](https://jsonplaceholder.typicode.com/) which is a fake online REST API for testing and prototyping.
+
+```{r REST posts}
+# Base URL
+baseurl <- "https://jsonplaceholder.typicode.com"
+# Retrieve all the posts
+posts <- GET(url = str_c(baseurl, "posts", sep = "/"))
+# Check the response is good
+status_code(x = posts) == 200L
+# Load the data as a data.frame
+posts <- posts %>%
+  content(as = "text", encoding = "utf8") %>%
+  fromJSON() %>%
+  setDT()
+datatable(data = posts)
+```
+
+```{r REST posts filter}
+# Base URL
+baseurl <- "https://jsonplaceholder.typicode.com"
+# Retrieve all the posts
+posts_by_user_1 <- GET(url = str_c(baseurl, "posts", sep = "/") %>%
+               str_c("?userId=1"))
+# Check the response is good
+status_code(x = posts_by_user_1) == 200L
+# Load the data as a data.frame
+posts_by_user_1 <- posts_by_user_1 %>%
+  content(as = "text", encoding = "utf8") %>%
+  # Parse JSON files
+  fromJSON() %>%
+  setDT()
+datatable(data = posts_by_user_1)
+```
+
+Verify that the query yields what you would expect
+
+```{r REST verify query}
+all(dt_filter(data = posts, userId == 1L) == posts_by_user_1)
+```
+
+Some REST API will require passing a token either as part of the URL or through the header.
+
+For GeoJSON API use `sf::st_read`
+
+## GraphQL API
+
+[GraphQL](https://graphql.org/) API always return atomic values.
+
+For example,
+
+```{r}
+cli <- GraphqlClient$new(url = "https://countries.trevorblades.com")
+qry <- Query$new()
+qry$query("ListCountries",
+          '{
+            country(code: "PR") {
+              name
+              native
+              emoji
+              currency
+              languages {
+                code
+                name
+              }
+            }
+          }
+         ')
+result <- cli$exec(qry$queries$ListCountries)
+fromJSON(result)
+```
+
+More advanced topics for GraphQL include authentication, fragments, multiple queries, and pagination. See [GitHubAPI.jl](https://github.com/uva-bi-sdad/GitHubAPI.jl) for more examples.
+
+## Files
+
+Sometimes, one needs to download files found on a website. For example, the Virginia Alcoholic Beverage Control Authority ([VA ABC](https://www.abc.virginia.gov)) provides an utility for conducting licensee search. As an alternative it provides the full data as Excel spreadsheet available for download.
+
+Obtaining the data can be done with the following code.
+
+```{r download_file}
+va_abc_licensees_scrape <- function() {
+  session <- html_session(url = "https://www.abc.virginia.gov/licenses/licensee-search-staging")
+  if (status_code(x = session) == 200L) {
+    html_nodes(x = session,
+               css = "#feature-card-text > div.content-body > p > a") %>%
+      html_attr(name = "href") %>%
+      subset(str_detect(string = ., pattern = "/library/licenses/.*\\.xlsx\\?la=en")) %>%
+      str_c(session$url, .) %>%
+      download.file(destfile = "va_abc-licensees.xlsx")
+    import(file = "va_abc-licensees.xlsx")
+  } else {
+    warning("VA ABC Licensees failed to update.")
+  }
+}
+datatable(data = head(va_abc_licensees_scrape(), n = 100L))
+```
+
+## HTML tables
+
+HTML tables may be quickly parsed through `html_tables`, but may require some cleaning
+
+```{r tables}
+session <- html_session(url = "https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index")
+status_code(x = session) == 200L
+x <- html_nodes(x = session,
+                css = "#mw-content-text > div > div:nth-child(57) > table > tbody > tr > td:nth-child(1) > table")
+html_table(x = x, fill = TRUE)
+```

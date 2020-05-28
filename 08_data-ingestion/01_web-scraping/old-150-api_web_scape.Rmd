@@ -1,0 +1,114 @@
+# APIs and Web Scraping
+
+Selector Gadget: http://selectorgadget.com/
+
+DataCamp:
+
+- https://www.datacamp.com/courses/working-with-web-data-in-r
+
+Additional Resources:
+
+- https://stat4701.github.io/edav/2015/04/02/rvest_tutorial/
+
+
+## Tables from websites (wikipedia)
+
+```{r}
+library(RCurl)
+library(XML)
+```
+
+```{r}
+wiki_url <- RCurl::getURL("https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations")
+
+tables <- XML::readHTMLTable(wiki_url)
+```
+
+```{r}
+class(tables)
+```
+
+
+```{r}
+length(tables)
+```
+
+```{r}
+abbrevs <- tables[[1]]
+head(abbrevs)
+```
+
+```{r}
+us <- abbrevs[11:nrow(abbrevs), ]
+head(us)
+```
+
+
+Write a test to make sure what you got is what you expect
+
+```{r}
+first_value <- stringr::str_trim((as.character(us[1, 1])))
+testthat::expect_equal(object = first_value, expected = 'United States of America')
+```
+
+## Websites (rvest)
+
+
+IMDB Top Rated Movies:
+
+http://www.imdb.com/chart/top?ref_=nv_mv_250_6
+
+http://selectorgadget.com/
+
+CSS class and id
+
+```{r}
+library(rvest)
+```
+
+
+```{r}
+lego_movie <- read_html("http://www.imdb.com/title/tt1490017/")
+```
+
+```{r}
+# Rating
+lego_movie %>% 
+  html_node("strong span") %>%
+  html_text() %>%
+  as.numeric()
+```
+
+```{r}
+# First page of actors
+lego_movie %>%
+  html_nodes(".itemprop .itemprop") %>%
+  html_text()
+
+```
+
+
+```{r}
+lego_movie %>%
+  html_nodes("table") %>%
+  .[[1]] %>%
+  html_table()
+```
+
+
+```{r}
+lego_movie %>%
+  html_nodes(".primary_photo , .ellipsis, .character, #titleCast .itemprop, #titleCast .loadlate")
+```
+
+```{r}
+# more manual way
+lego_movie %>%
+  html_nodes("table") %>%
+  .[[1]] %>%
+  html_nodes("tr") %>%
+  html_nodes("span") %>%
+  html_text()
+```
+
+## Selenium
