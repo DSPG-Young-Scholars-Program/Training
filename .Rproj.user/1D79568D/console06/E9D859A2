@@ -1000,3 +1000,105 @@ remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[K
 To https://github.com/DSPG-Young-Scholars-Program/Training.git
    337033a..13b08ad  master -> master
 git pushcommit -m "organization"status[Kadd -A .
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .[4Ppushcommit -m "organization"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"p"r"o"j"e"c"t" "f"i"l"e"
+[master 061d1da] project file
+ 8 files changed, 104 insertions(+), 2468 deletions(-)
+ rewrite .Rproj.user/1D79568D/console06/INDEX001 (100%)
+ delete mode 100644 .Rproj.user/1D79568D/sources/s-123b2334/40D809AB-contents
+ delete mode 100644 .Rproj.user/1D79568D/sources/s-123b2334/4DECBDFF-contents
+ delete mode 100644 .Rproj.user/1D79568D/sources/s-123b2334/8BAF9866-contents
+ create mode 100644 .gitignore
+ rename training_dspg2019.Rproj => Training.Rproj (100%)
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git push
+error: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': dads2busy
+error: cannot run rpostback-askpass: No such file or directory
+Password for 'https://dads2busy@github.com': 
+[KEnumerating objects: 20, done.
+[KCounting objects:   5% (1/20)[KCounting objects:  10% (2/20)[KCounting objects:  15% (3/20)[KCounting objects:  20% (4/20)[KCounting objects:  25% (5/20)[KCounting objects:  30% (6/20)[KCounting objects:  35% (7/20)[KCounting objects:  40% (8/20)[KCounting objects:  45% (9/20)[KCounting objects:  50% (10/20)[KCounting objects:  55% (11/20)[KCounting objects:  60% (12/20)[KCounting objects:  65% (13/20)[KCounting objects:  70% (14/20)[KCounting objects:  75% (15/20)[KCounting objects:  80% (16/20)[KCounting objects:  85% (17/20)[KCounting objects:  90% (18/20)[KCounting objects:  95% (19/20)[KCounting objects: 100% (20/20)[KCounting objects: 100% (20/20), done.
+Delta compression using up to 40 threads
+[KCompressing objects:  12% (1/8)[KCompressing objects:  25% (2/8)[KCompressing objects:  37% (3/8)[KCompressing objects:  50% (4/8)[KCompressing objects:  62% (5/8)[KCompressing objects:  75% (6/8)[KCompressing objects:  87% (7/8)[KCompressing objects: 100% (8/8)[KCompressing objects: 100% (8/8), done.
+[KWriting objects:   9% (1/11)[KWriting objects:  18% (2/11)[KWriting objects:  27% (3/11)[KWriting objects:  36% (4/11)[KWriting objects:  45% (5/11)[KWriting objects:  54% (6/11)[KWriting objects:  63% (7/11)[KWriting objects:  72% (8/11)[KWriting objects:  81% (9/11)[KWriting objects:  90% (10/11)[KWriting objects: 100% (11/11)[KWriting objects: 100% (11/11), 1.44 KiB | 369.00 KiB/s, done.
+Total 11 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/DSPG-Young-Scholars-Program/Training.git
+   13b08ad..061d1da  master -> master
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ [K]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ [K]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ cd 08_data-ingestion/00_importing-data/data/Census/tiger/
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[00m$ l
+total 95M
+-rw-r--r-- 1 ads7fg users 7.1M May 28 16:34 [0m[01;31mtl_2018_19_bg.zip[0m
+-rwxr-xr-x 1 ads7fg users  87M May 28 16:34 [01;32mtl_2018_19_tabblock10.zip[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[00m$ unzip tl_2018_19_tabblock10.zip 
+Archive:  tl_2018_19_tabblock10.zip
+ extracting: tl_2018_19_tabblock10.cpg  
+  inflating: tl_2018_19_tabblock10.dbf  
+  inflating: tl_2018_19_tabblock10.prj  
+  inflating: tl_2018_19_tabblock10.shp  
+  inflating: tl_2018_19_tabblock10.shp.ea.iso.xml  
+  inflating: tl_2018_19_tabblock10.shp.iso.xml  
+  inflating: tl_2018_19_tabblock10.shx  
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[00m$ l
+total 260M
+-rw-r--r-- 1 ads7fg users 7.1M May 28 16:34 [0m[01;31mtl_2018_19_bg.zip[0m
+-rwxrwxr-x 1 ads7fg users    5 Sep  7  2018 [01;32mtl_2018_19_tabblock10.cpg[0m
+-rwxrwxr-x 1 ads7fg users  22M Sep  7  2018 [01;32mtl_2018_19_tabblock10.dbf[0m
+-rwxrwxr-x 1 ads7fg users  165 Sep  7  2018 [01;32mtl_2018_19_tabblock10.prj[0m
+-rwxrwxr-x 1 ads7fg users 142M Sep  7  2018 [01;32mtl_2018_19_tabblock10.shp[0m
+-rwxrwx--- 1 ads7fg users  27K Sep  7  2018 [01;32mtl_2018_19_tabblock10.shp.ea.iso.xml[0m
+-rwxrwx--- 1 ads7fg users  38K Sep  7  2018 [01;32mtl_2018_19_tabblock10.shp.iso.xml[0m
+-rwxrwxr-x 1 ads7fg users 1.7M Sep  7  2018 [01;32mtl_2018_19_tabblock10.shx[0m
+-rwxr-xr-x 1 ads7fg users  87M May 28 16:34 [01;32mtl_2018_19_tabblock10.zip[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[00m$ zip -9 tl_2018_19_tabblock10.zip tl_2018_19_tab*
+updating: tl_2018_19_tabblock10.cpg (stored 0%)
+updating: tl_2018_19_tabblock10.dbf (deflated 77%)
+updating: tl_2018_19_tabblock10.prj (deflated 19%)
+updating: tl_2018_19_tabblock10.shp (deflated 43%)
+updating: tl_2018_19_tabblock10.shp.ea.iso.xml (deflated 92%)
+updating: tl_2018_19_tabblock10.shp.iso.xml (deflated 82%)
+updating: tl_2018_19_tabblock10.shx (deflated 44%)
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[00m$ l
+total 260M
+-rw-r--r-- 1 ads7fg users 7.1M May 28 16:34 [0m[01;31mtl_2018_19_bg.zip[0m
+-rwxrwxr-x 1 ads7fg users    5 Sep  7  2018 [01;32mtl_2018_19_tabblock10.cpg[0m
+-rwxrwxr-x 1 ads7fg users  22M Sep  7  2018 [01;32mtl_2018_19_tabblock10.dbf[0m
+-rwxrwxr-x 1 ads7fg users  165 Sep  7  2018 [01;32mtl_2018_19_tabblock10.prj[0m
+-rwxrwxr-x 1 ads7fg users 142M Sep  7  2018 [01;32mtl_2018_19_tabblock10.shp[0m
+-rwxrwx--- 1 ads7fg users  27K Sep  7  2018 [01;32mtl_2018_19_tabblock10.shp.ea.iso.xml[0m
+-rwxrwx--- 1 ads7fg users  38K Sep  7  2018 [01;32mtl_2018_19_tabblock10.shp.iso.xml[0m
+-rwxrwxr-x 1 ads7fg users 1.7M Sep  7  2018 [01;32mtl_2018_19_tabblock10.shx[0m
+-rwxr-xr-x 1 ads7fg users  87M May 28 16:49 [01;32mtl_2018_19_tabblock10.zip[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[00m$ rm tl_2018_19_[K[K[K[K[K[K[K[K[K[K[K[K[K[Kl
+total 260M
+-rw-r--r-- 1 ads7fg users 7.1M May 28 16:34 [0m[01;31mtl_2018_19_bg.zip[0m
+-rwxrwxr-x 1 ads7fg users    5 Sep  7  2018 [01;32mtl_2018_19_tabblock10.cpg[0m
+-rwxrwxr-x 1 ads7fg users  22M Sep  7  2018 [01;32mtl_2018_19_tabblock10.dbf[0m
+-rwxrwxr-x 1 ads7fg users  165 Sep  7  2018 [01;32mtl_2018_19_tabblock10.prj[0m
+-rwxrwxr-x 1 ads7fg users 142M Sep  7  2018 [01;32mtl_2018_19_tabblock10.shp[0m
+-rwxrwx--- 1 ads7fg users  27K Sep  7  2018 [01;32mtl_2018_19_tabblock10.shp.ea.iso.xml[0m
+-rwxrwx--- 1 ads7fg users  38K Sep  7  2018 [01;32mtl_2018_19_tabblock10.shp.iso.xml[0m
+-rwxrwxr-x 1 ads7fg users 1.7M Sep  7  2018 [01;32mtl_2018_19_tabblock10.shx[0m
+-rwxr-xr-x 1 ads7fg users  87M May 28 16:49 [01;32mtl_2018_19_tabblock10.zip[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[00m$ gzip -v -9l[K[Krm tl_2018_19_tabblock10.zip 
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[00m$ tar -cvjf test.tar.bz2 *[1P[1P[1P[1P[1P[1P[1P[1P[21@tl_2018_19_tabblock10[C[1@.[1@t[1@a[1@r[C[C[C[C[C[C[Ktab[K[Kl_2018_19_tabblock10.*
+tl_2018_19_tabblock10.cpg
+tl_2018_19_tabblock10.dbf
+tl_2018_19_tabblock10.prj
+tl_2018_19_tabblock10.shp
+tl_2018_19_tabblock10.shp.ea.iso.xml
+tl_2018_19_tabblock10.shp.iso.xml
+tl_2018_19_tabblock10.shx
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[00m$ l
+total 244M
+-rw-r--r-- 1 ads7fg users 7.1M May 28 16:34 [0m[01;31mtl_2018_19_bg.zip[0m
+-rwxrwxr-x 1 ads7fg users    5 Sep  7  2018 [01;32mtl_2018_19_tabblock10.cpg[0m
+-rwxrwxr-x 1 ads7fg users  22M Sep  7  2018 [01;32mtl_2018_19_tabblock10.dbf[0m
+-rwxrwxr-x 1 ads7fg users  165 Sep  7  2018 [01;32mtl_2018_19_tabblock10.prj[0m
+-rwxrwxr-x 1 ads7fg users 142M Sep  7  2018 [01;32mtl_2018_19_tabblock10.shp[0m
+-rwxrwx--- 1 ads7fg users  27K Sep  7  2018 [01;32mtl_2018_19_tabblock10.shp.ea.iso.xml[0m
+-rwxrwx--- 1 ads7fg users  38K Sep  7  2018 [01;32mtl_2018_19_tabblock10.shp.iso.xml[0m
+-rwxrwxr-x 1 ads7fg users 1.7M Sep  7  2018 [01;32mtl_2018_19_tabblock10.shx[0m
+-rw-r--r-- 1 ads7fg users  72M May 28 16:53 [01;31mtl_2018_19_tabblock10.tar.bz2[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[00m$ rm tl_2018_19_tabblock10.*
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data/data/Census/tiger[00m$ cd ../../../
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/08_data-ingestion/00_importing-data[00m$ cd ../../
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
