@@ -2608,3 +2608,342 @@ drwxr-sr-x 5 ads7fg users 2.0K May 28 16:15 [01;34msrc[0m
 ]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[00m$ rm -rf .git*
 ]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[00m$ cd ../../../
 ]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git pu[K[Kcommit -m "initial;[K transfer 3"
+[master 337033a] initial transfer 3
+ 319 files changed, 456476 insertions(+), 3 deletions(-)
+ create mode 100644 00_introduction/00_program-introduction/DSPG 2018 Intro.pdf
+ create mode 100644 00_introduction/01_the-public-good-data-science-process/2019-06-05_schroeder_data-science-processes-for-evidence-based-policy.pptx
+ create mode 100644 00_introduction/project-posters/2016-DSPG-Posters.zip
+ create mode 100644 00_introduction/project-posters/2017-DSPG-Posters.zip
+ create mode 100644 00_introduction/project-posters/2018-DSPG-Posters.zip
+ create mode 100644 00_introduction/project-posters/2019-DSPG-Posters.zip
+ create mode 100644 01_getting_ready/00_CLD3-Processes-Platforms-Examples.pdf
+ create mode 100644 01_getting_ready/01_System-Setup-2018.Rmd
+ create mode 100644 01_getting_ready/02_SDAD-Researcher-Data-Use-Agreement.pdf
+ create mode 100644 01_getting_ready/03_SDAD-Data-Management-Plan-Nov-2018.pdf
+ create mode 100644 03_code_management/DataCamp
+ create mode 100644 03_code_management/Intro to Git.pptx
+ create mode 100644 04_coding_standards/01_naming_things/naming-slides.pdf
+ create mode 100644 04_coding_standards/02_code-and-data-documentation/003-documentation_metadata.Rmd
+ create mode 100644 04_coding_standards/02_code-and-data-documentation/003-documentation_metadata.html
+ create mode 100644 04_coding_standards/03_style-guides
+ create mode 100644 05_r-basics/00_intro_to_r/DataCamp
+ create mode 100644 05_r-basics/00_intro_to_r/README.md
+ create mode 100644 05_r-basics/00_intro_to_r/introduction_to_R.Rmd
+ create mode 100644 05_r-basics/00_intro_to_r/introduction_to_R.html
+ create mode 100644 05_r-basics/00_intro_to_r/introduction_to_R.md
+ create mode 100644 05_r-basics/00_intro_to_r/introduction_to_R_files/figure-html/unnamed-chunk-14-1.png
+ create mode 100644 05_r-basics/01_datetimes/080-datetimes.Rmd
+ create mode 100644 05_r-basics/01_datetimes/080-datetimes.html
+ create mode 100644 05_r-basics/01_datetimes/080-datetimes.md
+ create mode 100644 05_r-basics/02_functions-and-control-flow/120-iteration.Rmd
+ create mode 100644 05_r-basics/02_functions-and-control-flow/DataCamp
+ create mode 100644 05_r-basics/02_functions-and-control-flow/README.md
+ create mode 100644 05_r-basics/02_functions-and-control-flow/functions-and-control-flow.Rmd
+ create mode 100644 05_r-basics/02_functions-and-control-flow/functions-and-control-flow.html
+ create mode 100644 05_r-basics/02_functions-and-control-flow/functions-and-control-flow.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/.ipynb_checkpoints/01_3-ways-to-subset-checkpoint.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/.ipynb_checkpoints/02_3-ways-to-rename-columns-checkpoint.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/00_3-ways-to-read-csv.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/00_3-ways-to-read-csv.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/00_3-ways-to-read-csv.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/01_3-ways-to-subset.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/01_3-ways-to-subset.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/01_3-ways-to-subset.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/02_3-ways-to-rename-columns.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/02_3-ways-to-rename-columns.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/02_3-ways-to-rename-columns.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/03_3-ways-to-group.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/03_3-ways-to-group.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/03_3-ways-to-group.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/04_2-ways-to-pipe.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/04_2-ways-to-pipe.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/04_2-ways-to-pipe.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/05_3-ways-to-bind-rows.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/05_3-ways-to-bind-rows.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/05_3-ways-to-bind-rows.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/06_3-ways-to-profile-consistency.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/07_whypipes.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/07_whypipes.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/07_whypipes.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/datacamp free tutorials
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/pigeon-racing.csv
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/ticket_cleint.csv
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/ticket_client.zip
+ create mode 100644 05_r-basics/04_regex/.ipynb_checkpoints/RVerbalExpressions-checkpoint.R
+ create mode 100644 05_r-basics/04_regex/RVerbalExpressions.R
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/README.md
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R.htm
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/1example.png
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/2dash.jpg
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/MathJax.js
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/countdown.css
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/countdown.js
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/default.css
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/metropolis-fonts.css
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/metropolis.css
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/remark-latest.min.js
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/1example.png
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/2dash.jpg
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/3cry.jpeg
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/4why1.png
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/4why2.png
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/4why3.jpg
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/regex.Rmd
+ create mode 100644 05_r-basics/05_relational_data_and_sql/050-relational_data_w_dplyr_r.Rmd
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/01_adminer.Rmd
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/01_adminer.html
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/02_rstudio_db_queries.Rmd
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/02_rstudio_db_queries.nb.html
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/03_rap_charts.Rmd
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/03_rap_charts.html
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/03_rap_charts.nb.html
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/03_rstudio_notebook.nb.html
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/090-sql_rap_charts.Rmd
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/090-sql_rap_charts.html
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/data/Rap_Charts.xlsx
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_dashboard_db.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_food_atlas_data.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_food_atlas_data_query_1.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_food_atlas_data_query_1_result.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_food_atlas_table.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_health_rankings_table.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_login.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_personal_db.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_personal_db_Customer_table_Case.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_personal_db_artists_table.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_personal_db_customer_table.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_select_db.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/DataCamp
+ create mode 100644 05_r-basics/05_relational_data_and_sql/PostgreSQL Basics.docx
+ create mode 100644 05_r-basics/05_relational_data_and_sql/PostgreSQL Basics.pdf
+ create mode 100644 06_data_discovery/00_discovery_workshop/DN-Data Discovery Workshop & Handouts DSPG [Autosaved].pptx
+ create mode 100644 06_data_discovery/01_literature-reviews/DSPG 2019 Literature Review.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Checklist/SDAD Generic Ethics Checklist 12June19).docx
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/SDAD ETHICS 2019-MacBook Pro (2).pptx
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/SDAD ETHICS 2019.pptx
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/comparison_codes_articles.png
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/frequency.png
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/frequency_codes.png
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/wordcloud.png
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/wordcloud_articles.png
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/wordcloud_codes.png
+ create mode 100644 07_ethics_and_experiments/00_ethics/Health Ethics (Joy Tobin)/NIH_BioethicsBrochure_WEB.PDF
+ create mode 100644 07_ethics_and_experiments/00_ethics/Health Ethics (Joy Tobin)/Proprietary Data Handling 2019.docx
+ create mode 100644 07_ethics_and_experiments/00_ethics/Health Ethics (Joy Tobin)/social_research_ethics_protocol.doc
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Ethics and data governance-excerpts from lit review (Jan2019).docx
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Nature (10April19)Train students to navigate ethical swamps.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Nature (14Feb19) US advisory board for research integrity.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Nature (24Apr19) Rein 4 horsemen of irreproducibility.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/On Being a Scientist_ A guide to Responsible Conduct in Reserach.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Promoting an Open Research Culture.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Self Correction of Science at Work.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Suggested Readings for SDAD Ethics Session (May2019).docx
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/The Mistrust of Science - The New Yorker.pdf
+ create mode 100644 07_ethics_and_experiments/01_behavioral_experiments/Instructions-bilateral-global.pptx
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/01_geo_data_CENSUS/01_create_geo_db_tables.R
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/01_geo_data_CENSUS/02_read_plot_geo_db_state.R
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/01_geo_data_CENSUS/03_build_query_plot_marshall.R
+ create mode 100644 08_data-ingestion/00_importing-data/01_ingest/01_geo_data_CENSUS/04_complete_ingest_store_view.R
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/02_job_data_LODES/01_LODESTechDoc7.3.pdf
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/02_job_data_LODES/create_centerpoints.R
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/02_job_data_LODES/get_census_blk_geo.R
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/02_job_data_LODES/get_lodes.R
+ create mode 100644 08_data-ingestion/00_importing-data/01_ingest/05_crime_data_SPOTCRIME/spotcrime.R
+ create mode 100644 08_data-ingestion/00_importing-data/01_read_combine_MOST_USEFUL.R
+ create mode 100644 08_data-ingestion/00_importing-data/02_shapefiles.R
+ create mode 100644 08_data-ingestion/00_importing-data/03_shapefiles-from-gis-database.R
+ create mode 100644 08_data-ingestion/00_importing-data/data/Census/LODES/ia_od_main_JT00_2015.csv.gz
+ create mode 100644 08_data-ingestion/00_importing-data/data/Census/LODES/lodes_ia_2015.RDS
+ create mode 100644 08_data-ingestion/00_importing-data/data/Census/tiger/tl_2018_19_bg.zip
+ create mode 100755 08_data-ingestion/00_importing-data/data/Census/tiger/tl_2018_19_tabblock10.zip
+ create mode 100644 08_data-ingestion/00_importing-data/data/MLS/2009.csv
+ create mode 100644 08_data-ingestion/00_importing-data/data/MLS/2010.csv
+ create mode 100644 08_data-ingestion/00_importing-data/data/MLS/2011.csv
+ create mode 100644 08_data-ingestion/00_importing-data/data/MLS/2012.csv
+ create mode 100644 08_data-ingestion/00_importing-data/data/MLS/2013.csv
+ create mode 100644 08_data-ingestion/00_importing-data/data/MLS/2014.csv
+ create mode 100644 08_data-ingestion/00_importing-data/data/spotcrime/daily_crime_report_iowa_urls_arl.RDS
+ create mode 100644 08_data-ingestion/00_importing-data/data/spotcrime/daily_crime_report_locality_urls_arl.RDS
+ create mode 100644 08_data-ingestion/00_importing-data/data/spotcrime/daily_crime_report_virginia_urls_arl.RDS
+ create mode 100644 08_data-ingestion/00_importing-data/quick_character_dates_to_dates.R
+ create mode 100644 08_data-ingestion/01_web-scraping/README.md
+ create mode 100644 08_data-ingestion/01_web-scraping/github-api4-graphql.R
+ create mode 100644 08_data-ingestion/01_web-scraping/old-150-api_web_scape.Rmd
+ create mode 100644 08_data-ingestion/01_web-scraping/va_abc-licensees.xlsx
+ create mode 100644 08_data-ingestion/01_web-scraping/webscraping.Rmd
+ create mode 100644 08_data-ingestion/01_web-scraping/webscraping.html
+ create mode 100644 08_data-ingestion/DataCamp
+ create mode 100755 09_profiling/00_read_combine_MOST_USEFUL.R
+ create mode 100755 09_profiling/01_some_profile_basics.R
+ create mode 100755 09_profiling/02_completeness.R
+ create mode 100755 09_profiling/03_valid_values.R
+ create mode 100755 09_profiling/04_record_consistency.R
+ create mode 100755 09_profiling/05_longitudinal_consistency.R
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/DSPG -- Data Cleaning Lesson.pptx
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/DSPG -- Data Transformation Lesson.pptx
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/Franchise2.csv
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/de Jonge & van der Loo (2013) - An Introduction to Data Cleaning with R.pdf
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/franchise.csv
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/job_availability_gravity_index.R
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/pig-pen1.csv
+ create mode 100644 10_data_preparation/01_tidy-data/040-tidy_data.Rmd
+ create mode 100644 11_data_exploration/00_summarization/summarization
+ create mode 100644 11_data_exploration/01_text-mining/180-text_mining.Rmd
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R.htm
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/MathJax.js
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/countdown.css
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/countdown.js
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/default.css
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/metropolis-fonts.css
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/metropolis.css
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot1-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot2-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot3-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot4-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot5-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot6-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot7-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/remark-latest.min.js
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/unnamed-chunk-11-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/unnamed-chunk-12-1.png
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/OverviewCoordinateReferenceSystems.pdf
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/congressional_trump_scores.csv.gz
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/cu12.RDS
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/shapefiles/congressional_districts.dbf
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/shapefiles/congressional_districts.prj
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/shapefiles/congressional_districts.shp
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/shapefiles/congressional_districts.shx
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/va_blockgroups_simplified_spdf.RDS
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/db_user_query.csv.gz
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/db_user_query.txt
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/set_dbuser_permissions.R
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/spatial_r_with_sf_intro.Rmd
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/spatial_r_with_sf_intro_files/figure-html/unnamed-chunk-4-1.png
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/spatial_r_with_sf_intro_files/figure-html/unnamed-chunk-5-1.png
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/spatial_r_with_sf_intro_files/figure-html/unnamed-chunk-8-1.png
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/cong_trump.R
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/congressional-trump-scores.Rproj
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/congressional_districts.dbf
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/congressional_districts.prj
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/congressional_districts.shp
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/congressional_districts.shx
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/congressional_trump_scores.csv.gz
+ create mode 100644 12_media-communication/00_SAGE-Writing Skills-Michael Todd/Writing an op-ed2.docx
+ create mode 100644 12_media-communication/00_SAGE-Writing Skills-Michael Todd/Writing for MethodSpace.docx
+ create mode 100644 12_media-communication/00_SAGE-Writing Skills-Michael Todd/example-OSS-Sage Brief.docx
+ create mode 100644 12_media-communication/01_media-speaking
+ create mode 100644 13_data_modeling/330-CART.Rmd
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/.ipynb_checkpoints/Demo-DataAnalysis-Iris-checkpoint.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/.ipynb_checkpoints/Demo-DecisionTree-Iris-checkpoint.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/.ipynb_checkpoints/Demo-GradientDescent-Basic-checkpoint.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-Clustering-FakeData.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-DataAnalysis-Iris.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-DecisionTree-Iris.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-GradientDescent-Basic.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-MultilayerPerceptron-MNIST.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-PCA-MNIST.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/IntroductionToAIML-4x3.pdf
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/README.md
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/data/mnist/mnist_data.pkl
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/data/mnist/mnist_target.pkl
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/requirements.txt
+ create mode 100644 13_data_modeling/Predictive Modeling/Decision_Tree_Training.R
+ create mode 100644 13_data_modeling/Predictive Modeling/KNN_Training1.R
+ create mode 100644 13_data_modeling/Predictive Modeling/Predictive Modeling Presentation.pptx
+ create mode 100644 13_data_modeling/Predictive Modeling/Prostate_Cancer.csv
+ create mode 100644 13_data_modeling/unsupervised_learning/UnsupervisedLearning7-17-19.pdf
+ create mode 100644 13_data_modeling/unsupervised_learning/unsupervised_learning.R
+ create mode 100644 14_data_presentation/00_visualization_standards/01-Visualize-Slides.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/Colorblind_Palette.R
+ create mode 100644 14_data_presentation/00_visualization_standards/DSPG 2019 Visualization.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/Few_2007.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/R_Color_Cheatsheet.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/R_Colors.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/R_Colorspace.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/Zeileis_2009.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/theme_SDAD.R
+ create mode 100644 14_data_presentation/01_graphics_with_ggplot/010-data_vis.Rmd
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/README.md
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app1.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app2.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app3.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app4.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app5.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app6.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app7.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app8.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/crime data.csv.gz
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/dashboard_tutorial.Rproj
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/dynamic.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/scratch_app.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/LICENSE
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/Measuring-STW-App.Rproj
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/R-Shiny-Datatable.Rproj
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/README.md
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/copy-app_2.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/data-dictionary.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/data-dictionary.html
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/data-discovery-feb-3.csv
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/data-discovery-versions/Data Discovery NOV17.csv
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/data-discovery-versions/Data Discovery NOV8.csv
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/data-discovery-versions/data-discovery-jan-20.csv
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/drafts/app.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/drafts/discrete-variables.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/drafts/fixed-storage-form.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/drafts/hover-fix.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/drafts/make_css_file.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/drafts/select-graph.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/drafts/shiny-storage.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/drafts/three-cat-var.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/drafts/visualize-list-columns.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/feedback/1579723647_1bb01f44817cf4667021e0ba9ce64244.csv
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/feedback/1579724018_77efc04b5b65dc5aaf413d62cd96b174.csv
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/feedback/1579724088_d6fc8a3948424c4bb94fa104dbbc2d8d.csv
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/feedback/1579724178_7dc4325d75fcbb669971c2e6174da6ec.csv
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/logos.R
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/welcome-page.Rmd
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/welcome-page.html
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/www/BII.jpg
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/www/NCSES-full-color.pdf
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/www/NCSES.ai
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/www/NSF.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/www/NSF_4-Color_bitmap_Logo.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/www/nsf-ncses.png
+ create mode 100644 14_data_presentation/03_dashboard-examples/Measuring-STW-App/www/theme.css
+ rewrite README.md (100%)
+ create mode 100644 data/Census/tiger/hi.txt
+ create mode 100644 data/Census/tiger/tl_2018_19_bg.zip
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.cpg
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.dbf
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.prj
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.shp
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.shp.ea.iso.xml
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.shp.iso.xml
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.shx
+ create mode 100644 data/MLS/2009.csv
+ create mode 100644 data/MLS/2010.csv
+ create mode 100644 data/MLS/2011.csv
+ create mode 100644 data/MLS/2012.csv
+ create mode 100644 data/MLS/2013.csv
+ create mode 100644 data/MLS/2014.csv
+ create mode 100644 training_dspg2019.Rproj
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git push
+error: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': dads2busy
+error: cannot run rpostback-askpass: No such file or directory
+Password for 'https://dads2busy@github.com': 
+[KEnumerating objects: 385, done.
+[KCounting objects:   0% (1/385)[KCounting objects:   1% (4/385)[KCounting objects:   2% (8/385)[KCounting objects:   3% (12/385)[KCounting objects:   4% (16/385)[KCounting objects:   5% (20/385)[KCounting objects:   6% (24/385)[KCounting objects:   7% (27/385)[KCounting objects:   8% (31/385)[KCounting objects:   9% (35/385)[KCounting objects:  10% (39/385)[KCounting objects:  11% (43/385)[KCounting objects:  12% (47/385)[KCounting objects:  13% (51/385)[KCounting objects:  14% (54/385)[KCounting objects:  15% (58/385)[KCounting objects:  16% (62/385)[KCounting objects:  17% (66/385)[KCounting objects:  18% (70/385)[KCounting objects:  19% (74/385)[KCounting objects:  20% (77/385)[KCounting objects:  21% (81/385)[KCounting objects:  22% (85/385)[KCounting objects:  23% (89/385)[KCounting objects:  24% (93/385)[KCounting objects:  25% (97/385)[KCounting objects:  26% (101/385)[KCounting objects:  27% (104/385)[KCounting objects:  28% (108/385)[KCounting objects:  29% (112/385)[KCounting objects:  30% (116/385)[KCounting objects:  31% (120/385)[KCounting objects:  32% (124/385)[KCounting objects:  33% (128/385)[KCounting objects:  34% (131/385)[KCounting objects:  35% (135/385)[KCounting objects:  36% (139/385)[KCounting objects:  37% (143/385)[KCounting objects:  38% (147/385)[KCounting objects:  39% (151/385)[KCounting objects:  40% (154/385)[KCounting objects:  41% (158/385)[KCounting objects:  42% (162/385)[KCounting objects:  43% (166/385)[KCounting objects:  44% (170/385)[KCounting objects:  45% (174/385)[KCounting objects:  46% (178/385)[KCounting objects:  47% (181/385)[KCounting objects:  48% (185/385)[KCounting objects:  49% (189/385)[KCounting objects:  50% (193/385)[KCounting objects:  51% (197/385)[KCounting objects:  52% (201/385)[KCounting objects:  53% (205/385)[KCounting objects:  54% (208/385)[KCounting objects:  55% (212/385)[KCounting objects:  56% (216/385)[KCounting objects:  57% (220/385)[KCounting objects:  58% (224/385)[KCounting objects:  59% (228/385)[KCounting objects:  60% (231/385)[KCounting objects:  61% (235/385)[KCounting objects:  62% (239/385)[KCounting objects:  63% (243/385)[KCounting objects:  64% (247/385)[KCounting objects:  65% (251/385)[KCounting objects:  66% (255/385)[KCounting objects:  67% (258/385)[KCounting objects:  68% (262/385)[KCounting objects:  69% (266/385)[KCounting objects:  70% (270/385)[KCounting objects:  71% (274/385)[KCounting objects:  72% (278/385)[KCounting objects:  73% (282/385)[KCounting objects:  74% (285/385)[KCounting objects:  75% (289/385)[KCounting objects:  76% (293/385)[KCounting objects:  77% (297/385)[KCounting objects:  78% (301/385)[KCounting objects:  79% (305/385)[KCounting objects:  80% (308/385)[KCounting objects:  81% (312/385)[KCounting objects:  82% (316/385)[KCounting objects:  83% (320/385)[KCounting objects:  84% (324/385)[KCounting objects:  85% (328/385)[KCounting objects:  86% (332/385)[KCounting objects:  87% (335/385)[KCounting objects:  88% (339/385)[KCounting objects:  89% (343/385)[KCounting objects:  90% (347/385)[KCounting objects:  91% (351/385)[KCounting objects:  92% (355/385)[KCounting objects:  93% (359/385)[KCounting objects:  94% (362/385)[KCounting objects:  95% (366/385)[KCounting objects:  96% (370/385)[KCounting objects:  97% (374/385)[KCounting objects:  98% (378/385)[KCounting objects:  99% (382/385)[KCounting objects: 100% (385/385)[KCounting objects: 100% (385/385), done.
+Delta compression using up to 40 threads
+[KCompressing objects:   0% (1/358)[KCompressing objects:   1% (4/358)[KCompressing objects:   2% (8/358)[KCompressing objects:   3% (11/358)[KCompressing objects:   4% (15/358)[KCompressing objects:   5% (18/358)[KCompressing objects:   6% (22/358)[KCompressing objects:   7% (26/358)[KCompressing objects:   8% (29/358)[KCompressing objects:   9% (33/358)[KCompressing objects:  10% (36/358)[KCompressing objects:  11% (40/358)[KCompressing objects:  12% (43/358)[KCompressing objects:  13% (47/358)[KCompressing objects:  14% (51/358)[KCompressing objects:  15% (54/358)[KCompressing objects:  16% (58/358)[KCompressing objects:  17% (61/358)[KCompressing objects:  18% (65/358)[KCompressing objects:  19% (69/358)[KCompressing objects:  20% (72/358)[KCompressing objects:  21% (76/358)[KCompressing objects:  22% (79/358)[KCompressing objects:  23% (83/358)[KCompressing objects:  24% (86/358)[KCompressing objects:  25% (90/358)[KCompressing objects:  26% (94/358)[KCompressing objects:  27% (97/358)[KCompressing objects:  28% (101/358)[KCompressing objects:  29% (104/358)[KCompressing objects:  30% (108/358)[KCompressing objects:  31% (111/358)[KCompressing objects:  32% (115/358)[KCompressing objects:  33% (119/358)[KCompressing objects:  34% (122/358)[KCompressing objects:  35% (126/358)[KCompressing objects:  36% (129/358)[KCompressing objects:  37% (133/358)[KCompressing objects:  38% (137/358)[KCompressing objects:  39% (140/358)[KCompressing objects:  40% (144/358)[KCompressing objects:  41% (147/358)[KCompressing objects:  42% (151/358)[KCompressing objects:  43% (154/358)[KCompressing objects:  44% (158/358)[KCompressing objects:  45% (162/358)[KCompressing objects:  46% (165/358)[KCompressing objects:  47% (169/358)[KCompressing objects:  48% (172/358)[KCompressing objects:  49% (176/358)[KCompressing objects:  50% (179/358)[KCompressing objects:  50% (182/358)[KCompressing objects:  51% (183/358)[KCompressing objects:  52% (187/358)[KCompressing objects:  53% (190/358)[KCompressing objects:  54% (194/358)[KCompressing objects:  55% (197/358)[KCompressing objects:  56% (201/358)[KCompressing objects:  57% (205/358)[KCompressing objects:  58% (208/358)[KCompressing objects:  58% (210/358)[KCompressing objects:  59% (212/358)[KCompressing objects:  60% (215/358)[KCompressing objects:  61% (219/358)[KCompressing objects:  62% (222/358)[KCompressing objects:  63% (226/358)[KCompressing objects:  64% (230/358)[KCompressing objects:  65% (233/358)[KCompressing objects:  66% (237/358)[KCompressing objects:  67% (240/358)[KCompressing objects:  68% (244/358)[KCompressing objects:  69% (248/358)[KCompressing objects:  70% (251/358)[KCompressing objects:  71% (255/358)[KCompressing objects:  72% (258/358)[KCompressing objects:  73% (262/358)[KCompressing objects:  74% (265/358)[KCompressing objects:  75% (269/358)[KCompressing objects:  76% (273/358)[KCompressing objects:  77% (276/358)[KCompressing objects:  77% (279/358)[KCompressing objects:  78% (280/358)[KCompressing objects:  79% (283/358)[KCompressing objects:  79% (286/358)[KCompressing objects:  80% (287/358)[KCompressing objects:  80% (289/358)[KCompressing objects:  81% (290/358)[KCompressing objects:  82% (294/358)[KCompressing objects:  83% (298/358)[KCompressing objects:  84% (301/358)[KCompressing objects:  84% (304/358)[KCompressing objects:  85% (305/358)[KCompressing objects:  86% (308/358)[KCompressing objects:  86% (310/358)[KCompressing objects:  87% (312/358)[KCompressing objects:  88% (316/358)[KCompressing objects:  89% (319/358)[KCompressing objects:  90% (323/358)[KCompressing objects:  90% (325/358)[KCompressing objects:  91% (326/358)[KCompressing objects:  92% (330/358)[KCompressing objects:  93% (333/358)[KCompressing objects:  94% (337/358)[KCompressing objects:  94% (340/358)[KCompressing objects:  95% (341/358)[KCompressing objects:  96% (344/358)[KCompressing objects:  97% (348/358)[KCompressing objects:  98% (351/358)[KCompressing objects:  98% (353/358)[KCompressing objects:  98% (354/358)[KCompressing objects:  99% (355/358)[KCompressing objects: 100% (358/358)[KCompressing objects: 100% (358/358), done.
+[KWriting objects:   0% (1/374)[KWriting objects:   1% (4/374)[KWriting objects:   2% (8/374)[KWriting objects:   2% (9/374), 3.45 MiB | 3.32 MiB/s[KWriting objects:   3% (12/374), 12.30 MiB | 7.66 MiB/s[KWriting objects:   3% (13/374), 16.16 MiB | 7.29 MiB/s[KWriting objects:   3% (14/374), 32.91 MiB | 8.62 MiB/s[KWriting objects:   3% (14/374), 57.21 MiB | 13.25 MiB/s[KWriting objects:   4% (15/374), 57.21 MiB | 13.25 MiB/s[KWriting objects:   4% (16/374), 68.55 MiB | 13.89 MiB/s[KWriting objects:   4% (16/374), 83.41 MiB | 13.45 MiB/s[KWriting objects:   4% (16/374), 111.55 MiB | 17.54 MiB/s[KWriting objects:   4% (18/374), 120.88 MiB | 14.61 MiB/s[KWriting objects:   5% (19/374), 137.83 MiB | 16.61 MiB/s[KWriting objects:   6% (23/374), 137.83 MiB | 16.61 MiB/s[KWriting objects:   6% (24/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:   7% (27/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:   8% (30/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:   9% (34/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  10% (38/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  11% (42/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  12% (48/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  13% (49/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  14% (53/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  15% (57/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  16% (60/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  17% (65/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  18% (68/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  19% (72/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  20% (75/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  21% (79/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  22% (83/374), 163.73 MiB | 16.26 MiB/s[KWriting objects:  22% (83/374), 177.66 MiB | 15.23 MiB/s[KWriting objects:  22% (85/374), 192.93 MiB | 14.28 MiB/s[KWriting objects:  23% (87/374), 192.93 MiB | 14.28 MiB/s[KWriting objects:  24% (90/374), 192.93 MiB | 14.28 MiB/s[KWriting objects:  25% (94/374), 192.93 MiB | 14.28 MiB/s[KWriting objects:  26% (98/374), 192.93 MiB | 14.28 MiB/s[KWriting objects:  27% (101/374), 192.93 MiB | 14.28 MiB/s[KWriting objects:  28% (105/374), 192.93 MiB | 14.28 MiB/s[KWriting objects:  29% (109/374), 192.93 MiB | 14.28 MiB/s[KWriting objects:  30% (113/374), 192.93 MiB | 14.28 MiB/s[KWriting objects:  31% (117/374), 192.93 MiB | 14.28 MiB/s[KWriting objects:  32% (120/374), 192.93 MiB | 14.28 MiB/s[KWriting objects:  33% (124/374), 203.46 MiB | 14.36 MiB/s[KWriting objects:  34% (128/374), 203.46 MiB | 14.36 MiB/s[KWriting objects:  35% (131/374), 203.46 MiB | 14.36 MiB/s[KWriting objects:  36% (135/374), 203.46 MiB | 14.36 MiB/s[KWriting objects:  37% (139/374), 203.46 MiB | 14.36 MiB/s[KWriting objects:  37% (139/374), 205.74 MiB | 13.62 MiB/s[KWriting objects:  38% (143/374), 205.74 MiB | 13.62 MiB/s[KWriting objects:  39% (146/374), 205.74 MiB | 13.62 MiB/s[KWriting objects:  39% (147/374), 220.67 MiB | 12.47 MiB/s[KWriting objects:  39% (147/374), 234.40 MiB | 12.55 MiB/s[KWriting objects:  40% (150/374), 234.40 MiB | 12.55 MiB/s[KWriting objects:  41% (154/374), 234.40 MiB | 12.55 MiB/s[KWriting objects:  42% (158/374), 234.40 MiB | 12.55 MiB/s[KWriting objects:  43% (161/374), 234.40 MiB | 12.55 MiB/s[KWriting objects:  44% (165/374), 234.40 MiB | 12.55 MiB/s[KWriting objects:  45% (169/374), 240.55 MiB | 14.07 MiB/s[KWriting objects:  46% (173/374), 240.55 MiB | 14.07 MiB/s[KWriting objects:  47% (177/374), 240.55 MiB | 14.07 MiB/s[KWriting objects:  48% (180/374), 240.55 MiB | 14.07 MiB/s[KWriting objects:  49% (184/374), 240.55 MiB | 14.07 MiB/s[KWriting objects:  50% (187/374), 240.55 MiB | 14.07 MiB/s[KWriting objects:  50% (190/374), 245.39 MiB | 12.64 MiB/s[KWriting objects:  51% (191/374), 245.39 MiB | 12.64 MiB/s[KWriting objects:  51% (193/374), 256.85 MiB | 13.66 MiB/s[KWriting objects:  51% (194/374), 263.85 MiB | 7.88 MiB/s[KWriting objects:  51% (194/374), 277.14 MiB | 8.19 MiB/s[KWriting objects:  51% (194/374), 332.60 MiB | 13.71 MiB/s[KWriting objects:  52% (195/374), 345.44 MiB | 14.17 MiB/s[KWriting objects:  54% (202/374), 351.55 MiB | 14.06 MiB/s[KWriting objects:  55% (206/374), 351.55 MiB | 14.06 MiB/s[KWriting objects:  55% (209/374), 354.05 MiB | 13.63 MiB/s[KWriting objects:  56% (210/374), 354.05 MiB | 13.63 MiB/s[KWriting objects:  57% (214/374), 354.05 MiB | 13.63 MiB/s[KWriting objects:  58% (217/374), 354.05 MiB | 13.63 MiB/s[KWriting objects:  59% (221/374), 354.05 MiB | 13.63 MiB/s[KWriting objects:  60% (225/374), 361.10 MiB | 14.03 MiB/s[KWriting objects:  61% (229/374), 361.10 MiB | 14.03 MiB/s[KWriting objects:  62% (232/374), 361.10 MiB | 14.03 MiB/s[KWriting objects:  63% (236/374), 361.10 MiB | 14.03 MiB/s[KWriting objects:  64% (240/374), 361.10 MiB | 14.03 MiB/s[KWriting objects:  65% (244/374), 361.10 MiB | 14.03 MiB/s[KWriting objects:  66% (247/374), 361.10 MiB | 14.03 MiB/s[KWriting objects:  67% (251/374), 361.10 MiB | 14.03 MiB/s[KWriting objects:  68% (255/374), 361.10 MiB | 14.03 MiB/s[KWriting objects:  68% (257/374), 366.67 MiB | 13.46 MiB/s[KWriting objects:  69% (259/374), 366.67 MiB | 13.46 MiB/s[KWriting objects:  70% (262/374), 366.67 MiB | 13.46 MiB/s[KWriting objects:  71% (266/374), 366.67 MiB | 13.46 MiB/s[KWriting objects:  72% (270/374), 366.67 MiB | 13.46 MiB/s[KWriting objects:  73% (274/374), 366.67 MiB | 13.46 MiB/s[KWriting objects:  74% (277/374), 366.67 MiB | 13.46 MiB/s[KWriting objects:  75% (281/374), 366.67 MiB | 13.46 MiB/s[KWriting objects:  76% (285/374), 366.67 MiB | 13.46 MiB/s[KWriting objects:  76% (287/374), 375.48 MiB | 21.25 MiB/s[KWriting objects:  77% (288/374), 375.48 MiB | 21.25 MiB/s[KWriting objects:  77% (291/374), 386.99 MiB | 18.76 MiB/s[KWriting objects:  78% (292/374), 391.11 MiB | 14.89 MiB/s[KWriting objects:  78% (293/374), 391.11 MiB | 14.89 MiB/s[KWriting objects:  79% (296/374), 391.11 MiB | 14.89 MiB/s[KWriting objects:  80% (300/374), 391.11 MiB | 14.89 MiB/s[KWriting objects:  81% (303/374), 395.51 MiB | 10.73 MiB/s[KWriting objects:  81% (304/374), 398.50 MiB | 8.10 MiB/s[KWriting objects:  81% (304/374), 404.63 MiB | 7.38 MiB/s[KWriting objects:  82% (307/374), 404.63 MiB | 7.38 MiB/s[KWriting objects:  83% (311/374), 410.98 MiB | 7.85 MiB/s[KWriting objects:  84% (315/374), 410.98 MiB | 7.85 MiB/s[KWriting objects:  85% (321/374), 410.98 MiB | 7.85 MiB/s[KWriting objects:  86% (322/374), 410.98 MiB | 7.85 MiB/s[KWriting objects:  87% (326/374), 414.05 MiB | 7.21 MiB/s[KWriting objects:  88% (330/374), 414.05 MiB | 7.21 MiB/s[KWriting objects:  89% (335/374), 414.05 MiB | 7.21 MiB/s[KWriting objects:  90% (337/374), 414.05 MiB | 7.21 MiB/s[KWriting objects:  91% (341/374), 414.05 MiB | 7.21 MiB/s[KWriting objects:  92% (345/374), 414.05 MiB | 7.21 MiB/s[KWriting objects:  93% (348/374), 414.05 MiB | 7.21 MiB/s[KWriting objects:  94% (352/374), 414.05 MiB | 7.21 MiB/s[KWriting objects:  95% (356/374), 414.05 MiB | 7.21 MiB/s[KWriting objects:  96% (360/374), 414.05 MiB | 7.21 MiB/s[KWriting objects:  97% (363/374), 414.05 MiB | 7.21 MiB/s[KWriting objects:  98% (367/374), 414.05 MiB | 7.21 MiB/s[KWriting objects:  98% (370/374), 417.45 MiB | 5.89 MiB/s[KWriting objects:  99% (371/374), 417.45 MiB | 5.89 MiB/s[KWriting objects: 100% (374/374), 417.45 MiB | 5.89 MiB/s[KWriting objects: 100% (374/374), 424.41 MiB | 12.20 MiB/s, done.
+Total 374 (delta 42), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/42)[Kremote: Resolving deltas:   2% (1/42)[Kremote: Resolving deltas:  30% (13/42)[Kremote: Resolving deltas:  33% (14/42)[Kremote: Resolving deltas:  35% (15/42)[Kremote: Resolving deltas:  40% (17/42)[Kremote: Resolving deltas:  42% (18/42)[Kremote: Resolving deltas:  47% (20/42)[Kremote: Resolving deltas:  50% (21/42)[Kremote: Resolving deltas:  52% (22/42)[Kremote: Resolving deltas:  57% (24/42)[Kremote: Resolving deltas:  69% (29/42)[Kremote: Resolving deltas:  71% (30/42)[Kremote: Resolving deltas:  73% (31/42)[Kremote: Resolving deltas:  76% (32/42)[Kremote: Resolving deltas:  88% (37/42)[Kremote: Resolving deltas:  95% (40/42)[Kremote: Resolving deltas:  97% (41/42)[Kremote: Resolving deltas: 100% (42/42)[Kremote: Resolving deltas: 100% (42/42), completed with 2 local objects.[K
+remote: [1;33mwarning[m: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.[K
+remote: [1;33mwarning[m: See http://git.io/iEPt8g for more information.[K
+remote: [1;33mwarning[m: File 05_r-basics/03_tables-of-data-3-ways/ticket_cleint.csv is 83.49 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB[K
+remote: [1;33mwarning[m: File 08_data-ingestion/00_importing-data/data/Census/tiger/tl_2018_19_tabblock10.zip is 86.99 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB[K
+To https://github.com/DSPG-Young-Scholars-Program/Training.git
+   54bf02f..337033a  master -> master
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
