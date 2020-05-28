@@ -1,0 +1,4 @@
+docker run --rm -p 3839:3838 \
+    -v /home/ads7fg/git/infrastructure/app/shiny/mountpoints/apps/stw/:/srv/shiny-server/ \
+    -v /home/ads7fg/git/infrastructure/app/shiny/shinylog/:/var/log/shiny-server/ \
+    rocker/shiny-verse

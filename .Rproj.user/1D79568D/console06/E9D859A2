@@ -1,0 +1,1917 @@
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ cd ../training/
+]0;/sfs/qumulo/qhome/ads7fg/git/training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/training[00m$ ls ol
+ls: cannot access 'ol': No such file or directory
+]0;/sfs/qumulo/qhome/ads7fg/git/training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/training[00m$ l
+total 76K
+drwxr-sr-x 5 ads7fg users 1.5K Apr 29 14:09 [0m[01;34m00_introduction[0m
+drwxr-sr-x 2 ads7fg users 2.0K Sep 13  2019 [01;34m01_getting_ready[0m
+drwxr-sr-x 2 ads7fg users 1.0K Sep 13  2019 [01;34m03_code_management[0m
+drwxr-sr-x 4 ads7fg users 1.5K Sep 13  2019 [01;34m04_coding_standards[0m
+drwxr-sr-x 8 ads7fg users 3.0K Sep 13  2019 [01;34m05_r-basics[0m
+drwxr-sr-x 4 ads7fg users 1.0K Sep 13  2019 [01;34m06_data_discovery[0m
+drwxr-sr-x 4 ads7fg users 1.0K Sep 13  2019 [01;34m07_ethics_and_experiments[0m
+drwxr-sr-x 4 ads7fg users 1.5K Sep 13  2019 [01;34m08_data-ingestion[0m
+drwxr-sr-x 2 ads7fg users 3.0K Sep 13  2019 [01;34m09_profiling[0m
+drwxr-sr-x 4 ads7fg users 1.0K Sep 13  2019 [01;34m10_data_preparation[0m
+drwxr-sr-x 5 ads7fg users 1.5K Sep 13  2019 [01;34m11_data_exploration[0m
+drwxr-sr-x 3 ads7fg users 1.0K Sep 13  2019 [01;34m12_media-communication[0m
+drwxr-sr-x 5 ads7fg users 2.0K Sep 13  2019 [01;34m13_data_modeling[0m
+drwxr-sr-x 6 ads7fg users 2.0K Mar  3 12:42 [01;34m14_data_presentation[0m
+drwxr-sr-x 4 ads7fg users 1.0K Sep 13  2019 [01;34mdata[0m
+-rw-r--r-- 1 ads7fg users 6.4K Apr 29 14:21 README.md
+-rw-r--r-- 1 ads7fg users  205 May 28 16:12 training_dspg2019.Rproj
+]0;/sfs/qumulo/qhome/ads7fg/git/training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/training[00m$ [K]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/training[00m$ [K]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/training[00m$ cp -R * ../Training/
+]0;/sfs/qumulo/qhome/ads7fg/git/training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/training[00m$ [K]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/training[00m$ [K]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/training[00m$ [K]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/training[00m$ [K]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/training[00m$ [K]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/training[00m$ cd ../Training/
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ tree
+[01;34m.[00m
+├── [01;34m00_introduction[00m
+│   ├── [01;34m00_program-introduction[00m
+│   │   └── DSPG\ 2018\ Intro.pdf
+│   ├── [01;34m01_the-public-good-data-science-process[00m
+│   │   └── 2019-06-05_schroeder_data-science-processes-for-evidence-based-policy.pptx
+│   └── [01;34mproject-posters[00m
+│       ├── [01;31m2016-DSPG-Posters.zip[00m
+│       ├── [01;31m2017-DSPG-Posters.zip[00m
+│       ├── [01;31m2018-DSPG-Posters.zip[00m
+│       └── [01;31m2019-DSPG-Posters.zip[00m
+├── [01;34m01_getting_ready[00m
+│   ├── 00_CLD3-Processes-Platforms-Examples.pdf
+│   ├── 01_System-Setup-2018.Rmd
+│   ├── 02_SDAD-Researcher-Data-Use-Agreement.pdf
+│   └── 03_SDAD-Data-Management-Plan-Nov-2018.pdf
+├── [01;34m03_code_management[00m
+│   ├── DataCamp
+│   ├── [01;34mgit_learnr[00m
+│   │   ├── [01;34mimages[00m
+│   │   │   ├── [01;35mbundle\ of\ committedchanges.png[00m
+│   │   │   ├── [01;35mclonelink.png[00m
+│   │   │   ├── [01;35mcommityourcode.png[00m
+│   │   │   ├── [01;35mcreate\ git\ branch.png[00m
+│   │   │   ├── [01;35mgit\ branches.png[00m
+│   │   │   ├── [01;35mgit\ check\ branch.png[00m
+│   │   │   ├── [01;35mgit\ clone\ steps.png[00m
+│   │   │   ├── [01;35mgit_collab_workflow.png[00m
+│   │   │   ├── [01;35mgit_full_steps.png[00m
+│   │   │   ├── [01;35mGitHub\ branch.png[00m
+│   │   │   ├── [01;35mGit_Workflow.png[00m
+│   │   │   ├── [01;35mGutHubSSH.png[00m
+│   │   │   ├── inst_bicomplex_4c_c.eps
+│   │   │   ├── [01;35mIntro\ to\ Git.png[00m
+│   │   │   ├── [01;35mjackie\ chan\ git\ meme.png[00m
+│   │   │   ├── [01;35mmerge\ your\ code.png[00m
+│   │   │   ├── [01;35mNew\ Project\ -\ Git\ -\ URL.png[00m
+│   │   │   ├── [01;35mNew\ Project\ -\ Version\ Control.png[00m
+│   │   │   ├── [01;35mopenApullrequest.png[00m
+│   │   │   ├── [01;35mProjectDirectory1.png[00m
+│   │   │   ├── [01;35mProjectDirectory2\ copy.png[00m
+│   │   │   ├── [01;35mProjectDirectory2.png[00m
+│   │   │   ├── [01;35mProjectDirectory3.png[00m
+│   │   │   ├── [01;35mpushyourcode.png[00m
+│   │   │   ├── [01;35mssh\ link\ on\ github.png[00m
+│   │   │   ├── [01;35mstageyourcode.png[00m
+│   │   │   ├── [01;35mTwas\ the\ Night.png[00m
+│   │   │   ├── [01;35muva_centrd_rgb.png[00m
+│   │   │   ├── [01;35mweasleygit.png[00m
+│   │   │   ├── [01;35mwriteyourcode.png[00m
+│   │   │   └── [01;35myou\ shall\ not\ pass\ go.png[00m
+│   │   ├── Intro-to-Git.html
+│   │   └── Intro\ to\ Git.Rmd
+│   └── Intro\ to\ Git.pptx
+├── [01;34m04_coding_standards[00m
+│   ├── [01;34m01_naming_things[00m
+│   │   └── naming-slides.pdf
+│   ├── [01;34m02_code-and-data-documentation[00m
+│   │   ├── 003-documentation_metadata.html
+│   │   └── 003-documentation_metadata.Rmd
+│   └── 03_style-guides
+├── [01;34m05_r-basics[00m
+│   ├── [01;34m00_intro_to_r[00m
+│   │   ├── DataCamp
+│   │   ├── [01;34mintroduction_to_R_files[00m
+│   │   │   └── [01;34mfigure-html[00m
+│   │   │       └── [01;35munnamed-chunk-14-1.png[00m
+│   │   ├── introduction_to_R.html
+│   │   ├── introduction_to_R.md
+│   │   ├── introduction_to_R.Rmd
+│   │   └── README.md
+│   ├── [01;34m01_datetimes[00m
+│   │   ├── 080-datetimes.html
+│   │   ├── 080-datetimes.md
+│   │   └── 080-datetimes.Rmd
+│   ├── [01;34m02_functions-and-control-flow[00m
+│   │   ├── 120-iteration.Rmd
+│   │   ├── DataCamp
+│   │   ├── functions-and-control-flow.html
+│   │   ├── functions-and-control-flow.md
+│   │   ├── functions-and-control-flow.Rmd
+│   │   └── README.md
+│   ├── [01;34m03_tables-of-data-3-ways[00m
+│   │   ├── 00_3-ways-to-read-csv.html
+│   │   ├── 00_3-ways-to-read-csv.md
+│   │   ├── 00_3-ways-to-read-csv.Rmd
+│   │   ├── 01_3-ways-to-subset.html
+│   │   ├── 01_3-ways-to-subset.md
+│   │   ├── 01_3-ways-to-subset.Rmd
+│   │   ├── 02_3-ways-to-rename-columns.html
+│   │   ├── 02_3-ways-to-rename-columns.md
+│   │   ├── 02_3-ways-to-rename-columns.Rmd
+│   │   ├── 03_3-ways-to-group.html
+│   │   ├── 03_3-ways-to-group.md
+│   │   ├── 03_3-ways-to-group.Rmd
+│   │   ├── 04_2-ways-to-pipe.html
+│   │   ├── 04_2-ways-to-pipe.md
+│   │   ├── 04_2-ways-to-pipe.Rmd
+│   │   ├── 05_3-ways-to-bind-rows.html
+│   │   ├── 05_3-ways-to-bind-rows.md
+│   │   ├── 05_3-ways-to-bind-rows.Rmd
+│   │   ├── 06_3-ways-to-profile-consistency.Rmd
+│   │   ├── 07_whypipes.html
+│   │   ├── 07_whypipes.md
+│   │   ├── 07_whypipes.Rmd
+│   │   ├── datacamp\ free\ tutorials
+│   │   ├── pigeon-racing.csv
+│   │   ├── ticket_cleint.csv
+│   │   └── [01;31mticket_client.zip[00m
+│   ├── [01;34m04_regex[00m
+│   │   ├── [01;34mregex_in_r_Teja_Pristavec[00m
+│   │   │   ├── [01;34mimages[00m
+│   │   │   │   ├── [01;35m1example.png[00m
+│   │   │   │   ├── [01;35m2dash.jpg[00m
+│   │   │   │   ├── [01;35m3cry.jpeg[00m
+│   │   │   │   ├── [01;35m4why1.png[00m
+│   │   │   │   ├── [01;35m4why2.png[00m
+│   │   │   │   └── [01;35m4why3.jpg[00m
+│   │   │   ├── README.md
+│   │   │   ├── [01;34mRegex\ in\ R_files[00m
+│   │   │   │   ├── [01;35m1example.png[00m
+│   │   │   │   ├── [01;35m2dash.jpg[00m
+│   │   │   │   ├── countdown.css
+│   │   │   │   ├── countdown.js
+│   │   │   │   ├── default.css
+│   │   │   │   ├── MathJax.js
+│   │   │   │   ├── metropolis.css
+│   │   │   │   ├── metropolis-fonts.css
+│   │   │   │   └── remark-latest.min.js
+│   │   │   ├── Regex\ in\ R.htm
+│   │   │   └── regex.Rmd
+│   │   └── RVerbalExpressions.R
+│   └── [01;34m05_relational_data_and_sql[00m
+│       ├── 050-relational_data_w_dplyr_r.Rmd
+│       ├── [01;34m08_sql[00m
+│       │   ├── 01_adminer.html
+│       │   ├── 01_adminer.Rmd
+│       │   ├── 02_rstudio_db_queries.nb.html
+│       │   ├── 02_rstudio_db_queries.Rmd
+│       │   ├── 03_rap_charts.html
+│       │   ├── 03_rap_charts.nb.html
+│       │   ├── 03_rap_charts.Rmd
+│       │   ├── 03_rstudio_notebook.nb.html
+│       │   ├── 090-sql_rap_charts.html
+│       │   ├── 090-sql_rap_charts.Rmd
+│       │   ├── [01;34mdata[00m
+│       │   │   └── Rap_Charts.xlsx
+│       │   └── [01;34mimages[00m
+│       │       ├── adminer_dashboard_db.PNG
+│       │       ├── adminer_food_atlas_data.PNG
+│       │       ├── adminer_food_atlas_data_query_1.PNG
+│       │       ├── adminer_food_atlas_data_query_1_result.PNG
+│       │       ├── adminer_food_atlas_table.PNG
+│       │       ├── adminer_health_rankings_table.PNG
+│       │       ├── adminer_login.PNG
+│       │       ├── adminer_personal_db_artists_table.PNG
+│       │       ├── adminer_personal_db_Customer_table_Case.PNG
+│       │       ├── adminer_personal_db_customer_table.PNG
+│       │       ├── adminer_personal_db.PNG
+│       │       └── adminer_select_db.PNG
+│       ├── DataCamp
+│       ├── PostgreSQL\ Basics.docx
+│       └── PostgreSQL\ Basics.pdf
+├── [01;34m06_data_discovery[00m
+│   ├── [01;34m00_discovery_workshop[00m
+│   │   └── DN-Data\ Discovery\ Workshop\ &\ Handouts\ DSPG\ [Autosaved].pptx
+│   └── [01;34m01_literature-reviews[00m
+│       └── DSPG\ 2019\ Literature\ Review.pdf
+├── [01;34m07_ethics_and_experiments[00m
+│   ├── [01;34m00_ethics[00m
+│   │   ├── [01;34mChecklist[00m
+│   │   │   └── SDAD\ Generic\ Ethics\ Checklist\ 12June19).docx
+│   │   ├── [01;34mDeck\ 2019[00m
+│   │   │   ├── [01;35mcomparison_codes_articles.png[00m
+│   │   │   ├── [01;35mfrequency_codes.png[00m
+│   │   │   ├── [01;35mfrequency.png[00m
+│   │   │   ├── SDAD\ ETHICS\ 2019-MacBook\ Pro\ (2).pptx
+│   │   │   ├── SDAD\ ETHICS\ 2019.pptx
+│   │   │   ├── [01;35mwordcloud_articles.png[00m
+│   │   │   ├── [01;35mwordcloud_codes.png[00m
+│   │   │   └── [01;35mwordcloud.png[00m
+│   │   ├── [01;34mHealth\ Ethics\ (Joy\ Tobin)[00m
+│   │   │   ├── NIH_BioethicsBrochure_WEB.PDF
+│   │   │   ├── Proprietary\ Data\ Handling\ 2019.docx
+│   │   │   └── social_research_ethics_protocol.doc
+│   │   └── [01;34mReadings[00m
+│   │       ├── Ethics\ and\ data\ governance-excerpts\ from\ lit\ review\ (Jan2019).docx
+│   │       ├── Nature\ (10April19)Train\ students\ to\ navigate\ ethical\ swamps.pdf
+│   │       ├── Nature\ (14Feb19)\ US\ advisory\ board\ for\ research\ integrity.pdf
+│   │       ├── Nature\ (24Apr19)\ Rein\ 4\ horsemen\ of\ irreproducibility.pdf
+│   │       ├── On\ Being\ a\ Scientist_\ A\ guide\ to\ Responsible\ Conduct\ in\ Reserach.pdf
+│   │       ├── Promoting\ an\ Open\ Research\ Culture.pdf
+│   │       ├── Self\ Correction\ of\ Science\ at\ Work.pdf
+│   │       ├── Suggested\ Readings\ for\ SDAD\ Ethics\ Session\ (May2019).docx
+│   │       └── The\ Mistrust\ of\ Science\ -\ The\ New\ Yorker.pdf
+│   └── [01;34m01_behavioral_experiments[00m
+│       └── Instructions-bilateral-global.pptx
+├── [01;34m08_data-ingestion[00m
+│   ├── [01;34m00_importing-data[00m
+│   │   ├── [01;34m01_ingest[00m
+│   │   │   ├── [01;34m01_geo_data_CENSUS[00m
+│   │   │   │   ├── [01;32m01_create_geo_db_tables.R[00m
+│   │   │   │   ├── [01;32m02_read_plot_geo_db_state.R[00m
+│   │   │   │   ├── [01;32m03_build_query_plot_marshall.R[00m
+│   │   │   │   └── 04_complete_ingest_store_view.R
+│   │   │   ├── [01;34m02_job_data_LODES[00m
+│   │   │   │   ├── [01;32m01_LODESTechDoc7.3.pdf[00m
+│   │   │   │   ├── [01;32mcreate_centerpoints.R[00m
+│   │   │   │   ├── [01;32mget_census_blk_geo.R[00m
+│   │   │   │   └── [01;32mget_lodes.R[00m
+│   │   │   └── [01;34m05_crime_data_SPOTCRIME[00m
+│   │   │       └── spotcrime.R
+│   │   ├── 01_read_combine_MOST_USEFUL.R
+│   │   ├── 02_shapefiles.R
+│   │   ├── 03_shapefiles-from-gis-database.R
+│   │   ├── [01;34mdata[00m
+│   │   │   ├── [01;34mCensus[00m
+│   │   │   │   ├── [01;34mLODES[00m
+│   │   │   │   │   ├── [01;31mia_od_main_JT00_2015.csv.gz[00m
+│   │   │   │   │   └── lodes_ia_2015.RDS
+│   │   │   │   └── [01;34mtiger[00m
+│   │   │   │       ├── [01;31mtl_2018_19_bg.zip[00m
+│   │   │   │       └── [01;32mtl_2018_19_tabblock10.zip[00m
+│   │   │   ├── [01;34mMLS[00m
+│   │   │   │   ├── 2009.csv
+│   │   │   │   ├── 2010.csv
+│   │   │   │   ├── 2011.csv
+│   │   │   │   ├── 2012.csv
+│   │   │   │   ├── 2013.csv
+│   │   │   │   └── 2014.csv
+│   │   │   └── [01;34mspotcrime[00m
+│   │   │       ├── daily_crime_report_iowa_urls_arl.RDS
+│   │   │       ├── daily_crime_report_locality_urls_arl.RDS
+│   │   │       └── daily_crime_report_virginia_urls_arl.RDS
+│   │   └── quick_character_dates_to_dates.R
+│   ├── [01;34m01_web-scraping[00m
+│   │   ├── github-api4-graphql.R
+│   │   ├── old-150-api_web_scape.Rmd
+│   │   ├── README.md
+│   │   ├── va_abc-licensees.xlsx
+│   │   ├── webscraping.html
+│   │   └── webscraping.Rmd
+│   └── DataCamp
+├── [01;34m09_profiling[00m
+│   ├── [01;32m00_read_combine_MOST_USEFUL.R[00m
+│   ├── [01;32m01_some_profile_basics.R[00m
+│   ├── [01;32m02_completeness.R[00m
+│   ├── [01;32m03_valid_values.R[00m
+│   ├── [01;32m04_record_consistency.R[00m
+│   └── [01;32m05_longitudinal_consistency.R[00m
+├── [01;34m10_data_preparation[00m
+│   ├── [01;34m00_data_cleaning_and_transformation[00m
+│   │   ├── de\ Jonge\ &\ van\ der\ Loo\ (2013)\ -\ An\ Introduction\ to\ Data\ Cleaning\ with\ R.pdf
+│   │   ├── DSPG\ --\ Data\ Cleaning\ Lesson.pptx
+│   │   ├── DSPG\ --\ Data\ Transformation\ Lesson.pptx
+│   │   ├── Franchise2.csv
+│   │   ├── franchise.csv
+│   │   ├── job_availability_gravity_index.R
+│   │   └── pig-pen1.csv
+│   └── [01;34m01_tidy-data[00m
+│       └── 040-tidy_data.Rmd
+├── [01;34m11_data_exploration[00m
+│   ├── [01;34m00_summarization[00m
+│   │   └── summarization
+│   ├── [01;34m01_text-mining[00m
+│   │   ├── 180-text_mining.Rmd
+│   │   └── [01;34mtext_mining_in_r_Teja_Pristavec[00m
+│   │       ├── [01;34mText\ Mining\ in\ R_files[00m
+│   │       │   ├── countdown.css
+│   │       │   ├── countdown.js
+│   │       │   ├── default.css
+│   │       │   ├── MathJax.js
+│   │       │   ├── metropolis.css
+│   │       │   ├── metropolis-fonts.css
+│   │       │   ├── [01;35mplot1-out-1.png[00m
+│   │       │   ├── [01;35mplot2-out-1.png[00m
+│   │       │   ├── [01;35mplot3-out-1.png[00m
+│   │       │   ├── [01;35mplot4-out-1.png[00m
+│   │       │   ├── [01;35mplot5-out-1.png[00m
+│   │       │   ├── [01;35mplot6-out-1.png[00m
+│   │       │   ├── [01;35mplot7-out-1.png[00m
+│   │       │   ├── remark-latest.min.js
+│   │       │   ├── [01;35munnamed-chunk-11-1.png[00m
+│   │       │   └── [01;35munnamed-chunk-12-1.png[00m
+│   │       └── Text\ Mining\ in\ R.htm
+│   └── [01;34m02_geospatial[00m
+│       ├── [01;34mspatial_sf_intro[00m
+│       │   ├── [01;34mdata[00m
+│       │   │   ├── [01;31mcongressional_trump_scores.csv.gz[00m
+│       │   │   ├── cu12.RDS
+│       │   │   ├── [01;34mshapefiles[00m
+│       │   │   │   ├── congressional_districts.dbf
+│       │   │   │   ├── congressional_districts.prj
+│       │   │   │   ├── congressional_districts.shp
+│       │   │   │   └── congressional_districts.shx
+│       │   │   └── va_blockgroups_simplified_spdf.RDS
+│       │   ├── [01;31mdb_user_query.csv.gz[00m
+│       │   ├── db_user_query.txt
+│       │   ├── OverviewCoordinateReferenceSystems.pdf
+│       │   ├── set_dbuser_permissions.R
+│       │   ├── [01;34mspatial_r_with_sf_intro_files[00m
+│       │   │   └── [01;34mfigure-html[00m
+│       │   │       ├── [01;35munnamed-chunk-4-1.png[00m
+│       │   │       ├── [01;35munnamed-chunk-5-1.png[00m
+│       │   │       └── [01;35munnamed-chunk-8-1.png[00m
+│       │   └── spatial_r_with_sf_intro.Rmd
+│       └── [01;34mtrump_scores[00m
+│           ├── congressional_districts.dbf
+│           ├── congressional_districts.prj
+│           ├── congressional_districts.shp
+│           ├── congressional_districts.shx
+│           ├── [01;31mcongressional_trump_scores.csv.gz[00m
+│           ├── congressional-trump-scores.Rproj
+│           └── cong_trump.R
+├── [01;34m12_media-communication[00m
+│   ├── [01;34m00_SAGE-Writing\ Skills-Michael\ Todd[00m
+│   │   ├── example-OSS-Sage\ Brief.docx
+│   │   ├── Writing\ an\ op-ed2.docx
+│   │   └── Writing\ for\ MethodSpace.docx
+│   └── 01_media-speaking
+├── [01;34m13_data_modeling[00m
+│   ├── 330-CART.Rmd
+│   ├── [01;34mAI_and_ML_Intro_MITRE_with_python[00m
+│   │   ├── [01;34mdata[00m
+│   │   │   └── [01;34mmnist[00m
+│   │   │       ├── mnist_data.pkl
+│   │   │       └── mnist_target.pkl
+│   │   ├── Demo-Clustering-FakeData.ipynb
+│   │   ├── Demo-DataAnalysis-Iris.ipynb
+│   │   ├── Demo-DecisionTree-Iris.ipynb
+│   │   ├── Demo-GradientDescent-Basic.ipynb
+│   │   ├── Demo-MultilayerPerceptron-MNIST.ipynb
+│   │   ├── Demo-PCA-MNIST.ipynb
+│   │   ├── IntroductionToAIML-4x3.pdf
+│   │   ├── README.md
+│   │   └── requirements.txt
+│   ├── [01;34mPredictive\ Modeling[00m
+│   │   ├── Decision_Tree_Training.R
+│   │   ├── KNN_Training1.R
+│   │   ├── Predictive\ Modeling\ Presentation.pptx
+│   │   └── Prostate_Cancer.csv
+│   └── [01;34munsupervised_learning[00m
+│       ├── UnsupervisedLearning7-17-19.pdf
+│       └── unsupervised_learning.R
+├── [01;34m14_data_presentation[00m
+│   ├── [01;34m00_visualization_standards[00m
+│   │   ├── 01-Visualize-Slides.pdf
+│   │   ├── Colorblind_Palette.R
+│   │   ├── DSPG\ 2019\ Visualization.pdf
+│   │   ├── Few_2007.pdf
+│   │   ├── R_Color_Cheatsheet.pdf
+│   │   ├── R_Colorspace.pdf
+│   │   ├── R_Colors.pdf
+│   │   ├── theme_SDAD.R
+│   │   └── Zeileis_2009.pdf
+│   ├── [01;34m01_graphics_with_ggplot[00m
+│   │   └── 010-data_vis.Rmd
+│   ├── [01;34m02_r-shiny-dashboards[00m
+│   │   ├── app1.R
+│   │   ├── app2.R
+│   │   ├── app3.R
+│   │   ├── app4.R
+│   │   ├── app5.R
+│   │   ├── app6.R
+│   │   ├── app7.R
+│   │   ├── app8.R
+│   │   ├── [01;31mcrime\ data.csv.gz[00m
+│   │   ├── dashboard_tutorial.Rproj
+│   │   ├── dynamic.R
+│   │   ├── README.md
+│   │   └── scratch_app.R
+│   └── [01;34m03_dashboard-examples[00m
+│       ├── [01;34macpd[00m
+│       │   ├── acpd.Rproj
+│       │   ├── [01;34mdata[00m
+│       │   │   ├── [40;31;01macpd[00m -> [00m/mnt/volume_nyc1_01/acpd/acpd[00m
+│       │   │   └── README.md
+│       │   ├── [01;34mdocs[00m
+│       │   │   ├── _config.yml
+│       │   │   └── index.html
+│       │   ├── README.md
+│       │   └── [01;34msrc[00m
+│       │       ├── [01;34m01_raw-data[00m
+│       │       │   └── raw-data.Rmd
+│       │       ├── [01;34m02_pre-processing[00m
+│       │       │   └── preprocessing.Rmd
+│       │       ├── [01;34m03_dashboard[00m
+│       │       │   ├── app.R
+│       │       │   ├── census_blocks.RDS
+│       │       │   ├── crime_hours.RDS
+│       │       │   ├── crimes.RDS
+│       │       │   ├── datatable.R
+│       │       │   ├── db_connection.R
+│       │       │   ├── heatmap.R
+│       │       │   ├── leaflet.R
+│       │       │   ├── map_pnts_sf.RDS
+│       │       │   ├── Untitled1.ipynb
+│       │       │   ├── Untitled.ipynb
+│       │       │   └── [01;34mwww[00m
+│       │       │       ├── [01;35mARI_circle.png[00m
+│       │       │       └── [01;34mm_files[00m
+│       │       │           ├── [01;34mfontawesome-4.7.0[00m
+│       │       │           │   ├── bootstrap.min.css
+│       │       │           │   ├── bootstrap.min.js
+│       │       │           │   ├── bootstrap-theme.min.css
+│       │       │           │   ├── font-awesome.min.css
+│       │       │           │   ├── [01;34mfonts[00m
+│       │       │           │   │   ├── FontAwesome.otf
+│       │       │           │   │   ├── fontawesome-webfont.eot
+│       │       │           │   │   ├── [01;35mfontawesome-webfont.svg[00m
+│       │       │           │   │   ├── fontawesome-webfont.ttf
+│       │       │           │   │   ├── fontawesome-webfont.woff
+│       │       │           │   │   ├── glyphicons-halflings-regular.eot
+│       │       │           │   │   ├── [01;35mglyphicons-halflings-regular.svg[00m
+│       │       │           │   │   ├── glyphicons-halflings-regular.ttf
+│       │       │           │   │   ├── glyphicons-halflings-regular.woff
+│       │       │           │   │   ├── ionicons.eot
+│       │       │           │   │   ├── [01;35mionicons.svg[00m
+│       │       │           │   │   ├── ionicons.ttf
+│       │       │           │   │   └── ionicons.woff
+│       │       │           │   ├── [01;34mimages[00m
+│       │       │           │   │   ├── [01;35mmarkers-matte@2x.png[00m
+│       │       │           │   │   ├── [01;35mmarkers-matte.png[00m
+│       │       │           │   │   ├── [01;35mmarkers-plain.png[00m
+│       │       │           │   │   ├── [01;35mmarkers-shadow@2x.png[00m
+│       │       │           │   │   ├── [01;35mmarkers-shadow.png[00m
+│       │       │           │   │   ├── [01;35mmarkers-soft@2x.png[00m
+│       │       │           │   │   └── [01;35mmarkers-soft.png[00m
+│       │       │           │   ├── ionicons.min.css
+│       │       │           │   ├── leaflet.awesome-markers.css
+│       │       │           │   ├── leaflet.awesome-markers.js
+│       │       │           │   └── leaflet.awesome-markers.min.js
+│       │       │           ├── [01;34mhtmlwidgets-1.2.1[00m
+│       │       │           │   └── htmlwidgets.js
+│       │       │           ├── [01;34mjquery-1.12.4[00m
+│       │       │           │   ├── jquery.js
+│       │       │           │   └── jquery.min.js
+│       │       │           ├── [01;34mleaflet-1.3.1[00m
+│       │       │           │   ├── [01;34mimages[00m
+│       │       │           │   │   ├── [01;35mlayers-2x.png[00m
+│       │       │           │   │   ├── [01;35mlayers.png[00m
+│       │       │           │   │   ├── [01;35mmarker-icon-2x.png[00m
+│       │       │           │   │   ├── [01;35mmarker-icon.png[00m
+│       │       │           │   │   └── [01;35mmarker-shadow.png[00m
+│       │       │           │   ├── leaflet.css
+│       │       │           │   ├── leaflet.js
+│       │       │           │   ├── leaflet.js.map
+│       │       │           │   ├── leaflet-src.js
+│       │       │           │   └── leaflet-src.js.map
+│       │       │           ├── [01;34mleaflet-awesomemarkers-2.0.3[00m
+│       │       │           │   ├── bootstrap.min.css
+│       │       │           │   ├── bootstrap.min.js
+│       │       │           │   ├── bootstrap-theme.min.css
+│       │       │           │   ├── font-awesome.min.css
+│       │       │           │   ├── [01;34mfonts[00m
+│       │       │           │   │   ├── FontAwesome.otf
+│       │       │           │   │   ├── fontawesome-webfont.eot
+│       │       │           │   │   ├── [01;35mfontawesome-webfont.svg[00m
+│       │       │           │   │   ├── fontawesome-webfont.ttf
+│       │       │           │   │   ├── fontawesome-webfont.woff
+│       │       │           │   │   ├── glyphicons-halflings-regular.eot
+│       │       │           │   │   ├── [01;35mglyphicons-halflings-regular.svg[00m
+│       │       │           │   │   ├── glyphicons-halflings-regular.ttf
+│       │       │           │   │   ├── glyphicons-halflings-regular.woff
+│       │       │           │   │   ├── ionicons.eot
+│       │       │           │   │   ├── [01;35mionicons.svg[00m
+│       │       │           │   │   ├── ionicons.ttf
+│       │       │           │   │   └── ionicons.woff
+│       │       │           │   ├── [01;34mimages[00m
+│       │       │           │   │   ├── [01;35mmarkers-matte@2x.png[00m
+│       │       │           │   │   ├── [01;35mmarkers-matte.png[00m
+│       │       │           │   │   ├── [01;35mmarkers-plain.png[00m
+│       │       │           │   │   ├── [01;35mmarkers-shadow@2x.png[00m
+│       │       │           │   │   ├── [01;35mmarkers-shadow.png[00m
+│       │       │           │   │   ├── [01;35mmarkers-soft@2x.png[00m
+│       │       │           │   │   └── [01;35mmarkers-soft.png[00m
+│       │       │           │   ├── ionicons.min.css
+│       │       │           │   ├── leaflet.awesome-markers.css
+│       │       │           │   ├── leaflet.awesome-markers.js
+│       │       │           │   └── leaflet.awesome-markers.min.js
+│       │       │           ├── [01;34mleaflet-binding-2.0.1.9000[00m
+│       │       │           │   └── leaflet.js
+│       │       │           ├── [01;34mleafletfix-1.0.0[00m
+│       │       │           │   └── leafletfix.css
+│       │       │           ├── [01;34mleaflet-markercluster-1.0.5[00m
+│       │       │           │   ├── leaflet.markercluster.freezable.js
+│       │       │           │   ├── leaflet.markercluster.freezable-src.js
+│       │       │           │   ├── leaflet.markercluster.js
+│       │       │           │   ├── leaflet.markercluster.layersupport.js
+│       │       │           │   ├── leaflet.markercluster.layersupport-src.js
+│       │       │           │   ├── leaflet.markercluster.layersupport-src.js.map
+│       │       │           │   ├── leaflet.markercluster-src.js
+│       │       │           │   ├── MarkerCluster.css
+│       │       │           │   ├── MarkerCluster.Default.css
+│       │       │           │   ├── MIT-LICENCE.txt
+│       │       │           │   └── package.json
+│       │       │           ├── [01;34mProj4Leaflet-1.0.1[00m
+│       │       │           │   ├── proj4-compressed.js
+│       │       │           │   ├── proj4.js
+│       │       │           │   └── proj4leaflet.js
+│       │       │           └── [01;34mrstudio_leaflet-1.3.1[00m
+│       │       │               ├── [01;34mimages[00m
+│       │       │               │   └── [01;35m1px.png[00m
+│       │       │               └── rstudio_leaflet.css
+│       │       └── README.md
+│       ├── [01;34mdspg19broadband[00m
+│       │   ├── BroadbandPoster.pdf
+│       │   ├── [01;34mdashboard[00m
+│       │   │   ├── app.R
+│       │   │   └── [01;34mwww[00m
+│       │   │       ├── bootstrap.css
+│       │   │       ├── logo.eps
+│       │   │       └── [01;35mlogo.png[00m
+│       │   ├── [40;31;01mdata[00m -> [00m/home/sdad/project_data/usda/dspg2019broadband[00m
+│       │   ├── [01;34mdoc[00m
+│       │   │   ├── 1-report.Rmd
+│       │   │   └── [01;34mdiscrepancies[00m
+│       │   │       ├── [01;35mcounties_all_discr_imp_compare_lol.png[00m
+│       │   │       ├── [01;35mcounties_all_discr_imp_impur.png[00m
+│       │   │       ├── [01;35mcounties_all_discr_imp_perm.png[00m
+│       │   │       ├── [01;35mcounties_all_discr_imp.png[00m
+│       │   │       ├── [01;35mcounties_all_discr_preds.png[00m
+│       │   │       ├── [01;35mcounties_rural_discr_imp_impur.png[00m
+│       │   │       ├── [01;35mcounties_rural_discr_imp_perm.png[00m
+│       │   │       ├── [01;35mcounties_rural_discr_imp.png[00m
+│       │   │       ├── [01;35mcounties_rural_discr_preds.png[00m
+│       │   │       ├── [01;35mcounties_urban_discr_imp_impur.png[00m
+│       │   │       ├── [01;35mcounties_urban_discr_imp_perm.png[00m
+│       │   │       ├── [01;35mcounties_urban_discr_imp.png[00m
+│       │   │       └── [01;35mcounties_urban_discr_preds.png[00m
+│       │   ├── dspg19broadband.Rproj
+│       │   ├── FCC_Manipulation.Rmd
+│       │   ├── README.md
+│       │   └── [01;34msrc[00m
+│       │       ├── 01_bbnow_cities.R
+│       │       ├── 02_bbnow_scrape_code.R
+│       │       ├── 03_exploring_bbnow.R
+│       │       ├── 04_exploring_bbnow_midterm.Rmd
+│       │       ├── acs_transform.R
+│       │       ├── app_trial.R
+│       │       ├── bband_test_viz.Rmd
+│       │       ├── [01;34mcorelogic[00m
+│       │       │   ├── 01_getacs.R
+│       │       │   ├── 02_explore.R
+│       │       │   └── 03_regress.R
+│       │       ├── county_discrepancy_aland.R
+│       │       ├── [01;34mdiscrepancies[00m
+│       │       │   ├── acs_models.R
+│       │       │   ├── [01;34magreementapp[00m
+│       │       │   │   └── app.R
+│       │       │   ├── agreement_fcc_acs_intervals.R
+│       │       │   ├── agreement_fcc_acs_model.R
+│       │       │   ├── agreement_fcc_acs.R
+│       │       │   ├── discr_getacs_county.R
+│       │       │   ├── discr_getacs_tract.R
+│       │       │   ├── discr_regress_blockgrp.R
+│       │       │   ├── discr_regress_county_all.R
+│       │       │   ├── ms_descriptives.R
+│       │       │   ├── ms_importance.R
+│       │       │   ├── ms_models_discr.R
+│       │       │   ├── ms_models.R
+│       │       │   └── predictFCC_ACS.R
+│       │       ├── [01;34meligibility[00m
+│       │       │   └── eligibleCommunityConnect.R
+│       │       ├── FCC_25mbps_bg.Rmd
+│       │       ├── fcc_25mbps_block.Rmd
+│       │       ├── FCC_25mbps_county_2017.R
+│       │       ├── FCC_25mbps_county.Rmd
+│       │       ├── FCC_25mbps.Rmd
+│       │       ├── FCC_25mbps_tract.Rmd
+│       │       ├── fcc_acs_merge_plot_bl.Rmd
+│       │       ├── FCC_county.R
+│       │       ├── FCC_county_take2.R
+│       │       ├── FCC_data_import.Rmd
+│       │       ├── FCC_Manipulation.Rmd
+│       │       ├── FCC_Tract.Rmd
+│       │       ├── get_broadband_com.R
+│       │       ├── merge_all.R
+│       │       ├── merge_rural_urban.R
+│       │       ├── [01;34mplot_acs[00m
+│       │       │   ├── plot_acs.R
+│       │       │   └── sp2.csv
+│       │       ├── Plot_FCC.Rmd
+│       │       ├── [01;34mposter_visuals[00m
+│       │       │   ├── all.pdf
+│       │       │   ├── [01;35mall.png[00m
+│       │       │   ├── [01;35mall_update.png[00m
+│       │       │   ├── correlations.pdf
+│       │       │   ├── [01;35mcorrelations.png[00m
+│       │       │   ├── [01;35mcorrelation_update.png[00m
+│       │       │   ├── discrepancy.pdf
+│       │       │   ├── [01;35mdiscrepancy.png[00m
+│       │       │   ├── [01;35mdiscrepancy_update.png[00m
+│       │       │   ├── metro.pdf
+│       │       │   ├── [01;35mmetro.png[00m
+│       │       │   ├── [01;35mmetro_update.png[00m
+│       │       │   ├── rucc.pdf
+│       │       │   ├── [01;35mrucc.png[00m
+│       │       │   └── [01;35mrucc_update.png[00m
+│       │       ├── rucc_explore.R
+│       │       ├── sample_VA_data.rds
+│       │       ├── [01;34mscrape_acs[00m
+│       │       │   ├── scrape_acs_B02001.R
+│       │       │   ├── scrape_acs_B03003.R
+│       │       │   ├── scrape_acs_B15003.R
+│       │       │   ├── scrape_acs_B17026.R
+│       │       │   ├── scrape_acs_B23025.R
+│       │       │   ├── scrape_acs_B28002.R
+│       │       │   └── scrape_acs_B28003.R
+│       │       ├── scrape_cities.R
+│       │       ├── [01;34msummary_acs[00m
+│       │       │   ├── ruralurbancodes2013\ (2).xls
+│       │       │   ├── summary_acs_census_tract.R
+│       │       │   ├── summary_acs_county.R
+│       │       │   └── summary_acs.R
+│       │       ├── va_zips.csv
+│       │       └── [01;34mwww[00m
+│       │           ├── bootstrap.css
+│       │           └── [01;35mers_logo.png[00m
+│       └── [01;34mMeasuring-STW-App[00m
+│           ├── copy-app_2.R
+│           ├── data-dictionary.html
+│           ├── data-dictionary.Rmd
+│           ├── data-discovery-feb-3.csv
+│           ├── [01;34mdata-discovery-versions[00m
+│           │   ├── data-discovery-jan-20.csv
+│           │   ├── Data\ Discovery\ NOV17.csv
+│           │   └── Data\ Discovery\ NOV8.csv
+│           ├── [01;34mdrafts[00m
+│           │   ├── app.R
+│           │   ├── discrete-variables.R
+│           │   ├── fixed-storage-form.R
+│           │   ├── hover-fix.R
+│           │   ├── make_css_file.R
+│           │   ├── select-graph.R
+│           │   ├── shiny-storage.R
+│           │   ├── three-cat-var.R
+│           │   └── visualize-list-columns.R
+│           ├── [01;34mfeedback[00m
+│           │   ├── 1579723647_1bb01f44817cf4667021e0ba9ce64244.csv
+│           │   ├── 1579724018_77efc04b5b65dc5aaf413d62cd96b174.csv
+│           │   ├── 1579724088_d6fc8a3948424c4bb94fa104dbbc2d8d.csv
+│           │   └── 1579724178_7dc4325d75fcbb669971c2e6174da6ec.csv
+│           ├── LICENSE
+│           ├── logos.R
+│           ├── Measuring-STW-App.Rproj
+│           ├── README.md
+│           ├── R-Shiny-Datatable.Rproj
+│           ├── welcome-page.html
+│           ├── welcome-page.Rmd
+│           └── [01;34mwww[00m
+│               ├── [01;35mBII.jpg[00m
+│               ├── NCSES.ai
+│               ├── NCSES-full-color.pdf
+│               ├── [01;35mNSF_4-Color_bitmap_Logo.png[00m
+│               ├── [01;35mnsf-ncses.png[00m
+│               ├── [01;35mNSF.png[00m
+│               └── theme.css
+├── [01;34mdata[00m
+│   ├── [01;34mCensus[00m
+│   │   └── [01;34mtiger[00m
+│   │       ├── hi.txt
+│   │       ├── [01;34mtl_2018_19_bg[00m
+│   │       │   ├── tl_2018_19_bg.cpg
+│   │       │   ├── tl_2018_19_bg.dbf
+│   │       │   ├── tl_2018_19_bg.prj
+│   │       │   ├── tl_2018_19_bg.shp
+│   │       │   ├── tl_2018_19_bg.shp.ea.iso.xml
+│   │       │   ├── tl_2018_19_bg.shp.iso.xml
+│   │       │   └── tl_2018_19_bg.shx
+│   │       └── [01;31mtl_2018_19_bg.zip[00m
+│   └── [01;34mMLS[00m
+│       ├── 2009.csv
+│       ├── 2010.csv
+│       ├── 2011.csv
+│       ├── 2012.csv
+│       ├── 2013.csv
+│       └── 2014.csv
+├── README.md
+├── training_dspg2019.Rproj
+└── Training.Rproj
+
+128 directories, 552 files
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ tree --help
+usage: tree [-acdfghilnpqrstuvxACDFJQNSUX] [-H baseHREF] [-T title ]
+	[-L level [-R]] [-P pattern] [-I pattern] [-o filename] [--version]
+	[--help] [--inodes] [--device] [--noreport] [--nolinks] [--dirsfirst]
+	[--charset charset] [--filelimit[=]#] [--si] [--timefmt[=]<f>]
+	[--sort[=]<name>] [--matchdirs] [--ignore-case] [--fromfile] [--]
+	[<directory list>]
+  ------- Listing options -------
+  -a            All files are listed.
+  -d            List directories only.
+  -l            Follow symbolic links like directories.
+  -f            Print the full path prefix for each file.
+  -x            Stay on current filesystem only.
+  -L level      Descend only level directories deep.
+  -R            Rerun tree when max dir level reached.
+  -P pattern    List only those files that match the pattern given.
+  -I pattern    Do not list files that match the given pattern.
+  --ignore-case Ignore case when pattern matching.
+  --matchdirs   Include directory names in -P pattern matching.
+  --noreport    Turn off file/directory count at end of tree listing.
+  --charset X   Use charset X for terminal/HTML and indentation line output.
+  --filelimit # Do not descend dirs with more than # files in them.
+  --timefmt <f> Print and format time according to the format <f>.
+  -o filename   Output to file instead of stdout.
+  ------- File options -------
+  -q            Print non-printable characters as '?'.
+  -N            Print non-printable characters as is.
+  -Q            Quote filenames with double quotes.
+  -p            Print the protections for each file.
+  -u            Displays file owner or UID number.
+  -g            Displays file group owner or GID number.
+  -s            Print the size in bytes of each file.
+  -h            Print the size in a more human readable way.
+  --si          Like -h, but use in SI units (powers of 1000).
+  -D            Print the date of last modification or (-c) status change.
+  -F            Appends '/', '=', '*', '@', '|' or '>' as per ls -F.
+  --inodes      Print inode number of each file.
+  --device      Print device ID number to which each file belongs.
+  ------- Sorting options -------
+  -v            Sort files alphanumerically by version.
+  -t            Sort files by last modification time.
+  -c            Sort files by last status change time.
+  -U            Leave files unsorted.
+  -r            Reverse the order of the sort.
+  --dirsfirst   List directories before files (-U disables).
+  --sort X      Select sort: name,version,size,mtime,ctime.
+  ------- Graphics options -------
+  -i            Don't print indentation lines.
+  -A            Print ANSI lines graphic indentation lines.
+  -S            Print with CP437 (console) graphics indentation lines.
+  -n            Turn colorization off always (-C overrides).
+  -C            Turn colorization on always.
+  ------- XML/HTML/JSON options -------
+  -X            Prints out an XML representation of the tree.
+  -J            Prints out an JSON representation of the tree.
+  -H baseHREF   Prints out HTML format with baseHREF as top directory.
+  -T string     Replace the default HTML title and H1 header with string.
+  --nolinks     Turn off hyperlinks in HTML output.
+  ------- Input options -------
+  --fromfile    Reads paths from files (.=stdin)
+  ------- Miscellaneous options -------
+  --version     Print version and exit.
+  --help        Print usage and this help message and exit.
+  --            Options processing terminator.
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ tree --help[K[K[K[K[KL 3
+[01;34m.[00m
+├── [01;34m00_introduction[00m
+│   ├── [01;34m00_program-introduction[00m
+│   │   └── DSPG\ 2018\ Intro.pdf
+│   ├── [01;34m01_the-public-good-data-science-process[00m
+│   │   └── 2019-06-05_schroeder_data-science-processes-for-evidence-based-policy.pptx
+│   └── [01;34mproject-posters[00m
+│       ├── [01;31m2016-DSPG-Posters.zip[00m
+│       ├── [01;31m2017-DSPG-Posters.zip[00m
+│       ├── [01;31m2018-DSPG-Posters.zip[00m
+│       └── [01;31m2019-DSPG-Posters.zip[00m
+├── [01;34m01_getting_ready[00m
+│   ├── 00_CLD3-Processes-Platforms-Examples.pdf
+│   ├── 01_System-Setup-2018.Rmd
+│   ├── 02_SDAD-Researcher-Data-Use-Agreement.pdf
+│   └── 03_SDAD-Data-Management-Plan-Nov-2018.pdf
+├── [01;34m03_code_management[00m
+│   ├── DataCamp
+│   ├── [01;34mgit_learnr[00m
+│   │   ├── [01;34mimages[00m
+│   │   ├── Intro-to-Git.html
+│   │   └── Intro\ to\ Git.Rmd
+│   └── Intro\ to\ Git.pptx
+├── [01;34m04_coding_standards[00m
+│   ├── [01;34m01_naming_things[00m
+│   │   └── naming-slides.pdf
+│   ├── [01;34m02_code-and-data-documentation[00m
+│   │   ├── 003-documentation_metadata.html
+│   │   └── 003-documentation_metadata.Rmd
+│   └── 03_style-guides
+├── [01;34m05_r-basics[00m
+│   ├── [01;34m00_intro_to_r[00m
+│   │   ├── DataCamp
+│   │   ├── [01;34mintroduction_to_R_files[00m
+│   │   ├── introduction_to_R.html
+│   │   ├── introduction_to_R.md
+│   │   ├── introduction_to_R.Rmd
+│   │   └── README.md
+│   ├── [01;34m01_datetimes[00m
+│   │   ├── 080-datetimes.html
+│   │   ├── 080-datetimes.md
+│   │   └── 080-datetimes.Rmd
+│   ├── [01;34m02_functions-and-control-flow[00m
+│   │   ├── 120-iteration.Rmd
+│   │   ├── DataCamp
+│   │   ├── functions-and-control-flow.html
+│   │   ├── functions-and-control-flow.md
+│   │   ├── functions-and-control-flow.Rmd
+│   │   └── README.md
+│   ├── [01;34m03_tables-of-data-3-ways[00m
+│   │   ├── 00_3-ways-to-read-csv.html
+│   │   ├── 00_3-ways-to-read-csv.md
+│   │   ├── 00_3-ways-to-read-csv.Rmd
+│   │   ├── 01_3-ways-to-subset.html
+│   │   ├── 01_3-ways-to-subset.md
+│   │   ├── 01_3-ways-to-subset.Rmd
+│   │   ├── 02_3-ways-to-rename-columns.html
+│   │   ├── 02_3-ways-to-rename-columns.md
+│   │   ├── 02_3-ways-to-rename-columns.Rmd
+│   │   ├── 03_3-ways-to-group.html
+│   │   ├── 03_3-ways-to-group.md
+│   │   ├── 03_3-ways-to-group.Rmd
+│   │   ├── 04_2-ways-to-pipe.html
+│   │   ├── 04_2-ways-to-pipe.md
+│   │   ├── 04_2-ways-to-pipe.Rmd
+│   │   ├── 05_3-ways-to-bind-rows.html
+│   │   ├── 05_3-ways-to-bind-rows.md
+│   │   ├── 05_3-ways-to-bind-rows.Rmd
+│   │   ├── 06_3-ways-to-profile-consistency.Rmd
+│   │   ├── 07_whypipes.html
+│   │   ├── 07_whypipes.md
+│   │   ├── 07_whypipes.Rmd
+│   │   ├── datacamp\ free\ tutorials
+│   │   ├── pigeon-racing.csv
+│   │   ├── ticket_cleint.csv
+│   │   └── [01;31mticket_client.zip[00m
+│   ├── [01;34m04_regex[00m
+│   │   ├── [01;34mregex_in_r_Teja_Pristavec[00m
+│   │   └── RVerbalExpressions.R
+│   └── [01;34m05_relational_data_and_sql[00m
+│       ├── 050-relational_data_w_dplyr_r.Rmd
+│       ├── [01;34m08_sql[00m
+│       ├── DataCamp
+│       ├── PostgreSQL\ Basics.docx
+│       └── PostgreSQL\ Basics.pdf
+├── [01;34m06_data_discovery[00m
+│   ├── [01;34m00_discovery_workshop[00m
+│   │   └── DN-Data\ Discovery\ Workshop\ &\ Handouts\ DSPG\ [Autosaved].pptx
+│   └── [01;34m01_literature-reviews[00m
+│       └── DSPG\ 2019\ Literature\ Review.pdf
+├── [01;34m07_ethics_and_experiments[00m
+│   ├── [01;34m00_ethics[00m
+│   │   ├── [01;34mChecklist[00m
+│   │   ├── [01;34mDeck\ 2019[00m
+│   │   ├── [01;34mHealth\ Ethics\ (Joy\ Tobin)[00m
+│   │   └── [01;34mReadings[00m
+│   └── [01;34m01_behavioral_experiments[00m
+│       └── Instructions-bilateral-global.pptx
+├── [01;34m08_data-ingestion[00m
+│   ├── [01;34m00_importing-data[00m
+│   │   ├── [01;34m01_ingest[00m
+│   │   ├── 01_read_combine_MOST_USEFUL.R
+│   │   ├── 02_shapefiles.R
+│   │   ├── 03_shapefiles-from-gis-database.R
+│   │   ├── [01;34mdata[00m
+│   │   └── quick_character_dates_to_dates.R
+│   ├── [01;34m01_web-scraping[00m
+│   │   ├── github-api4-graphql.R
+│   │   ├── old-150-api_web_scape.Rmd
+│   │   ├── README.md
+│   │   ├── va_abc-licensees.xlsx
+│   │   ├── webscraping.html
+│   │   └── webscraping.Rmd
+│   └── DataCamp
+├── [01;34m09_profiling[00m
+│   ├── [01;32m00_read_combine_MOST_USEFUL.R[00m
+│   ├── [01;32m01_some_profile_basics.R[00m
+│   ├── [01;32m02_completeness.R[00m
+│   ├── [01;32m03_valid_values.R[00m
+│   ├── [01;32m04_record_consistency.R[00m
+│   └── [01;32m05_longitudinal_consistency.R[00m
+├── [01;34m10_data_preparation[00m
+│   ├── [01;34m00_data_cleaning_and_transformation[00m
+│   │   ├── de\ Jonge\ &\ van\ der\ Loo\ (2013)\ -\ An\ Introduction\ to\ Data\ Cleaning\ with\ R.pdf
+│   │   ├── DSPG\ --\ Data\ Cleaning\ Lesson.pptx
+│   │   ├── DSPG\ --\ Data\ Transformation\ Lesson.pptx
+│   │   ├── Franchise2.csv
+│   │   ├── franchise.csv
+│   │   ├── job_availability_gravity_index.R
+│   │   └── pig-pen1.csv
+│   └── [01;34m01_tidy-data[00m
+│       └── 040-tidy_data.Rmd
+├── [01;34m11_data_exploration[00m
+│   ├── [01;34m00_summarization[00m
+│   │   └── summarization
+│   ├── [01;34m01_text-mining[00m
+│   │   ├── 180-text_mining.Rmd
+│   │   └── [01;34mtext_mining_in_r_Teja_Pristavec[00m
+│   └── [01;34m02_geospatial[00m
+│       ├── [01;34mspatial_sf_intro[00m
+│       └── [01;34mtrump_scores[00m
+├── [01;34m12_media-communication[00m
+│   ├── [01;34m00_SAGE-Writing\ Skills-Michael\ Todd[00m
+│   │   ├── example-OSS-Sage\ Brief.docx
+│   │   ├── Writing\ an\ op-ed2.docx
+│   │   └── Writing\ for\ MethodSpace.docx
+│   └── 01_media-speaking
+├── [01;34m13_data_modeling[00m
+│   ├── 330-CART.Rmd
+│   ├── [01;34mAI_and_ML_Intro_MITRE_with_python[00m
+│   │   ├── [01;34mdata[00m
+│   │   ├── Demo-Clustering-FakeData.ipynb
+│   │   ├── Demo-DataAnalysis-Iris.ipynb
+│   │   ├── Demo-DecisionTree-Iris.ipynb
+│   │   ├── Demo-GradientDescent-Basic.ipynb
+│   │   ├── Demo-MultilayerPerceptron-MNIST.ipynb
+│   │   ├── Demo-PCA-MNIST.ipynb
+│   │   ├── IntroductionToAIML-4x3.pdf
+│   │   ├── README.md
+│   │   └── requirements.txt
+│   ├── [01;34mPredictive\ Modeling[00m
+│   │   ├── Decision_Tree_Training.R
+│   │   ├── KNN_Training1.R
+│   │   ├── Predictive\ Modeling\ Presentation.pptx
+│   │   └── Prostate_Cancer.csv
+│   └── [01;34munsupervised_learning[00m
+│       ├── UnsupervisedLearning7-17-19.pdf
+│       └── unsupervised_learning.R
+├── [01;34m14_data_presentation[00m
+│   ├── [01;34m00_visualization_standards[00m
+│   │   ├── 01-Visualize-Slides.pdf
+│   │   ├── Colorblind_Palette.R
+│   │   ├── DSPG\ 2019\ Visualization.pdf
+│   │   ├── Few_2007.pdf
+│   │   ├── R_Color_Cheatsheet.pdf
+│   │   ├── R_Colorspace.pdf
+│   │   ├── R_Colors.pdf
+│   │   ├── theme_SDAD.R
+│   │   └── Zeileis_2009.pdf
+│   ├── [01;34m01_graphics_with_ggplot[00m
+│   │   └── 010-data_vis.Rmd
+│   ├── [01;34m02_r-shiny-dashboards[00m
+│   │   ├── app1.R
+│   │   ├── app2.R
+│   │   ├── app3.R
+│   │   ├── app4.R
+│   │   ├── app5.R
+│   │   ├── app6.R
+│   │   ├── app7.R
+│   │   ├── app8.R
+│   │   ├── [01;31mcrime\ data.csv.gz[00m
+│   │   ├── dashboard_tutorial.Rproj
+│   │   ├── dynamic.R
+│   │   ├── README.md
+│   │   └── scratch_app.R
+│   └── [01;34m03_dashboard-examples[00m
+│       ├── [01;34macpd[00m
+│       ├── [01;34mdspg19broadband[00m
+│       └── [01;34mMeasuring-STW-App[00m
+├── [01;34mdata[00m
+│   ├── [01;34mCensus[00m
+│   │   └── [01;34mtiger[00m
+│   └── [01;34mMLS[00m
+│       ├── 2009.csv
+│       ├── 2010.csv
+│       ├── 2011.csv
+│       ├── 2012.csv
+│       ├── 2013.csv
+│       └── 2014.csv
+├── README.md
+├── training_dspg2019.Rproj
+└── Training.Rproj
+
+66 directories, 145 files
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
+warning: adding embedded git repository: 14_data_presentation/03_dashboard-examples/Measuring-STW-App
+[33mhint: You've added another git repository inside your current repository.[m
+[33mhint: Clones of the outer repository will not contain the contents of[m
+[33mhint: the embedded repository and will not know how to obtain it.[m
+[33mhint: If you meant to add a submodule, use:[m
+[33mhint: [m
+[33mhint: 	git submodule add <url> 14_data_presentation/03_dashboard-examples/Measuring-STW-App[m
+[33mhint: [m
+[33mhint: If you added this path by mistake, you can remove it from the[m
+[33mhint: index with:[m
+[33mhint: [m
+[33mhint: 	git rm --cached 14_data_presentation/03_dashboard-examples/Measuring-STW-App[m
+[33mhint: [m
+[33mhint: See "git help submodule" for more information.[m
+warning: adding embedded git repository: 14_data_presentation/03_dashboard-examples/acpd
+warning: adding embedded git repository: 14_data_presentation/03_dashboard-examples/dspg19broadband
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ cd 14_data_presentation/03_dashboard-examples/Measuring-STW-App/
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[00m$ ls -la
+total 1808
+drwxr-sr-x 8 ads7fg users   9216 May 28 16:20 [0m[01;34m.[0m
+drwxr-sr-x 5 ads7fg users   1536 May 28 16:15 [01;34m..[0m
+-rw-r--r-- 1 ads7fg users  53640 May 28 16:15 copy-app_2.R
+-rw-r--r-- 1 ads7fg users 743748 May 28 16:15 data-dictionary.html
+-rw-r--r-- 1 ads7fg users   4853 May 28 16:15 data-dictionary.Rmd
+-rw-r--r-- 1 ads7fg users 136459 May 28 16:15 data-discovery-feb-3.csv
+drwxr-sr-x 2 ads7fg users   1536 May 28 16:15 [01;34mdata-discovery-versions[0m
+drwxr-sr-x 2 ads7fg users   4608 May 28 16:15 [01;34mdrafts[0m
+drwxr-sr-x 2 ads7fg users   2048 May 28 16:15 [01;34mfeedback[0m
+drwxr-sr-x 7 ads7fg users   6144 May 28 16:20 [01;34m.git[0m
+-rw-r--r-- 1 ads7fg users   1102 May 28 16:15 LICENSE
+-rw-r--r-- 1 ads7fg users    132 May 28 16:15 logos.R
+-rw-r--r-- 1 ads7fg users    205 May 28 16:15 Measuring-STW-App.Rproj
+-rw-r--r-- 1 ads7fg users     61 May 28 16:15 README.md
+-rw-r--r-- 1 ads7fg users  20815 May 28 16:15 .Rhistory
+drwxr-sr-x 4 ads7fg users   1024 May 28 16:15 [01;34m.Rproj.user[0m
+-rw-r--r-- 1 ads7fg users    205 May 28 16:15 R-Shiny-Datatable.Rproj
+-rw-r--r-- 1 ads7fg users 787208 May 28 16:15 welcome-page.html
+-rw-r--r-- 1 ads7fg users   3672 May 28 16:15 welcome-page.Rmd
+drwxr-sr-x 2 ads7fg users   3584 May 28 16:15 [01;34mwww[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[00m$ rm .git
+rm: cannot remove '.git': Is a directory
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[00m$ rm .git-.git .gitr.gitf.git[1P.git[1P.git[1P.git[1P.git-.gitr.gitf .git
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[00m$ l
+total 1.8M
+-rw-r--r-- 1 ads7fg users  53K May 28 16:15 copy-app_2.R
+-rw-r--r-- 1 ads7fg users 727K May 28 16:15 data-dictionary.html
+-rw-r--r-- 1 ads7fg users 4.8K May 28 16:15 data-dictionary.Rmd
+-rw-r--r-- 1 ads7fg users 134K May 28 16:15 data-discovery-feb-3.csv
+drwxr-sr-x 2 ads7fg users 1.5K May 28 16:15 [0m[01;34mdata-discovery-versions[0m
+drwxr-sr-x 2 ads7fg users 4.5K May 28 16:15 [01;34mdrafts[0m
+drwxr-sr-x 2 ads7fg users 2.0K May 28 16:15 [01;34mfeedback[0m
+-rw-r--r-- 1 ads7fg users 1.1K May 28 16:15 LICENSE
+-rw-r--r-- 1 ads7fg users  132 May 28 16:15 logos.R
+-rw-r--r-- 1 ads7fg users  205 May 28 16:15 Measuring-STW-App.Rproj
+-rw-r--r-- 1 ads7fg users   61 May 28 16:15 README.md
+-rw-r--r-- 1 ads7fg users  205 May 28 16:15 R-Shiny-Datatable.Rproj
+-rw-r--r-- 1 ads7fg users 769K May 28 16:15 welcome-page.html
+-rw-r--r-- 1 ads7fg users 3.6K May 28 16:15 welcome-page.Rmd
+drwxr-sr-x 2 ads7fg users 3.5K May 28 16:15 [01;34mwww[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/Measuring-STW-App[00m$ cd ../../../
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ cd ../../../l[Krm -rf .git[4P.git[1Pls -lacd 14_data_presentation/03_dashboard-examples/Measuring-STW-App/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add -A .[K
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   .gitignore[m
+	[32mnew file:   00_introduction/00_program-introduction/DSPG 2018 Intro.pdf[m
+	[32mnew file:   00_introduction/01_the-public-good-data-science-process/2019-06-05_schroeder_data-science-processes-for-evidence-based-policy.pptx[m
+	[32mnew file:   00_introduction/project-posters/2016-DSPG-Posters.zip[m
+	[32mnew file:   00_introduction/project-posters/2017-DSPG-Posters.zip[m
+	[32mnew file:   00_introduction/project-posters/2018-DSPG-Posters.zip[m
+	[32mnew file:   00_introduction/project-posters/2019-DSPG-Posters.zip[m
+	[32mnew file:   01_getting_ready/00_CLD3-Processes-Platforms-Examples.pdf[m
+	[32mnew file:   01_getting_ready/01_System-Setup-2018.Rmd[m
+	[32mnew file:   01_getting_ready/02_SDAD-Researcher-Data-Use-Agreement.pdf[m
+	[32mnew file:   01_getting_ready/03_SDAD-Data-Management-Plan-Nov-2018.pdf[m
+	[32mnew file:   03_code_management/DataCamp[m
+	[32mnew file:   03_code_management/Intro to Git.pptx[m
+	[32mrenamed:    03_codemanagement/git_learnr/Intro to Git.Rmd -> 03_code_management/git_learnr/Intro to Git.Rmd[m
+	[32mrenamed:    03_codemanagement/git_learnr/Intro-to-Git.html -> 03_code_management/git_learnr/Intro-to-Git.html[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/GitHub branch.png -> 03_code_management/git_learnr/images/GitHub branch.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/Git_Workflow.png -> 03_code_management/git_learnr/images/Git_Workflow.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/GutHubSSH.png -> 03_code_management/git_learnr/images/GutHubSSH.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/Intro to Git.png -> 03_code_management/git_learnr/images/Intro to Git.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/New Project - Git - URL.png -> 03_code_management/git_learnr/images/New Project - Git - URL.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/New Project - Version Control.png -> 03_code_management/git_learnr/images/New Project - Version Control.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/ProjectDirectory1.png -> 03_code_management/git_learnr/images/ProjectDirectory1.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/ProjectDirectory2 copy.png -> 03_code_management/git_learnr/images/ProjectDirectory2 copy.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/ProjectDirectory2.png -> 03_code_management/git_learnr/images/ProjectDirectory2.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/ProjectDirectory3.png -> 03_code_management/git_learnr/images/ProjectDirectory3.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/Twas the Night.png -> 03_code_management/git_learnr/images/Twas the Night.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/bundle of committedchanges.png -> 03_code_management/git_learnr/images/bundle of committedchanges.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/clonelink.png -> 03_code_management/git_learnr/images/clonelink.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/commityourcode.png -> 03_code_management/git_learnr/images/commityourcode.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/create git branch.png -> 03_code_management/git_learnr/images/create git branch.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/git branches.png -> 03_code_management/git_learnr/images/git branches.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/git check branch.png -> 03_code_management/git_learnr/images/git check branch.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/git clone steps.png -> 03_code_management/git_learnr/images/git clone steps.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/git_collab_workflow.png -> 03_code_management/git_learnr/images/git_collab_workflow.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/git_full_steps.png -> 03_code_management/git_learnr/images/git_full_steps.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/inst_bicomplex_4c_c.eps -> 03_code_management/git_learnr/images/inst_bicomplex_4c_c.eps[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/jackie chan git meme.png -> 03_code_management/git_learnr/images/jackie chan git meme.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/merge your code.png -> 03_code_management/git_learnr/images/merge your code.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/openApullrequest.png -> 03_code_management/git_learnr/images/openApullrequest.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/pushyourcode.png -> 03_code_management/git_learnr/images/pushyourcode.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/ssh link on github.png -> 03_code_management/git_learnr/images/ssh link on github.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/stageyourcode.png -> 03_code_management/git_learnr/images/stageyourcode.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/uva_centrd_rgb.png -> 03_code_management/git_learnr/images/uva_centrd_rgb.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/weasleygit.png -> 03_code_management/git_learnr/images/weasleygit.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/writeyourcode.png -> 03_code_management/git_learnr/images/writeyourcode.png[m
+	[32mrenamed:    03_codemanagement/git_learnr/images/you shall not pass go.png -> 03_code_management/git_learnr/images/you shall not pass go.png[m
+	[32mnew file:   04_coding_standards/01_naming_things/naming-slides.pdf[m
+	[32mnew file:   04_coding_standards/02_code-and-data-documentation/003-documentation_metadata.Rmd[m
+	[32mnew file:   04_coding_standards/02_code-and-data-documentation/003-documentation_metadata.html[m
+	[32mnew file:   04_coding_standards/03_style-guides[m
+	[32mnew file:   05_r-basics/00_intro_to_r/DataCamp[m
+	[32mnew file:   05_r-basics/00_intro_to_r/README.md[m
+	[32mnew file:   05_r-basics/00_intro_to_r/introduction_to_R.Rmd[m
+	[32mnew file:   05_r-basics/00_intro_to_r/introduction_to_R.html[m
+	[32mnew file:   05_r-basics/00_intro_to_r/introduction_to_R.md[m
+	[32mnew file:   05_r-basics/00_intro_to_r/introduction_to_R_files/figure-html/unnamed-chunk-14-1.png[m
+	[32mnew file:   05_r-basics/01_datetimes/080-datetimes.Rmd[m
+	[32mnew file:   05_r-basics/01_datetimes/080-datetimes.html[m
+	[32mnew file:   05_r-basics/01_datetimes/080-datetimes.md[m
+	[32mnew file:   05_r-basics/02_functions-and-control-flow/120-iteration.Rmd[m
+	[32mnew file:   05_r-basics/02_functions-and-control-flow/DataCamp[m
+	[32mnew file:   05_r-basics/02_functions-and-control-flow/README.md[m
+	[32mnew file:   05_r-basics/02_functions-and-control-flow/functions-and-control-flow.Rmd[m
+	[32mnew file:   05_r-basics/02_functions-and-control-flow/functions-and-control-flow.html[m
+	[32mnew file:   05_r-basics/02_functions-and-control-flow/functions-and-control-flow.md[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/.ipynb_checkpoints/01_3-ways-to-subset-checkpoint.Rmd[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/.ipynb_checkpoints/02_3-ways-to-rename-columns-checkpoint.Rmd[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/00_3-ways-to-read-csv.Rmd[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/00_3-ways-to-read-csv.html[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/00_3-ways-to-read-csv.md[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/01_3-ways-to-subset.Rmd[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/01_3-ways-to-subset.html[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/01_3-ways-to-subset.md[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/02_3-ways-to-rename-columns.Rmd[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/02_3-ways-to-rename-columns.html[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/02_3-ways-to-rename-columns.md[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/03_3-ways-to-group.Rmd[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/03_3-ways-to-group.html[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/03_3-ways-to-group.md[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/04_2-ways-to-pipe.Rmd[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/04_2-ways-to-pipe.html[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/04_2-ways-to-pipe.md[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/05_3-ways-to-bind-rows.Rmd[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/05_3-ways-to-bind-rows.html[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/05_3-ways-to-bind-rows.md[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/06_3-ways-to-profile-consistency.Rmd[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/07_whypipes.Rmd[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/07_whypipes.html[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/07_whypipes.md[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/datacamp free tutorials[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/pigeon-racing.csv[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/ticket_cleint.csv[m
+	[32mnew file:   05_r-basics/03_tables-of-data-3-ways/ticket_client.zip[m
+	[32mnew file:   05_r-basics/04_regex/.ipynb_checkpoints/RVerbalExpressions-checkpoint.R[m
+	[32mnew file:   05_r-basics/04_regex/RVerbalExpressions.R[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/README.md[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R.htm[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/1example.png[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/2dash.jpg[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/MathJax.js[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/countdown.css[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/countdown.js[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/default.css[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/metropolis-fonts.css[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/metropolis.css[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/remark-latest.min.js[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/1example.png[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/2dash.jpg[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/3cry.jpeg[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/4why1.png[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/4why2.png[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/4why3.jpg[m
+	[32mnew file:   05_r-basics/04_regex/regex_in_r_Teja_Pristavec/regex.Rmd[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/050-relational_data_w_dplyr_r.Rmd[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/01_adminer.Rmd[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/01_adminer.html[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/02_rstudio_db_queries.Rmd[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/02_rstudio_db_queries.nb.html[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/03_rap_charts.Rmd[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/03_rap_charts.html[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/03_rap_charts.nb.html[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/03_rstudio_notebook.nb.html[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/090-sql_rap_charts.Rmd[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/090-sql_rap_charts.html[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/data/Rap_Charts.xlsx[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_dashboard_db.PNG[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_food_atlas_data.PNG[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_food_atlas_data_query_1.PNG[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_food_atlas_data_query_1_result.PNG[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_food_atlas_table.PNG[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_health_rankings_table.PNG[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_login.PNG[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_personal_db.PNG[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_personal_db_Customer_table_Case.PNG[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_personal_db_artists_table.PNG[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_personal_db_customer_table.PNG[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_select_db.PNG[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/DataCamp[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/PostgreSQL Basics.docx[m
+	[32mnew file:   05_r-basics/05_relational_data_and_sql/PostgreSQL Basics.pdf[m
+	[32mnew file:   06_data_discovery/00_discovery_workshop/DN-Data Discovery Workshop & Handouts DSPG [Autosaved].pptx[m
+	[32mnew file:   06_data_discovery/01_literature-reviews/DSPG 2019 Literature Review.pdf[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Checklist/SDAD Generic Ethics Checklist 12June19).docx[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Deck 2019/SDAD ETHICS 2019-MacBook Pro (2).pptx[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Deck 2019/SDAD ETHICS 2019.pptx[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Deck 2019/comparison_codes_articles.png[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Deck 2019/frequency.png[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Deck 2019/frequency_codes.png[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Deck 2019/wordcloud.png[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Deck 2019/wordcloud_articles.png[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Deck 2019/wordcloud_codes.png[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Health Ethics (Joy Tobin)/NIH_BioethicsBrochure_WEB.PDF[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Health Ethics (Joy Tobin)/Proprietary Data Handling 2019.docx[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Health Ethics (Joy Tobin)/social_research_ethics_protocol.doc[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Readings/Ethics and data governance-excerpts from lit review (Jan2019).docx[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Readings/Nature (10April19)Train students to navigate ethical swamps.pdf[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Readings/Nature (14Feb19) US advisory board for research integrity.pdf[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Readings/Nature (24Apr19) Rein 4 horsemen of irreproducibility.pdf[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Readings/On Being a Scientist_ A guide to Responsible Conduct in Reserach.pdf[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Readings/Promoting an Open Research Culture.pdf[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Readings/Self Correction of Science at Work.pdf[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Readings/Suggested Readings for SDAD Ethics Session (May2019).docx[m
+	[32mnew file:   07_ethics_and_experiments/00_ethics/Readings/The Mistrust of Science - The New Yorker.pdf[m
+	[32mnew file:   07_ethics_and_experiments/01_behavioral_experiments/Instructions-bilateral-global.pptx[m
+	[32mnew file:   08_data-ingestion/00_importing-data/01_ingest/01_geo_data_CENSUS/01_create_geo_db_tables.R[m
+	[32mnew file:   08_data-ingestion/00_importing-data/01_ingest/01_geo_data_CENSUS/02_read_plot_geo_db_state.R[m
+	[32mnew file:   08_data-ingestion/00_importing-data/01_ingest/01_geo_data_CENSUS/03_build_query_plot_marshall.R[m
+	[32mnew file:   08_data-ingestion/00_importing-data/01_ingest/01_geo_data_CENSUS/04_complete_ingest_store_view.R[m
+	[32mnew file:   08_data-ingestion/00_importing-data/01_ingest/02_job_data_LODES/01_LODESTechDoc7.3.pdf[m
+	[32mnew file:   08_data-ingestion/00_importing-data/01_ingest/02_job_data_LODES/create_centerpoints.R[m
+	[32mnew file:   08_data-ingestion/00_importing-data/01_ingest/02_job_data_LODES/get_census_blk_geo.R[m
+	[32mnew file:   08_data-ingestion/00_importing-data/01_ingest/02_job_data_LODES/get_lodes.R[m
+	[32mnew file:   08_data-ingestion/00_importing-data/01_ingest/05_crime_data_SPOTCRIME/spotcrime.R[m
+	[32mnew file:   08_data-ingestion/00_importing-data/01_read_combine_MOST_USEFUL.R[m
+	[32mnew file:   08_data-ingestion/00_importing-data/02_shapefiles.R[m
+	[32mnew file:   08_data-ingestion/00_importing-data/03_shapefiles-from-gis-database.R[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/Census/LODES/ia_od_main_JT00_2015.csv.gz[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/Census/LODES/lodes_ia_2015.RDS[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/Census/tiger/tl_2018_19_bg.zip[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/Census/tiger/tl_2018_19_tabblock10.zip[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/MLS/2009.csv[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/MLS/2010.csv[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/MLS/2011.csv[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/MLS/2012.csv[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/MLS/2013.csv[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/MLS/2014.csv[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/spotcrime/daily_crime_report_iowa_urls_arl.RDS[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/spotcrime/daily_crime_report_locality_urls_arl.RDS[m
+	[32mnew file:   08_data-ingestion/00_importing-data/data/spotcrime/daily_crime_report_virginia_urls_arl.RDS[m
+	[32mnew file:   08_data-ingestion/00_importing-data/quick_character_dates_to_dates.R[m
+	[32mnew file:   08_data-ingestion/01_web-scraping/README.md[m
+	[32mnew file:   08_data-ingestion/01_web-scraping/github-api4-graphql.R[m
+	[32mnew file:   08_data-ingestion/01_web-scraping/old-150-api_web_scape.Rmd[m
+	[32mnew file:   08_data-ingestion/01_web-scraping/va_abc-licensees.xlsx[m
+	[32mnew file:   08_data-ingestion/01_web-scraping/webscraping.Rmd[m
+	[32mnew file:   08_data-ingestion/01_web-scraping/webscraping.html[m
+	[32mnew file:   08_data-ingestion/DataCamp[m
+	[32mnew file:   09_profiling/00_read_combine_MOST_USEFUL.R[m
+	[32mnew file:   09_profiling/01_some_profile_basics.R[m
+	[32mnew file:   09_profiling/02_completeness.R[m
+	[32mnew file:   09_profiling/03_valid_values.R[m
+	[32mnew file:   09_profiling/04_record_consistency.R[m
+	[32mnew file:   09_profiling/05_longitudinal_consistency.R[m
+	[32mnew file:   10_data_preparation/00_data_cleaning_and_transformation/DSPG -- Data Cleaning Lesson.pptx[m
+	[32mnew file:   10_data_preparation/00_data_cleaning_and_transformation/DSPG -- Data Transformation Lesson.pptx[m
+	[32mnew file:   10_data_preparation/00_data_cleaning_and_transformation/Franchise2.csv[m
+	[32mnew file:   10_data_preparation/00_data_cleaning_and_transformation/de Jonge & van der Loo (2013) - An Introduction to Data Cleaning with R.pdf[m
+	[32mnew file:   10_data_preparation/00_data_cleaning_and_transformation/franchise.csv[m
+	[32mnew file:   10_data_preparation/00_data_cleaning_and_transformation/job_availability_gravity_index.R[m
+	[32mnew file:   10_data_preparation/00_data_cleaning_and_transformation/pig-pen1.csv[m
+	[32mnew file:   10_data_preparation/01_tidy-data/040-tidy_data.Rmd[m
+	[32mnew file:   11_data_exploration/00_summarization/summarization[m
+	[32mnew file:   11_data_exploration/01_text-mining/180-text_mining.Rmd[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R.htm[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/MathJax.js[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/countdown.css[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/countdown.js[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/default.css[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/metropolis-fonts.css[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/metropolis.css[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot1-out-1.png[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot2-out-1.png[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot3-out-1.png[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot4-out-1.png[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot5-out-1.png[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot6-out-1.png[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot7-out-1.png[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/remark-latest.min.js[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/unnamed-chunk-11-1.png[m
+	[32mnew file:   11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/unnamed-chunk-12-1.png[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/OverviewCoordinateReferenceSystems.pdf[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/data/congressional_trump_scores.csv.gz[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/data/cu12.RDS[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/data/shapefiles/congressional_districts.dbf[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/data/shapefiles/congressional_districts.prj[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/data/shapefiles/congressional_districts.shp[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/data/shapefiles/congressional_districts.shx[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/data/va_blockgroups_simplified_spdf.RDS[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/db_user_query.csv.gz[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/db_user_query.txt[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/set_dbuser_permissions.R[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/spatial_r_with_sf_intro.Rmd[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/spatial_r_with_sf_intro_files/figure-html/unnamed-chunk-4-1.png[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/spatial_r_with_sf_intro_files/figure-html/unnamed-chunk-5-1.png[m
+	[32mnew file:   11_data_exploration/02_geospatial/spatial_sf_intro/spatial_r_with_sf_intro_files/figure-html/unnamed-chunk-8-1.png[m
+	[32mnew file:   11_data_exploration/02_geospatial/trump_scores/cong_trump.R[m
+	[32mnew file:   11_data_exploration/02_geospatial/trump_scores/congressional-trump-scores.Rproj[m
+	[32mnew file:   11_data_exploration/02_geospatial/trump_scores/congressional_districts.dbf[m
+	[32mnew file:   11_data_exploration/02_geospatial/trump_scores/congressional_districts.prj[m
+	[32mnew file:   11_data_exploration/02_geospatial/trump_scores/congressional_districts.shp[m
+	[32mnew file:   11_data_exploration/02_geospatial/trump_scores/congressional_districts.shx[m
+	[32mnew file:   11_data_exploration/02_geospatial/trump_scores/congressional_trump_scores.csv.gz[m
+	[32mnew file:   12_media-communication/00_SAGE-Writing Skills-Michael Todd/Writing an op-ed2.docx[m
+	[32mnew file:   12_media-communication/00_SAGE-Writing Skills-Michael Todd/Writing for MethodSpace.docx[m
+	[32mnew file:   12_media-communication/00_SAGE-Writing Skills-Michael Todd/example-OSS-Sage Brief.docx[m
+	[32mnew file:   12_media-communication/01_media-speaking[m
+	[32mnew file:   13_data_modeling/330-CART.Rmd[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/.ipynb_checkpoints/Demo-DataAnalysis-Iris-checkpoint.ipynb[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/.ipynb_checkpoints/Demo-DecisionTree-Iris-checkpoint.ipynb[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/.ipynb_checkpoints/Demo-GradientDescent-Basic-checkpoint.ipynb[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-Clustering-FakeData.ipynb[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-DataAnalysis-Iris.ipynb[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-DecisionTree-Iris.ipynb[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-GradientDescent-Basic.ipynb[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-MultilayerPerceptron-MNIST.ipynb[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-PCA-MNIST.ipynb[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/IntroductionToAIML-4x3.pdf[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/README.md[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/data/mnist/mnist_data.pkl[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/data/mnist/mnist_target.pkl[m
+	[32mnew file:   13_data_modeling/AI_and_ML_Intro_MITRE_with_python/requirements.txt[m
+	[32mnew file:   13_data_modeling/Predictive Modeling/Decision_Tree_Training.R[m
+	[32mnew file:   13_data_modeling/Predictive Modeling/KNN_Training1.R[m
+	[32mnew file:   13_data_modeling/Predictive Modeling/Predictive Modeling Presentation.pptx[m
+	[32mnew file:   13_data_modeling/Predictive Modeling/Prostate_Cancer.csv[m
+	[32mnew file:   13_data_modeling/unsupervised_learning/UnsupervisedLearning7-17-19.pdf[m
+	[32mnew file:   13_data_modeling/unsupervised_learning/unsupervised_learning.R[m
+	[32mnew file:   14_data_presentation/00_visualization_standards/01-Visualize-Slides.pdf[m
+	[32mnew file:   14_data_presentation/00_visualization_standards/Colorblind_Palette.R[m
+	[32mnew file:   14_data_presentation/00_visualization_standards/DSPG 2019 Visualization.pdf[m
+	[32mnew file:   14_data_presentation/00_visualization_standards/Few_2007.pdf[m
+	[32mnew file:   14_data_presentation/00_visualization_standards/R_Color_Cheatsheet.pdf[m
+	[32mnew file:   14_data_presentation/00_visualization_standards/R_Colors.pdf[m
+	[32mnew file:   14_data_presentation/00_visualization_standards/R_Colorspace.pdf[m
+	[32mnew file:   14_data_presentation/00_visualization_standards/Zeileis_2009.pdf[m
+	[32mnew file:   14_data_presentation/00_visualization_standards/theme_SDAD.R[m
+	[32mnew file:   14_data_presentation/01_graphics_with_ggplot/010-data_vis.Rmd[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/README.md[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/app1.R[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/app2.R[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/app3.R[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/app4.R[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/app5.R[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/app6.R[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/app7.R[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/app8.R[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/crime data.csv.gz[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/dashboard_tutorial.Rproj[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/dynamic.R[m
+	[32mnew file:   14_data_presentation/02_r-shiny-dashboards/scratch_app.R[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/Measuring-STW-App[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/acpd[m
+	[32mnew file:   14_data_presentation/03_dashboard-examples/dspg19broadband[m
+	[32mmodified:   README.md[m
+	[32mnew file:   Training.Rproj[m
+	[32mnew file:   data/Census/tiger/hi.txt[m
+	[32mnew file:   data/Census/tiger/tl_2018_19_bg.zip[m
+	[32mnew file:   data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.cpg[m
+	[32mnew file:   data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.dbf[m
+	[32mnew file:   data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.prj[m
+	[32mnew file:   data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.shp[m
+	[32mnew file:   data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.shp.ea.iso.xml[m
+	[32mnew file:   data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.shp.iso.xml[m
+	[32mnew file:   data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.shx[m
+	[32mnew file:   data/MLS/2009.csv[m
+	[32mnew file:   data/MLS/2010.csv[m
+	[32mnew file:   data/MLS/2011.csv[m
+	[32mnew file:   data/MLS/2012.csv[m
+	[32mnew file:   data/MLS/2013.csv[m
+	[32mnew file:   data/MLS/2014.csv[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	[31mmodified:   14_data_presentation/03_dashboard-examples/acpd[m (modified content)
+
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git commit -m  " initial move of materials to 2020 repo"[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[master e42cda7] initial move of materials to 2020 repo
+ 320 files changed, 446932 insertions(+), 2 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 00_introduction/00_program-introduction/DSPG 2018 Intro.pdf
+ create mode 100644 00_introduction/01_the-public-good-data-science-process/2019-06-05_schroeder_data-science-processes-for-evidence-based-policy.pptx
+ create mode 100644 00_introduction/project-posters/2016-DSPG-Posters.zip
+ create mode 100644 00_introduction/project-posters/2017-DSPG-Posters.zip
+ create mode 100644 00_introduction/project-posters/2018-DSPG-Posters.zip
+ create mode 100644 00_introduction/project-posters/2019-DSPG-Posters.zip
+ create mode 100644 01_getting_ready/00_CLD3-Processes-Platforms-Examples.pdf
+ create mode 100644 01_getting_ready/01_System-Setup-2018.Rmd
+ create mode 100644 01_getting_ready/02_SDAD-Researcher-Data-Use-Agreement.pdf
+ create mode 100644 01_getting_ready/03_SDAD-Data-Management-Plan-Nov-2018.pdf
+ create mode 100644 03_code_management/DataCamp
+ create mode 100644 03_code_management/Intro to Git.pptx
+ rename {03_codemanagement => 03_code_management}/git_learnr/Intro to Git.Rmd (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/Intro-to-Git.html (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/GitHub branch.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/Git_Workflow.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/GutHubSSH.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/Intro to Git.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/New Project - Git - URL.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/New Project - Version Control.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/ProjectDirectory1.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/ProjectDirectory2 copy.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/ProjectDirectory2.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/ProjectDirectory3.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/Twas the Night.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/bundle of committedchanges.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/clonelink.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/commityourcode.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/create git branch.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/git branches.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/git check branch.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/git clone steps.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/git_collab_workflow.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/git_full_steps.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/inst_bicomplex_4c_c.eps (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/jackie chan git meme.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/merge your code.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/openApullrequest.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/pushyourcode.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/ssh link on github.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/stageyourcode.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/uva_centrd_rgb.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/weasleygit.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/writeyourcode.png (100%)
+ rename {03_codemanagement => 03_code_management}/git_learnr/images/you shall not pass go.png (100%)
+ create mode 100644 04_coding_standards/01_naming_things/naming-slides.pdf
+ create mode 100644 04_coding_standards/02_code-and-data-documentation/003-documentation_metadata.Rmd
+ create mode 100644 04_coding_standards/02_code-and-data-documentation/003-documentation_metadata.html
+ create mode 100644 04_coding_standards/03_style-guides
+ create mode 100644 05_r-basics/00_intro_to_r/DataCamp
+ create mode 100644 05_r-basics/00_intro_to_r/README.md
+ create mode 100644 05_r-basics/00_intro_to_r/introduction_to_R.Rmd
+ create mode 100644 05_r-basics/00_intro_to_r/introduction_to_R.html
+ create mode 100644 05_r-basics/00_intro_to_r/introduction_to_R.md
+ create mode 100644 05_r-basics/00_intro_to_r/introduction_to_R_files/figure-html/unnamed-chunk-14-1.png
+ create mode 100644 05_r-basics/01_datetimes/080-datetimes.Rmd
+ create mode 100644 05_r-basics/01_datetimes/080-datetimes.html
+ create mode 100644 05_r-basics/01_datetimes/080-datetimes.md
+ create mode 100644 05_r-basics/02_functions-and-control-flow/120-iteration.Rmd
+ create mode 100644 05_r-basics/02_functions-and-control-flow/DataCamp
+ create mode 100644 05_r-basics/02_functions-and-control-flow/README.md
+ create mode 100644 05_r-basics/02_functions-and-control-flow/functions-and-control-flow.Rmd
+ create mode 100644 05_r-basics/02_functions-and-control-flow/functions-and-control-flow.html
+ create mode 100644 05_r-basics/02_functions-and-control-flow/functions-and-control-flow.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/.ipynb_checkpoints/01_3-ways-to-subset-checkpoint.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/.ipynb_checkpoints/02_3-ways-to-rename-columns-checkpoint.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/00_3-ways-to-read-csv.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/00_3-ways-to-read-csv.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/00_3-ways-to-read-csv.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/01_3-ways-to-subset.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/01_3-ways-to-subset.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/01_3-ways-to-subset.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/02_3-ways-to-rename-columns.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/02_3-ways-to-rename-columns.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/02_3-ways-to-rename-columns.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/03_3-ways-to-group.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/03_3-ways-to-group.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/03_3-ways-to-group.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/04_2-ways-to-pipe.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/04_2-ways-to-pipe.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/04_2-ways-to-pipe.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/05_3-ways-to-bind-rows.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/05_3-ways-to-bind-rows.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/05_3-ways-to-bind-rows.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/06_3-ways-to-profile-consistency.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/07_whypipes.Rmd
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/07_whypipes.html
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/07_whypipes.md
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/datacamp free tutorials
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/pigeon-racing.csv
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/ticket_cleint.csv
+ create mode 100644 05_r-basics/03_tables-of-data-3-ways/ticket_client.zip
+ create mode 100644 05_r-basics/04_regex/.ipynb_checkpoints/RVerbalExpressions-checkpoint.R
+ create mode 100644 05_r-basics/04_regex/RVerbalExpressions.R
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/README.md
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R.htm
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/1example.png
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/2dash.jpg
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/MathJax.js
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/countdown.css
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/countdown.js
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/default.css
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/metropolis-fonts.css
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/metropolis.css
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/Regex in R_files/remark-latest.min.js
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/1example.png
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/2dash.jpg
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/3cry.jpeg
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/4why1.png
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/4why2.png
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/images/4why3.jpg
+ create mode 100644 05_r-basics/04_regex/regex_in_r_Teja_Pristavec/regex.Rmd
+ create mode 100644 05_r-basics/05_relational_data_and_sql/050-relational_data_w_dplyr_r.Rmd
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/01_adminer.Rmd
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/01_adminer.html
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/02_rstudio_db_queries.Rmd
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/02_rstudio_db_queries.nb.html
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/03_rap_charts.Rmd
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/03_rap_charts.html
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/03_rap_charts.nb.html
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/03_rstudio_notebook.nb.html
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/090-sql_rap_charts.Rmd
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/090-sql_rap_charts.html
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/data/Rap_Charts.xlsx
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_dashboard_db.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_food_atlas_data.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_food_atlas_data_query_1.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_food_atlas_data_query_1_result.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_food_atlas_table.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_health_rankings_table.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_login.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_personal_db.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_personal_db_Customer_table_Case.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_personal_db_artists_table.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_personal_db_customer_table.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/08_sql/images/adminer_select_db.PNG
+ create mode 100644 05_r-basics/05_relational_data_and_sql/DataCamp
+ create mode 100644 05_r-basics/05_relational_data_and_sql/PostgreSQL Basics.docx
+ create mode 100644 05_r-basics/05_relational_data_and_sql/PostgreSQL Basics.pdf
+ create mode 100644 06_data_discovery/00_discovery_workshop/DN-Data Discovery Workshop & Handouts DSPG [Autosaved].pptx
+ create mode 100644 06_data_discovery/01_literature-reviews/DSPG 2019 Literature Review.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Checklist/SDAD Generic Ethics Checklist 12June19).docx
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/SDAD ETHICS 2019-MacBook Pro (2).pptx
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/SDAD ETHICS 2019.pptx
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/comparison_codes_articles.png
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/frequency.png
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/frequency_codes.png
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/wordcloud.png
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/wordcloud_articles.png
+ create mode 100644 07_ethics_and_experiments/00_ethics/Deck 2019/wordcloud_codes.png
+ create mode 100644 07_ethics_and_experiments/00_ethics/Health Ethics (Joy Tobin)/NIH_BioethicsBrochure_WEB.PDF
+ create mode 100644 07_ethics_and_experiments/00_ethics/Health Ethics (Joy Tobin)/Proprietary Data Handling 2019.docx
+ create mode 100644 07_ethics_and_experiments/00_ethics/Health Ethics (Joy Tobin)/social_research_ethics_protocol.doc
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Ethics and data governance-excerpts from lit review (Jan2019).docx
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Nature (10April19)Train students to navigate ethical swamps.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Nature (14Feb19) US advisory board for research integrity.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Nature (24Apr19) Rein 4 horsemen of irreproducibility.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/On Being a Scientist_ A guide to Responsible Conduct in Reserach.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Promoting an Open Research Culture.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Self Correction of Science at Work.pdf
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/Suggested Readings for SDAD Ethics Session (May2019).docx
+ create mode 100644 07_ethics_and_experiments/00_ethics/Readings/The Mistrust of Science - The New Yorker.pdf
+ create mode 100644 07_ethics_and_experiments/01_behavioral_experiments/Instructions-bilateral-global.pptx
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/01_geo_data_CENSUS/01_create_geo_db_tables.R
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/01_geo_data_CENSUS/02_read_plot_geo_db_state.R
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/01_geo_data_CENSUS/03_build_query_plot_marshall.R
+ create mode 100644 08_data-ingestion/00_importing-data/01_ingest/01_geo_data_CENSUS/04_complete_ingest_store_view.R
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/02_job_data_LODES/01_LODESTechDoc7.3.pdf
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/02_job_data_LODES/create_centerpoints.R
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/02_job_data_LODES/get_census_blk_geo.R
+ create mode 100755 08_data-ingestion/00_importing-data/01_ingest/02_job_data_LODES/get_lodes.R
+ create mode 100644 08_data-ingestion/00_importing-data/01_ingest/05_crime_data_SPOTCRIME/spotcrime.R
+ create mode 100644 08_data-ingestion/00_importing-data/01_read_combine_MOST_USEFUL.R
+ create mode 100644 08_data-ingestion/00_importing-data/02_shapefiles.R
+ create mode 100644 08_data-ingestion/00_importing-data/03_shapefiles-from-gis-database.R
+ create mode 100644 08_data-ingestion/00_importing-data/data/Census/LODES/ia_od_main_JT00_2015.csv.gz
+ create mode 100644 08_data-ingestion/00_importing-data/data/Census/LODES/lodes_ia_2015.RDS
+ create mode 100644 08_data-ingestion/00_importing-data/data/Census/tiger/tl_2018_19_bg.zip
+ create mode 100755 08_data-ingestion/00_importing-data/data/Census/tiger/tl_2018_19_tabblock10.zip
+ create mode 100644 08_data-ingestion/00_importing-data/data/MLS/2009.csv
+ create mode 100644 08_data-ingestion/00_importing-data/data/MLS/2010.csv
+ create mode 100644 08_data-ingestion/00_importing-data/data/MLS/2011.csv
+ create mode 100644 08_data-ingestion/00_importing-data/data/MLS/2012.csv
+ create mode 100644 08_data-ingestion/00_importing-data/data/MLS/2013.csv
+ create mode 100644 08_data-ingestion/00_importing-data/data/MLS/2014.csv
+ create mode 100644 08_data-ingestion/00_importing-data/data/spotcrime/daily_crime_report_iowa_urls_arl.RDS
+ create mode 100644 08_data-ingestion/00_importing-data/data/spotcrime/daily_crime_report_locality_urls_arl.RDS
+ create mode 100644 08_data-ingestion/00_importing-data/data/spotcrime/daily_crime_report_virginia_urls_arl.RDS
+ create mode 100644 08_data-ingestion/00_importing-data/quick_character_dates_to_dates.R
+ create mode 100644 08_data-ingestion/01_web-scraping/README.md
+ create mode 100644 08_data-ingestion/01_web-scraping/github-api4-graphql.R
+ create mode 100644 08_data-ingestion/01_web-scraping/old-150-api_web_scape.Rmd
+ create mode 100644 08_data-ingestion/01_web-scraping/va_abc-licensees.xlsx
+ create mode 100644 08_data-ingestion/01_web-scraping/webscraping.Rmd
+ create mode 100644 08_data-ingestion/01_web-scraping/webscraping.html
+ create mode 100644 08_data-ingestion/DataCamp
+ create mode 100755 09_profiling/00_read_combine_MOST_USEFUL.R
+ create mode 100755 09_profiling/01_some_profile_basics.R
+ create mode 100755 09_profiling/02_completeness.R
+ create mode 100755 09_profiling/03_valid_values.R
+ create mode 100755 09_profiling/04_record_consistency.R
+ create mode 100755 09_profiling/05_longitudinal_consistency.R
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/DSPG -- Data Cleaning Lesson.pptx
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/DSPG -- Data Transformation Lesson.pptx
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/Franchise2.csv
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/de Jonge & van der Loo (2013) - An Introduction to Data Cleaning with R.pdf
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/franchise.csv
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/job_availability_gravity_index.R
+ create mode 100644 10_data_preparation/00_data_cleaning_and_transformation/pig-pen1.csv
+ create mode 100644 10_data_preparation/01_tidy-data/040-tidy_data.Rmd
+ create mode 100644 11_data_exploration/00_summarization/summarization
+ create mode 100644 11_data_exploration/01_text-mining/180-text_mining.Rmd
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R.htm
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/MathJax.js
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/countdown.css
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/countdown.js
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/default.css
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/metropolis-fonts.css
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/metropolis.css
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot1-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot2-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot3-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot4-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot5-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot6-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/plot7-out-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/remark-latest.min.js
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/unnamed-chunk-11-1.png
+ create mode 100644 11_data_exploration/01_text-mining/text_mining_in_r_Teja_Pristavec/Text Mining in R_files/unnamed-chunk-12-1.png
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/OverviewCoordinateReferenceSystems.pdf
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/congressional_trump_scores.csv.gz
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/cu12.RDS
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/shapefiles/congressional_districts.dbf
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/shapefiles/congressional_districts.prj
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/shapefiles/congressional_districts.shp
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/shapefiles/congressional_districts.shx
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/data/va_blockgroups_simplified_spdf.RDS
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/db_user_query.csv.gz
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/db_user_query.txt
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/set_dbuser_permissions.R
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/spatial_r_with_sf_intro.Rmd
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/spatial_r_with_sf_intro_files/figure-html/unnamed-chunk-4-1.png
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/spatial_r_with_sf_intro_files/figure-html/unnamed-chunk-5-1.png
+ create mode 100644 11_data_exploration/02_geospatial/spatial_sf_intro/spatial_r_with_sf_intro_files/figure-html/unnamed-chunk-8-1.png
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/cong_trump.R
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/congressional-trump-scores.Rproj
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/congressional_districts.dbf
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/congressional_districts.prj
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/congressional_districts.shp
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/congressional_districts.shx
+ create mode 100644 11_data_exploration/02_geospatial/trump_scores/congressional_trump_scores.csv.gz
+ create mode 100644 12_media-communication/00_SAGE-Writing Skills-Michael Todd/Writing an op-ed2.docx
+ create mode 100644 12_media-communication/00_SAGE-Writing Skills-Michael Todd/Writing for MethodSpace.docx
+ create mode 100644 12_media-communication/00_SAGE-Writing Skills-Michael Todd/example-OSS-Sage Brief.docx
+ create mode 100644 12_media-communication/01_media-speaking
+ create mode 100644 13_data_modeling/330-CART.Rmd
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/.ipynb_checkpoints/Demo-DataAnalysis-Iris-checkpoint.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/.ipynb_checkpoints/Demo-DecisionTree-Iris-checkpoint.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/.ipynb_checkpoints/Demo-GradientDescent-Basic-checkpoint.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-Clustering-FakeData.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-DataAnalysis-Iris.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-DecisionTree-Iris.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-GradientDescent-Basic.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-MultilayerPerceptron-MNIST.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/Demo-PCA-MNIST.ipynb
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/IntroductionToAIML-4x3.pdf
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/README.md
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/data/mnist/mnist_data.pkl
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/data/mnist/mnist_target.pkl
+ create mode 100644 13_data_modeling/AI_and_ML_Intro_MITRE_with_python/requirements.txt
+ create mode 100644 13_data_modeling/Predictive Modeling/Decision_Tree_Training.R
+ create mode 100644 13_data_modeling/Predictive Modeling/KNN_Training1.R
+ create mode 100644 13_data_modeling/Predictive Modeling/Predictive Modeling Presentation.pptx
+ create mode 100644 13_data_modeling/Predictive Modeling/Prostate_Cancer.csv
+ create mode 100644 13_data_modeling/unsupervised_learning/UnsupervisedLearning7-17-19.pdf
+ create mode 100644 13_data_modeling/unsupervised_learning/unsupervised_learning.R
+ create mode 100644 14_data_presentation/00_visualization_standards/01-Visualize-Slides.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/Colorblind_Palette.R
+ create mode 100644 14_data_presentation/00_visualization_standards/DSPG 2019 Visualization.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/Few_2007.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/R_Color_Cheatsheet.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/R_Colors.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/R_Colorspace.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/Zeileis_2009.pdf
+ create mode 100644 14_data_presentation/00_visualization_standards/theme_SDAD.R
+ create mode 100644 14_data_presentation/01_graphics_with_ggplot/010-data_vis.Rmd
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/README.md
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app1.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app2.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app3.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app4.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app5.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app6.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app7.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/app8.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/crime data.csv.gz
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/dashboard_tutorial.Rproj
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/dynamic.R
+ create mode 100644 14_data_presentation/02_r-shiny-dashboards/scratch_app.R
+ create mode 160000 14_data_presentation/03_dashboard-examples/Measuring-STW-App
+ create mode 160000 14_data_presentation/03_dashboard-examples/acpd
+ create mode 160000 14_data_presentation/03_dashboard-examples/dspg19broadband
+ rewrite README.md (100%)
+ create mode 100644 Training.Rproj
+ create mode 100644 data/Census/tiger/hi.txt
+ create mode 100644 data/Census/tiger/tl_2018_19_bg.zip
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.cpg
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.dbf
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.prj
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.shp
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.shp.ea.iso.xml
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.shp.iso.xml
+ create mode 100644 data/Census/tiger/tl_2018_19_bg/tl_2018_19_bg.shx
+ create mode 100644 data/MLS/2009.csv
+ create mode 100644 data/MLS/2010.csv
+ create mode 100644 data/MLS/2011.csv
+ create mode 100644 data/MLS/2012.csv
+ create mode 100644 data/MLS/2013.csv
+ create mode 100644 data/MLS/2014.csv
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git push
+error: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': dads2busy
+error: cannot run rpostback-askpass: No such file or directory
+Password for 'https://dads2busy@github.com': 
+remote: Permission to DSPG-Young-Scholars-Program/Training.git denied to dads2busy.
+fatal: unable to access 'https://github.com/DSPG-Young-Scholars-Program/Training.git/': The requested URL returned error: 403
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git push
+error: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': dads2busy
+error: cannot run rpostback-askpass: No such file or directory
+Password for 'https://dads2busy@github.com': 
+remote: Permission to DSPG-Young-Scholars-Program/Training.git denied to dads2busy.
+fatal: unable to access 'https://github.com/DSPG-Young-Scholars-Program/Training.git/': The requested URL returned error: 403
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ [K]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git reset HEAD~
+Unstaged changes after reset:
+D	03_codemanagement/git_learnr/Intro to Git.Rmd
+D	03_codemanagement/git_learnr/Intro-to-Git.html
+D	03_codemanagement/git_learnr/images/GitHub branch.png
+D	03_codemanagement/git_learnr/images/Git_Workflow.png
+D	03_codemanagement/git_learnr/images/GutHubSSH.png
+D	03_codemanagement/git_learnr/images/Intro to Git.png
+D	03_codemanagement/git_learnr/images/New Project - Git - URL.png
+D	03_codemanagement/git_learnr/images/New Project - Version Control.png
+D	03_codemanagement/git_learnr/images/ProjectDirectory1.png
+D	03_codemanagement/git_learnr/images/ProjectDirectory2 copy.png
+D	03_codemanagement/git_learnr/images/ProjectDirectory2.png
+D	03_codemanagement/git_learnr/images/ProjectDirectory3.png
+D	03_codemanagement/git_learnr/images/Twas the Night.png
+D	03_codemanagement/git_learnr/images/bundle of committedchanges.png
+D	03_codemanagement/git_learnr/images/clonelink.png
+D	03_codemanagement/git_learnr/images/commityourcode.png
+D	03_codemanagement/git_learnr/images/create git branch.png
+D	03_codemanagement/git_learnr/images/git branches.png
+D	03_codemanagement/git_learnr/images/git check branch.png
+D	03_codemanagement/git_learnr/images/git clone steps.png
+D	03_codemanagement/git_learnr/images/git_collab_workflow.png
+D	03_codemanagement/git_learnr/images/git_full_steps.png
+D	03_codemanagement/git_learnr/images/inst_bicomplex_4c_c.eps
+D	03_codemanagement/git_learnr/images/jackie chan git meme.png
+D	03_codemanagement/git_learnr/images/merge your code.png
+D	03_codemanagement/git_learnr/images/openApullrequest.png
+D	03_codemanagement/git_learnr/images/pushyourcode.png
+D	03_codemanagement/git_learnr/images/ssh link on github.png
+D	03_codemanagement/git_learnr/images/stageyourcode.png
+D	03_codemanagement/git_learnr/images/uva_centrd_rgb.png
+D	03_codemanagement/git_learnr/images/weasleygit.png
+D	03_codemanagement/git_learnr/images/writeyourcode.png
+D	03_codemanagement/git_learnr/images/you shall not pass go.png
+M	README.md
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    03_codemanagement/git_learnr/Intro to Git.Rmd[m
+	[31mdeleted:    03_codemanagement/git_learnr/Intro-to-Git.html[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/GitHub branch.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/Git_Workflow.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/GutHubSSH.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/Intro to Git.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/New Project - Git - URL.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/New Project - Version Control.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/ProjectDirectory1.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/ProjectDirectory2 copy.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/ProjectDirectory2.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/ProjectDirectory3.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/Twas the Night.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/bundle of committedchanges.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/clonelink.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/commityourcode.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/create git branch.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/git branches.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/git check branch.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/git clone steps.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/git_collab_workflow.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/git_full_steps.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/inst_bicomplex_4c_c.eps[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/jackie chan git meme.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/merge your code.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/openApullrequest.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/pushyourcode.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/ssh link on github.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/stageyourcode.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/uva_centrd_rgb.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/weasleygit.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/writeyourcode.png[m
+	[31mdeleted:    03_codemanagement/git_learnr/images/you shall not pass go.png[m
+	[31mmodified:   README.md[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.gitignore[m
+	[31m00_introduction/[m
+	[31m01_getting_ready/[m
+	[31m03_code_management/[m
+	[31m04_coding_standards/[m
+	[31m05_r-basics/[m
+	[31m06_data_discovery/[m
+	[31m07_ethics_and_experiments/[m
+	[31m08_data-ingestion/[m
+	[31m09_profiling/[m
+	[31m10_data_preparation/[m
+	[31m11_data_exploration/[m
+	[31m12_media-communication/[m
+	[31m13_data_modeling/[m
+	[31m14_data_presentation/[m
+	[31mTraining.Rproj[m
+	[31mdata/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
+warning: adding embedded git repository: 14_data_presentation/03_dashboard-examples/acpd
+[33mhint: You've added another git repository inside your current repository.[m
+[33mhint: Clones of the outer repository will not contain the contents of[m
+[33mhint: the embedded repository and will not know how to obtain it.[m
+[33mhint: If you meant to add a submodule, use:[m
+[33mhint: [m
+[33mhint: 	git submodule add <url> 14_data_presentation/03_dashboard-examples/acpd[m
+[33mhint: [m
+[33mhint: If you added this path by mistake, you can remove it from the[m
+[33mhint: index with:[m
+[33mhint: [m
+[33mhint: 	git rm --cached 14_data_presentation/03_dashboard-examples/acpd[m
+[33mhint: [m
+[33mhint: See "git help submodule" for more information.[m
+warning: adding embedded git repository: 14_data_presentation/03_dashboard-examples/dspg19broadband
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ cd 14_data_presentation/03_dashboard-examples/acpd/
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[00m$ l
+total 20K
+-rw-r--r-- 1 ads7fg users  272 May 28 16:15 acpd.Rproj
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:15 [0m[01;34mdata[0m
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:15 [01;34mdocs[0m
+-rw-r--r-- 1 ads7fg users   54 May 28 16:15 README.md
+drwxr-sr-x 5 ads7fg users 2.0K May 28 16:15 [01;34msrc[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[00m$ l -a
+total 44K
+drwxr-sr-x 8 ads7fg users 4.5K May 28 16:15 [0m[01;34m.[0m
+drwxr-sr-x 5 ads7fg users 1.5K May 28 16:15 [01;34m..[0m
+-rw-r--r-- 1 ads7fg users  272 May 28 16:15 acpd.Rproj
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:15 [01;34mdata[0m
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:15 [01;34mdocs[0m
+drwxr-sr-x 7 ads7fg users 5.0K May 28 16:30 [01;34m.git[0m
+-rw-r--r-- 1 ads7fg users  797 May 28 16:15 .gitignore
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:15 [01;34m.ipynb_checkpoints[0m
+-rw-r--r-- 1 ads7fg users   54 May 28 16:15 README.md
+drwxr-sr-x 4 ads7fg users 1.0K May 28 16:15 [01;34m.Rproj.user[0m
+drwxr-sr-x 5 ads7fg users 2.0K May 28 16:15 [01;34msrc[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[00m$ rm -rf .git*
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[00m$ l
+total 20K
+-rw-r--r-- 1 ads7fg users  272 May 28 16:15 acpd.Rproj
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:15 [0m[01;34mdata[0m
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:15 [01;34mdocs[0m
+-rw-r--r-- 1 ads7fg users   54 May 28 16:15 README.md
+drwxr-sr-x 5 ads7fg users 2.0K May 28 16:15 [01;34msrc[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[00m$ l -a
+total 36K
+drwxr-sr-x 7 ads7fg users 3.5K May 28 16:31 [0m[01;34m.[0m
+drwxr-sr-x 5 ads7fg users 1.5K May 28 16:15 [01;34m..[0m
+-rw-r--r-- 1 ads7fg users  272 May 28 16:15 acpd.Rproj
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:15 [01;34mdata[0m
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:15 [01;34mdocs[0m
+drwxr-sr-x 2 ads7fg users 1.0K May 28 16:15 [01;34m.ipynb_checkpoints[0m
+-rw-r--r-- 1 ads7fg users   54 May 28 16:15 README.md
+drwxr-sr-x 4 ads7fg users 1.0K May 28 16:15 [01;34m.Rproj.user[0m
+drwxr-sr-x 5 ads7fg users 2.0K May 28 16:15 [01;34msrc[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/acpd[00m$ cd ..
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples[00m$ l
+total 12K
+drwxr-sr-x 7 ads7fg users 3.5K May 28 16:31 [0m[01;34macpd[0m
+drwxr-sr-x 6 ads7fg users 5.5K May 28 16:15 [01;34mdspg19broadband[0m
+drwxr-sr-x 7 ads7fg users 8.5K May 28 16:21 [01;34mMeasuring-STW-App[0m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples[00m$ cd sd[K[Kdspg19broadband/
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband[00m$ l -a
+total 3.3M
+drwxr-sr-x  6 ads7fg users 5.5K May 28 16:15 [0m[01;34m.[0m
+drwxr-sr-x  5 ads7fg users 1.5K May 28 16:15 [01;34m..[0m
+-rw-r--r--  1 ads7fg users 3.2M May 28 16:15 BroadbandPoster.pdf
+drwxr-sr-x  3 ads7fg users 1.0K May 28 16:15 [01;34mdashboard[0m
+lrwxrwxrwx  1 ads7fg users   46 May 28 16:15 [40;31;01mdata[0m -> [40;31;01m/home/sdad/project_data/usda/dspg2019broadband[0m
+drwxr-sr-x  3 ads7fg users 1.0K May 28 16:15 [01;34mdoc[0m
+-rw-r--r--  1 ads7fg users  205 May 28 16:15 dspg19broadband.Rproj
+-rw-r--r--  1 ads7fg users 5.8K May 28 16:15 FCC_Manipulation.Rmd
+drwxr-sr-x  7 ads7fg users 5.0K May 28 16:31 [01;34m.git[0m
+-rw-r--r--  1 ads7fg users   50 May 28 16:15 .gitignore
+-rw-r--r--  1 ads7fg users  641 May 28 16:15 README.md
+drwxr-sr-x 10 ads7fg users  18K May 28 16:15 [01;34msrc[0m
+-rw-r--r--  1 ads7fg users  137 May 28 16:15 .whitesource
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband[00m$ rm -rf .git*
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband[00m$ rm -rf .git*[8Pl -a
+total 3.3M
+drwxr-sr-x  5 ads7fg users 4.5K May 28 16:32 [0m[01;34m.[0m
+drwxr-sr-x  5 ads7fg users 1.5K May 28 16:15 [01;34m..[0m
+-rw-r--r--  1 ads7fg users 3.2M May 28 16:15 BroadbandPoster.pdf
+drwxr-sr-x  3 ads7fg users 1.0K May 28 16:15 [01;34mdashboard[0m
+lrwxrwxrwx  1 ads7fg users   46 May 28 16:15 [40;31;01mdata[0m -> [40;31;01m/home/sdad/project_data/usda/dspg2019broadband[0m
+drwxr-sr-x  3 ads7fg users 1.0K May 28 16:15 [01;34mdoc[0m
+-rw-r--r--  1 ads7fg users  205 May 28 16:15 dspg19broadband.Rproj
+-rw-r--r--  1 ads7fg users 5.8K May 28 16:15 FCC_Manipulation.Rmd
+-rw-r--r--  1 ads7fg users  641 May 28 16:15 README.md
+drwxr-sr-x 10 ads7fg users  18K May 28 16:15 [01;34msrc[0m
+-rw-r--r--  1 ads7fg users  137 May 28 16:15 .whitesource
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation/03_dashboard-examples/dspg19broadband[00m$ cd ../../
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/14_data_presentation[00m$ cd ../
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git stash
+Saved working directory and index state WIP on master: c00b814 Merge pull request #1 from DSPG-Young-Scholars-Program/dtmn_git_training
+warning: unable to rmdir '14_data_presentation/03_dashboard-examples/acpd': Directory not empty
+warning: unable to rmdir '14_data_presentation/03_dashboard-examples/dspg19broadband': Directory not empty
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-1c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .

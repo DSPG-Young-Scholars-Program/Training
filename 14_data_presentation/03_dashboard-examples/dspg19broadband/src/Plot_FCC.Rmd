@@ -1,0 +1,99 @@
+---
+title: "FCC_Plot"
+author: "Kateryna Savchyn"
+date: "6/20/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# read in packages
+```{r packages, message = FALSE}
+for (pkg in c("httr", "here", "maptools","gpclib","sp", 'sf', 'ggplot2', 'ggmap', 'osmdata', 'tidyverse', 'tigris', 'acs', 'data.table', 'maditr', 'viridis', 'ggplot2')) {
+  library(pkg, character.only = TRUE)
+}
+```
+
+# fcc data summarized by consumer
+```{r fcc}
+destfile <- here("data", "original", "FCC", "fcc_477_VA.csv")
+sp <- fread(destfile)
+sp <- sp[,c('hoconum', 'blockcode', 'maxaddown', 'maxcirdown')]
+sp[, GEOID := substr(as.character(blockcode), 1, 12)]   # create block group level GEOID
+sp %>% dt_mutate(ad_25 = ifelse(maxaddown > 25, 1, 0)) %>% dt_mutate(cir_25 = ifelse(maxcirdown > 25, 1, 0)) # does provider in each block offer > 25 mpbs?
+sp_g1 <- sp[, .(num_providers_20_ad = ifelse(sum(ad_25)>0,1,0), num_providers_20_cir = ifelse(sum(cir_25)>0,1,0)), .(blockcode)]
+sp_g1[, GEOID := substr(as.character(blockcode), 1, 12)]
+sp_g1 <- sp_g1[, .(num_bl = length(unique(blockcode)), sum_ad = sum(num_providers_20_ad), sum_cir = sum(num_providers_20_cir)), .(GEOID)]
+sp_g1 %>% dt_mutate(percent_ad = (sum_ad/num_bl)*100, percent_cir = (sum_cir/num_bl)*100)
+
+sp_grp <- sp[, .(provider_cnt = length(unique(hoconum)), max_mbps_down_consumer = max(maxaddown), 
+              max_mbps_down_business = max(maxcirdown)), .(GEOID)]  # group by block group (GEOID)
+
+# advertised mbps is for consumer providers, contractual is for business
+
+```
+
+```{r quants}
+# par(mfrow=c(1,2))
+# hist(sp$maxaddown, freq = FALSE)
+# hist(sp_grp$max_mbps_down_consumer, freq = FALSE)
+```
+
+# census block group data
+```{r census}
+con <- DBI::dbConnect(drv = RPostgreSQL::PostgreSQL(),
+                      dbname = "gis",
+                      host = "postgis_1",
+                      port = "5432",
+                      user = Sys.getenv("db_userid"),
+                      password = Sys.getenv("db_pwd"))
+
+mygeo <- sf::st_read(con, c("census_cb", "cb_2018_51_bg_500k"))
+DBI::dbDisconnect(con)
+```
+
+# merge and plot
+```{r merge_plot}
+fcc_va_w_geo_1 <- merge(sp_g1, mygeo, by = "GEOID")         # merge data sets
+fcc_va_w_geo_sf1 <- st_as_sf(fcc_va_w_geo_1)                  # convert to sf
+
+fcc_va_w_geo_2 <- merge(sp_grp, mygeo, by = "GEOID")         # merge data sets
+fcc_va_w_geo_sf2 <- st_as_sf(fcc_va_w_geo_2)                  # convert to sf
+
+par(mfrow = c(2,2))
+
+ggplot(fcc_va_w_geo_sf1) +
+  geom_sf(aes(fill = percent_ad), size = 0.05) + 
+  ggtitle('Consumer Providers: % Blocks within Block Group Having > 25 Mbps') + 
+  labs(fill = 'Percentage of Block Group') +
+  scale_fill_viridis(option = 'magma') + 
+  theme_minimal() + theme(legend.position = 'bottom')
+
+ggplot(fcc_va_w_geo_sf1) + 
+  geom_sf(aes(fill = percent_cir), size = 0.05) +  
+  ggtitle('Business Providers: % Blocks within Block Group Having > 25 Mbps')  + 
+  labs(fill = 'Percentage of Block Group') + 
+  scale_fill_viridis(option = 'magma') + 
+  theme_minimal() + theme(legend.position = 'bottom')
+
+ggplot(fcc_va_w_geo_sf2) + 
+  geom_sf(aes(fill = max_mbps_down_consumer), size = 0.05) + 
+  ggtitle('Max Block Download Speed (Mbps) by Block Group: Consumer Providers') +  
+  labs(fill = 'Maximum Speed (Mbps)') +
+  scale_fill_viridis(option = 'magma') + 
+  theme_minimal() + theme(legend.position = 'bottom')
+
+
+ggplot(fcc_va_w_geo_sf2) + 
+  geom_sf(aes(fill = max_mbps_down_business), size = 0.05)  + 
+  ggtitle('Max Block Download Speed (Mbps) by Block Group: Business Providers') + 
+  labs(fill = 'Maximum Speed (Mbps)') + 
+  scale_fill_viridis(option = 'magma') + 
+  theme_minimal() + theme(legend.position = 'bottom')
+
+``` 
+
+
+

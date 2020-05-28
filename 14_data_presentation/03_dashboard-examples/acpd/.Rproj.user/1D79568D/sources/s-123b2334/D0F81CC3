@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572896613111.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "D0F81CC3",
+    "lastKnownWriteTime" : 1572888771,
+    "last_content_update" : 1572888771,
+    "path" : "~/git/acpd/src/03_dashboard/app.R",
+    "project_path" : "src/03_dashboard/app.R",
+    "properties" : {
+        "cursorPosition" : "55,28",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

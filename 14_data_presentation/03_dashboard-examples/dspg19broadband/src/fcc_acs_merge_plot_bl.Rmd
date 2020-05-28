@@ -1,0 +1,54 @@
+---
+title: "FCC and ACS Merge"
+author: "Kateryna Savchyn"
+date: "7/8/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Install Packages
+```{r install}
+for (pkg in c("httr", "here", "maptools","gpclib","sp", 'sf', 'ggplot2', 'ggmap', 'osmdata', 'tidyverse', 'tigris', 'acs', 'data.table', 'maditr', 'viridis', 'ggplot2', 'usmap')) {
+  library(pkg, character.only = TRUE)
+}
+```
+
+## Create Function that takes in State FIPS and outputs FCC/ACS plot
+```{r acs}
+acs_fcc_bl_shapes <- function(state_fips){
+  acs_file <- here("data", "working", "summary_acs.csv")
+  acs <- fread(acs_file, colClasses=c(state="character",county="character",census_tract="character", block_group = "character"))
+  fcc_file <- here("data", "working", "fcc_processed.csv")
+  fcc <- fread(fcc_file, colClasses=c(state="character",county="character",tract="character", block_group = "character")) 
+  
+  #merge fcc & acs
+  fcc_acs = merge(fcc, acs, by.x = c('state', 'county', 'tract','block_group'), by.y = c('state', 'county', 'census_tract','block_group')) %>% dt_filter(state==state_fips)
+
+  #pull shapes for state
+  con <- DBI::dbConnect(drv = RPostgreSQL::PostgreSQL(),
+                      dbname = "gis",
+                      host = "postgis_1",
+                      port = "5432",
+                      user = Sys.getenv("db_userid"),
+                      password = Sys.getenv("db_pwd"))
+  geo = st_read(con, c("census_cb", sprintf("cb_2018_%s_bg_500k", state_fips)))
+  
+  DBI::dbDisconnect(con)
+  
+  #merge shapes and data
+  full <- merge(fcc_acs, geo, by.x = c('state', 'county', 'tract', 'block_group'), by.y =c('STATEFP','COUNTYFP','TRACTCE','BLKGRPCE'))
+  full_sf <- st_as_sf(full) %>% dt_select(state,county,tract, block_group, consumer_has, business_has,
+                                          maxaddown, maxcirdown, stateabbr, num_ppl, availability_cons,
+                                          availability_bus, pcat_all_pct_min, pcat_all_pct_max, pcat_all_10x1_min,
+                                          pcat_all_10x1_max, State, County_Name, Population_2010, RUCC_2013.x, 
+                                          B28002_004_per, B28002_007_per, ALAND, AWATER, geometry)
+  head(full_sf)
+}
+
+```
+
+
+

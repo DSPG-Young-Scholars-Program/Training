@@ -1,0 +1,32 @@
+---
+title: "Broadband data comparison"
+author: "Josh Goldstein, Teja Pristavec, Kateryna Savchyn"
+date: "5/31/2019"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Background
+The United States Department of Agriculture (USDA) Economic Research Service (ERS) is interested in measuring the impact of broadband grants and loans from the USDA Rural Utility Service (RUS) on rural prosperity, with property values in particular. To understand how broadband programs shape property values, it is key to obtain valid and reliable data on broadband-related factors like availability, subscription rates, and speed. 
+
+To collect such data, the Federal Communications Commission (FCC) uses Form 477 to bi-yearly obtain information from broadband providers. Although the FCC data are an authoritative source covering the entire United States (US), there are known issues with published FCC estimates, including using advertised and not actual speeds, and counting a single broadband-covered residence per Census Block as sufficient to the entire block as covered. These issues result in overestimating the coverage and quality of broadband across the US. 
+
+This project aims to identify where FCC measurements are unreliable in the US using supplementary data on broadband availability, including data 2018 5-year American Community Survey estimates, BroadbandNow.com, and other sources. We conduct an exploratory comparison of these data sources and develop heuristics for measuring the fitness-for-use of FCC data, and when appropriate for removing, replacing, or adjusting the FCC estimates.
+
+# Data
+
+## Federal Communications Commission (FCC) Form 477
+Description of source. Description of known issues.
+
+## American Community Survey 2014-2018 estimates
+Description of source. Description of known issues.
+
+## Other data
+Description of source. Description of known issues.
+
+# Methods
+
+# Results

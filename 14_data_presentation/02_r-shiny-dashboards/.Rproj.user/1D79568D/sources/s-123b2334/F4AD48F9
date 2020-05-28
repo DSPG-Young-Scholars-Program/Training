@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572891294504.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2403887236",
+    "id" : "F4AD48F9",
+    "lastKnownWriteTime" : 1568398706,
+    "last_content_update" : 1568398706,
+    "path" : "~/git/training/14_data_presentation/02_r-shiny-dashboards/app1.R",
+    "project_path" : "app1.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

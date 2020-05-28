@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572896879609.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E6A168FC",
+    "lastKnownWriteTime" : 1572896898,
+    "last_content_update" : 1572896898941,
+    "path" : "~/git/acpd/src/03_dashboard/heatmap.R",
+    "project_path" : "src/03_dashboard/heatmap.R",
+    "properties" : {
+        "cursorPosition" : "9,32",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

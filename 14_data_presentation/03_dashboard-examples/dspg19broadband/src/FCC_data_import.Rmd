@@ -1,0 +1,83 @@
+---
+title: "FCC Data Acquisition"
+author: "Kateryna Savchyn"
+date: "6/19/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## FCC Form 477
+
+Resource:[Form 477](https://opendata.fcc.gov/Wireline/Fixed-Broadband-Deployment-Data-Dec-2017-Status-V2/ei6b-6aiz)
+Updated: April 8, 2019
+Type: CSV
+
+
+
+```{r fcc 477, message=FALSE}
+for (pkg in c("httr", "here", "maptools","gpclib","sp", 'sf', 'ggplot2', 'ggmap', 'osmdata', 'tidyverse', 'tigris', 'acs')) {
+  library(pkg, character.only = TRUE)
+}
+
+fcc_477 <- function() {
+  destfile <- here("data", "original", "FCC","fcc_477.csv")
+  if (!file.exists(destfile)) {
+    download.file(url = "https://opendata.fcc.gov/resource/ei6b-6aiz.csv",
+                  destfile = destfile)
+  }
+}
+
+fcc_477()
+
+
+```
+
+## FCC Residential Fixed Internet Access Service Connections
+Resource:[Internet Access  Service Connections](https://www.fcc.gov/reports-research/maps/residential-fixed-internet-access-service-connections-per-1000-households-by-census-tract/)
+Updated: June, 2017
+Type: zip
+
+
+```{r int serv report}
+service_map <- function() {
+  destzip<- here("data", "original", "FCC", "tract_map_dec_2015.zip")
+  destfolder<- here("data", "original", "FCC", "tract_map_dec_2015")
+  if (!file.exists(destzip)) {
+    download.file(url = "https://www.fcc.gov/sites/default/files/tract_map_dec_2015.zip",
+                  destfile = destzip)
+  }
+  unzip(destzip, exdir = destfolder)
+
+}
+
+service_map()
+
+```
+
+```{r census tracts}
+state_blocks <- function(fips) {
+
+  destzip <- here("data", "original", "Census Blocks",  sprintf('%s_census_blocks.zip', fips))
+  destdir<- here("data", "original", "Census Blocks", sprintf('%s_census_blocks', fips))
+  if (!dir.exists(destfile)) {
+    dir.create(destdir)
+    download.file(url = sprintf('https://www2.census.gov/geo/tiger/TIGER2018/BG/tl_2018_%s_bg.zip', fips),
+                  destfile = destzip)
+  }
+  unzip(destzip, exdir = destfile)
+  file.remove(destzip)
+
+}
+
+
+# get block groups for VA
+state_blocks(51)
+
+
+```
+
+
+

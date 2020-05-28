@@ -1,0 +1,138 @@
+---
+title: "FCC_25_block"
+author: "Kateryna Savchyn"
+date: "7/29/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+title: "FCC Data Manipulation"
+author: "Kateryna Savchyn"
+date: "7/2/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load Packages
+```{r load, messages = FALSE}
+for (pkg in c("httr", "here", "maptools","gpclib","sp", 'sf', 'ggplot2', 'ggmap', 'osmdata', 'tidyverse', 'tigris', 'acs', 'data.table', 'maditr', 'viridis', 'ggplot2', 'usmap')) {
+  library(pkg, character.only = TRUE)
+}
+```
+
+## Read in FCC data and create GEOID from BlockCode
+```{r read}
+fcc <-  fread('unzip -p  ~/dspg19broadband/data/original/FCC/FCC-Dec-2015/US-Fixed-without-Satellite-Dec2015.zip', 
+              colClasses = c(BlockCode = "character"))
+fcc <- fcc[,c('HocoNum', 'BlockCode', 'MaxAdDown', 'MaxCIRDown', 'Consumer', 'Business', 'StateAbbr')]
+fcc[, GEOID_12 := substr(BlockCode, 1, 12)] 
+names(fcc) <- tolower(names(fcc))
+```
+
+## Population - from Decennial Census (2010)
+```{r with pop}
+pop <- fread('~/dspg19broadband/data/working/population_by_census_block_2010.csv', colClasses = c(GEOID = "character"))
+# correct for data being stupid about trailing 0's
+pop$GEOID <- ifelse(nchar(pop$GEOID) !=15 ,gsub(" ", "", paste("0",pop$GEOID), fixed = TRUE), pop$GEOID)
+pop[, GEOID_12 := substr(GEOID, 1, 12)] 
+names(pop) <- tolower(names(pop))
+```
+
+## Merge fcc and population data by block
+```{r merge}
+fcc_pop <- merge(fcc, pop, by.x = 'blockcode', by.y = 'geoid', all.x = TRUE, all.y = FALSE)
+```
+
+
+## Bring FCC Data up to the Block Level (from companyXblock level)
+```{r agg fcc}
+fcc_threshold <- fcc_pop %>% dt_mutate(threshold_addown = maxaddown > 25) %>% dt_mutate(threshold_cirdown = maxcirdown > 25) 
+
+# bring up to block level first to get block level populations
+fcc_block <- fcc_threshold[, .(state = max(stateabbr), bg = max(geoid_12.x), consumer = max(consumer), business = max(business), threshold_addown = max(threshold_addown),  threshold_cirdown = max(threshold_cirdown), 
+                               maxaddown = max(maxaddown), maxcirdown = max(maxcirdown),
+                               block_population = mean(value)), .(blockcode)]
+```
+
+
+
+## Count number of People who have at least one provider with 25 MBPS and total number of people in the Block Group
+```{r blocks to people}
+fcc_bg <- fcc_block[, .(consumer_has = sum(threshold_addown*block_population), business_has = sum(threshold_cirdown*block_population), 
+                        maxaddown = max(maxaddown), maxcirdown = max(maxcirdown), stateabbr = max(state), num_ppl = sum(block_population)), .(bg)]
+```
+
+## Availability Metric
+Availability = What % of the population has at least one provider in the Block Group. 
+
+There are 950 GEOIDs that did not have population values in the raw population data (ex: geoid_12 = '100399000000', blocks 1 - 41) - these 950 Block Groups were omitted from the analysis.
+```{r metrics}
+fcc_bg %>% dt_mutate(availability_cons = consumer_has/num_ppl) %>% dt_mutate(availability_bus = business_has/num_ppl) # 222537
+fcc_bg_final <- fcc_bg[!is.na(fcc_bg$availability_cons) & !is.na(fcc_bg$availability_bus),] # 221587
+```
+
+## Parse GEOID into State, County, Tract
+```{r parse GEOID}
+fcc_bg_final$state <- usmap::fips(fcc_bg_final$stateabbr)
+fcc_bg_final$county <- substr(fcc_bg_final$bg, 3,5)
+fcc_bg_final$tract <- substr(fcc_bg_final$bg, 6,11)
+fcc_bg_final$block_group <- substr(fcc_bg_final$bg, 12,12)
+```
+
+## Bring In Subscription Data
+residential fixed Internet access service connections at least 10 Mbps downstream - this is by Census Tract. number of connections/1000 households
+
+```{r subscriptions}
+connections <- fread('~/dspg19broadband/data/original/FCC/tract_map_dec_2015/tract_map_dec_2015.csv', colClasses = c(tractcode = "character"))
+# convert numbers to %s: 0 - 0%, 1 - min=0% max=200/1000, 2 - min=200/1000, max=400/1000, 
+# 3 - min=400/1000, max=600/1000, 4 - min=600/1000, max=800/1000, 5 - min=800/1000, max=NA
+connections %>% dt_mutate(pcat_all_pct_min = case_when(pcat_all == 0 ~ 0,
+                                                       pcat_all == 1 ~ 0,
+                                                       pcat_all == 2 ~ 200/1000,
+                                                       pcat_all == 3 ~ 400/1000,
+                                                       pcat_all == 4 ~ 600/1000,
+                                                       pcat_all == 5 ~ 800/1000)) %>%
+                dt_mutate(pcat_all_pct_max = case_when(pcat_all == 0 ~ 0,
+                                                       pcat_all == 1 ~ 200/1000,
+                                                       pcat_all == 2 ~ 400/1000,
+                                                       pcat_all == 3 ~ 600/1000,
+                                                       pcat_all == 4 ~ 800/1000,
+                                                       pcat_all == 5 ~ 1)) %>%
+                dt_mutate(pcat_all_10x1_min = case_when(pcat_10x1 == 0 ~ 0,
+                                                       pcat_10x1 == 1 ~ 0,
+                                                       pcat_10x1 == 2 ~ 200/1000,
+                                                       pcat_10x1 == 3 ~ 400/1000,
+                                                       pcat_10x1 == 4 ~ 600/1000,
+                                                       pcat_10x1 == 5 ~ 800/1000)) %>%
+                dt_mutate(pcat_all_10x1_max = case_when(pcat_10x1 == 0 ~ 0,
+                                                       pcat_10x1 == 1 ~ 200/1000,
+                                                       pcat_10x1 == 2 ~ 400/1000,
+                                                       pcat_10x1 == 3 ~ 600/1000,
+                                                       pcat_10x1 == 4 ~ 800/1000,
+                                                       pcat_10x1 == 5 ~ 1))
+
+# merge on tract level with fcc_bg_final - first create geoid-10 (state thru tract code)
+fcc_bg_final$tract_full <- substr(fcc_bg_final$bg, 1, 11)
+
+fcc_full <- merge(fcc_bg_final, connections, by.x = 'tract_full', by.y = 'tractcode', all.x = TRUE) #221587
+
+```
+
+## Rural/Urban
+```{r rural/urban}
+r_u <- fread('~/dspg19broadband/data/working/ruralurban2013.csv', colClasses = 'character')
+fcc_full$county_full <- substr(fcc_full$bg, 1,5)
+fcc_final  <- merge(fcc_full, r_u, by.x = 'county_full', by.y = 'FIPS', all.x = TRUE, all.y = FALSE)
+```
+
+## Write it out
+```{r write out}
+write.csv(fcc_final, '~/dspg19broadband/data/working/fcc_processed_25.csv')
+```

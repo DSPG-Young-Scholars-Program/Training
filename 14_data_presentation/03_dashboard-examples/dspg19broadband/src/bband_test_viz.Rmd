@@ -1,0 +1,63 @@
+---
+title: "Untitled"
+author: "Kateryna Savchyn"
+date: "6/27/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+for (pkg in c("httr", "here", "maptools","gpclib","sp", 'sf', 'ggplot2', 'ggmap', 'osmdata', 'tidyverse', 'tigris', 'acs', 'data.table', 'maditr', 'viridis', 'ggplot2')) {
+  library(pkg, character.only = TRUE)
+}
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+dat <- read.csv('~/dspg19broadband/data/working/virginia_dat.csv')
+
+con <- DBI::dbConnect(drv = RPostgreSQL::PostgreSQL(),
+                      dbname = "gis",
+                      host = "postgis_1",
+                      port = "5432",
+                      user = Sys.getenv("db_userid"),
+                      password = Sys.getenv("db_pwd")) 
+
+mygeo <- sf::st_read(con, c("census_cb", "cb_2018_51_place_500k"))
+DBI::dbDisconnect(con)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r merge}
+mygeo$NAME = str_replace_all(mygeo$NAME, "\\[upper-alpha 3\\]", "")
+mygeo$NAME = str_replace_all(mygeo$NAME, "\\[upper-alpha 4\\]", "")
+mygeo$NAME = str_replace_all(mygeo$NAME, " ", "-")
+
+mygeo$city = mygeo$NAME
+mygeo$city = tolower(mygeo$city)
+
+dat_merge <- merge(dat, mygeo, by = 'city')
+
+dat_sf <- st_as_sf(dat_merge) 
+
+ggplot(dat_sf) + 
+  geom_sf(aes(fill = providernum), size = 0.2) + 
+  ggtitle('Number of Providers by City') +  
+  labs(fill = 'Number of Providers') +
+  scale_fill_viridis(option = 'magma') + 
+  theme_minimal() + theme(legend.position = 'bottom')
+
+```

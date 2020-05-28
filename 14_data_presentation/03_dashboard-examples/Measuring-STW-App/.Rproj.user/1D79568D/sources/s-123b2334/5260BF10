@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1581955808606.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5260BF10",
+    "lastKnownWriteTime" : 1582063154,
+    "last_content_update" : 1582063154,
+    "path" : "~/git/Measuring-STW-App/copy-app_2.R",
+    "project_path" : "copy-app_2.R",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

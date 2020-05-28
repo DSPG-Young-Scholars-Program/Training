@@ -1,0 +1,210 @@
+---
+title: "Preprocessing of Data"
+author: "DSPG 2019 ACPD Team"
+date: "2019-07-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Housekeeping
+
+```{r load packages}
+if (!("pacman" %in% installed.packages()[,1])) {
+  install.packages(pkgs = "pacman")
+}
+pacman::p_load(RPostgreSQL, tidyverse, maditr, httr, sf, geosphere, assertthat,
+               measurements)
+```
+
+## Helpers
+
+[MapQuest Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/)
+
+```{r geocode helper}
+geocode <- function(address) {
+  response <- str_c("http://www.mapquestapi.com/geocoding/v1/address?key=",
+                    Sys.getenv(x = "mapquest_key"),
+                    "&location=",
+                    str_replace_all(string = address, pattern = "\\s+", replacement = "+") %>%
+                      str_replace(pattern = "\\+Arlington,\\+VA\\+", replacement = "Arlington,VA")) %>%
+    GET()
+  assert_that(status_code(x = response) == 200L)
+  response %>%
+    content() %>%
+    getElement(name = "results") %>%
+    getElement(name = 1L) %>%
+    getElement(name = "locations") %>%
+    getElement(name = 1L) %>%
+    getElement(name = "displayLatLng") %>%
+    unlist() %>%
+    t() %>%
+    data.table()
+}
+```
+
+Compute distance from the Clarendon Metro Station
+
+```{r}
+compute_distance_from_hq_in_mi <- function(lon, lat) {
+  distm(x = c(lon, lat),
+        y = c(-77.0950, 38.8872),
+        fun = distVincentyEllipsoid) %>%
+    conv_unit(from = "m", to = "mi")
+}
+```
+
+Broad crime categories
+
+```{r}
+category_parser <- function(description) {
+  if (str_detect(string = description,
+                 pattern = "(?i)(assault|battery)")) {
+    "Aggravated Assault"
+  } else if (str_detect(string = description,
+                        pattern = "(?i)(exposure|peace|disorder|urinat)")) {
+    "Disorderly Conduct"
+  } else if (str_detect(string = description,
+                        pattern = "(?i)(drunk|intoxication|alcohol|liquor)")) {
+    "Drunkenness"
+  } else if (str_detect(string = description,
+                        pattern = "(?i)(dui|container|breath|blood test|drivinig under influence|refusal of breath|drinking while driving)")) {
+    "DUI"
+  } else if (str_detect(string = description,
+                        pattern = "(?i)(sex|rape|sodomy)")) {
+    "Sexual Assault/Rape"
+  } else if (str_detect(string = description,
+                        pattern = "(?i)(minor|fake|fictitious|liquor misrepresenting age)")) {
+    "Underage Drinking/Fake ID"
+  } else if (str_detect(string = description,
+                        pattern = "(?i)(parking violation|traffic violation)")) {
+    "Traffic/Parking Violation"
+    } else {
+      "Other"
+    }
+  }
+```
+
+## Obtaining table with establishment (ABC license) and geolocation
+
+- The ARI layer has the establishments and their geolocation
+
+- Some establishments are missing in the layer
+
+- Manually add the missing observations and geocode those with MapQuest
+
+- Limit establishments to those that are ABC licensed
+
+```{r establishments}
+establishments <- function() {
+  conn <- dbConnect(drv = PostgreSQL(),
+                    host = "postgis_1",
+                    port = 5432L,
+                    dbname = "acpd",
+                    user = Sys.getenv(x = "db_userid"),
+                    password = Sys.getenv(x = "db_pwd"))
+  ari_restaurants <- st_read(dsn = conn, layer = "ari_restaurants") %>%
+           data.table()
+  licenses <- dbReadTable(conn = conn, name = "abc_licensees") %>%
+           data.table()
+  additional_data <- data.table(restaurant = c("Celtic House",
+                                               "Lebanese Taverna-Pentagon Row",
+                                               "Lebanese Taverna-Westover",
+                                               "Fiona's Irish Pub",
+                                               "G.O.A.T",
+                                               "The Local Oyster",
+                                               "Punch Bowl Social",
+                                               "Rebellion On The Pike",
+                                               "Wilson Hardware"),
+                                address = c("2500 Columbia Pike, Arlington, VA 22204",
+                                            "1101 S Joyce St, Arlington, VA 22202",
+                                            "5900 Washington Blvd, Arlington, VA 22205",
+                                            "567 23rd St S, Arlington, VA 22202",
+                                            "3028 Wilson Blvd, Arlington, VA 22201",
+                                            "4238 Wilson Blvd, Arlington, VA 22203",
+                                            "4238 Wilson Blvd Ste. 1180, Arlington, VA 22203",
+                                            "2900 Columbia Pike, Arlington, VA 22204",
+                                            "2915 Wilson Blvd, Arlington, VA 22201"),
+                                ari = c(rep(x = FALSE, times = 3L), rep(x = TRUE, times = 6L)),
+                                ask_angela = NA) %>%
+    cbind(map_df(.x = .$address, .f = geocode)) %>%
+    st_as_sf(coords = c("lng", "lat")) %>%
+    data.table()
+  enhanced_ari <- rbind(ari_restaurants,
+                        additional_data,
+                        fill = TRUE) %>%
+    dt_mutate(ari = if_else(condition = is.na(x = ari),
+                            true = !is.na(x = ari_accredit),
+                            false = ari))
+  # Create common key
+  enhanced_ari <- enhanced_ari %>%
+    dt_mutate(key = paste(substr(tolower(restaurant),1,5), substr(tolower(address),1,5)) %>% 
+                str_remove_all(pattern = "\\s"))
+  licenses <- licenses %>%
+    dt_mutate(key = paste(substr(tolower(trade_name),1,5), substr(tolower(add1),1,5)) %>%
+                str_remove_all(pattern = "\\s"))
+  DBI::dbSendQuery(conn, str_c("TRUNCATE TABLE ", "vabc_arlington_restaurants"))
+
+  dbWriteTable(con = conn,
+               name = 'vabc_arlington_restaurants',
+               value = merge(x = enhanced_ari, y = licenses) %>%
+                 st_as_sf() %>%
+                 cbind(st_coordinates(.)) %>%
+                 setDT() %>%
+                 dt_filter(cty_cnty %in% "Arlington County") %>%
+                 dt_select(-cty_cnty) %>%
+                 setnames(old = "X", new = "x") %>%
+                 setnames(old = "Y", new = "y"),
+               row.names = FALSE,
+               append = TRUE)
+  on.exit(expr = dbDisconnect(conn = conn))
+}
+establishments()
+```
+
+## Crime description and geospatial and temporal filter to police interactions
+
+```{r filtered incidents}
+refresh_filtered_incidents <- function() {
+  conn <- dbConnect(drv = PostgreSQL(),
+                    host = "postgis_1",
+                    port = 5432L,
+                    dbname = "acpd",
+                    user = Sys.getenv(x = "db_userid"),
+                    password = Sys.getenv(x = "db_pwd"))
+
+  DBI::dbSendQuery(conn, str_c("TRUNCATE TABLE ", "incidents_filtered"))
+
+  dbReadTable(conn = conn, name = "police_log") %>%
+    data.table() %>%
+    dt_mutate(nearby = map2_dbl(.x = longitude,
+                                .y = latitude,
+                                .f = compute_distance_from_hq_in_mi) <= 0.5) %>%
+    dt_mutate(day = weekdays(x = start, abbreviate = FALSE),
+              hour = hour(x = start)) %>%
+    # Broad alcohol-related
+    dt_filter(str_detect(string = description,
+                         pattern = "(DRUNK|DUI|ASSAULT|POSSESSION|SEXUAL|DISORDERLY)")) %>%
+    # Broad crime categories
+    dt_mutate(crime_category = map_chr(.x = description,
+                                       .f = category_parser) %>%
+                as.factor()) %>%
+    dt_filter(crime_category != "Other") %>%
+    # Create indicator for nightlife = THURS-SUN 21:00-05:00 (21:24, 1:5)
+    # Also include Cinco de Mayo and St. Patricks Day
+    dt_mutate(nightlife = (day %in% c("Thursday", "Friday", "Saturday", "Sunday") |
+                             str_detect(string = start,
+                                        pattern = "(05-05|05-06|03-17|03-18)$")) &
+                (hour %in% c(1:5, 21:24))) %>%
+
+    dbWriteTable(con = conn,
+                 name = 'incidents_filtered',
+                 value = .,
+                 row.names = FALSE,
+                 append = TRUE)
+  on.exit(expr = dbDisconnect(conn = conn))
+  }
+refresh_filtered_incidents()
+```

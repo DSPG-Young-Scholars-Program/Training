@@ -1,0 +1,69 @@
+---
+title: "BBNow_EDA"
+output: html_document
+---
+
+
+
+
+```{r}
+
+# Loading libraries for our project
+
+library(dplyr)
+library(stringr)
+library(readr)
+library(xml2)
+library(purrr)
+library(data.table)
+library(DataExplorer)
+
+```
+
+
+```{r}
+
+bbnow <- read.csv("bbnow_cities.csv")
+uscity <- read.csv("./data/working/uscities.csv")
+uscities <- uscity[c(1,3:10)]
+#head(bbnow)
+#head(uscities)
+#city_n <- uscities$city
+uscities$city <- tolower(uscities$city)
+uscities$city <- str_replace_all(uscities$city, "\\[upper-alpha 3\\]", "")
+uscities$city <- str_replace_all(uscities$city, "\\[upper-alpha 4\\]", "")
+uscities$city <- str_replace_all(uscities$city, " ", "-")
+head(uscities)
+
+#uscities %>% data.table() %>% dt_mutate(city_names = tolower(city)) %>% dt_mutate(city_names =str_replace_all(city_names, "\\[upper-alpha 3\\]", ""))
+
+#head(city_names)
+#head(uscities)
+merged_by_city <- merge(bbnow,uscities,by.x = "city",by.y = "city")
+final <- merged_by_city
+head(final)
+tail(final)
+distinct(final) -> test2
+final %>% distinct(final$city, .keep_all = TRUE) -> final_dataset
+tail(final_dataset)
+```
+
+
+```{r}
+View(bbnow)
+
+plot_str(bbnow)
+introduce(bbnow)
+plot_intro(bbnow)
+
+# Plotting all our discrete features
+plot(bbnow$state,bbnow$coverage)
+plot_histogram(bbnow)
+
+
+
+
+plot(final$lat,final$long)
+write.csv(final, "./data/working/finalbbnow.csv")
+
+```

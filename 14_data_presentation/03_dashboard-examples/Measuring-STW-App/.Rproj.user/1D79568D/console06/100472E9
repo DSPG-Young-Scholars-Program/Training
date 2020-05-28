@@ -1,0 +1,100 @@
+]0;/home/ads7fg/git/Measuring-STW-App]0;ads7fg@udc-aj37-17c0: ~/git/Measuring-STW-App[01;32mads7fg@udc-aj37-17c0[00m:[01;34m~/git/Measuring-STW-App[00m$ 
+]0;/home/ads7fg/git/Measuring-STW-App]0;ads7fg@udc-aj37-17c0: ~/git/Measuring-STW-App[01;32mads7fg@udc-aj37-17c0[00m:[01;34m~/git/Measuring-STW-App[00m$ cd /
+]0;/]0;ads7fg@udc-aj37-17c0: /[01;32mads7fg@udc-aj37-17c0[00m:[01;34m/[00m$ ls -l
+total 594
+drwxr-xr-x.    2 root   root      1159 Jan 10 20:47 [0m[01;34mbin[0m
+drwxr-xr-x.    2 root   root         3 Apr 24  2018 [01;34mboot[0m
+drwxr-xr-x    22 root   root      3400 Jan 20 08:32 [01;34mdev[0m
+lrwxrwxrwx.    1 root   root        36 Aug 27  2018 [01;36menvironment[0m -> [01;32m.singularity.d/env/90-environment.sh[0m
+drwxr-xr-x.   49 root   root      1809 Jan 10 20:47 [01;34metc[0m
+drwxr-xr-x.    1 root   root        60 Jan 30 16:30 [01;34mhome[0m
+drwxr-xr-x.    8 root   root       140 Jan 10 20:11 [01;34mlib[0m
+drwxr-xr-x.    2 root   root        43 Dec  2 12:43 [01;34mlib64[0m
+drwxrwxr-x.    2 root   root         3 Jan 10 20:46 [01;34mlibrary[0m
+drwxr-xr-x.    2 root   root         3 Dec  2 12:43 [01;34mmedia[0m
+drwxr-xr-x.    2 root   root         3 Dec  2 12:43 [01;34mmnt[0m
+drwxr-xr-x     2 root   root         0 Jan 30 04:23 [01;34mnv[0m
+drwxr-xr-x.    2 root   root         3 Dec  2 12:43 [01;34mopt[0m
+dr-xr-xr-x   622 root   root         0 Dec 18 21:04 [01;34mproc[0m
+dr-xr-xr-x    89 root   nogroup  45056 Jan 22 14:05 [01;34mproject[0m
+drwx------.    4 root   root        92 Jan 10 20:47 [01;34mroot[0m
+drwxr-xr-x.    6 root   root        89 Jan 10 20:47 [01;34mrun[0m
+drwxr-xr-x.    2 root   root      1135 Jan 10 20:08 [01;34msbin[0m
+drwxrwxr-x.    4 root   root        39 Jan 10 20:47 [01;34mscif[0m
+drwxr-xr-x  4385 root   root    582144 Jan 29 20:40 [01;34mscratch[0m
+drwxr-xr-x     3 root   root        60 Jan 30 16:30 [01;34msfs[0m
+drwxr-xr-x     3 root   root        60 Jan 30 16:30 [01;34mshare[0m
+lrwxrwxrwx.    1 root   root        24 Aug 27  2018 [01;36msingularity[0m -> [01;32m.singularity.d/runscript[0m
+drwxr-xr-x.    2 root   root         3 Dec  2 12:43 [01;34msrv[0m
+dr-xr-xr-x    13 root   root         0 Dec 18 21:04 [01;34msys[0m
+drwxr-xr-x     5 ads7fg users     1536 Jan 30 16:30 [01;34mtmp[0m
+drwxr-xr-x.   10 root   root       174 Dec  2 12:43 [01;34musr[0m
+drwxr-xr-x.   11 root   root       160 Dec  2 12:43 [01;34mvar[0m
+]0;/]0;ads7fg@udc-aj37-17c0: /[01;32mads7fg@udc-aj37-17c0[00m:[01;34m/[00m$ cd bio[K[K[Kproject/biocomplexity/sdad/
+]0;/project/biocomplexity/sdad]0;ads7fg@udc-aj37-17c0: /project/biocomplexity/sdad[01;32mads7fg@udc-aj37-17c0[00m:[01;34m/project/biocomplexity/sdad[00m$ ls -l
+total 12
+drwxr-sr-x  4 2463535 bii_sdad 1024 Dec  6 15:18 [0m[01;34mbkramer[0m
+drwxr-s---  2 ads7fg  bii_sdad  512 Oct 14 19:26 [01;34mcorelogic[0m
+drwxrws--x 10 ads7fg  bii_sdad 4096 Jan 29 15:21 [01;34mprojects-active[0m
+]0;/project/biocomplexity/sdad]0;ads7fg@udc-aj37-17c0: /project/biocomplexity/sdad[01;32mads7fg@udc-aj37-17c0[00m:[01;34m/project/biocomplexity/sdad[00m$ cd projects-active/
+]0;/project/biocomplexity/sdad/projects-active]0;ads7fg@udc-aj37-17c0: /project/biocomplexity/sdad/projects-active[01;32mads7fg@udc-aj37-17c0[00m:[01;34m/project/biocomplexity/sdad/projects-active[00m$ ls -l
+total 32
+drwxr-sr-x 2 2451322 bii_sdad_acpd_ari     0 Jan 20 19:27 [0m[01;34macpd[0m
+drwxr-sr-x 3 2451322 bii_sdad            512 Jan 27 20:25 [01;34minfrastructure[0m
+drwxrws--x 7 ads7fg  bii_sdad           2560 Jan  8 17:43 [01;34mncses[0m
+drwxr-sr-x 3 ads7fg  bii_sdad            512 Nov 19 21:04 [01;34mnsf[0m
+drwxrws--x 3 ads7fg  bii_sdad            512 Oct 14 19:31 [01;34musda[0m
+drwxr-s--- 9 2457715 bii_sdad           3584 Jan 29 15:20 [01;34mvolume_nyc1_01[0m
+drwxr-s--- 4 2457715 bii_sdad          16896 Jan 29 21:22 [01;34mvolume_nyc1_02[0m
+drwxr-s--- 3 2457715 bii_sdad           8192 Jan 29 21:32 [01;34mvolume_nyc1_03[0m
+]0;/project/biocomplexity/sdad/projects-active]0;ads7fg@udc-aj37-17c0: /project/biocomplexity/sdad/projects-active[01;32mads7fg@udc-aj37-17c0[00m:[01;34m/project/biocomplexity/sdad/projects-active[00m$ [K]0;ads7fg@udc-aj37-17c0: /project/biocomplexity/sdad/projects-active[01;32mads7fg@udc-aj37-17c0[00m:[01;34m/project/biocomplexity/sdad/projects-active[00m$ 11 Feb 2020 18:01:13 [rsession-ads7fg] ERROR system error 2 (No such file or directory) [description=Error changing directory: '/project/biocomplexity/sdad/projects-active']; OCCURRED AT: rstudio::core::Error rstudio::core::system::ChildProcess::run() /home/ubuntu/rstudio/src/cpp/core/system/PosixChildProcess.cpp:626; LOGGED FROM: rstudio::core::Error rstudio::core::system::ChildProcess::run() /home/ubuntu/rstudio/src/cpp/core/system/PosixChildProcess.cpp:626
+]0;/home/ads7fg/git/Measuring-STW-App]0;ads7fg@udc-aj38-15c1: ~/git/Measuring-STW-App[01;32mads7fg@udc-aj38-15c1[00m:[01;34m~/git/Measuring-STW-App[00m$ git pull
+remote: Enumerating objects: 10, done.[K
+remote: Counting objects:  10% (1/10)[Kremote: Counting objects:  20% (2/10)[Kremote: Counting objects:  30% (3/10)[Kremote: Counting objects:  40% (4/10)[Kremote: Counting objects:  50% (5/10)[Kremote: Counting objects:  60% (6/10)[Kremote: Counting objects:  70% (7/10)[Kremote: Counting objects:  80% (8/10)[Kremote: Counting objects:  90% (9/10)[Kremote: Counting objects: 100% (10/10)[Kremote: Counting objects: 100% (10/10), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+[KUnpacking objects:  16% (1/6)[KUnpacking objects:  33% (2/6)[KUnpacking objects:  50% (3/6)[KUnpacking objects:  66% (4/6)[KUnpacking objects:  83% (5/6)remote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0[K
+[KUnpacking objects: 100% (6/6)[KUnpacking objects: 100% (6/6), done.
+From https://github.com/uva-bi-sdad/Measuring-STW-App
+   dfdf34e..0c01345  sarah      -> origin/sarah
+Updating dfdf34e..0c01345
+error: Your local changes to the following files would be overwritten by merge:
+	copy-app.R
+Please commit your changes or stash them before you merge.
+Aborting
+]0;/home/ads7fg/git/Measuring-STW-App]0;ads7fg@udc-aj37-10c0: ~/git/Measuring-STW-App[01;32mads7fg@udc-aj37-10c0[00m:[01;34m~/git/Measuring-STW-App[00m$ gi [Kt pull
+remote: Enumerating objects: 84, done.[K
+remote: Counting objects:   1% (1/79)[Kremote: Counting objects:   2% (2/79)[Kremote: Counting objects:   3% (3/79)[Kremote: Counting objects:   5% (4/79)[Kremote: Counting objects:   6% (5/79)[Kremote: Counting objects:   7% (6/79)[Kremote: Counting objects:   8% (7/79)[Kremote: Counting objects:  10% (8/79)[Kremote: Counting objects:  11% (9/79)[Kremote: Counting objects:  12% (10/79)[Kremote: Counting objects:  13% (11/79)[Kremote: Counting objects:  15% (12/79)[Kremote: Counting objects:  16% (13/79)[Kremote: Counting objects:  17% (14/79)[Kremote: Counting objects:  18% (15/79)[Kremote: Counting objects:  20% (16/79)[Kremote: Counting objects:  21% (17/79)[Kremote: Counting objects:  22% (18/79)[Kremote: Counting objects:  24% (19/79)[Kremote: Counting objects:  25% (20/79)[Kremote: Counting objects:  26% (21/79)[Kremote: Counting objects:  27% (22/79)[Kremote: Counting objects:  29% (23/79)[Kremote: Counting objects:  30% (24/79)[Kremote: Counting objects:  31% (25/79)[Kremote: Counting objects:  32% (26/79)[Kremote: Counting objects:  34% (27/79)[Kremote: Counting objects:  35% (28/79)[Kremote: Counting objects:  36% (29/79)[Kremote: Counting objects:  37% (30/79)[Kremote: Counting objects:  39% (31/79)[Kremote: Counting objects:  40% (32/79)[Kremote: Counting objects:  41% (33/79)[Kremote: Counting objects:  43% (34/79)[Kremote: Counting objects:  44% (35/79)[Kremote: Counting objects:  45% (36/79)[Kremote: Counting objects:  46% (37/79)[Kremote: Counting objects:  48% (38/79)[Kremote: Counting objects:  49% (39/79)[Kremote: Counting objects:  50% (40/79)[Kremote: Counting objects:  51% (41/79)[Kremote: Counting objects:  53% (42/79)[Kremote: Counting objects:  54% (43/79)[Kremote: Counting objects:  55% (44/79)[Kremote: Counting objects:  56% (45/79)[Kremote: Counting objects:  58% (46/79)[Kremote: Counting objects:  59% (47/79)[Kremote: Counting objects:  60% (48/79)[Kremote: Counting objects:  62% (49/79)[Kremote: Counting objects:  63% (50/79)[Kremote: Counting objects:  64% (51/79)[Kremote: Counting objects:  65% (52/79)[Kremote: Counting objects:  67% (53/79)[Kremote: Counting objects:  68% (54/79)[Kremote: Counting objects:  69% (55/79)[Kremote: Counting objects:  70% (56/79)[Kremote: Counting objects:  72% (57/79)[Kremote: Counting objects:  73% (58/79)[Kremote: Counting objects:  74% (59/79)[Kremote: Counting objects:  75% (60/79)[Kremote: Counting objects:  77% (61/79)[Kremote: Counting objects:  78% (62/79)[Kremote: Counting objects:  79% (63/79)[Kremote: Counting objects:  81% (64/79)[Kremote: Counting objects:  82% (65/79)[Kremote: Counting objects:  83% (66/79)[Kremote: Counting objects:  84% (67/79)[Kremote: Counting objects:  86% (68/79)[Kremote: Counting objects:  87% (69/79)[Kremote: Counting objects:  88% (70/79)[Kremote: Counting objects:  89% (71/79)[Kremote: Counting objects:  91% (72/79)[Kremote: Counting objects:  92% (73/79)[Kremote: Counting objects:  93% (74/79)[Kremote: Counting objects:  94% (75/79)[Kremote: Counting objects:  96% (76/79)[Kremote: Counting objects:  97% (77/79)[Kremote: Counting objects:  98% (78/79)[Kremote: Counting objects: 100% (79/79)[Kremote: Counting objects: 100% (79/79), done.[K
+remote: Compressing objects:   2% (1/38)[Kremote: Compressing objects:   5% (2/38)[Kremote: Compressing objects:   7% (3/38)[Kremote: Compressing objects:  10% (4/38)[Kremote: Compressing objects:  13% (5/38)[Kremote: Compressing objects:  15% (6/38)[Kremote: Compressing objects:  18% (7/38)[Kremote: Compressing objects:  21% (8/38)[Kremote: Compressing objects:  23% (9/38)[Kremote: Compressing objects:  26% (10/38)[Kremote: Compressing objects:  28% (11/38)[Kremote: Compressing objects:  31% (12/38)[Kremote: Compressing objects:  34% (13/38)[Kremote: Compressing objects:  36% (14/38)[Kremote: Compressing objects:  39% (15/38)[Kremote: Compressing objects:  42% (16/38)[Kremote: Compressing objects:  44% (17/38)[Kremote: Compressing objects:  47% (18/38)[Kremote: Compressing objects:  50% (19/38)[Kremote: Compressing objects:  52% (20/38)[Kremote: Compressing objects:  55% (21/38)[Kremote: Compressing objects:  57% (22/38)[Kremote: Compressing objects:  60% (23/38)[Kremote: Compressing objects:  63% (24/38)[Kremote: Compressing objects:  65% (25/38)[Kremote: Compressing objects:  68% (26/38)[Kremote: Compressing objects:  71% (27/38)[Kremote: Compressing objects:  73% (28/38)[Kremote: Compressing objects:  76% (29/38)[Kremote: Compressing objects:  78% (30/38)[Kremote: Compressing objects:  81% (31/38)[Kremote: Compressing objects:  84% (32/38)[Kremote: Compressing objects:  86% (33/38)[Kremote: Compressing objects:  89% (34/38)[Kremote: Compressing objects:  92% (35/38)[Kremote: Compressing objects:  94% (36/38)[Kremote: Compressing objects:  97% (37/38)[Kremote: Compressing objects: 100% (38/38)[Kremote: Compressing objects: 100% (38/38), done.[K
+remote: Total 68 (delta 51), reused 47 (delta 30), pack-reused 0[K
+[KUnpacking objects:   1% (1/68)[KUnpacking objects:   2% (2/68)[KUnpacking objects:   4% (3/68)[KUnpacking objects:   5% (4/68)[KUnpacking objects:   7% (5/68)[KUnpacking objects:   8% (6/68)[KUnpacking objects:  10% (7/68)[KUnpacking objects:  11% (8/68)[KUnpacking objects:  13% (9/68)[KUnpacking objects:  14% (10/68)[KUnpacking objects:  16% (11/68)[KUnpacking objects:  17% (12/68)[KUnpacking objects:  19% (13/68)[KUnpacking objects:  20% (14/68)[KUnpacking objects:  22% (15/68)[KUnpacking objects:  23% (16/68)[KUnpacking objects:  25% (17/68)[KUnpacking objects:  26% (18/68)[KUnpacking objects:  27% (19/68)[KUnpacking objects:  29% (20/68)[KUnpacking objects:  30% (21/68)[KUnpacking objects:  32% (22/68)[KUnpacking objects:  33% (23/68)[KUnpacking objects:  35% (24/68)[KUnpacking objects:  36% (25/68)[KUnpacking objects:  38% (26/68)[KUnpacking objects:  39% (27/68)[KUnpacking objects:  41% (28/68)[KUnpacking objects:  42% (29/68)[KUnpacking objects:  44% (30/68)[KUnpacking objects:  45% (31/68)[KUnpacking objects:  47% (32/68)[KUnpacking objects:  48% (33/68)[KUnpacking objects:  50% (34/68)[KUnpacking objects:  51% (35/68)[KUnpacking objects:  52% (36/68)[KUnpacking objects:  54% (37/68)[KUnpacking objects:  55% (38/68)[KUnpacking objects:  57% (39/68)[KUnpacking objects:  58% (40/68)[KUnpacking objects:  60% (41/68)[KUnpacking objects:  61% (42/68)[KUnpacking objects:  63% (43/68)[KUnpacking objects:  64% (44/68)[KUnpacking objects:  66% (45/68)[KUnpacking objects:  67% (46/68)[KUnpacking objects:  69% (47/68)[KUnpacking objects:  70% (48/68)[KUnpacking objects:  72% (49/68)[KUnpacking objects:  73% (50/68)[KUnpacking objects:  75% (51/68)[KUnpacking objects:  76% (52/68)[KUnpacking objects:  77% (53/68)[KUnpacking objects:  79% (54/68)[KUnpacking objects:  80% (55/68)[KUnpacking objects:  82% (56/68)[KUnpacking objects:  83% (57/68)[KUnpacking objects:  85% (58/68)[KUnpacking objects:  86% (59/68)[KUnpacking objects:  88% (60/68)[KUnpacking objects:  89% (61/68)[KUnpacking objects:  91% (62/68)[KUnpacking objects:  92% (63/68)[KUnpacking objects:  94% (64/68)[KUnpacking objects:  95% (65/68)[KUnpacking objects:  97% (66/68)[KUnpacking objects:  98% (67/68)[KUnpacking objects: 100% (68/68)[KUnpacking objects: 100% (68/68), done.
+From https://github.com/uva-bi-sdad/Measuring-STW-App
+   0c01345..7db5b38  sarah      -> origin/sarah
+Updating dfdf34e..7db5b38
+error: Your local changes to the following files would be overwritten by merge:
+	copy-app.R
+Please commit your changes or stash them before you merge.
+Aborting
+]0;/home/ads7fg/git/Measuring-STW-App]0;ads7fg@udc-aj37-10c0: ~/git/Measuring-STW-App[01;32mads7fg@udc-aj37-10c0[00m:[01;34m~/git/Measuring-STW-App[00m$ git stat[Ksh
+Saved working directory and index state WIP on sarah: dfdf34e include markdown files as links
+]0;/home/ads7fg/git/Measuring-STW-App]0;ads7fg@udc-aj37-10c0: ~/git/Measuring-STW-App[01;32mads7fg@udc-aj37-10c0[00m:[01;34m~/git/Measuring-STW-App[00m$ git stash[1Ppull
+Updating dfdf34e..7db5b38
+Fast-forward
+ copy-app.R                      | 662 [31m------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------[m
+ copy-app_2.R                    | 726 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ data-discovery-feb-3.csv        | 232 [32m+++++++++++++++++++++++++++++++[m[31m--------------------------------[m
+ drafts/visualize-list-columns.R | 114 [32m+++++++++++++++++++++++++++++++[m
+ welcome-page.Rmd                |  34 [32m+++++[m[31m-----[m
+ welcome-page.html               |  51 [32m+++++++++[m[31m-----[m
+ www/nsf-ncses.png               | Bin [31m0[m -> [32m90556[m bytes
+ www/theme.css                   |  56 [32m++++++++++++++[m[31m--[m
+ 8 files changed, 1060 insertions(+), 815 deletions(-)
+ delete mode 100644 copy-app.R
+ create mode 100644 copy-app_2.R
+ create mode 100644 www/nsf-ncses.png
+]0;/home/ads7fg/git/Measuring-STW-App]0;ads7fg@udc-aj37-10c0: ~/git/Measuring-STW-App[01;32mads7fg@udc-aj37-10c0[00m:[01;34m~/git/Measuring-STW-App[00m$ cp copy-app_2.R ~/git/infrastructure/app/sharelatex/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+app/                  check_container.sh    dev/                  file/                 .gitignore            ldap/                 .Rhistory             startup.sh            users/                web/
+books.sqlite          db/                   docker-compose.yml    .git/                 infrastructure.Rproj  README.md             .Rproj.user/          test/                 util/                 wiki/
+]0;ads7fg@udc-aj37-10c0: ~/git/Measuring-STW-App[01;32mads7fg@udc-aj37-10c0[00m:[01;34m~/git/Measuring-STW-App[00m$ cp copy-app_2.R ~/git/infrastructure/app/sharelatex/docker-compose.yml [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kl ~/git/infrastructure/app
+total 4.0K
+drwxr-sr-x 2 ads7fg users 512 Nov  6 17:42 [0m[01;34msharelatex[0m
+]0;/home/ads7fg/git/Measuring-STW-App]0;ads7fg@udc-aj37-10c0: ~/git/Measuring-STW-App[01;32mads7fg@udc-aj37-10c0[00m:[01;34m~/git/Measuring-STW-App[00m$ [K]0;ads7fg@udc-aj37-10c0: ~/git/Measuring-STW-App[01;32mads7fg@udc-aj37-10c0[00m:[01;34m~/git/Measuring-STW-App[00m$ 

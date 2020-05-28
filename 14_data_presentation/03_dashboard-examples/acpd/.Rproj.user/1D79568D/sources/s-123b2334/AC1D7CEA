@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572896674748.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "AC1D7CEA",
+    "lastKnownWriteTime" : 1572896832,
+    "last_content_update" : 1572896832331,
+    "path" : "~/git/acpd/src/03_dashboard/leaflet.R",
+    "project_path" : "src/03_dashboard/leaflet.R",
+    "properties" : {
+        "cursorPosition" : "119,50",
+        "scrollLine" : "82"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

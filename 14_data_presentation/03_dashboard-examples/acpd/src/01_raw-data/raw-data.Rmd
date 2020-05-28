@@ -1,0 +1,271 @@
+---
+title: "Raw Data"
+author: "DSPG 2019 ACPD Team"
+date: "2019-07-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(echo = TRUE)
+```
+
+## Data Sources Description
+
+### Arlington County Police Incident Log
+
+Source: [Police Incident Log](http://bit.ly/21nPzoE)
+
+Last Updated: 2019-07-10
+
+Frequency: Daily
+
+Time Coverage: 2015-01-01 - Present
+
+Type: REST/JSON
+
+### ABC Virginia Hearing and Appeals: Final Decisions
+
+Source: [ABC Hearings and Appeals](https://www.abc.virginia.gov/enforcement/hearings-and-appeals/final-decisions/)
+
+Last Updated: 2014-07 - 2018-06
+
+Frequency: Annual
+
+Type: Excel (XLS) One file per version
+
+### ABC Virginia Licensee Data
+
+Source: [ABC Licensees](https://www.abc.virginia.gov/licenses/licensee-search-staging)
+
+Version 2010-04 - 2019-06
+
+Type: Excel (XLSX)
+
+### Arlington Restaurant Initiative Participants
+
+Source: [Arlington Restaurant Initiative GIS Data](https://gisdata-arlgis.opendata.arcgis.com/datasets/arlington-restaurant-initiative)
+
+Version: 2019-05-21
+
+Type: GeoJSON / Feature Layer
+
+### Arlington County, VA, 2010 Census Block Polygon boundaries.
+
+Source: [Census Block 2010 Polygons](https://hub.arcgis.com/datasets/093fb97eabcc4829b72755a08c1b4766_0)
+
+Version: Census 2010
+
+Frequency: Decennial
+
+Type: GeoJSON / Feature Layer
+
+## Install Packages
+
+```{r load packages}
+if (!("pacman" %in% installed.packages()[,1])) {
+  install.packages(pkgs = "pacman")
+}
+pacman::p_load(RPostgreSQL, tidyverse, janitor, maditr, httr, rio, sf)
+```
+
+## Environmental Variables Used
+
+- `db_userid`
+- `db_pwd`
+- `arlington_api_key`
+
+## Data Scraping
+
+```{r police log}
+crime_incidents <- function() {
+  conn <- dbConnect(drv = PostgreSQL(),
+                    dbname = "acpd",
+                    host = "postgis_1",
+                    port = 5432L,
+                    user = Sys.getenv("db_userid"),
+                    password = Sys.getenv("db_pwd"))
+  if (dbExistsTable(conn = conn, name = "police_log")) {
+    police_log <- dbReadTable(conn = conn, name = "police_log")
+    last_updated <- police_log$last_updated[1L]
+  } else {
+    last_updated <- today() - days()
+  }
+  if (last_updated < today()) {
+    str_c("https://api.data.arlingtonva.us/api/v2/",
+        "datastreams/POLIC-INCID-LOG-19589/data.csv/?auth_key=",
+        Sys.getenv(x = "arlington_api_key")) %>%
+      GET() %>%
+      content(as = 'text', encoding = 'UTF-8') %>%
+      fread() %>%
+      dt_mutate(firstReportDtm = as_datetime(x = firstReportDtm, tz = "EST5EDT"),
+                lastReportDtm = as_datetime(x = lastReportDtm, tz = "EST5EDT"),
+                last_updated = today()) %>%
+      setnames(old = 'reportNbr', new = 'id') %>%
+      setnames(old = 'offenseDsc', new = 'description') %>%
+      setnames(old = 'locationName', new = 'location') %>%
+      setnames(old = 'latitudeCrd', new = 'latitude') %>%
+      setnames(old = 'longitudeCrd', new = 'longitude') %>%
+      setnames(old = 'firstReportDtm', new = 'start') %>%
+      setnames(old = 'lastReportDtm', new = 'end') %>%
+      dbWriteTable(con = conn,
+                   name = 'police_log',
+                   value = .,
+                   row.names = FALSE,
+                   overwrite = TRUE)
+  }
+  on.exit(expr = dbDisconnect(conn = conn))
+}
+crime_incidents()
+```
+
+
+```{r abc violations}
+abc_violations <- function() {
+  conn <- dbConnect(drv = PostgreSQL(),
+                    dbname = "acpd",
+                    host = "postgis_1",
+                    port = 5432L,
+                    user = Sys.getenv("db_userid"),
+                    password = Sys.getenv("db_pwd"))
+  if (!dbExistsTable(conn = conn, name = "abc_violations")) {
+    manual_fix <- function(x) {
+      if (is.na(x = x)) {
+        NA
+      } else if (str_detect(string = x, pattern = "^\\d+$")) {
+        x %>%
+          as.integer() %>%
+          excel_numeric_to_date() %>%
+          as.character()
+      } else {
+        x %>%
+          recode("05/12/216" = "2016-05-12",
+                 "8/152014" = "2014-08-15",
+                 "7-1613" = "2013-07-16",
+                 "6/24/22017" = "2017-06-24",
+                 "5/20/154" = "2015-05-20",
+                 "10/9/185" = "2018-10-09",
+                 "2/29/15" = "2015-03-01", # "2015-02-29" is not valid.
+                 "6/31/16" = "2016-07-01", # "2016-06-31" is not valid.
+                 "8/4/2014/" = "2014-08-04")
+      }
+    }
+    map_df(.x = str_c("https://www.abc.virginia.gov/library/enforcement/other-documents/",
+                      c("finalboardorders_july2017-june2018.xls",
+                        "fy17-final-board-order-spreadsheet.xlsx",
+                        "finalboardorders_july2015-june2016.xls",
+                        "finalboardorders_july2014-june2015.xls"),
+                      "?la=en"),
+           .f = function(file) {
+             x <- import(file = file,
+                         col_types = c(rep(x = "text", times = 25L),
+                                       rep(x = "skip", times = 7L)))
+           }) %>%
+      clean_names(case = "snake") %>%
+      dt_filter(!is.na(state)) %>% # Excel is dirty. Valid records have state.
+      dt_mutate(number_of_charges = as.integer(x = number_of_charges),
+                violation_date = map_chr(.x = violation_date, .f = manual_fix) %>%
+                  as_date(),
+                repeat_abc_offense = repeat_abc_offense == "Y",
+                continuance = continuance == "Y",
+                date_available_to_h_a = map_chr(.x = date_available_to_h_a, .f = manual_fix) %>%
+                  as_date(),
+                date_heard = map_chr(.x = date_heard, .f = manual_fix) %>%
+                  as_date(),
+                decision_date = map_chr(.x = decision_date , .f = manual_fix) %>%
+                  as_date(),
+                disposition_date  = map_chr(.x = disposition_date , .f = manual_fix) %>%
+                  as_date(),
+                suspension_days = as.integer(x = suspension_days),
+                civil_penalty = recode(.x = civil_penalty,
+                                       "1.000.00" = "1000") %>%
+                  as.integer(),
+                mandatory_susp_w_civil_penalty_days =
+                  as.integer(x = mandatory_susp_w_civil_penalty_days),
+                probation_months = recode(.x = probation_months,
+                                          "Y" = "12",
+                                          "1 YR" = "12",
+                                          "1 YEAR" = "12",
+                                          "12 MOS" = "12"),
+                revoked_y_n = revoked_y_n == "Y",
+                dismissed_y_n = dismissed_y_n == "Y") %>%
+      setnames(old = "revoked_y_n", new = "revoked") %>%
+      setnames(old = "dismissed_y_n", new = "dismissed") %>%
+      dt_arrange(abc_license_number) %>%
+      dbWriteTable(conn = conn,
+                   name = "abc_violations",
+                   value = .,
+                   row.names = FALSE)
+  }
+  on.exit(expr = dbDisconnect(conn = conn))
+}
+abc_violations()
+```
+
+```{r pull and create license table}
+abc_licensees <- function() {
+  conn <- dbConnect(drv = PostgreSQL(),
+                    dbname = "acpd",
+                    host = "postgis_1",
+                    port = 5432L,
+                    user = Sys.getenv("db_userid"),
+                    password = Sys.getenv("db_pwd"))
+  if (!dbExistsTable(conn = conn, name = "abc_licensees")) {
+    import(file = "https://www.abc.virginia.gov/library/licenses/other-documents/valicapril2019.xlsx?la=en") %>%
+      clean_names(case = "snake") %>%
+      dbWriteTable(con = conn,
+                   name = 'abc_licensees',
+                   value = .,
+                   row.names = FALSE)
+  }
+  on.exit(expr = dbDisconnect(conn = conn))
+}
+abc_licensees()
+```
+
+```{r ari layer}
+ari_restaurants_layer <- function() {
+  conn <- dbConnect(drv = PostgreSQL(),
+                    host = "postgis_1",
+                    dbname = "acpd",
+                    port = 5432L,
+                    user = Sys.getenv("db_userid"),
+                    password = Sys.getenv("db_pwd"))
+  if (!dbExistsTable(conn = conn, name = "ari_restaurants")) {
+    st_read(dsn = "https://opendata.arcgis.com/datasets/2dc91350ea6f4bffb65ece8730b7fcca_0.geojson",
+                 stringsAsFactors = FALSE) %>%
+      clean_names(case = "snake") %>%
+      data.table() %>%
+      dt_mutate(ari_accredit = as_date(x = ari_accredit,
+                                       format = "%m/%d/%Y",
+                                       tz = "EST5EDT"),
+                last_update = as_date(x = last_update,
+                                      format = "%m/%d/%Y",
+                                      tz = "EST5EDT"),
+                accredit_date = as_date(x = accredit_date,
+                                        format = "%m/%d/%Y",
+                                        tz = "EST5EDT"),
+                ask_angela = ask_angela == "Y") %>%
+      st_write(dsn = conn, layer = "ari_restaurants")
+  }
+  on.exit(expr = dbDisconnect(conn = conn))
+}
+ari_restaurants_layer()
+```
+
+```{r census blocks}
+census_blocks <- function() {
+  conn <- dbConnect(drv = PostgreSQL(),
+                    host = "postgis_1",
+                    dbname = "acpd",
+                    port = 5432L,
+                    user = Sys.getenv("db_userid"),
+                    password = Sys.getenv("db_pwd"))
+  if (!dbExistsTable(conn = conn, name = "arlington_census_blocks")) {
+    st_read(dsn = "https://opendata.arcgis.com/datasets/093fb97eabcc4829b72755a08c1b4766_0.geojson") %>%
+      clean_names(case = "snake") %>%
+      st_write(dsn = conn, layer = "arlington_census_blocks")
+  }
+  on.exit(expr = dbDisconnect(conn = conn))
+}
+census_blocks()
+```
