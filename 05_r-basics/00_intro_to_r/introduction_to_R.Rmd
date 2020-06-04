@@ -7,10 +7,6 @@ output:
     keep_md: yes
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Introduction to R markdown
 
 What is [Literate programming](https://en.wikipedia.org/wiki/Literate_programming)?
@@ -27,29 +23,28 @@ Many newcomers and advanced users alike can benefit from customizing their RStud
 
 - The `.Rprofile` in the HOME directory can be used to modify startup behavior
 
-For example, my `.Rprofile` file has the following code
+For example, my `~/.Rprofile` file has the following code
 
-```{r cars}
-Sys.setenv(TZ = 'EST')
+```{r ~/.Rprofile, eval=FALSE}
+for (ln in readLines(con = "~/.bashrc")) {
+  if (startsWith(x = ln, prefix = "export")) {
+    x <- sub(pattern = "export\\s*", replacement = "", x = ln)
+    if (!grepl(pattern = "=\"", x = x, perl = TRUE)) {
+      x <- gsub(pattern = "((?<==)|$)", replacement = "\"", x = x, perl = TRUE)
+    }
+    eval(expr = parse(text = paste0("Sys.setenv(", x, ")")))
+  }
+}
+rm(list = ls())
 if (interactive()) {
   try(expr = fortunes::fortune(), silent = TRUE)
-  }
-cat("Welcome, Nosferican.\nLogged at: ", as.character(Sys.time()))
+}
+message(cat("Welcome, Dr. Nosferican.\nLogged at: ", as.character(Sys.time()), Sys.getenv(x = "TZ")))
 ```
 
-which displays an R fortune cookie, my username and current time when I start a session.
+which displays an R fortune cookie, a welcome message and current time when I start a session.
 The fortune cookie is a random piece of R history/culture very useful to understand the
 philosophy behind the project.
-
-- The `.Renviron` file can be used to define variables accessible during your session
-
-For example, rather than writing my database credentials and making those avaiable in the code
-I can specify these as environmental variables I can access without compromising these
-
-```{r}
-db_userid = "[your computing ID]"
-db_pwd = "[your database pwd]"
-```
 
 ## Setting up your environment (Housekeeping)
 
@@ -61,11 +56,8 @@ The next block of code will provide all the functionality we will be using durin
 this lesson
 
 ```{r}
-library(magrittr)
-library(stringr)
-library(forcats)
-library(lubridate)
-library(ggplot2)
+invisible(x = suppressPackageStartupMessages(expr = library(package = tidyverse)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = lubridate)))
 ```
 
 ## Atomic data types
@@ -82,9 +74,7 @@ R has six atomic data types:
 ### Logical
 
 ```{r}
-x <- c(NA, FALSE, TRUE)
-names(x = x) <- as.character(x = x)
-x
+x <- c(`NA` = NA, `FALSE` = FALSE, `TRUE` = TRUE)
 ```
 
 `&` Table
@@ -110,6 +100,7 @@ Negation
 ```{r !}
 !TRUE
 !FALSE
+!NA
 ```
 
 Logical interpretation of integers/numeric
@@ -122,8 +113,8 @@ FALSE | -2 # (FALSE | (-2 != 0))
 ### Integer
 
 ```{r}
-x = 2L
-y = 3L
+x <- 2L
+y <- 3L
 +x # Positive sign
 -x # Negative sign
 abs(x = x)
@@ -143,8 +134,8 @@ factorial(x = x)
 ### Numeric
 
 ```{r}
-x = 2.5
-y = 3.2
+x <- 2.5
+y <- 3.2
 ```
 
 ```{r}
@@ -197,15 +188,15 @@ Conj(z = x)
 ### Character
 
 ```{r}
-x <- "\"R doesn't like emojis :(, Julia does.\" - Bayoán (史志鼎)"
+x <- "\"R still doesn't like emojis... Julia does\" - Bayoán (史志鼎)"
 str_detect(string = x, pattern = "Bayoán")
 str_detect(string = x, pattern = "Nosferican")
 str_extract(string = x, pattern = "(?<=\" - ).*")
 str_sub(string = x, start = 28L, end = 32L)
 str_replace(string = x, pattern = "(?<=\" - ).*", "Me")
 str_remove(string = x, pattern = "e")
-str_replace_all(string = x, pattern = "e", replace = "E")
-str_c("This a fine quote.", x, sep = "  ")
+str_replace_all(string = x, pattern = "e", replacement = "E")
+cat(str_c("This is a fine quote.", x, sep = " "))
 ```
 
 ## Collections
@@ -266,7 +257,7 @@ dim(x = x)
 ### Lists
 
 ```{r}
-x = list(x = 1:5, y = TRUE, z = c("A", "Z"))
+x <- list(x = 1:5, y = TRUE, z = c("A", "Z"))
 str(object = x)
 x$z
 x$A <- 23L
@@ -297,7 +288,7 @@ x %m+% months(x = 1L, abbreviate = TRUE)
 Named vectors are an example of a struct with more than one atomic data type element
 
 ```{r}
-x <- c(a = 1, b = 2)
+x <- c(a = 1L, b = 2L)
 str(object = x)
 names(x = x)
 ```

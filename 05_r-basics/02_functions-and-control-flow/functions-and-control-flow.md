@@ -7,75 +7,13 @@ output:
     keep_md: yes
 ---
 
-
-
 ## Housekeeping
 
 
 ```r
-library(rlang)
-library(stringr)
-library(purrr)
-```
-
-```
-## 
-## Attaching package: 'purrr'
-```
-
-```
-## The following objects are masked from 'package:rlang':
-## 
-##     %@%, as_function, flatten, flatten_chr, flatten_dbl,
-##     flatten_int, flatten_lgl, flatten_raw, invoke, list_along,
-##     modify, prepend, splice
-```
-
-```r
-library(testthat)
-```
-
-```
-## 
-## Attaching package: 'testthat'
-```
-
-```
-## The following object is masked from 'package:purrr':
-## 
-##     is_null
-```
-
-```
-## The following objects are masked from 'package:rlang':
-## 
-##     is_false, is_null, is_true
-```
-
-```r
-library(maditr)
-```
-
-```
-## 
-## To aggregate several columns with one summary: take(mtcars, mpg, hp, fun = mean, by = am)
-```
-
-```
-## 
-## Attaching package: 'maditr'
-```
-
-```
-## The following object is masked from 'package:purrr':
-## 
-##     transpose
-```
-
-```
-## The following object is masked from 'package:rlang':
-## 
-##     :=
+invisible(x = suppressPackageStartupMessages(expr = library(package = tidyverse)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = maditr)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = testthat)))
 ```
 
 
@@ -300,7 +238,7 @@ system.time(expr = x^2)
 
 ```
 ##    user  system elapsed 
-##   0.001   0.000   0.002
+##       0       0       0
 ```
 
 ```r
@@ -312,27 +250,55 @@ system.time(expr = {
 
 ```
 ##    user  system elapsed 
-##   0.023   0.000   0.024
+##   0.007   0.000   0.007
 ```
 
 
 ```r
 data("iris")
+```
+
+
+```r
 x <- list()
 for (i in 1L:10L) {
   x[[i]] <- iris
-  }
+}
+```
+
+
+```r
 magic <- function(data) {
-  dt_filter(data = data, Species %in% "setosa")
-  }
+  take_if(data = data, Species %in% "setosa")
+}
+```
+
+
+```r
 y <- copy(x = x)
 for (idx in seq_along(along.with = y)) {
   y[[idx]] <- magic(data = y[[idx]])
-  }
+}
+```
+
+
+```r
 y <- do.call(what = rbind, args = y)
+```
+
+
+```r
 z <- map_df(.x = x, .f = magic)
+```
+
+
+```r
 expect_equal(object = y,
              expected = z)
+```
+
+
+```r
 system.time(expr = {
   y <- copy(x = x)
   for (idx in seq_along(along.with = y)) {
@@ -344,7 +310,7 @@ system.time(expr = {
 
 ```
 ##    user  system elapsed 
-##   1.991   0.038   0.447
+##   0.005   0.000   0.005
 ```
 
 ```r
@@ -355,5 +321,5 @@ system.time(expr = {
 
 ```
 ##    user  system elapsed 
-##   1.737   0.034   0.519
+##   0.005   0.000   0.005
 ```

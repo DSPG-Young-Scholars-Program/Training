@@ -7,8 +7,6 @@ output:
     keep_md: yes
 ---
 
-
-
 ## Introduction to R markdown
 
 What is [Literate programming](https://en.wikipedia.org/wiki/Literate_programming)?
@@ -25,36 +23,29 @@ Many newcomers and advanced users alike can benefit from customizing their RStud
 
 - The `.Rprofile` in the HOME directory can be used to modify startup behavior
 
-For example, my `.Rprofile` file has the following code
+For example, my `~/.Rprofile` file has the following code
 
 
 ```r
-Sys.setenv(TZ = 'EST')
+for (ln in readLines(con = "~/.bashrc")) {
+  if (startsWith(x = ln, prefix = "export")) {
+    x <- sub(pattern = "export\\s*", replacement = "", x = ln)
+    if (!grepl(pattern = "=\"", x = x, perl = TRUE)) {
+      x <- gsub(pattern = "((?<==)|$)", replacement = "\"", x = x, perl = TRUE)
+    }
+    eval(expr = parse(text = paste0("Sys.setenv(", x, ")")))
+  }
+}
+rm(list = ls())
 if (interactive()) {
   try(expr = fortunes::fortune(), silent = TRUE)
-  }
-cat("Welcome, Nosferican.\nLogged at: ", as.character(Sys.time()))
+}
+message(cat("Welcome, Dr. Nosferican.\nLogged at: ", as.character(Sys.time()), Sys.getenv(x = "TZ")))
 ```
 
-```
-## Welcome, Nosferican.
-## Logged at:  2019-09-26 10:36:54
-```
-
-which displays an R fortune cookie, my username and current time when I start a session.
+which displays an R fortune cookie, a welcome message and current time when I start a session.
 The fortune cookie is a random piece of R history/culture very useful to understand the
 philosophy behind the project.
-
-- The `.Renviron` file can be used to define variables accessible during your session
-
-For example, rather than writing my database credentials and making those avaiable in the code
-I can specify these as environmental variables I can access without compromising these
-
-
-```r
-db_userid = "[your computing ID]"
-db_pwd = "[your database pwd]"
-```
 
 ## Setting up your environment (Housekeeping)
 
@@ -67,25 +58,8 @@ this lesson
 
 
 ```r
-library(magrittr)
-library(stringr)
-library(forcats)
-library(lubridate)
-```
-
-```
-## 
-## Attaching package: 'lubridate'
-```
-
-```
-## The following object is masked from 'package:base':
-## 
-##     date
-```
-
-```r
-library(ggplot2)
+invisible(x = suppressPackageStartupMessages(expr = library(package = tidyverse)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = lubridate)))
 ```
 
 ## Atomic data types
@@ -103,14 +77,7 @@ R has six atomic data types:
 
 
 ```r
-x <- c(NA, FALSE, TRUE)
-names(x = x) <- as.character(x = x)
-x
-```
-
-```
-##  <NA> FALSE  TRUE 
-##    NA FALSE  TRUE
+x <- c(`NA` = NA, `FALSE` = FALSE, `TRUE` = TRUE)
 ```
 
 `&` Table
@@ -121,8 +88,8 @@ outer(X = x, Y = x, FUN = "&")
 ```
 
 ```
-##        <NA> FALSE  TRUE
-## <NA>     NA FALSE    NA
+##          NA FALSE  TRUE
+## NA       NA FALSE    NA
 ## FALSE FALSE FALSE FALSE
 ## TRUE     NA FALSE  TRUE
 ```
@@ -135,8 +102,8 @@ outer(X = x, Y = x, FUN = "|")
 ```
 
 ```
-##       <NA> FALSE TRUE
-## <NA>    NA    NA TRUE
+##         NA FALSE TRUE
+## NA      NA    NA TRUE
 ## FALSE   NA FALSE TRUE
 ## TRUE  TRUE  TRUE TRUE
 ```
@@ -149,10 +116,10 @@ outer(X = x, Y = x, FUN = "xor")
 ```
 
 ```
-##       <NA> FALSE  TRUE
-## <NA>    NA    NA    NA
-## FALSE   NA FALSE  TRUE
-## TRUE    NA  TRUE FALSE
+##       NA FALSE  TRUE
+## NA    NA    NA    NA
+## FALSE NA FALSE  TRUE
+## TRUE  NA  TRUE FALSE
 ```
 
 Negation
@@ -172,6 +139,14 @@ Negation
 
 ```
 ## [1] TRUE
+```
+
+```r
+!NA
+```
+
+```
+## [1] NA
 ```
 
 Logical interpretation of integers/numeric
@@ -197,8 +172,8 @@ FALSE | -2 # (FALSE | (-2 != 0))
 
 
 ```r
-x = 2L
-y = 3L
+x <- 2L
+y <- 3L
 +x # Positive sign
 ```
 
@@ -314,8 +289,8 @@ factorial(x = x)
 
 
 ```r
-x = 2.5
-y = 3.2
+x <- 2.5
+y <- 3.2
 ```
 
 
@@ -611,7 +586,7 @@ Conj(z = x)
 
 
 ```r
-x <- "\"R doesn't like emojis :(, Julia does.\" - Bayoán (史志鼎)"
+x <- "\"R still doesn't like emojis... Julia does\" - Bayoán (史志鼎)"
 str_detect(string = x, pattern = "Bayoán")
 ```
 
@@ -640,7 +615,7 @@ str_sub(string = x, start = 28L, end = 32L)
 ```
 
 ```
-## [1] "Julia"
+## [1] "s... "
 ```
 
 ```r
@@ -648,7 +623,7 @@ str_replace(string = x, pattern = "(?<=\" - ).*", "Me")
 ```
 
 ```
-## [1] "\"R doesn't like emojis :(, Julia does.\" - Me"
+## [1] "\"R still doesn't like emojis... Julia does\" - Me"
 ```
 
 ```r
@@ -656,23 +631,23 @@ str_remove(string = x, pattern = "e")
 ```
 
 ```
-## [1] "\"R dosn't like emojis :(, Julia does.\" - Bayoán (史志鼎)"
+## [1] "\"R still dosn't like emojis... Julia does\" - Bayoán (史志鼎)"
 ```
 
 ```r
-str_replace_all(string = x, pattern = "e", replace = "E")
+str_replace_all(string = x, pattern = "e", replacement = "E")
 ```
 
 ```
-## [1] "\"R doEsn't likE Emojis :(, Julia doEs.\" - Bayoán (史志鼎)"
+## [1] "\"R still doEsn't likE Emojis... Julia doEs\" - Bayoán (史志鼎)"
 ```
 
 ```r
-str_c("This a fine quote.", x, sep = "  ")
+cat(str_c("This is a fine quote.", x, sep = " "))
 ```
 
 ```
-## [1] "This a fine quote.  \"R doesn't like emojis :(, Julia does.\" - Bayoán (史志鼎)"
+## This is a fine quote. "R still doesn't like emojis... Julia does" - Bayoán (史志鼎)
 ```
 
 ## Collections
@@ -928,7 +903,7 @@ dim(x = x)
 
 
 ```r
-x = list(x = 1:5, y = TRUE, z = c("A", "Z"))
+x <- list(x = 1:5, y = TRUE, z = c("A", "Z"))
 str(object = x)
 ```
 
@@ -1025,7 +1000,7 @@ year(x = x)
 ```
 
 ```
-## [1] 2019
+## [1] 2020
 ```
 
 ```r
@@ -1033,7 +1008,7 @@ month(x = x)
 ```
 
 ```
-## [1] 9
+## [1] 6
 ```
 
 ```r
@@ -1041,7 +1016,7 @@ day(x = x)
 ```
 
 ```
-## [1] 26
+## [1] 4
 ```
 
 ```r
@@ -1049,7 +1024,7 @@ hour(x = x)
 ```
 
 ```
-## [1] 10
+## [1] 18
 ```
 
 ```r
@@ -1057,7 +1032,7 @@ minute(x = x)
 ```
 
 ```
-## [1] 36
+## [1] 18
 ```
 
 ```r
@@ -1065,7 +1040,7 @@ second(x = x)
 ```
 
 ```
-## [1] 56.40556
+## [1] 58.07195
 ```
 
 ```r
@@ -1073,7 +1048,7 @@ seconds(x = x)
 ```
 
 ```
-## [1] "1569512216.40556S"
+## [1] "1591309138.07195S"
 ```
 
 ```r
@@ -1081,19 +1056,19 @@ x %m+% months(x = 1L, abbreviate = TRUE)
 ```
 
 ```
-## [1] "2019-10-26 10:36:56 EST"
+## [1] "2020-07-04 18:18:58 AST"
 ```
 
 Named vectors are an example of a struct with more than one atomic data type element
 
 
 ```r
-x <- c(a = 1, b = 2)
+x <- c(a = 1L, b = 2L)
 str(object = x)
 ```
 
 ```
-##  Named num [1:2] 1 2
+##  Named int [1:2] 1 2
 ##  - attr(*, "names")= chr [1:2] "a" "b"
 ```
 
@@ -1115,7 +1090,7 @@ str(x)
 ```
 
 ```
-##  Factor w/ 5 levels "e","b","c","d",..: 1 2 2 3 1 2 1 1 4 4 ...
+##  Factor w/ 5 levels "a","d","b","e",..: 1 2 1 3 4 5 3 5 5 1 ...
 ```
 
 ```r
@@ -1123,8 +1098,8 @@ x[10L]
 ```
 
 ```
-## [1] d
-## Levels: e b c d a
+## [1] a
+## Levels: a d b e c
 ```
 
 ```r
@@ -1132,7 +1107,7 @@ levels(x = x)
 ```
 
 ```
-## [1] "e" "b" "c" "d" "a"
+## [1] "a" "d" "b" "e" "c"
 ```
 
 ```r
@@ -1144,4 +1119,4 @@ ggplot(mapping = aes(x = x)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-![](introduction_to_R_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
+![](introduction_to_R_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
