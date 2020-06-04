@@ -1,0 +1,12 @@
+name: R-Basics
+title: R-Basics
+username:
+account: nosferican
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2409205
+bundleId: 3228931
+url: https://nosferican.shinyapps.io/R-Basics/
+when: 1591290297.11953
+asMultiple: FALSE
+asStatic: FALSE

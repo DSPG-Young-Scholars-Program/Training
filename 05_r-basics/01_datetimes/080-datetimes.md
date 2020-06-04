@@ -18,18 +18,9 @@ Cheat Sheets
 
 
 ```r
-library(lubridate)
-```
-
-```
-## 
-## Attaching package: 'lubridate'
-```
-
-```
-## The following object is masked from 'package:base':
-## 
-##     date
+invisible(x = suppressPackageStartupMessages(expr = library(package = lubridate)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = nycflights13)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = maditr)))
 ```
 
 
@@ -101,126 +92,61 @@ ymd_hms('2018-06-06 10:33:55', tz = 'EDT')
 
 
 ```r
-library(nycflights13)
-library(dplyr)
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:lubridate':
-## 
-##     intersect, setdiff, union
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 flights
 ```
 
 ```
 ## # A tibble: 336,776 x 19
-##     year month   day dep_time sched_dep_time dep_delay arr_time
-##    <int> <int> <int>    <int>          <int>     <dbl>    <int>
-##  1  2013     1     1      517            515         2      830
-##  2  2013     1     1      533            529         4      850
-##  3  2013     1     1      542            540         2      923
-##  4  2013     1     1      544            545        -1     1004
-##  5  2013     1     1      554            600        -6      812
-##  6  2013     1     1      554            558        -4      740
-##  7  2013     1     1      555            600        -5      913
-##  8  2013     1     1      557            600        -3      709
-##  9  2013     1     1      557            600        -3      838
-## 10  2013     1     1      558            600        -2      753
-## # … with 336,766 more rows, and 12 more variables: sched_arr_time <int>,
-## #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
-## #   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,
-## #   minute <dbl>, time_hour <dttm>
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    <int> <int> <int>    <int>          <int>     <dbl>    <int>          <int>
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # … with 336,766 more rows, and 11 more variables: arr_delay <dbl>,
+## #   carrier <chr>, flight <int>, tailnum <chr>, origin <chr>, dest <chr>,
+## #   air_time <dbl>, distance <dbl>, hour <dbl>, minute <dbl>, time_hour <dttm>
 ```
 
 
 ```r
 flight_times <- flights %>%
-    select(year, month, day, hour, minute)
+    take(year, month, day, hour, minute)
 flight_times
 ```
 
 ```
-## # A tibble: 336,776 x 5
-##     year month   day  hour minute
-##    <int> <int> <int> <dbl>  <dbl>
-##  1  2013     1     1     5     15
-##  2  2013     1     1     5     29
-##  3  2013     1     1     5     40
-##  4  2013     1     1     5     45
-##  5  2013     1     1     6      0
-##  6  2013     1     1     5     58
-##  7  2013     1     1     6      0
-##  8  2013     1     1     6      0
-##  9  2013     1     1     6      0
-## 10  2013     1     1     6      0
-## # … with 336,766 more rows
+##         year month day hour minute
+##      1: 2013     1   1    5     15
+##      2: 2013     1   1    5     29
+##      3: 2013     1   1    5     40
+##      4: 2013     1   1    5     45
+##      5: 2013     1   1    6      0
+##     ---                           
+## 336772: 2013     9  30   14     55
+## 336773: 2013     9  30   22      0
+## 336774: 2013     9  30   12     10
+## 336775: 2013     9  30   11     59
+## 336776: 2013     9  30    8     40
 ```
 
 
 ```r
 flight_times %>%
-    mutate(dep_dt = make_datetime(year, month, day, hour, minute))
-```
-
-```
-## # A tibble: 336,776 x 6
-##     year month   day  hour minute dep_dt             
-##    <int> <int> <int> <dbl>  <dbl> <dttm>             
-##  1  2013     1     1     5     15 2013-01-01 05:15:00
-##  2  2013     1     1     5     29 2013-01-01 05:29:00
-##  3  2013     1     1     5     40 2013-01-01 05:40:00
-##  4  2013     1     1     5     45 2013-01-01 05:45:00
-##  5  2013     1     1     6      0 2013-01-01 06:00:00
-##  6  2013     1     1     5     58 2013-01-01 05:58:00
-##  7  2013     1     1     6      0 2013-01-01 06:00:00
-##  8  2013     1     1     6      0 2013-01-01 06:00:00
-##  9  2013     1     1     6      0 2013-01-01 06:00:00
-## 10  2013     1     1     6      0 2013-01-01 06:00:00
-## # … with 336,766 more rows
+    let(dep_dt = make_datetime(year = year, month = month, day = day, hour = hour, min = minute))
 ```
 
 
 ```r
 flights %>%
-    select(year, month, day, hour, minute) %>%
-    mutate(dep_dt = make_datetime(year, month, day, hour, minute))
-```
-
-```
-## # A tibble: 336,776 x 6
-##     year month   day  hour minute dep_dt             
-##    <int> <int> <int> <dbl>  <dbl> <dttm>             
-##  1  2013     1     1     5     15 2013-01-01 05:15:00
-##  2  2013     1     1     5     29 2013-01-01 05:29:00
-##  3  2013     1     1     5     40 2013-01-01 05:40:00
-##  4  2013     1     1     5     45 2013-01-01 05:45:00
-##  5  2013     1     1     6      0 2013-01-01 06:00:00
-##  6  2013     1     1     5     58 2013-01-01 05:58:00
-##  7  2013     1     1     6      0 2013-01-01 06:00:00
-##  8  2013     1     1     6      0 2013-01-01 06:00:00
-##  9  2013     1     1     6      0 2013-01-01 06:00:00
-## 10  2013     1     1     6      0 2013-01-01 06:00:00
-## # … with 336,766 more rows
+    take(year, month, day, hour, minute) %>%
+    let(dep_dt = make_datetime(year, month, day, hour, minute))
 ```
 
 ## Non-standard date formatting
@@ -253,14 +179,14 @@ You can now use these variables to create a pattern for your custom datetime str
 
 
 ```r
-curr_time <- lubridate::as_datetime('WED 06-JUNE-18 10:47:30 AM',
-                       format = '%a %d-%B-%y %I:%M:%S %p',
-                       tz = "EST")
+curr_time <- as_datetime(x = 'WED 06-JUNE-18 10:47:30 AM',
+                         format = '%a %d-%B-%y %I:%M:%S %p',
+                         tz = "America/New_York")
 curr_time
 ```
 
 ```
-## [1] "2018-06-06 10:47:30 EST"
+## [1] "2018-06-06 10:47:30 EDT"
 ```
 
 
@@ -380,8 +306,6 @@ Signed offset in hours and minutes from UTC, so -0800 is 8 hours behind UTC. Val
 
 %Z
 (Output only.) Time zone abbreviation as a character string (empty if not available). This may not be reliable when a time zone has changed abbreviations over the years.
-
-
 ```
 
 ## Datetime arithmetic
@@ -394,5 +318,19 @@ now() - curr_time
 ```
 
 ```
-## Time difference of 477.0105 days
+## Time difference of 729.3137 days
+```
+
+
+```r
+x <- interval(start = curr_time, end = now())
+```
+
+
+```r
+as.period(x = x, unit = "day")
+```
+
+```
+## [1] "729d 7H 31M 44.0462186336517S"
 ```

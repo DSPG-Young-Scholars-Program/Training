@@ -17,7 +17,9 @@ Cheat Sheets
 ## lubridate
 
 ```{r}
-library(lubridate)
+invisible(x = suppressPackageStartupMessages(expr = library(package = lubridate)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = nycflights13)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = maditr)))
 ```
 
 ```{r}
@@ -47,32 +49,30 @@ ymd(20190606)
 ```
 
 ```{r}
-ymd_hms('2018-06-06 10:33:55', tz = 'EDT')
+ymd_hms('2018-06-06 10:33:55', tz = 'GMT')
 ```
 
 ## Making datetimes from data
 
 ```{r}
-library(nycflights13)
-library(dplyr)
 flights
 ```
 
 ```{r}
 flight_times <- flights %>%
-    select(year, month, day, hour, minute)
+    take(year, month, day, hour, minute)
 flight_times
 ```
 
 ```{r}
 flight_times %>%
-    mutate(dep_dt = make_datetime(year, month, day, hour, minute))
+    let(dep_dt = make_datetime(year = year, month = month, day = day, hour = hour, min = minute))
 ```
 
 ```{r}
 flights %>%
-    select(year, month, day, hour, minute) %>%
-    mutate(dep_dt = make_datetime(year, month, day, hour, minute))
+    take(year, month, day, hour, minute) %>%
+    let(dep_dt = make_datetime(year, month, day, hour, minute))
 ```
 
 ## Non-standard date formatting
@@ -97,9 +97,9 @@ If you look at the `strptime` documentation, you will get a nice table of codes 
 You can now use these variables to create a pattern for your custom datetime string
 
 ```{r}
-curr_time <- lubridate::as_datetime('WED 06-JUNE-18 10:47:30 AM',
-                       format = '%a %d-%B-%y %I:%M:%S %p',
-                       tz = "EST")
+curr_time <- as_datetime(x = 'WED 06-JUNE-18 10:47:30 AM',
+                         format = '%a %d-%B-%y %I:%M:%S %p',
+                         tz = "America/New_York")
 curr_time
 ```
 
@@ -220,8 +220,6 @@ Signed offset in hours and minutes from UTC, so -0800 is 8 hours behind UTC. Val
 
 %Z
 (Output only.) Time zone abbreviation as a character string (empty if not available). This may not be reliable when a time zone has changed abbreviations over the years.
-
-
 ```
 
 ## Datetime arithmetic
@@ -230,4 +228,12 @@ Once you have a datetime object, you can then begin to do calculations and arith
 
 ```{r}
 now() - curr_time
+```
+
+```{r}
+x <- interval(start = curr_time, end = now())
+```
+
+```{r}
+as.period(x = x, unit = "day")
 ```

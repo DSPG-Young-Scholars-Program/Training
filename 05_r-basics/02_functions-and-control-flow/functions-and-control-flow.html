@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -147,6 +146,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -187,36 +187,9 @@ summary {
 
 <div id="housekeeping" class="section level2">
 <h2>Housekeeping</h2>
-<pre class="r"><code>library(rlang)
-library(stringr)
-library(purrr)</code></pre>
-<pre><code>## 
-## Attaching package: 'purrr'</code></pre>
-<pre><code>## The following objects are masked from 'package:rlang':
-## 
-##     %@%, as_function, flatten, flatten_chr, flatten_dbl,
-##     flatten_int, flatten_lgl, flatten_raw, invoke, list_along,
-##     modify, prepend, splice</code></pre>
-<pre class="r"><code>library(testthat)</code></pre>
-<pre><code>## 
-## Attaching package: 'testthat'</code></pre>
-<pre><code>## The following object is masked from 'package:purrr':
-## 
-##     is_null</code></pre>
-<pre><code>## The following objects are masked from 'package:rlang':
-## 
-##     is_false, is_null, is_true</code></pre>
-<pre class="r"><code>library(maditr)</code></pre>
-<pre><code>## 
-## To aggregate several columns with one summary: take(mtcars, mpg, hp, fun = mean, by = am)</code></pre>
-<pre><code>## 
-## Attaching package: 'maditr'</code></pre>
-<pre><code>## The following object is masked from 'package:purrr':
-## 
-##     transpose</code></pre>
-<pre><code>## The following object is masked from 'package:rlang':
-## 
-##     :=</code></pre>
+<pre class="r"><code>invisible(x = suppressPackageStartupMessages(expr = library(package = tidyverse)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = maditr)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = testthat)))</code></pre>
 </div>
 <div id="functions-and-control-flow" class="section level2">
 <h2>Functions and Control Flow</h2>
@@ -415,30 +388,30 @@ test_that(&quot;nine doubled is nine&quot;, {
 <pre class="r"><code>x &lt;- 1L:1e5L
 system.time(expr = x^2)</code></pre>
 <pre><code>##    user  system elapsed 
-##   0.001   0.000   0.002</code></pre>
+##       0       0       0</code></pre>
 <pre class="r"><code>system.time(expr = {
   for (idx in seq_along(x)) {
     x[idx] &lt;- idx^2
     }})</code></pre>
 <pre><code>##    user  system elapsed 
-##   0.023   0.000   0.024</code></pre>
-<pre class="r"><code>data(&quot;iris&quot;)
-x &lt;- list()
+##   0.007   0.000   0.007</code></pre>
+<pre class="r"><code>data(&quot;iris&quot;)</code></pre>
+<pre class="r"><code>x &lt;- list()
 for (i in 1L:10L) {
   x[[i]] &lt;- iris
-  }
-magic &lt;- function(data) {
-  dt_filter(data = data, Species %in% &quot;setosa&quot;)
-  }
-y &lt;- copy(x = x)
+}</code></pre>
+<pre class="r"><code>magic &lt;- function(data) {
+  take_if(data = data, Species %in% &quot;setosa&quot;)
+}</code></pre>
+<pre class="r"><code>y &lt;- copy(x = x)
 for (idx in seq_along(along.with = y)) {
   y[[idx]] &lt;- magic(data = y[[idx]])
-  }
-y &lt;- do.call(what = rbind, args = y)
-z &lt;- map_df(.x = x, .f = magic)
-expect_equal(object = y,
-             expected = z)
-system.time(expr = {
+}</code></pre>
+<pre class="r"><code>y &lt;- do.call(what = rbind, args = y)</code></pre>
+<pre class="r"><code>z &lt;- map_df(.x = x, .f = magic)</code></pre>
+<pre class="r"><code>expect_equal(object = y,
+             expected = z)</code></pre>
+<pre class="r"><code>system.time(expr = {
   y &lt;- copy(x = x)
   for (idx in seq_along(along.with = y)) {
     y[[idx]] &lt;- magic(data = y[[idx]])
@@ -446,12 +419,12 @@ system.time(expr = {
   y &lt;- do.call(what = rbind, args = y)
   })</code></pre>
 <pre><code>##    user  system elapsed 
-##   1.991   0.038   0.447</code></pre>
+##   0.005   0.000   0.005</code></pre>
 <pre class="r"><code>system.time(expr = {
   map_df(.x = x, .f = magic)
   })</code></pre>
 <pre><code>##    user  system elapsed 
-##   1.737   0.034   0.519</code></pre>
+##   0.005   0.000   0.005</code></pre>
 </div>
 </div>
 
