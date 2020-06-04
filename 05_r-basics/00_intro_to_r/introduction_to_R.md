@@ -43,7 +43,7 @@ if (interactive()) {
 message(cat("Welcome, Dr. Nosferican.\nLogged at: ", as.character(Sys.time()), Sys.getenv(x = "TZ")))
 ```
 
-which displays an R fortune cookie, a welcome message and current time when I start a session.
+which displays an R fortune cookie, a welcome message, and current time when I start a session.
 The fortune cookie is a random piece of R history/culture very useful to understand the
 philosophy behind the project.
 
@@ -1032,7 +1032,7 @@ minute(x = x)
 ```
 
 ```
-## [1] 18
+## [1] 27
 ```
 
 ```r
@@ -1040,7 +1040,7 @@ second(x = x)
 ```
 
 ```
-## [1] 58.07195
+## [1] 10.15607
 ```
 
 ```r
@@ -1048,7 +1048,7 @@ seconds(x = x)
 ```
 
 ```
-## [1] "1591309138.07195S"
+## [1] "1591309630.15607S"
 ```
 
 ```r
@@ -1056,7 +1056,7 @@ x %m+% months(x = 1L, abbreviate = TRUE)
 ```
 
 ```
-## [1] "2020-07-04 18:18:58 AST"
+## [1] "2020-07-04 18:27:10 AST"
 ```
 
 Named vectors are an example of a struct with more than one atomic data type element

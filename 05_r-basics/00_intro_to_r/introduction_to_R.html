@@ -217,7 +217,7 @@ if (interactive()) {
   try(expr = fortunes::fortune(), silent = TRUE)
 }
 message(cat(&quot;Welcome, Dr. Nosferican.\nLogged at: &quot;, as.character(Sys.time()), Sys.getenv(x = &quot;TZ&quot;)))</code></pre>
-<p>which displays an R fortune cookie, a welcome message and current time when I start a session. The fortune cookie is a random piece of R history/culture very useful to understand the philosophy behind the project.</p>
+<p>which displays an R fortune cookie, a welcome message, and current time when I start a session. The fortune cookie is a random piece of R history/culture very useful to understand the philosophy behind the project.</p>
 </div>
 <div id="setting-up-your-environment-housekeeping" class="section level2">
 <h2>Setting up your environment (Housekeeping)</h2>
@@ -577,13 +577,13 @@ year(x = x)</code></pre>
 <pre class="r"><code>hour(x = x)</code></pre>
 <pre><code>## [1] 18</code></pre>
 <pre class="r"><code>minute(x = x)</code></pre>
-<pre><code>## [1] 18</code></pre>
+<pre><code>## [1] 27</code></pre>
 <pre class="r"><code>second(x = x)</code></pre>
-<pre><code>## [1] 58.07195</code></pre>
+<pre><code>## [1] 10.15607</code></pre>
 <pre class="r"><code>seconds(x = x)</code></pre>
-<pre><code>## [1] &quot;1591309138.07195S&quot;</code></pre>
+<pre><code>## [1] &quot;1591309630.15607S&quot;</code></pre>
 <pre class="r"><code>x %m+% months(x = 1L, abbreviate = TRUE)</code></pre>
-<pre><code>## [1] &quot;2020-07-04 18:18:58 AST&quot;</code></pre>
+<pre><code>## [1] &quot;2020-07-04 18:27:10 AST&quot;</code></pre>
 <p>Named vectors are an example of a struct with more than one atomic data type element</p>
 <pre class="r"><code>x &lt;- c(a = 1L, b = 2L)
 str(object = x)</code></pre>

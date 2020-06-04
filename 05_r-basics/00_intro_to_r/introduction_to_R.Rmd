@@ -42,7 +42,7 @@ if (interactive()) {
 message(cat("Welcome, Dr. Nosferican.\nLogged at: ", as.character(Sys.time()), Sys.getenv(x = "TZ")))
 ```
 
-which displays an R fortune cookie, a welcome message and current time when I start a session.
+which displays an R fortune cookie, a welcome message, and current time when I start a session.
 The fortune cookie is a random piece of R history/culture very useful to understand the
 philosophy behind the project.
 
