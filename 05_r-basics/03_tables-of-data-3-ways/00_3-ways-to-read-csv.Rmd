@@ -9,24 +9,35 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r sample-data}
+df1 <- data.frame(a = seq(1,16,by=2), b = LETTERS[1:8], x= month.abb[1:8], y = sample(10:20,10000, replace = TRUE), z=letters[1:8])
+data.table::fwrite(df1, "sample_small.csv")
+
+df2 <- data.frame(a = seq(1,16,by=2), b = LETTERS[1:8], x= month.abb[1:8], y = sample(10:20,1000000, replace = TRUE), z=letters[1:8])
+data.table::fwrite(df2, "sample_medium.csv")
+
+df3 <- data.frame(a = seq(1,16,by=2), b = LETTERS[1:8], x= month.abb[1:8], y = sample(10:20,10000000, replace = TRUE), z=letters[1:8])
+data.table::fwrite(df3, "sample_large.csv")
+```
+
+
 # base
 ```{r base}
-pigeon_racing_df <- read.csv("pigeon-racing.csv", stringsAsFactors = FALSE)
-system.time(read.csv("ticket_cleint.csv", stringsAsFactors = FALSE))
+system.time(read.csv <- read.csv("sample_large.csv", stringsAsFactors = FALSE))
 ```
 
 # readr (need to assign to new data.frame)
 ```{r readr}
 library(readr)
-pigeon_racing_tbl <- read_csv("pigeon-racing.csv", col_types = "c")
-system.time(read_csv("ticket_cleint.csv"))
+
+system.time(read_csv <- read_csv("sample_large.csv", progress = FALSE))
 ```
 
 # data.table
 ```{r data.table}
 library(data.table)
-pigeon_racing_dt <- fread("pigeon-racing.csv")
-system.time(fread("ticket_cleint.csv"))
+
+system.time(fread <- fread("sample_large.csv"))
 ```
 
 
@@ -36,5 +47,37 @@ fread("pigeon-racing.csv", drop = 4:11)
 fread("pigeon-racing.csv", select = c(1, 2, 3))
 fread("pigeon-racing.csv", drop = c("Name", "Arrival"))
 fread("pigeon-racing.csv", select = c("Breeder", "Speed"))
+```
+
+# A 4th Way!
+```{r vroom}
+library(vroom)
+system.time(vroom <- vroom("sample_large.csv"))
+```
+
+```{r}
+results_vroom <- microbenchmark(
+  read.csv = read.csv(file = here("static", "data", "sim-data-large.csv")),
+  read_csv = read_csv(file = here("static", "data", "sim-data-large.csv")),
+  vroom = vroom::vroom(file = here("static", "data", "sim-data-large.csv"))
+)
+```
+
+
+```{r}
+library(microbenchmark)
+results <- microbenchmark(
+  read.csv = read.csv(file = "sample_medium.csv", stringsAsFactors = FALSE),
+  read_csv = read_csv(file = "sample_medium.csv", progress = FALSE),
+  fread = fread(file = "sample_medium.csv"),
+  vroom = vroom::vroom(file = "sample_medium.csv"),
+  times = 10
+)
+
+library(ggplot2)
+autoplot(object = results) +
+  scale_y_log10() +
+  labs(y = "Time [milliseconds], logged")
+
 ```
 

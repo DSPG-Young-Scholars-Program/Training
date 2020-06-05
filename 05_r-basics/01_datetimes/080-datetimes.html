@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -145,6 +144,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -193,12 +193,9 @@ summary {
 </ul>
 <div id="lubridate" class="section level2">
 <h2>lubridate</h2>
-<pre class="r"><code>library(lubridate)</code></pre>
-<pre><code>## 
-## Attaching package: 'lubridate'</code></pre>
-<pre><code>## The following object is masked from 'package:base':
-## 
-##     date</code></pre>
+<pre class="r"><code>invisible(x = suppressPackageStartupMessages(expr = library(package = lubridate)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = nycflights13)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = maditr)))</code></pre>
 <pre class="r"><code>ymd('2018-06-06')</code></pre>
 <pre><code>## [1] &quot;2018-06-06&quot;</code></pre>
 <pre class="r"><code>dt_str &lt;- '2018-06-06'
@@ -218,103 +215,59 @@ class(dt_dt)</code></pre>
 </div>
 <div id="making-datetimes-from-data" class="section level2">
 <h2>Making datetimes from data</h2>
-<pre class="r"><code>library(nycflights13)
-library(dplyr)</code></pre>
-<pre><code>## 
-## Attaching package: 'dplyr'</code></pre>
-<pre><code>## The following objects are masked from 'package:lubridate':
-## 
-##     intersect, setdiff, union</code></pre>
-<pre><code>## The following objects are masked from 'package:stats':
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union</code></pre>
 <pre class="r"><code>flights</code></pre>
 <pre><code>## # A tibble: 336,776 x 19
-##     year month   day dep_time sched_dep_time dep_delay arr_time
-##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;
-##  1  2013     1     1      517            515         2      830
-##  2  2013     1     1      533            529         4      850
-##  3  2013     1     1      542            540         2      923
-##  4  2013     1     1      544            545        -1     1004
-##  5  2013     1     1      554            600        -6      812
-##  6  2013     1     1      554            558        -4      740
-##  7  2013     1     1      555            600        -5      913
-##  8  2013     1     1      557            600        -3      709
-##  9  2013     1     1      557            600        -3      838
-## 10  2013     1     1      558            600        -2      753
-## # … with 336,766 more rows, and 12 more variables: sched_arr_time &lt;int&gt;,
-## #   arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;,
-## #   origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;,
-## #   minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # … with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
 <pre class="r"><code>flight_times &lt;- flights %&gt;%
-    select(year, month, day, hour, minute)
+    take(year, month, day, hour, minute)
 flight_times</code></pre>
-<pre><code>## # A tibble: 336,776 x 5
-##     year month   day  hour minute
-##    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt;
-##  1  2013     1     1     5     15
-##  2  2013     1     1     5     29
-##  3  2013     1     1     5     40
-##  4  2013     1     1     5     45
-##  5  2013     1     1     6      0
-##  6  2013     1     1     5     58
-##  7  2013     1     1     6      0
-##  8  2013     1     1     6      0
-##  9  2013     1     1     6      0
-## 10  2013     1     1     6      0
-## # … with 336,766 more rows</code></pre>
+<pre><code>##         year month day hour minute
+##      1: 2013     1   1    5     15
+##      2: 2013     1   1    5     29
+##      3: 2013     1   1    5     40
+##      4: 2013     1   1    5     45
+##      5: 2013     1   1    6      0
+##     ---                           
+## 336772: 2013     9  30   14     55
+## 336773: 2013     9  30   22      0
+## 336774: 2013     9  30   12     10
+## 336775: 2013     9  30   11     59
+## 336776: 2013     9  30    8     40</code></pre>
 <pre class="r"><code>flight_times %&gt;%
-    mutate(dep_dt = make_datetime(year, month, day, hour, minute))</code></pre>
-<pre><code>## # A tibble: 336,776 x 6
-##     year month   day  hour minute dep_dt             
-##    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dttm&gt;             
-##  1  2013     1     1     5     15 2013-01-01 05:15:00
-##  2  2013     1     1     5     29 2013-01-01 05:29:00
-##  3  2013     1     1     5     40 2013-01-01 05:40:00
-##  4  2013     1     1     5     45 2013-01-01 05:45:00
-##  5  2013     1     1     6      0 2013-01-01 06:00:00
-##  6  2013     1     1     5     58 2013-01-01 05:58:00
-##  7  2013     1     1     6      0 2013-01-01 06:00:00
-##  8  2013     1     1     6      0 2013-01-01 06:00:00
-##  9  2013     1     1     6      0 2013-01-01 06:00:00
-## 10  2013     1     1     6      0 2013-01-01 06:00:00
-## # … with 336,766 more rows</code></pre>
+    let(dep_dt = make_datetime(year = year, month = month, day = day, hour = hour, min = minute))</code></pre>
 <pre class="r"><code>flights %&gt;%
-    select(year, month, day, hour, minute) %&gt;%
-    mutate(dep_dt = make_datetime(year, month, day, hour, minute))</code></pre>
-<pre><code>## # A tibble: 336,776 x 6
-##     year month   day  hour minute dep_dt             
-##    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dttm&gt;             
-##  1  2013     1     1     5     15 2013-01-01 05:15:00
-##  2  2013     1     1     5     29 2013-01-01 05:29:00
-##  3  2013     1     1     5     40 2013-01-01 05:40:00
-##  4  2013     1     1     5     45 2013-01-01 05:45:00
-##  5  2013     1     1     6      0 2013-01-01 06:00:00
-##  6  2013     1     1     5     58 2013-01-01 05:58:00
-##  7  2013     1     1     6      0 2013-01-01 06:00:00
-##  8  2013     1     1     6      0 2013-01-01 06:00:00
-##  9  2013     1     1     6      0 2013-01-01 06:00:00
-## 10  2013     1     1     6      0 2013-01-01 06:00:00
-## # … with 336,766 more rows</code></pre>
+    take(year, month, day, hour, minute) %&gt;%
+    let(dep_dt = make_datetime(year, month, day, hour, minute))</code></pre>
 </div>
 <div id="non-standard-date-formatting" class="section level2">
 <h2>Non-standard date formatting</h2>
 <pre class="r"><code># an example of a non-standard date format
 'WED 06-JUNE-18 10:47:30 AM'</code></pre>
 <pre><code>## [1] &quot;WED 06-JUNE-18 10:47:30 AM&quot;</code></pre>
-<p>If you look at the <code>as_datetime</code> function, under the ‘format’ section there is a link to the <code>strptime</code> documentation</p>
+<p>If you look at the <code>as_datetime</code> function, under the 'format' section there is a link to the <code>strptime</code> documentation</p>
 <pre class="r"><code>?lubridate::as_datetime</code></pre>
 <p>If you look at the <code>strptime</code> documentation, you will get a nice table of codes you can use to create your own datetime pattern</p>
 <pre class="r"><code>?strptime</code></pre>
 <p>You can now use these variables to create a pattern for your custom datetime string</p>
-<pre class="r"><code>curr_time &lt;- lubridate::as_datetime('WED 06-JUNE-18 10:47:30 AM',
-                       format = '%a %d-%B-%y %I:%M:%S %p',
-                       tz = &quot;EST&quot;)
+<pre class="r"><code>curr_time &lt;- as_datetime(x = 'WED 06-JUNE-18 10:47:30 AM',
+                         format = '%a %d-%B-%y %I:%M:%S %p',
+                         tz = &quot;America/New_York&quot;)
 curr_time</code></pre>
-<pre><code>## [1] &quot;2018-06-06 10:47:30 EST&quot;</code></pre>
+<pre><code>## [1] &quot;2018-06-06 10:47:30 EDT&quot;</code></pre>
 </div>
 <div id="strptime-format-variables" class="section level2">
 <h2>strptime format variables</h2>
@@ -429,15 +382,16 @@ For input, only years 0:9999 are accepted.
 Signed offset in hours and minutes from UTC, so -0800 is 8 hours behind UTC. Values up to +1400 are accepted. (Standard only for output.)
 
 %Z
-(Output only.) Time zone abbreviation as a character string (empty if not available). This may not be reliable when a time zone has changed abbreviations over the years.
-
-</code></pre>
+(Output only.) Time zone abbreviation as a character string (empty if not available). This may not be reliable when a time zone has changed abbreviations over the years.</code></pre>
 </div>
 <div id="datetime-arithmetic" class="section level2">
 <h2>Datetime arithmetic</h2>
 <p>Once you have a datetime object, you can then begin to do calculations and arithmetic on them.</p>
 <pre class="r"><code>now() - curr_time</code></pre>
-<pre><code>## Time difference of 477.0105 days</code></pre>
+<pre><code>## Time difference of 729.3137 days</code></pre>
+<pre class="r"><code>x &lt;- interval(start = curr_time, end = now())</code></pre>
+<pre class="r"><code>as.period(x = x, unit = &quot;day&quot;)</code></pre>
+<pre><code>## [1] &quot;729d 7H 31M 44.0462186336517S&quot;</code></pre>
 </div>
 </div>
 

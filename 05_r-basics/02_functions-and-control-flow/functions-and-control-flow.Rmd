@@ -7,19 +7,12 @@ output:
     keep_md: yes
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_knit$set(echo = TRUE,
-                     root.dir = rprojroot::find_rstudio_root_file())
-```
-
 ## Housekeeping
 
 ```{r}
-library(rlang)
-library(stringr)
-library(purrr)
-library(testthat)
-library(maditr)
+invisible(x = suppressPackageStartupMessages(expr = library(package = tidyverse)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = maditr)))
+invisible(x = suppressPackageStartupMessages(expr = library(package = testthat)))
 ```
 
 
@@ -241,21 +234,42 @@ system.time(expr = {
 
 ```{r}
 data("iris")
+```
+
+```{r preallocation}
 x <- list()
 for (i in 1L:10L) {
   x[[i]] <- iris
-  }
+}
+```
+
+```{r function}
 magic <- function(data) {
-  dt_filter(data = data, Species %in% "setosa")
-  }
+  take_if(data = data, Species %in% "setosa")
+}
+```
+
+```{r pre-allocation and func}
 y <- copy(x = x)
 for (idx in seq_along(along.with = y)) {
   y[[idx]] <- magic(data = y[[idx]])
-  }
+}
+```
+
+```{r docall}
 y <- do.call(what = rbind, args = y)
+```
+
+```{r purrr}
 z <- map_df(.x = x, .f = magic)
+```
+
+```{r test approaches}
 expect_equal(object = y,
              expected = z)
+```
+
+```{r time approaches}
 system.time(expr = {
   y <- copy(x = x)
   for (idx in seq_along(along.with = y)) {
