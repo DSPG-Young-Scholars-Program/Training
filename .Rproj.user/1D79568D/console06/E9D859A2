@@ -1160,3 +1160,34 @@ To https://github.com/DSPG-Young-Scholars-Program/Training.git
 [m]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git pushllstatusreset --soft HEAD^
 ]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git reset --soft HEAD^
 ]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git commit -m "huh"
+[master f9d358e] huh
+ 21 files changed, 1969 insertions(+), 1663 deletions(-)
+ rewrite .Rproj.user/1D79568D/console06/E9D859A2 (97%)
+ rewrite .Rproj.user/1D79568D/console06/INDEX001 (86%)
+ create mode 100644 05_r-basics/00_intro_to_r/introduction_to_R_files/figure-html/unnamed-chunk-13-1.png
+ delete mode 100644 05_r-basics/03_tables-of-data-3-ways/ticket_client.zip
+ create mode 100644 05_r-basics/R Basics/R Basics.Rmd
+ create mode 100644 05_r-basics/R Basics/R-Basics.html
+ create mode 100644 05_r-basics/R Basics/rsconnect/documents/R Basics.Rmd/shinyapps.io/nosferican/R-Basics.dcf
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git push 
+error: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': dads2busy
+error: cannot run rpostback-askpass: No such file or directory
+Password for 'https://dads2busy@github.com': 
+To https://github.com/DSPG-Young-Scholars-Program/Training.git
+ [31m! [rejected]       [m master -> master (non-fast-forward)
+[31merror: failed to push some refs to 'https://github.com/DSPG-Young-Scholars-Program/Training.git'
+[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
+[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
+[33mhint: 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git pull
+hint: Waiting for your editor to close the file... error: cannot run vi: No such file or directory
+error: unable to start editor 'vi'
+Not committing merge; use 'git commit' to complete the merge.
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$  [Kgit commit -m "lost"
+[master 9d8333e] lost
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git pull
+Already up to date.
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
