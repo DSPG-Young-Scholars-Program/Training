@@ -1,0 +1,196 @@
+---
+title: "Data Visualization with Base R and ggplot2"
+author: "Ford Ramsey"
+fontsize: 10pt
+output:
+  html_document
+---
+
+
+One of the most important aspects of data exploration is data visualization. The goal of this module is to introduce basic concepts of data visualization using functions from base R and the package [ggplot2](https://ggplot2.tidyverse.org/). Although ggplot2 can be used as a standalone package for plotting, it is a part of Hadley Wickham's [tidyverse](https://www.tidyverse.org/). The tidyverse is a collection of packages for data science. As we will see, availing ourselves of other tidyverse packages will be useful for using `ggplot2`.
+
+Unless we are dealing with spatial data or large text files, most of the data we encounter will be in tabular form. As you are already aware, tabular data is a set of values where each value is associated with a variable and observation. We wish to visualize those values and uncover information about distributions of variables or relationships between variables. In doing so, we will also pay attention to the intended audience for a visualization and whether the plot appropriately communicates the information we want to convey. 
+
+For the first few examples, we will use data on passenger throughput reported by the Transportation Safety Administration (TSA). The data is contained in an Excel file with the first row containing variable names.
+```{r, message = FALSE}
+library(tidyverse)
+library(readxl)
+tsa <- read_excel("throughput.xlsx") # Change Directory
+names(tsa) <- c("date", "passengers_2020", "passengers_2019")
+```
+The data is read into R using the `read_excel()` function from the `readxl` package. This package is also part of the tidyverse. The function reads the variables into their correct formats. The dataset contains information on passenger throughput each day in both 2019 and 2020.
+
+We will also use a dataset called airquality that is part of the `ggplot` package. It can be directly accessed using the following code.
+```{r}
+air <- airquality
+```
+
+# Visualization in Base R
+
+Most basic plots in base R have their own standalone functions. Scatterplots can be implemented using the `plot()` function. For instance, we can construct a scatterplot of passengers in 2019 versus passengers in 2020.
+```{r}
+plot(x = tsa$passengers_2019, y = tsa$passengers_2020)
+```
+
+Although the plot gives a general impression of much lower passenger numbers in 2020, it's difficult to tell due to the scale of the axes. In base R, most amendments to plots can be made inside the plotting function. We can add more informative labels and change the limits of the scatterplot. The resulting plot is somewhat more informative.
+```{r}
+plot(x = tsa$passengers_2019, y = tsa$passengers_2020, xlab = "2019 Passengers", ylab = "2020 Passengers", xlim = c(0,3000000), ylim = c(0,3000000))
+```
+
+***
+
+We may also be interested in the distribution of a random variable. Histograms are one way to visualize a distribution. The function for plotting histograms in R is `hist()`. Let's plot the distribution of passengers per day in 2019.
+```{r}
+hist(tsa$passengers_2019)
+```
+
+Another option for visualizing this distribution is to construct a smoothed density plot or kernel density estimate. The kernel density estimate is, very roughly, constructed by placing many tiny normal distributions at each point in the data. In constructing the density plot, we will also encounter some differences between base R and `ggplot2`. Base R does not have a function to simultaneously calculate and plot a kernel density estimate. Instead, we have to first calculate the density estimate with a call to the `density()` function. The results of this call are saved to the object `smoothed`. Then we use the `plot()` function to plot `smoothed`.
+```{r}
+smoothed <- density(tsa$passengers_2019)
+plot(smoothed)
+```
+
+We don't have to provide the `plot()` function with any additional information. It inherently knows what to do with an object of the "density" class. We will find that this additional step is unecessary in ggplot2 which has graphical primitives for a wider variety of plots.
+
+Boxplots can be useful for visualizing differences between distributions of variables. Let's switch to the data on air quality. The data contain measurements on ozone, solar radiation, and other weather variables by month and day. The measurements were recorded in New York City between May and September of 1973.
+
+We will start by plotting the distribution of temperature by month. The `boxplot()` funcion is used to create the boxplot in this case. Note that month is not coded as a factor in the raw data, so we first set it as an ordered factor. Then maximum daily temperature is plotted by month using the base function.
+```{r}
+air$Month <- factor(air$Month, order = TRUE, labels = c("May", "June", "July", "August", "September"))
+boxplot(Temp ~ Month, data = air, xlab = "Month", ylab = "Maximum Daily Temperature (F)")
+```
+
+A barchart is a chart where the length of a bar is proportional to the value of the variable. In R, this is accomplished with the `barplot()` function. Suppose that we are interested in plotting the cumulative solar radiation in each month. We would first sum the solar radiation in each month.
+```{r}
+summed <- aggregate(x = air$Solar.R,                # Specify data column
+          by = list(air$Month),              # Specify group indicator
+          FUN = sum, na.rm = TRUE) 
+names(summed) <- c("Month", "Radiation")
+barplot(height = summed$Radiation, names.arg = summed$Month, xlab = "Month", ylab = "Cumulative Solar Radiation")
+```
+
+Apparently July had the most solar radiation in that year.
+
+# Visualization with ggplot2
+`Ggplot2` implements what has been called a grammar of graphics. By having a coherent system for naming different types of graphics, once you learn the basics of this grammar, you can cook up new graphics fairly quickly. `Ggplot2` essentially requires data, a mapping of variables to aesthetics, and graphic primitives. More information on `ggplot2` is available in the following Datacamp courses:
+
+- The `ggplot2` stack
+
+    - https://www.datacamp.com/courses/data-visualization-with-ggplot2-1
+
+    - https://www.datacamp.com/courses/data-visualization-with-ggplot2-2
+
+    - https://www.datacamp.com/courses/data-visualization-with-ggplot2-part-3
+
+
+## A Simple Graphic
+We start with a simple line plot called with the following code
+```{r}
+library(ggplot2)
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers_2020))
+```
+
+The output is a line plot showing the number of passengers by date in 2020. There are two key elements to the call to `ggplot2`. First, there is the basic `ggplot()` function where we specify the data space for the plot. This creates a coordinate system on which layers will be added. The `geom_line()` function creates a layer that is added to the plot. The different geoms in `ggplot2` correspond to different types of plots and are graphical primitives. Complete lists of available geoms can be found online. The mapping in the second term includes an aesthetic that controls how data is visually displayed in the layer. You can see that the code basically maps different variables to aesthetics of the plot. Here, the `geom_line()` function has x and y components that control the values that are plotted. 
+
+We may also be interested in a comparison of passengers in 2019 versus 2020. There are several ways to do this. I'm going to first demonstrate an approach that works, but isn't proper.
+```{r}
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers_2019), color = "blue") + geom_line(mapping = aes(x = date, y = passengers_2020), color = "red")
+```
+
+We can see that the plot could be corrected by changing the text accompanying the y axis. In addition, it is impossible to tell the difference in the lines from the plot. A more informative plot would have both lines displayed with different colors and a legend telling the viewer which line corresponds to which year. To do this, we want to map a variable to the color component of the plot. To do so, it's necessary to restructure the data so that year is its own variable.
+
+Tidyverse has several functions available to do the necessary pivot. The current functions are `pivot_longer()` and `pivot_wider()`. The correct call is
+```{r}
+tsa <- tsa %>% pivot_longer(-date, names_to = "year", values_to = "passengers", names_prefix = "passengers_")
+head(tsa)
+```
+
+Now that the data is in a format more amenable to the plotting we want, the call to ggplot is 
+```{r}
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers, color = year))
+```
+
+The year variable is now mapped to the color aesthetic in ggplot. The result is correctly labeled and has a descriptive legend. 
+
+## Labels and Other Niceties
+We can change the labels in the previous plot. These can be succinctly relabeled by adding the `labs()` function to the plot. There are also two helper functions `xlab()` and `ylab()` that can be used to specify labels for the x and y axes specifically.
+```{r}
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers, color = year)) + labs(color = "Year", x = "Date", y = "Passengers")
+```
+
+You may notice that the y axis ticks use scientific notation which is not particularly friendly for the average reader. To customize axes, you use the functions `scale_x_continuous()` and `scale_y_continuous()` (or `scale_x_discrete()` when the values are discrete). In this case, we might prefer to display the passenger values as their raw values. This can be done by loading the package scales and changing the labels argument on the y variable scale.
+```{r}
+library(scales)
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers, color = year)) + labs(color = "Year", x = "Date", y = "Passengers") + scale_y_continuous(labels = comma)
+```
+
+Documentation for the scales package contains a list of different scales and tick formats available in the package.
+
+We may also want to change the appearance of the plot outside of the way that the data is displayed. For instance, we might prefer to have a gray background in the plotting area. The easiest way to do this in `ggplot2` is with themes. Specific elements of a plot can be controlled using the `theme()` function, but ggplot2 also comes with some complete themes. For instance, the dark theme adds extra shading in the plotting area.
+```{r}
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers, color = year)) + labs(color = "Year", x = "Date", y = "Passengers") + scale_y_continuous(labels = comma) + theme_dark()
+```
+
+The `ggthemes` package contains many user-created themes that replicate the styles of popular publications.
+```{r}
+library(ggthemes)
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers, color = year)) + labs(color = "Year", x = "Date", y = "Passengers") + scale_y_continuous(labels = comma) + theme_wsj()
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers, color = year)) + labs(color = "Year", x = "Date", y = "Passengers") + scale_y_continuous(labels = comma) + theme_economist()
+```
+
+## Geoms
+So far we have confined ourselves to a single type of plot in `ggplot2`. Other types of plots are available using different geoms. Let's recreate some of the same plot types we made with base R. First, we can create a scatterplot of passenger throughput over time. In this case, we again use the color aesthetic to distinguish between 2019 and 2020.
+```{r}
+ggplot(data = tsa) + geom_point(mapping = aes(x = date, y = passengers, color = year))
+```
+
+We could also consider using a smooth line to connect the points in the previous plot. Because we are adding an extra layer to the plot, we require the use of a second geom. Notice in the code below, that we simply add the geom_smooth function to the ggplot call.
+```{r}
+ggplot(data = tsa) + geom_point(mapping = aes(x = date, y = passengers, color = year)) + geom_smooth(mapping = aes(x = date, y = passengers, color = year))
+```
+
+You will remember that when we wanted to create a kernel density plot in base R, we had to calculate the density first and assign the density estimate to an object. This step can be avoided with ggplot. Suppose we want to see a kernel density estimate of passengers. We only need to use the geom_density function.
+```{r}
+ggplot(data = tsa) + geom_density(mapping = aes(x = passengers))
+```
+
+Notice that the density is bimodal and these modes roughly correspond to the years 2019 and 2020.
+
+## Aesthetic Mappings
+So far, we have only mapped variables to the color aesthetic. However, ggplot has many different aesthetics within geoms that you can map to different variables. In the examples that follow, we return to plotting passengers by year in a line plot. But instead of having the year variables assigned to the color aesthetic, we will assign it to different aesthetics. The different aesthetics available in a geom can be found in the ggplot documentation.
+```{r}
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers, alpha = year)) + labs(x = "Date", y = "Passengers") + scale_y_continuous(labels = comma)
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers, group = year)) + labs(x = "Date", y = "Passengers") + scale_y_continuous(labels = comma)
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers, linetype = year)) + labs(x = "Date", y = "Passengers") + scale_y_continuous(labels = comma)
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers, size = year)) + labs(x = "Date", y = "Passengers") + scale_y_continuous(labels = comma)
+```
+
+Take a look at the aesthetics to make sure you know what each one is doing. Notice that the group aesthetic groups passengers by year, but otherwise does not make any other changes to the plot. As a general rule, when you want to display two or more sets of data in a plot, they groupings should be their own variable.
+
+## Coordinate Systems
+Ggplot has the capability to use different coordinate systems. For instance, polar coordinates can be used if desired. For the purposes of this basic introduction, the most useful coordinate function is `ccord_flip`. This flips the x and y axes. For instance,
+```{r}
+ggplot(data = tsa) + geom_line(mapping = aes(x = date, y = passengers, color = year)) + labs(x = "Date", y = "Passengers") + scale_y_continuous(labels = comma) + coord_flip()
+```
+
+Not particularly useful in this case, but can be nice if labels on one axis are especially long. Two other interesting functions are `coord_equal()` and `coord_fixed()` which forces a specific ratio between the representations of data units on the axes.
+
+## Non-variable Aesthetics
+We often have cause to change aesthetics that are not related to a specific variable. For instance, we may want to jitter the data in a scatterplot. Such changes go inside a geom, but not inside the mapping argument. We can illustrate with the diamonds dataset. This dataset contains information on diamonds, such as cut, clarity, etc.
+```{r}
+diamond <- diamonds
+ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, fill = clarity))
+ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, fill = clarity))
+ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, fill = clarity), position = 'fill')
+ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, fill = clarity), position = 'dodge')
+```
+
+Notice that the graphs display (essentially) the same information. We have not made any changes to the aesthetics related to variables. Information on other options for each geom can be found in the associated help documentation.
+
+# Saving Plots
+Plots can be saved manually or using the `ggsave()` function. There are some other options as well that can make use of your PDF rendering engine.
+
+# Funding for this training provided by
+![](C:/Users/aframsey/Desktop/usda_nifa_logo_300.png)
+
+
