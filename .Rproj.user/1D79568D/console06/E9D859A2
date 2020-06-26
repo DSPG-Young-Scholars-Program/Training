@@ -1,1180 +1,3 @@
-
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63A_ Omnibus Study of Attitudes 07_1943, codebook.AMS063A.CDBK
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63A_ Omnibus Study of Attitudes 07_1943, codebook.AMS063A.CDBK.ascii
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63B_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS063B.CDBK
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63B_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS063B.CDBK.ascii
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63C_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS063C.CDBK
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63C_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS063C.CDBK.ascii
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63D_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS063D.CDBK
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63D_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS063D.CDBK.ascii
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63E_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS063E.CDBK
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63E_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS063E.CDBK.ascii
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63F_ Omnibus Study of Attitudes 07_1943, codebook.AMS063F.CDBK
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63F_ Omnibus Study of Attitudes 07_1943, codebook.AMS063F.CDBK.ascii
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63G_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS063G.CDBK
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63G_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS063G.CDBK.ascii
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63_ Technical Specifications Summary.224.7TSS.pdf
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63_ Technical documentation.224.7DP.pdf
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-64), July-September 1943/Electronic Records/AMS-64_ Omnibus Study of Attitudes 07-09_1943, data.AMS64.CLEAN
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-64), July-September 1943/Technical Documentation/AMS-64_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS0064.CDBK
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-64), July-September 1943/Technical Documentation/AMS-64_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS0064.CDBK.ascii
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-64), July-September 1943/Technical Documentation/AMS-64_ Technical Specifications Summary.224.8TSS.pdf
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-64), July-September 1943/Technical Documentation/AMS-64_ Technical documentation.224.8DP.pdf
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-64), July-September 1943/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Orientation Problems (AMS-230), April 1945/Electronic Records/AMS-230_ Orientation Problems 04_1945, data.AMS230.CLEAN
- create mode 100644 data/original/Orientation Problems (AMS-230), April 1945/Technical Documentation/AMS-230_ Orientation Problems 04_1945, codebook.AMS0230.CDBK
- create mode 100644 data/original/Orientation Problems (AMS-230), April 1945/Technical Documentation/AMS-230_ Orientation Problems 04_1945, codebook.AMS0230.CDBK.ascii
- create mode 100644 data/original/Orientation Problems (AMS-230), April 1945/Technical Documentation/AMS-230_ Technical Specifications Summary.224.78TSS.pdf
- create mode 100644 data/original/Orientation Problems (AMS-230), April 1945/Technical Documentation/AMS-230_ Technical documentation.224.78DP.pdf
- create mode 100644 data/original/Orientation Problems (AMS-230), April 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Planning Survey (PS-5), December 1942/Electronic Records/PS-5A_ Planning Survey, data.AMSPS5A.CLEAN
- create mode 100644 data/original/Planning Survey (PS-5), December 1942/Electronic Records/PS-5B_ Planning Survey, data.AMSPS5B.CLEAN
- create mode 100644 data/original/Planning Survey (PS-5), December 1942/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Planning Survey (PS-5), December 1942/Technical Documentation/PS-5A_ Planning Survey, codebook.AMSPS5A.CDBK
- create mode 100644 data/original/Planning Survey (PS-5), December 1942/Technical Documentation/PS-5A_ Planning Survey, codebook.AMSPS5A.CDBK.ascii
- create mode 100644 data/original/Planning Survey (PS-5), December 1942/Technical Documentation/PS-5B_ Planning Survey, codebook.AMSPS5B.CDBK
- create mode 100644 data/original/Planning Survey (PS-5), December 1942/Technical Documentation/PS-5B_ Planning Survey, codebook.AMSPS5B.CDBK.ascii
- create mode 100644 data/original/Planning Survey (PS-5), December 1942/Technical Documentation/PS-5_ Technical Specifications Summary.224.84TSS.pdf
- create mode 100644 data/original/Planning Survey (PS-5), December 1942/Technical Documentation/PS-5_ Technical documentation.224.84DP.pdf
- create mode 100644 "data/original/Planning Survey for Attitudes toward Medical Care (PS-4), October 1942/Electronic Records/PS-4_ Planning \342\200\246 for Attitudes toward Medical Care, data.AMS.PS04.CLEAN"
- create mode 100644 data/original/Planning Survey for Attitudes toward Medical Care (PS-4), October 1942/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Planning Survey for Attitudes toward Medical Care (PS-4), October 1942/Technical Documentation/PS-4_ Planning for Attitudes toward Medical Care, codebook.AMSPS04.CDBK
- create mode 100644 data/original/Planning Survey for Attitudes toward Medical Care (PS-4), October 1942/Technical Documentation/PS-4_ Planning for Attitudes toward Medical Care, codebook.AMSPS04.CDBK.ascii
- create mode 100644 data/original/Planning Survey for Attitudes toward Medical Care (PS-4), October 1942/Technical Documentation/PS-4_ Technical Specifications Summary.224.2TSS.pdf
- create mode 100644 data/original/Planning Survey for Attitudes toward Medical Care (PS-4), October 1942/Technical Documentation/PS-4_ Technical documentation.224.2DP.pdf
- create mode 100644 data/original/Port Battalion Study (AMS-196), January 1945/Electronic Records/AMS-196_ Port Battalion Study 01_1945, data.AMS196.CLEAN
- create mode 100644 data/original/Port Battalion Study (AMS-196), January 1945/Technical Documentation/AMS-196_ Port Battalion Study 01_1945, codebook.AMS0196.CDBK
- create mode 100644 data/original/Port Battalion Study (AMS-196), January 1945/Technical Documentation/AMS-196_ Port Battalion Study 01_1945, codebook.AMS0196.CDBK.ascii
- create mode 100644 data/original/Port Battalion Study (AMS-196), January 1945/Technical Documentation/AMS-196_ Technical Specifications Summary.224.61TSS.pdf
- create mode 100644 data/original/Port Battalion Study (AMS-196), January 1945/Technical Documentation/AMS-196_ Technical documentation.224.61DP.pdf
- create mode 100644 data/original/Port Battalion Study (AMS-196), January 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 "data/original/Post-War Army Plans of Officers and Enlisted Men (AMS-198), February 1945/Electronic Records/AMS-198E_ Post-War Army Plans \342\200\246 02_1945, data.AMS198E.CLEAN"
- create mode 100644 data/original/Post-War Army Plans of Officers and Enlisted Men (AMS-198), February 1945/Electronic Records/AMS-198O_ Post-War Army Plans ... 02_1945, data.AMS198O.CLEAN
- create mode 100644 data/original/Post-War Army Plans of Officers and Enlisted Men (AMS-198), February 1945/Electronic Records/AMS-198RO_ Post-War Army Plans ... 02_1945, data.AMS198RO.CLEAN
- create mode 100644 data/original/Post-War Army Plans of Officers and Enlisted Men (AMS-198), February 1945/Technical Documentation/AMS- 198_ Technical Specifications Summary.224.62TSS.pdf
- create mode 100644 "data/original/Post-War Army Plans of Officers and Enlisted Men (AMS-198), February 1945/Technical Documentation/AMS-198E_ Post-War Army Plans \342\200\246 02_1945, codebook.AMS198E.CDBK"
- create mode 100644 "data/original/Post-War Army Plans of Officers and Enlisted Men (AMS-198), February 1945/Technical Documentation/AMS-198E_ Post-War Army Plans \342\200\246 02_1945, codebook.AMS198E.CDBK.ascii"
- create mode 100644 data/original/Post-War Army Plans of Officers and Enlisted Men (AMS-198), February 1945/Technical Documentation/AMS-198O_ Post-War Army Plans ... 02_1945, codebook.AMS198O.CDBK
- create mode 100644 data/original/Post-War Army Plans of Officers and Enlisted Men (AMS-198), February 1945/Technical Documentation/AMS-198O_ Post-War Army Plans ... 02_1945, codebook.AMS198O.CDBK.ascii
- create mode 100644 data/original/Post-War Army Plans of Officers and Enlisted Men (AMS-198), February 1945/Technical Documentation/AMS-198RO_ Post-War Army Plans ... 02_1945, codebook.AMS198RO.CDBK
- create mode 100644 data/original/Post-War Army Plans of Officers and Enlisted Men (AMS-198), February 1945/Technical Documentation/AMS-198RO_ Post-War Army Plans ... 02_1945, codebook.AMS198RO.CDBK.ascii
- create mode 100644 data/original/Post-War Army Plans of Officers and Enlisted Men (AMS-198), February 1945/Technical Documentation/AMS-198_ Technical documentation.224.62DP.pdf
- create mode 100644 data/original/Post-War Army Plans of Officers and Enlisted Men (AMS-198), February 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 "data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Electronic Records/AMS-106EE_ Post-War Job Plans of \342\200\246 Enlisted Men, data.AMS106EE.CLEAN"
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Electronic Records/AMS-106EH_ Post-War Job Plans of White Enlisted Men, data.AMS106EH.CLEAN
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Electronic Records/AMS-106EU_ Post-War Job Plans of White Enlisted Men, data.AMS106EU.CLEAN
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Electronic Records/AMS-106OE_ Post-War Job Plans of White Officers, data.AMS106OE.CLEAN
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Electronic Records/AMS-106OH_ Post-War Job Plans of White Officers, data.AMS106OH.CLEAN
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Electronic Records/AMS-106OU_ Post-War Job Plans of White Officers, data.AMS106OU.CLEAN
- create mode 100644 "data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106EE_ Post-War Job Plans of \342\200\246 Enlisted Men, codebook.AMS106EE.CDBK"
- create mode 100644 "data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106EE_ Post-War Job Plans of \342\200\246 Enlisted Men, codebook.AMS106EE.CDBK.ascii"
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106EH_ Job Plans of White Enlisted Men, codebook.AMS106EH.CDBK
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106EH_ Job Plans of White Enlisted Men, codebook.AMS106EH.CDBK.ascii
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106EU_ Job Plans of White Enlisted Men, codebook.AMS106EU.CDBK
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106EU_ Job Plans of White Enlisted Men, codebook.AMS106EU.CDBK.ascii
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106OE_ Post-War Job Plans of White Officers, codebook.AMS106OE.CDBK
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106OE_ Post-War Job Plans of White Officers, codebook.AMS106OE.CDBK.ascii
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106OH_ Post-War Job Plans of White Officers, codebook.AMS106OH.CDBK
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106OH_ Post-War Job Plans of White Officers, codebook.AMS106OH.CDBK.ascii
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106OU_ Post-War Job Plans of White Officers, codebook.AMS106OU.CDBK
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106OU_ Post-War Job Plans of White Officers, codebook.AMS106OU.CDBK.ascii
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106_ Technical Specifications Summary.224.24TSS.pdf
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/AMS-106_ Technical documentation.224.24DP.pdf
- create mode 100644 data/original/Post-War Job Plans of White (and Negro) Enlisted Men (Officers) (AMS-106), June 1944/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Post-War Plans Study (AMS-159), October 1944/Electronic Records/AMS-159_ Post-War Plans Study 10_1944, data.AMS0159.CLEAN
- create mode 100644 data/original/Post-War Plans Study (AMS-159), October 1944/Technical Documentation/AMS-159_ Post-War Plans Study 10_1944, codebook.AMS0159.CDBK
- create mode 100644 data/original/Post-War Plans Study (AMS-159), October 1944/Technical Documentation/AMS-159_ Post-War Plans Study 10_1944, codebook.AMS0159.CDBK.ascii
- create mode 100644 data/original/Post-War Plans Study (AMS-159), October 1944/Technical Documentation/AMS-159_ Technical Specifications Summary.224.48TSS.pdf
- create mode 100644 data/original/Post-War Plans Study (AMS-159), October 1944/Technical Documentation/AMS-159_ Technical documentation.224.48DP.pdf
- create mode 100644 data/original/Post-War Plans Study (AMS-159), October 1944/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Post-War Plans of Negro Soldiers (AMS-144), August 1944/Electronic Records/AMS-144_ Post-War Plans of Negro Soldiers 08_1944, data.AMS0144.CLEAN
- create mode 100644 data/original/Post-War Plans of Negro Soldiers (AMS-144), August 1944/Technical Documentation/AMS-144_ Post-War Plans of Negro Soldiers 08_1944, codebook.AMS0144.CDBK
- create mode 100644 data/original/Post-War Plans of Negro Soldiers (AMS-144), August 1944/Technical Documentation/AMS-144_ Post-War Plans of Negro Soldiers 08_1944, codebook.AMS0144.CDBK.ascii
- create mode 100644 data/original/Post-War Plans of Negro Soldiers (AMS-144), August 1944/Technical Documentation/AMS-144_ Technical Specifications Summary.224.43TSS.pdf
- create mode 100644 data/original/Post-War Plans of Negro Soldiers (AMS-144), August 1944/Technical Documentation/AMS-144_ Technical documentation.224.43DP.pdf
- create mode 100644 data/original/Post-War Plans of Negro Soldiers (AMS-144), August 1944/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Pre-VE Day Study of Men_s Attitudes toward Military Service after VE Day (AMS-186), March 1945/Electronic Records/AMS-186B_ Military Service after VE Day, data.AMS186B.CLEAN
- create mode 100644 data/original/Pre-VE Day Study of Men_s Attitudes toward Military Service after VE Day (AMS-186), March 1945/Technical Documentation/AMS-186B_ Military Service after VE Day, codebook.AMS186B.CDBK
- create mode 100644 data/original/Pre-VE Day Study of Men_s Attitudes toward Military Service after VE Day (AMS-186), March 1945/Technical Documentation/AMS-186B_ Military Service after VE Day, codebook.AMS186B.CDBK.ascii
- create mode 100644 data/original/Pre-VE Day Study of Men_s Attitudes toward Military Service after VE Day (AMS-186), March 1945/Technical Documentation/AMS-186_ Technical Specifications Summary.224.56TSS.pdf
- create mode 100644 data/original/Pre-VE Day Study of Men_s Attitudes toward Military Service after VE Day (AMS-186), March 1945/Technical Documentation/AMS-186_ Technical documentation.224.56DP.pdf
- create mode 100644 data/original/Pre-VE Day Study of Men_s Attitudes toward Military Service after VE Day (AMS-186), March 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Psychiatric Study (AMS-74), September 1943/Electronic Records/AMS-74_ Psychiatric Study, data.AMS74.CLEAN
- create mode 100644 data/original/Psychiatric Study (AMS-74), September 1943/Technical Documentation/AMS-74_ Psychiatric Study, codebook.AMS0074.CDBK
- create mode 100644 data/original/Psychiatric Study (AMS-74), September 1943/Technical Documentation/AMS-74_ Psychiatric Study, codebook.AMS0074.CDBK.ascii
- create mode 100644 data/original/Psychiatric Study (AMS-74), September 1943/Technical Documentation/AMS-74_ Technical Specifications Summary.224.11TSS.pdf
- create mode 100644 data/original/Psychiatric Study (AMS-74), September 1943/Technical Documentation/AMS-74_ Technical documentation.224.11DP.pdf
- create mode 100644 data/original/Psychiatric Study (AMS-74), September 1943/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Psychoneurotic Screening (AMS-108), March 1944/Electronic Records/AMS-108_ Psychoneurotic Screening 03_1944, data.AMS0108.CLEAN
- create mode 100644 data/original/Psychoneurotic Screening (AMS-108), March 1944/Technical Documentation/AMS-108_ Psychoneurotic Screening 03_1944, codebook.AMS0108.CDBK
- create mode 100644 data/original/Psychoneurotic Screening (AMS-108), March 1944/Technical Documentation/AMS-108_ Psychoneurotic Screening 03_1944, codebook.AMS0108.CDBK.ascii
- create mode 100644 data/original/Psychoneurotic Screening (AMS-108), March 1944/Technical Documentation/AMS-108_ Technical Specifications Summary.224.26TSS.pdf
- create mode 100644 data/original/Psychoneurotic Screening (AMS-108), March 1944/Technical Documentation/AMS-108_ Technical documentation.224.26DP.pdf
- create mode 100644 data/original/Psychoneurotic Screening (AMS-108), March 1944/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Psychoneurotic Study (AMS-126), April-May 1944/Electronic Records/AMS-126_ Psychoneurotic Study 04-05_1944, data.AMS126.CLEAN
- create mode 100644 data/original/Psychoneurotic Study (AMS-126), April-May 1944/Technical Documentation/AMS-126_ Psychoneurotic Study 04-05_1944, codebook.AMS0126.CDBK
- create mode 100644 data/original/Psychoneurotic Study (AMS-126), April-May 1944/Technical Documentation/AMS-126_ Psychoneurotic Study 04-05_1944, codebook.AMS0126.CDBK.ascii
- create mode 100644 data/original/Psychoneurotic Study (AMS-126), April-May 1944/Technical Documentation/AMS-126_ Technical Specifications Summary.224.33TSS.pdf
- create mode 100644 data/original/Psychoneurotic Study (AMS-126), April-May 1944/Technical Documentation/AMS-126_ Technical documentation.224.33DP.pdf
- create mode 100644 data/original/Psychoneurotic Study (AMS-126), April-May 1944/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Psychoneurotic Study (AMS-177), November-December 1944/Electronic Records/AMS-177_ Psychoneurotic Study 11-12_1944, data.AMS0177.CLEAN
- create mode 100644 data/original/Psychoneurotic Study (AMS-177), November-December 1944/Technical Documentation/AMS-177_ Psychoneurotic Study 11-12_1944, codebook.AMS0177.CDBK
- create mode 100644 data/original/Psychoneurotic Study (AMS-177), November-December 1944/Technical Documentation/AMS-177_ Psychoneurotic Study 11-12_1944, codebook.AMS0177.CDBK.ascii
- create mode 100644 data/original/Psychoneurotic Study (AMS-177), November-December 1944/Technical Documentation/AMS-177_ Technical Specifications Summary.224.54TSS.pdf
- create mode 100644 data/original/Psychoneurotic Study (AMS-177), November-December 1944/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Radio Survey (AMS-189), January 1945/Electronic Records/AMS-189_ Radio Survey 01_1945, data.AMS0189.CLEAN
- create mode 100644 data/original/Radio Survey (AMS-189), January 1945/Technical Documentation/AMS-189_ Radio Survey 01_1945, codebook.AMS0189.CDBK
- create mode 100644 data/original/Radio Survey (AMS-189), January 1945/Technical Documentation/AMS-189_ Radio Survey 01_1945, codebook.AMS0189.CDBK.ascii
- create mode 100644 data/original/Radio Survey (AMS-189), January 1945/Technical Documentation/AMS-189_ Technical Specifications Summary.224.57TSS.pdf
- create mode 100644 data/original/Radio Survey (AMS-189), January 1945/Technical Documentation/AMS-189_ Technical documentation.224.57DP.pdf
- create mode 100644 data/original/Radio Survey (AMS-189), January 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Returnee Study (AMS-172), March-May 1945/Electronic Records/AMS-172_ Returnee Study 03-05_1945, data.AMS172.CLEAN
- create mode 100644 data/original/Returnee Study (AMS-172), March-May 1945/Technical Documentation/AMS-172_ Returnee Study 03-05_1945, codebook.AMS0172.CDBK
- create mode 100644 data/original/Returnee Study (AMS-172), March-May 1945/Technical Documentation/AMS-172_ Returnee Study 03-05_1945, codebook.AMS0172.CDBK.ascii
- create mode 100644 data/original/Returnee Study (AMS-172), March-May 1945/Technical Documentation/AMS-172_ Technical documentation.224.51DP.pdf
- create mode 100644 data/original/Returnee Study (AMS-172), March-May 1945/Technical Documentation/AMS-172_Technical Specifications Summary.224.51TSS.pdf
- create mode 100644 data/original/Returnee Study (AMS-172), March-May 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Returnees_ Reactions to Enemy and Further Duty (AMS-211), June 1945/Electronic Records/AMS-211A_ Returnee Reactions, data.AMS211A.CLEAN
- create mode 100644 data/original/Returnees_ Reactions to Enemy and Further Duty (AMS-211), June 1945/Electronic Records/AMS-211B_ Returnee Reactions, data.AMS211B.CLEAN
- create mode 100644 data/original/Returnees_ Reactions to Enemy and Further Duty (AMS-211), June 1945/Technical Documentation/AMS-211A_ Returnee Reactions, codebook.AMS211A.CDBK
- create mode 100644 data/original/Returnees_ Reactions to Enemy and Further Duty (AMS-211), June 1945/Technical Documentation/AMS-211A_ Returnee Reactions, codebook.AMS211A.CDBK.ascii
- create mode 100644 data/original/Returnees_ Reactions to Enemy and Further Duty (AMS-211), June 1945/Technical Documentation/AMS-211B_ Returnee Reactions, codebook.AMS211B.CDBK
- create mode 100644 data/original/Returnees_ Reactions to Enemy and Further Duty (AMS-211), June 1945/Technical Documentation/AMS-211B_ Returnee Reactions, codebook.AMS211B.CDBK.ascii
- create mode 100644 data/original/Returnees_ Reactions to Enemy and Further Duty (AMS-211), June 1945/Technical Documentation/AMS-211_ Technical Specifications Summary.224.69TSS.pdf
- create mode 100644 data/original/Returnees_ Reactions to Enemy and Further Duty (AMS-211), June 1945/Technical Documentation/AMS-211_ Technical documentation.224.69DP.pdf
- create mode 100644 data/original/Returnees_ Reactions to Enemy and Further Duty (AMS-211), June 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Rotation Study (AMS-132), June-July 1944/Electronic Records/AMS-132A_ Rotation Study 06-07_1944, data.AMS132A.CLEAN
- create mode 100644 data/original/Rotation Study (AMS-132), June-July 1944/Electronic Records/AMS-132B_ Rotation Study 06-07_1944, data.AMS132B.CLEAN
- create mode 100644 data/original/Rotation Study (AMS-132), June-July 1944/Electronic Records/AMS-132C_ Rotation Study 06-07_1944, data.AMS132C.CLEAN
- create mode 100644 data/original/Rotation Study (AMS-132), June-July 1944/Technical Documentation/AMS-132A_ Rotation Study 06-07_1944, codebook.AMS132A.CDBK
- create mode 100644 data/original/Rotation Study (AMS-132), June-July 1944/Technical Documentation/AMS-132A_ Rotation Study 06-07_1944, codebook.AMS132A.CDBK.ascii
- create mode 100644 data/original/Rotation Study (AMS-132), June-July 1944/Technical Documentation/AMS-132B_ Rotation Study 06-07_1944, codebook.AMS132B.CDBK
- create mode 100644 data/original/Rotation Study (AMS-132), June-July 1944/Technical Documentation/AMS-132B_ Rotation Study 06-07_1944, codebook.AMS132B.CDBK.ascii
- create mode 100644 data/original/Rotation Study (AMS-132), June-July 1944/Technical Documentation/AMS-132C_ Rotation Study 06-07_1944, codebook.AMS132C.CDBK
- create mode 100644 data/original/Rotation Study (AMS-132), June-July 1944/Technical Documentation/AMS-132C_ Rotation Study 06-07_1944, codebook.AMS132C.CDBK.ascii
- create mode 100644 data/original/Rotation Study (AMS-132), June-July 1944/Technical Documentation/AMS-132_ Technical Specifications Summary.224.36TSS.pdf
- create mode 100644 data/original/Rotation Study (AMS-132), June-July 1944/Technical Documentation/AMS-132_ Technical documentation.224.36DP.pdf
- create mode 100644 data/original/Rotation Study (AMS-132), June-July 1944/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Electronic Records/AMS-100A_ Survey of Enlisted Men Overseas 02_1944, data.AMS100A.CLEAN
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Electronic Records/AMS-100B_ Survey of Combat Infantrymen 01-04_1944, data.AMS100B.CLEAN
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Electronic Records/AMS-100C_ Survey of Combat Infantrymen 01-04_1944, data.AMS100C.CLEAN
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Electronic Records/AMS-100D_ Survey of Combat Infantrymen 01-04_1944, data.AMS100D.CLEAN
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Electronic Records/AMS-100E_ Survey of Combat Infantrymen 01_1944, data.AMS100E.CLEAN
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Electronic Records/AMS-100F_ Survey of Combat Infantrymen 01_1944, data.AMS100F.CLEAN
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Electronic Records/AMS-100G_ Survey of Combat Infantrymen 01-04_1944, data.AMS100G.CLEAN
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100A_ Survey of Enlisted Men Overseas 02_1944, codebook.AMS100A.CDBK
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100A_ Survey of Enlisted Men Overseas 02_1944, codebook.AMS100A.CDBK.ascii
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100B_ Survey of Combat Infantrymen 01-04_1944, codebook.AMS100B.CDBK
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100B_ Survey of Combat Infantrymen 01-04_1944, codebook.AMS100B.CDBK.ascii
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100C_ Survey of Combat Infantrymen 01-04_1944, codebook.AMS100C.CDBK
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100C_ Survey of Combat Infantrymen 01-04_1944, codebook.AMS100C.CDBK.ascii
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100D_ Survey of Combat Infantrymen 01-04_1944, codebook.AMS100D.CDBK
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100D_ Survey of Combat Infantrymen 01-04_1944, codebook.AMS100D.CDBK.ascii
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100E_ Survey of Combat Infantrymen 01_1944, codebook.AMS100E.CDBK
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100E_ Survey of Combat Infantrymen 01_1944, codebook.AMS100E.CDBK.ascii
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100F_ Survey of Combat Infantrymen 01_1944, codebook.AMS100F.CDBK
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100F_ Survey of Combat Infantrymen 01_1944, codebook.AMS100F.CDBK.ascii
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100G_ Survey of Combat Infantrymen 01-04_1944, codebook.AMS100G.CDBK
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100G_ Survey of Combat Infantrymen 01-04_1944, codebook.AMS100G.CDBK.ascii
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100_ Technical Specifications Summary.224.22TSS.pdf
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/AMS-100_ Technical documentation.224.22DP.pdf
- create mode 100644 data/original/Survey of Enlisted Men Overseas and Survey of Combat Infantrymen (AMS-100), February, January, and January-April 1944/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Survey of Hospital Patients (AMS-193), July 1945/Electronic Records/AMS-193_ Survey of Hospital Patients, data.AMS193.CLEAN
- create mode 100644 data/original/Survey of Hospital Patients (AMS-193), July 1945/Technical Documentation/AMS-193 Technical Specifications Summary.224.59TSS.pdf
- create mode 100644 data/original/Survey of Hospital Patients (AMS-193), July 1945/Technical Documentation/AMS-193_ Survey of Hospital Patients, codebook.AMS0193.CDBK
- create mode 100644 data/original/Survey of Hospital Patients (AMS-193), July 1945/Technical Documentation/AMS-193_ Survey of Hospital Patients, codebook.AMS0193.CDBK.ascii
- create mode 100644 data/original/Survey of Hospital Patients (AMS-193), July 1945/Technical Documentation/AMS-193_ Technical documentation.224.59DP.pdf
- create mode 100644 data/original/Survey of Hospital Patients (AMS-193), July 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Trends in Attitudes (AMS-210), March-April 1945/Electronic Records/AMS-210_ Trends in Attitudes 03-04_1945, data.AMS210.CLEAN
- create mode 100644 data/original/Trends in Attitudes (AMS-210), March-April 1945/Technical Documentation/AMS-210_ Technical Specifications Summary.224.68TSS.pdf
- create mode 100644 data/original/Trends in Attitudes (AMS-210), March-April 1945/Technical Documentation/AMS-210_ Technical documentation.224.68DP.pdf
- create mode 100644 data/original/Trends in Attitudes (AMS-210), March-April 1945/Technical Documentation/AMS-210_ Trends in Attitudes 03-04_1945, codebook.AMS0210.CDBK
- create mode 100644 data/original/Trends in Attitudes (AMS-210), March-April 1945/Technical Documentation/AMS-210_ Trends in Attitudes 03-04_1945, codebook.AMS0210.CDBK.ascii
- create mode 100644 data/original/Trends in Attitudes (AMS-210), March-April 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Utilization of Civilian Skills in Army Jobs (AMS-68), July 1943/Electronic Records/AMS-68_ Utilization of Civilian Skills, data.AMS0068.CLEAN
- create mode 100644 data/original/Utilization of Civilian Skills in Army Jobs (AMS-68), July 1943/Technical Documentation/AMS-68_ Technical Specifications Summary.224.9TSS.pdf
- create mode 100644 data/original/Utilization of Civilian Skills in Army Jobs (AMS-68), July 1943/Technical Documentation/AMS-68_ Technical documentation.224.9DP.pdf
- create mode 100644 data/original/Utilization of Civilian Skills in Army Jobs (AMS-68), July 1943/Technical Documentation/AMS-68_ Utilization of Civilian Skills, codebook.AMS0068.CDBK
- create mode 100644 data/original/Utilization of Civilian Skills in Army Jobs (AMS-68), July 1943/Technical Documentation/AMS-68_ Utilization of Civilian Skills, codebook.AMS0068.CDBK.ascii
- create mode 100644 data/original/Utilization of Civilian Skills in Army Jobs (AMS-68), July 1943/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Winter Clothing Survey (AMS-199), January 1945/Electronic Records/AMS-199_ Winter Clothing Survey 01_1945, data.AMS199.CLEAN
- create mode 100644 data/original/Winter Clothing Survey (AMS-199), January 1945/Technical Documentation/AMS-199_ Technical Specifications Summary.224.63TSS.pdf
- create mode 100644 data/original/Winter Clothing Survey (AMS-199), January 1945/Technical Documentation/AMS-199_ Technical documentation.224.63DP.pdf
- create mode 100644 data/original/Winter Clothing Survey (AMS-199), January 1945/Technical Documentation/AMS-199_ Winter Clothing Survey 01_1945, codebook.AMS0199.CDBK
- create mode 100644 data/original/Winter Clothing Survey (AMS-199), January 1945/Technical Documentation/AMS-199_ Winter Clothing Survey 01_1945, codebook.AMS0199.CDBK.ascii
- create mode 100644 data/original/Winter Clothing Survey (AMS-199), January 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/_Stars and Stripes_ Survey and _Warweek_ and _Army Talks_ Survey (AMS-203), February 1945/Electronic Records/AMS-203A_ _Stars and Stripes_ Survey, data.AMS203A.CLEAN
- create mode 100644 data/original/_Stars and Stripes_ Survey and _Warweek_ and _Army Talks_ Survey (AMS-203), February 1945/Electronic Records/AMS-203B_ _Warweek_ and _Army Talks_ Survey, data.AMS203B.CLEAN
- create mode 100644 data/original/_Stars and Stripes_ Survey and _Warweek_ and _Army Talks_ Survey (AMS-203), February 1945/Technical Documentation/AMS-203A_ _Stars and Stripes_ Survey, codebook.AMS203A.CDBK
- create mode 100644 data/original/_Stars and Stripes_ Survey and _Warweek_ and _Army Talks_ Survey (AMS-203), February 1945/Technical Documentation/AMS-203A_ _Stars and Stripes_ Survey, codebook.AMS203A.CDBK.ascii
- create mode 100644 data/original/_Stars and Stripes_ Survey and _Warweek_ and _Army Talks_ Survey (AMS-203), February 1945/Technical Documentation/AMS-203B_ _Warweek_ and _Army Talks_ Survey, codebook.AMS203B.CDBK
- create mode 100644 data/original/_Stars and Stripes_ Survey and _Warweek_ and _Army Talks_ Survey (AMS-203), February 1945/Technical Documentation/AMS-203B_ _Warweek_ and _Army Talks_ Survey, codebook.AMS203B.CDBK.ascii
- create mode 100644 data/original/_Stars and Stripes_ Survey and _Warweek_ and _Army Talks_ Survey (AMS-203), February 1945/Technical Documentation/AMS-203_ Technical Specifications Summary.224.64TSS.pdf
- create mode 100644 data/original/_Stars and Stripes_ Survey and _Warweek_ and _Army Talks_ Survey (AMS-203), February 1945/Technical Documentation/AMS-203_ Technical documentation.224.64DP.pdf
- create mode 100644 data/original/_Stars and Stripes_ Survey and _Warweek_ and _Army Talks_ Survey (AMS-203), February 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/_Stars and Stripes_ Survey and _Warweek_ and _Army Talks_ Survey (AMS-203), February 1945/Technical Documentation/editAMS-203B_ _Warweek_ and _Army Talks_ Survey, codebook.AMS203B.CDBedit
- create mode 100644 data/working/.. the 8th and 9th Air Force, codebook.AMS0136_answers.csv
- create mode 100644 data/working/.. the 8th and 9th Air Force, codebook.AMS0136_questions.csv
- create mode 100644 data/working/.. the 8th and 9th Air Force, codebook.AMS0150_answers.csv
- create mode 100644 data/working/.. the 8th and 9th Air Force, codebook.AMS0150_questions.csv
- create mode 100644 data/working/AMS0035.sav
- create mode 100644 data/working/AMS0035_answers.csv
- create mode 100644 data/working/AMS0035_questions.csv
- create mode 100644 data/working/AMS0044T.sav
- create mode 100644 data/working/AMS0044T_answers.csv
- create mode 100644 data/working/AMS0044T_questions.csv
- create mode 100644 data/working/AMS0047.sav
- create mode 100644 data/working/AMS0047_answers.csv
- create mode 100644 data/working/AMS0047_questions.csv
- create mode 100644 data/working/AMS0064.sav
- create mode 100644 data/working/AMS0064_answers.csv
- create mode 100644 data/working/AMS0064_questions.csv
- create mode 100644 data/working/AMS0068.sav
- create mode 100644 data/working/AMS0068_answers.csv
- create mode 100644 data/working/AMS0068_questions.csv
- create mode 100644 data/working/AMS0072.sav
- create mode 100644 data/working/AMS0072_answers.csv
- create mode 100644 data/working/AMS0072_questions.csv
- create mode 100644 data/working/AMS0074.sav
- create mode 100644 data/working/AMS0074_answers.csv
- create mode 100644 data/working/AMS0074_questions.csv
- create mode 100644 data/working/AMS0076.sav
- create mode 100644 data/working/AMS0076_answers.csv
- create mode 100644 data/working/AMS0076_questions.csv
- create mode 100644 data/working/AMS0079.sav
- create mode 100644 data/working/AMS0079_answers.csv
- create mode 100644 data/working/AMS0079_questions.csv
- create mode 100644 data/working/AMS0083.sav
- create mode 100644 data/working/AMS0083_answers.csv
- create mode 100644 data/working/AMS0083_questions.csv
- create mode 100644 data/working/AMS0085.sav
- create mode 100644 data/working/AMS0085_answers.csv
- create mode 100644 data/working/AMS0085_questions.csv
- create mode 100644 data/working/AMS0086.sav
- create mode 100644 data/working/AMS0086_answers.csv
- create mode 100644 data/working/AMS0086_questions.csv
- create mode 100644 data/working/AMS0087.sav
- create mode 100644 data/working/AMS0087_answers.csv
- create mode 100644 data/working/AMS0087_questions.csv
- create mode 100644 data/working/AMS0091.sav
- create mode 100644 data/working/AMS0091_answers.csv
- create mode 100644 data/working/AMS0091_questions.csv
- create mode 100644 data/working/AMS0092.sav
- create mode 100644 data/working/AMS0092_answers.csv
- create mode 100644 data/working/AMS0092_questions.csv
- create mode 100644 data/working/AMS0093.sav
- create mode 100644 data/working/AMS0093_answers.csv
- create mode 100644 data/working/AMS0093_questions.csv
- create mode 100644 data/working/AMS0108.sav
- create mode 100644 data/working/AMS0108_answers.csv
- create mode 100644 data/working/AMS0108_questions.csv
- create mode 100644 data/working/AMS0112.sav
- create mode 100644 data/working/AMS0112_answers.csv
- create mode 100644 data/working/AMS0112_questions.csv
- create mode 100644 data/working/AMS0113.sav
- create mode 100644 data/working/AMS0113_answers.csv
- create mode 100644 data/working/AMS0113_questions.csv
- create mode 100644 data/working/AMS0116.sav
- create mode 100644 data/working/AMS0116_answers.csv
- create mode 100644 data/working/AMS0116_questions.csv
- create mode 100644 data/working/AMS0122.sav
- create mode 100644 data/working/AMS0122_answers.csv
- create mode 100644 data/working/AMS0122_questions.csv
- create mode 100644 data/working/AMS0125.sav
- create mode 100644 data/working/AMS0125_answers.csv
- create mode 100644 data/working/AMS0125_questions.csv
- create mode 100644 data/working/AMS0126.sav
- create mode 100644 data/working/AMS0126_answers.csv
- create mode 100644 data/working/AMS0126_questions.csv
- create mode 100644 data/working/AMS0127.sav
- create mode 100644 data/working/AMS0127_answers.csv
- create mode 100644 data/working/AMS0127_questions.csv
- create mode 100644 data/working/AMS0131.sav
- create mode 100644 data/working/AMS0131_answers.csv
- create mode 100644 data/working/AMS0131_questions.csv
- create mode 100644 data/working/AMS0134.sav
- create mode 100644 data/working/AMS0134_answers.csv
- create mode 100644 data/working/AMS0134_questions.csv
- create mode 100644 data/working/AMS0136.sav
- create mode 100644 data/working/AMS0136_answers.csv
- create mode 100644 data/working/AMS0136_questions.csv
- create mode 100644 data/working/AMS0141.sav
- create mode 100644 data/working/AMS0141_answers.csv
- create mode 100644 data/working/AMS0141_questions.csv
- create mode 100644 data/working/AMS0142.sav
- create mode 100644 data/working/AMS0142_answers.csv
- create mode 100644 data/working/AMS0142_questions.csv
- create mode 100644 data/working/AMS0144.sav
- create mode 100644 data/working/AMS0144_answers.csv
- create mode 100644 data/working/AMS0144_questions.csv
- create mode 100644 data/working/AMS0145.sav
- create mode 100644 data/working/AMS0145_answers.csv
- create mode 100644 data/working/AMS0145_questions.csv
- create mode 100644 data/working/AMS0146.sav
- create mode 100644 data/working/AMS0146_answers.csv
- create mode 100644 data/working/AMS0146_questions.csv
- create mode 100644 data/working/AMS0150.sav
- create mode 100644 data/working/AMS0150_answers.csv
- create mode 100644 data/working/AMS0150_questions.csv
- create mode 100644 data/working/AMS0159.sav
- create mode 100644 data/working/AMS0159_answers.csv
- create mode 100644 data/working/AMS0159_questions.csv
- create mode 100644 data/working/AMS0170.sav
- create mode 100644 data/working/AMS0170_answers.csv
- create mode 100644 data/working/AMS0170_questions.csv
- create mode 100644 data/working/AMS0172.sav
- create mode 100644 data/working/AMS0172_answers.csv
- create mode 100644 data/working/AMS0172_questions.csv
- create mode 100644 data/working/AMS0174.sav
- create mode 100644 data/working/AMS0174_answers.csv
- create mode 100644 data/working/AMS0174_questions.csv
- create mode 100644 data/working/AMS0175.sav
- create mode 100644 data/working/AMS0175_answers.csv
- create mode 100644 data/working/AMS0175_questions.csv
- create mode 100644 data/working/AMS0177.sav
- create mode 100644 data/working/AMS0177_answers.csv
- create mode 100644 data/working/AMS0177_questions.csv
- create mode 100644 data/working/AMS0181.sav
- create mode 100644 data/working/AMS0181_answers.csv
- create mode 100644 data/working/AMS0181_questions.csv
- create mode 100644 data/working/AMS0189.sav
- create mode 100644 data/working/AMS0189_answers.csv
- create mode 100644 data/working/AMS0189_questions.csv
- create mode 100644 data/working/AMS0193.sav
- create mode 100644 data/working/AMS0193_answers.csv
- create mode 100644 data/working/AMS0193_questions.csv
- create mode 100644 data/working/AMS0194.sav
- create mode 100644 data/working/AMS0194_answers.csv
- create mode 100644 data/working/AMS0194_questions.csv
- create mode 100644 data/working/AMS0196.sav
- create mode 100644 data/working/AMS0196_answers.csv
- create mode 100644 data/working/AMS0196_questions.csv
- create mode 100644 data/working/AMS0199.sav
- create mode 100644 data/working/AMS0199_answers.csv
- create mode 100644 data/working/AMS0199_questions.csv
- create mode 100644 data/working/AMS0204.sav
- create mode 100644 data/working/AMS0204_answers.csv
- create mode 100644 data/working/AMS0204_questions.csv
- create mode 100644 data/working/AMS0210.sav
- create mode 100644 data/working/AMS0210_answers.csv
- create mode 100644 data/working/AMS0210_questions.csv
- create mode 100644 data/working/AMS0212.sav
- create mode 100644 data/working/AMS0212_answers.csv
- create mode 100644 data/working/AMS0212_answers_old.csv
- create mode 100644 data/working/AMS0212_questions.csv
- create mode 100644 data/working/AMS0212_questions_old.csv
- create mode 100644 data/working/AMS0213.sav
- create mode 100644 data/working/AMS0213_answers.csv
- create mode 100644 data/working/AMS0213_questions.csv
- create mode 100644 data/working/AMS0214.sav
- create mode 100644 data/working/AMS0214_answers.csv
- create mode 100644 data/working/AMS0214_questions.csv
- create mode 100644 data/working/AMS0215.sav
- create mode 100644 data/working/AMS0215_answers.csv
- create mode 100644 data/working/AMS0215_questions.csv
- create mode 100644 data/working/AMS0224.sav
- create mode 100644 data/working/AMS0224_answers.csv
- create mode 100644 data/working/AMS0224_questions.csv
- create mode 100644 data/working/AMS0227.sav
- create mode 100644 data/working/AMS0227_answers.csv
- create mode 100644 data/working/AMS0227_questions.csv
- create mode 100644 data/working/AMS0230.sav
- create mode 100644 data/working/AMS0230_answers.csv
- create mode 100644 data/working/AMS0230_questions.csv
- create mode 100644 data/working/AMS0232.sav
- create mode 100644 data/working/AMS0232_answers.csv
- create mode 100644 data/working/AMS0232_questions.csv
- create mode 100644 data/working/AMS0233.sav
- create mode 100644 data/working/AMS0233_answers.csv
- create mode 100644 data/working/AMS0233_questions.csv
- create mode 100644 data/working/AMS0235.sav
- create mode 100644 data/working/AMS0235_answers.csv
- create mode 100644 data/working/AMS0235_questions.csv
- create mode 100644 data/working/AMS032N.sav
- create mode 100644 data/working/AMS032N_answers.csv
- create mode 100644 data/working/AMS032N_questions.csv
- create mode 100644 data/working/AMS032W.sav
- create mode 100644 data/working/AMS032W_answers.csv
- create mode 100644 data/working/AMS032W_questions.csv
- create mode 100644 data/working/AMS040E.sav
- create mode 100644 data/working/AMS040E_answers.csv
- create mode 100644 data/working/AMS040E_questions.csv
- create mode 100644 data/working/AMS040O.sav
- create mode 100644 data/working/AMS040O_answers.csv
- create mode 100644 data/working/AMS040O_questions.csv
- create mode 100644 data/working/AMS044I.sav
- create mode 100644 data/working/AMS044I_answers.csv
- create mode 100644 data/working/AMS044I_questions.csv
- create mode 100644 data/working/AMS044X.sav
- create mode 100644 data/working/AMS044X_answers.csv
- create mode 100644 data/working/AMS044X_questions.csv
- create mode 100644 data/working/AMS063A.sav
- create mode 100644 data/working/AMS063A_answers.csv
- create mode 100644 data/working/AMS063A_questions.csv
- create mode 100644 data/working/AMS063B.sav
- create mode 100644 data/working/AMS063B_answers.csv
- create mode 100644 data/working/AMS063B_questions.csv
- create mode 100644 data/working/AMS063C.sav
- create mode 100644 data/working/AMS063C_answers.csv
- create mode 100644 data/working/AMS063C_questions.csv
- create mode 100644 data/working/AMS063D.sav
- create mode 100644 data/working/AMS063D_answers.csv
- create mode 100644 data/working/AMS063D_questions.csv
- create mode 100644 data/working/AMS063E.sav
- create mode 100644 data/working/AMS063E_answers.csv
- create mode 100644 data/working/AMS063E_questions.csv
- create mode 100644 data/working/AMS063F.sav
- create mode 100644 data/working/AMS063F_answers.csv
- create mode 100644 data/working/AMS063F_questions.csv
- create mode 100644 data/working/AMS063G.sav
- create mode 100644 data/working/AMS063G_answers.csv
- create mode 100644 data/working/AMS063G_questions.csv
- create mode 100644 data/working/AMS077A.sav
- create mode 100644 data/working/AMS077A_answers.csv
- create mode 100644 data/working/AMS077A_questions.csv
- create mode 100644 data/working/AMS077B.sav
- create mode 100644 data/working/AMS077B_answers.csv
- create mode 100644 data/working/AMS077B_questions.csv
- create mode 100644 data/working/AMS100A.sav
- create mode 100644 data/working/AMS100A_answers.csv
- create mode 100644 data/working/AMS100A_questions.csv
- create mode 100644 data/working/AMS100B.sav
- create mode 100644 data/working/AMS100B_answers.csv
- create mode 100644 data/working/AMS100B_questions.csv
- create mode 100644 data/working/AMS100C.sav
- create mode 100644 data/working/AMS100C_answers.csv
- create mode 100644 data/working/AMS100C_questions.csv
- create mode 100644 data/working/AMS100D.sav
- create mode 100644 data/working/AMS100D_answers.csv
- create mode 100644 data/working/AMS100D_questions.csv
- create mode 100644 data/working/AMS100E.sav
- create mode 100644 data/working/AMS100E_answers.csv
- create mode 100644 data/working/AMS100E_questions.csv
- create mode 100644 data/working/AMS100F.sav
- create mode 100644 data/working/AMS100F_answers.csv
- create mode 100644 data/working/AMS100F_questions.csv
- create mode 100644 data/working/AMS100G.sav
- create mode 100644 data/working/AMS100G_answers.csv
- create mode 100644 data/working/AMS100G_questions.csv
- create mode 100644 data/working/AMS101B.sav
- create mode 100644 data/working/AMS101B_answers.csv
- create mode 100644 data/working/AMS101B_questions.csv
- create mode 100644 data/working/AMS101C.sav
- create mode 100644 data/working/AMS101C_answers.csv
- create mode 100644 data/working/AMS101C_questions.csv
- create mode 100644 data/working/AMS101D.sav
- create mode 100644 data/working/AMS101D_answers.csv
- create mode 100644 data/working/AMS101D_questions.csv
- create mode 100644 data/working/AMS101E.sav
- create mode 100644 data/working/AMS101E_answers.csv
- create mode 100644 data/working/AMS101E_questions.csv
- create mode 100644 data/working/AMS101F.sav
- create mode 100644 data/working/AMS101F_answers.csv
- create mode 100644 data/working/AMS101F_questions.csv
- create mode 100644 data/working/AMS106EE.sav
- create mode 100644 data/working/AMS106EE_answers.csv
- create mode 100644 data/working/AMS106EE_questions.csv
- create mode 100644 data/working/AMS106EH.sav
- create mode 100644 data/working/AMS106EH_answers.csv
- create mode 100644 data/working/AMS106EH_questions.csv
- create mode 100644 data/working/AMS106EU.sav
- create mode 100644 data/working/AMS106EU_answers.csv
- create mode 100644 data/working/AMS106EU_questions.csv
- create mode 100644 data/working/AMS106OE.sav
- create mode 100644 data/working/AMS106OE_answers.csv
- create mode 100644 data/working/AMS106OE_questions.csv
- create mode 100644 data/working/AMS106OH.sav
- create mode 100644 data/working/AMS106OH_answers.csv
- create mode 100644 data/working/AMS106OH_questions.csv
- create mode 100644 data/working/AMS106OU.sav
- create mode 100644 data/working/AMS106OU_answers.csv
- create mode 100644 data/working/AMS106OU_questions.csv
- create mode 100644 data/working/AMS107E.sav
- create mode 100644 data/working/AMS107E_answers.csv
- create mode 100644 data/working/AMS107E_questions.csv
- create mode 100644 data/working/AMS107O.sav
- create mode 100644 data/working/AMS107O_answers.csv
- create mode 100644 data/working/AMS107O_questions.csv
- create mode 100644 data/working/AMS115A.sav
- create mode 100644 data/working/AMS115A_answers.csv
- create mode 100644 data/working/AMS115A_questions.csv
- create mode 100644 data/working/AMS115B.sav
- create mode 100644 data/working/AMS115B_answers.csv
- create mode 100644 data/working/AMS115B_questions.csv
- create mode 100644 data/working/AMS115C.sav
- create mode 100644 data/working/AMS115C_answers.csv
- create mode 100644 data/working/AMS115C_questions.csv
- create mode 100644 data/working/AMS132A.sav
- create mode 100644 data/working/AMS132A_answers.csv
- create mode 100644 data/working/AMS132A_questions.csv
- create mode 100644 data/working/AMS132B.sav
- create mode 100644 data/working/AMS132B_answers.csv
- create mode 100644 data/working/AMS132B_questions.csv
- create mode 100644 data/working/AMS132C.sav
- create mode 100644 data/working/AMS132C_answers.csv
- create mode 100644 data/working/AMS132C_questions.csv
- create mode 100644 data/working/AMS133A.sav
- create mode 100644 data/working/AMS133A_answers.csv
- create mode 100644 data/working/AMS133A_questions.csv
- create mode 100644 data/working/AMS133B.sav
- create mode 100644 data/working/AMS133B_answers.csv
- create mode 100644 data/working/AMS133B_questions.csv
- create mode 100644 data/working/AMS135A.sav
- create mode 100644 data/working/AMS135A_answers.csv
- create mode 100644 data/working/AMS135A_questions.csv
- create mode 100644 data/working/AMS135B.sav
- create mode 100644 data/working/AMS135B_answers.csv
- create mode 100644 data/working/AMS135B_questions.csv
- create mode 100644 data/working/AMS157E.sav
- create mode 100644 data/working/AMS157E_answers.csv
- create mode 100644 data/working/AMS157E_questions.csv
- create mode 100644 data/working/AMS157O.sav
- create mode 100644 data/working/AMS157O_answers.csv
- create mode 100644 data/working/AMS157O_questions.csv
- create mode 100644 data/working/AMS160A.sav
- create mode 100644 data/working/AMS160A_answers.csv
- create mode 100644 data/working/AMS160A_questions.csv
- create mode 100644 data/working/AMS160B.sav
- create mode 100644 data/working/AMS160B_answers.csv
- create mode 100644 data/working/AMS160B_questions.csv
- create mode 100644 data/working/AMS186B.sav
- create mode 100644 data/working/AMS186B_answers.csv
- create mode 100644 data/working/AMS186B_questions.csv
- create mode 100644 data/working/AMS192A.sav
- create mode 100644 data/working/AMS192A_answers.csv
- create mode 100644 data/working/AMS192A_questions.csv
- create mode 100644 data/working/AMS192B.sav
- create mode 100644 data/working/AMS192B_answers.csv
- create mode 100644 data/working/AMS192B_questions.csv
- create mode 100644 data/working/AMS195A.sav
- create mode 100644 data/working/AMS195A_answers.csv
- create mode 100644 data/working/AMS195A_questions.csv
- create mode 100644 data/working/AMS195B.sav
- create mode 100644 data/working/AMS195B_answers.csv
- create mode 100644 data/working/AMS195B_questions.csv
- create mode 100644 data/working/AMS195C.sav
- create mode 100644 data/working/AMS195C_answers.csv
- create mode 100644 data/working/AMS195C_questions.csv
- create mode 100644 data/working/AMS198E.sav
- create mode 100644 data/working/AMS198E_answers.csv
- create mode 100644 data/working/AMS198E_questions.csv
- create mode 100644 data/working/AMS198O.sav
- create mode 100644 data/working/AMS198O_answers.csv
- create mode 100644 data/working/AMS198O_questions.csv
- create mode 100644 data/working/AMS198RO.sav
- create mode 100644 data/working/AMS198RO_answers.csv
- create mode 100644 data/working/AMS198RO_questions.csv
- create mode 100644 data/working/AMS203A.sav
- create mode 100644 data/working/AMS203A_answers.csv
- create mode 100644 data/working/AMS203A_questions.csv
- create mode 100644 data/working/AMS203B.sav
- create mode 100644 data/working/AMS203B_answers.csv
- create mode 100644 data/working/AMS203B_questions.csv
- create mode 100644 data/working/AMS205C.sav
- create mode 100644 data/working/AMS205C_answers.csv
- create mode 100644 data/working/AMS205C_questions.csv
- create mode 100644 data/working/AMS205E.sav
- create mode 100644 data/working/AMS205E_answers.csv
- create mode 100644 data/working/AMS205E_questions.csv
- create mode 100644 data/working/AMS205I.sav
- create mode 100644 data/working/AMS205I_answers.csv
- create mode 100644 data/working/AMS205I_questions.csv
- create mode 100644 data/working/AMS205U.sav
- create mode 100644 data/working/AMS205U_answers.csv
- create mode 100644 data/working/AMS205U_questions.csv
- create mode 100644 data/working/AMS207F.sav
- create mode 100644 data/working/AMS207F_answers.csv
- create mode 100644 data/working/AMS207F_questions.csv
- create mode 100644 data/working/AMS207G.sav
- create mode 100644 data/working/AMS207G_answers.csv
- create mode 100644 data/working/AMS207G_questions.csv
- create mode 100644 data/working/AMS211A.sav
- create mode 100644 data/working/AMS211A_answers.csv
- create mode 100644 data/working/AMS211A_questions.csv
- create mode 100644 data/working/AMS211B.sav
- create mode 100644 data/working/AMS211B_answers.csv
- create mode 100644 data/working/AMS211B_questions.csv
- create mode 100644 data/working/AMS218C.sav
- create mode 100644 data/working/AMS218C_answers.csv
- create mode 100644 data/working/AMS218C_questions.csv
- create mode 100644 data/working/AMS218I.sav
- create mode 100644 data/working/AMS218I_answers.csv
- create mode 100644 data/working/AMS218I_questions.csv
- create mode 100644 data/working/AMS218U.sav
- create mode 100644 data/working/AMS218U_answers.csv
- create mode 100644 data/working/AMS218U_questions.csv
- create mode 100644 data/working/AMS219A.sav
- create mode 100644 data/working/AMS219A_answers.csv
- create mode 100644 data/working/AMS219A_questions.csv
- create mode 100644 data/working/AMS219B.sav
- create mode 100644 data/working/AMS219B_answers.csv
- create mode 100644 data/working/AMS219B_questions.csv
- create mode 100644 data/working/AMS219C.sav
- create mode 100644 data/working/AMS219C_answers.csv
- create mode 100644 data/working/AMS219C_questions.csv
- create mode 100644 data/working/AMS234AE.sav
- create mode 100644 data/working/AMS234AE_answers.csv
- create mode 100644 data/working/AMS234AE_questions.csv
- create mode 100644 data/working/AMS234AO.sav
- create mode 100644 data/working/AMS234AO_answers.csv
- create mode 100644 data/working/AMS234AO_questions.csv
- create mode 100644 data/working/AMS234BE.sav
- create mode 100644 data/working/AMS234BE_answers.csv
- create mode 100644 data/working/AMS234BE_questions.csv
- create mode 100644 data/working/AMS234BO.sav
- create mode 100644 data/working/AMS234BO_answers.csv
- create mode 100644 data/working/AMS234BO_questions.csv
- create mode 100644 data/working/AMSPS04.sav
- create mode 100644 data/working/AMSPS04_answers.csv
- create mode 100644 data/working/AMSPS04_questions.csv
- create mode 100644 data/working/AMSPS5A.sav
- create mode 100644 data/working/AMSPS5A_answers.csv
- create mode 100644 data/working/AMSPS5A_questions.csv
- create mode 100644 data/working/AMSPS5B.sav
- create mode 100644 data/working/AMSPS5B_answers.csv
- create mode 100644 data/working/AMSPS5B_questions.csv
- create mode 100644 src/archive/add_duplicates.R
- create mode 100644 src/archive/extract_columns.R
- create mode 100644 src/archive/remove_qs_no_cols.R
- create mode 100644 src/fix_AMS0085.R
- create mode 100644 src/functions/better_strsplit.R
- create mode 100644 src/functions/check_instructions.R
- create mode 100644 src/functions/create_one_row_respondent.R
- create mode 100644 src/functions/extract_answer_column_widths.R
- create mode 100644 src/functions/extract_questions.R
- create mode 100644 src/functions/file_paths.R
- create mode 100644 src/functions/find_answer_and_codebook_files.R
- create mode 100644 src/functions/fix_cols_coded_together.R
- create mode 100644 src/functions/fix_cols_not_used.R
- create mode 100644 src/functions/import_answers.R
- create mode 100644 src/functions/import_codebook.R
- create mode 100644 src/functions/parse_answer_options.R
- create mode 100644 src/functions/parse_answer_rows.R
- create mode 100644 src/functions/parse_questions.R
- create mode 100644 src/functions/set_session_variables.R
- create mode 100644 src/functions/trim_question.R
- create mode 100644 src/functions/update_parsed_names.R
- create mode 100644 src/functions/write_output_files.R
- create mode 100644 src/libraries.R
- create mode 100644 src/parse_questions_and_answers.R
- create mode 100644 src/survey_csv_into_sav.R
- create mode 100644 src/survey_csv_into_sav_v2.R
- create mode 100644 src/test_file_lengths.R
- create mode 100644 src/test_spss.R
-]0;/sfs/qumulo/qhome/ads7fg/git/dspg20amsoldier]0;ads7fg@udc-aj40-7c1: /sfs/qumulo/qhome/ads7fg/git/dspg20amsoldier[01;32mads7fg@udc-aj40-7c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/dspg20amsoldier[00m$ git push
-error: cannot run rpostback-askpass: No such file or directory
-Username for 'https://github.com': dads2busy
-error: cannot run rpostback-askpass: No such file or directory
-Password for 'https://dads2busy@github.com': 
-[KEnumerating objects: 1223, done.
-[KCounting objects:   0% (1/1223)[KCounting objects:   1% (13/1223)[KCounting objects:   2% (25/1223)[KCounting objects:   3% (37/1223)[KCounting objects:   4% (49/1223)[KCounting objects:   5% (62/1223)[KCounting objects:   6% (74/1223)[KCounting objects:   7% (86/1223)[KCounting objects:   8% (98/1223)[KCounting objects:   9% (111/1223)[KCounting objects:  10% (123/1223)[KCounting objects:  11% (135/1223)[KCounting objects:  12% (147/1223)[KCounting objects:  13% (159/1223)[KCounting objects:  14% (172/1223)[KCounting objects:  15% (184/1223)[KCounting objects:  16% (196/1223)[KCounting objects:  17% (208/1223)[KCounting objects:  18% (221/1223)[KCounting objects:  19% (233/1223)[KCounting objects:  20% (245/1223)[KCounting objects:  21% (257/1223)[KCounting objects:  22% (270/1223)[KCounting objects:  23% (282/1223)[KCounting objects:  24% (294/1223)[KCounting objects:  25% (306/1223)[KCounting objects:  26% (318/1223)[KCounting objects:  27% (331/1223)[KCounting objects:  28% (343/1223)[KCounting objects:  29% (355/1223)[KCounting objects:  30% (367/1223)[KCounting objects:  31% (380/1223)[KCounting objects:  32% (392/1223)[KCounting objects:  33% (404/1223)[KCounting objects:  34% (416/1223)[KCounting objects:  35% (429/1223)[KCounting objects:  36% (441/1223)[KCounting objects:  37% (453/1223)[KCounting objects:  38% (465/1223)[KCounting objects:  39% (477/1223)[KCounting objects:  40% (490/1223)[KCounting objects:  41% (502/1223)[KCounting objects:  42% (514/1223)[KCounting objects:  43% (526/1223)[KCounting objects:  44% (539/1223)[KCounting objects:  45% (551/1223)[KCounting objects:  46% (563/1223)[KCounting objects:  47% (575/1223)[KCounting objects:  48% (588/1223)[KCounting objects:  49% (600/1223)[KCounting objects:  50% (612/1223)[KCounting objects:  51% (624/1223)[KCounting objects:  52% (636/1223)[KCounting objects:  53% (649/1223)[KCounting objects:  54% (661/1223)[KCounting objects:  55% (673/1223)[KCounting objects:  56% (685/1223)[KCounting objects:  57% (698/1223)[KCounting objects:  58% (710/1223)[KCounting objects:  59% (722/1223)[KCounting objects:  60% (734/1223)[KCounting objects:  61% (747/1223)[KCounting objects:  62% (759/1223)[KCounting objects:  63% (771/1223)[KCounting objects:  64% (783/1223)[KCounting objects:  65% (795/1223)[KCounting objects:  66% (808/1223)[KCounting objects:  67% (820/1223)[KCounting objects:  68% (832/1223)[KCounting objects:  69% (844/1223)[KCounting objects:  70% (857/1223)[KCounting objects:  71% (869/1223)[KCounting objects:  72% (881/1223)[KCounting objects:  73% (893/1223)[KCounting objects:  74% (906/1223)[KCounting objects:  75% (918/1223)[KCounting objects:  75% (925/1223)[KCounting objects:  76% (930/1223)[KCounting objects:  77% (942/1223)[KCounting objects:  78% (954/1223)[KCounting objects:  79% (967/1223)[KCounting objects:  80% (979/1223)[KCounting objects:  81% (991/1223)[KCounting objects:  82% (1003/1223)[KCounting objects:  83% (1016/1223)[KCounting objects:  84% (1028/1223)[KCounting objects:  85% (1040/1223)[KCounting objects:  86% (1052/1223)[KCounting objects:  87% (1065/1223)[KCounting objects:  88% (1077/1223)[KCounting objects:  89% (1089/1223)[KCounting objects:  90% (1101/1223)[KCounting objects:  91% (1113/1223)[KCounting objects:  92% (1126/1223)[KCounting objects:  93% (1138/1223)[KCounting objects:  94% (1150/1223)[KCounting objects:  95% (1162/1223)[KCounting objects:  96% (1175/1223)[KCounting objects:  97% (1187/1223)[KCounting objects:  98% (1199/1223)[KCounting objects:  99% (1211/1223)[KCounting objects: 100% (1223/1223)[KCounting objects: 100% (1223/1223), done.
-Delta compression using up to 40 threads
-[KCompressing objects:   0% (1/1221)[KCompressing objects:   1% (13/1221)[KCompressing objects:   2% (25/1221)[KCompressing objects:   3% (37/1221)[KCompressing objects:   4% (49/1221)[KCompressing objects:   5% (62/1221)[KCompressing objects:   6% (74/1221)[KCompressing objects:   7% (86/1221)[KCompressing objects:   8% (98/1221)[KCompressing objects:   9% (110/1221)[KCompressing objects:  10% (123/1221)[KCompressing objects:  11% (135/1221)[KCompressing objects:  12% (147/1221)[KCompressing objects:  13% (159/1221)[KCompressing objects:  14% (171/1221)[KCompressing objects:  15% (184/1221)[KCompressing objects:  16% (196/1221)[KCompressing objects:  17% (208/1221)[KCompressing objects:  18% (220/1221)[KCompressing objects:  19% (232/1221)[KCompressing objects:  20% (245/1221)[KCompressing objects:  21% (257/1221)[KCompressing objects:  22% (269/1221)[KCompressing objects:  23% (281/1221)[KCompressing objects:  24% (294/1221)[KCompressing objects:  25% (306/1221)[KCompressing objects:  26% (318/1221)[KCompressing objects:  27% (330/1221)[KCompressing objects:  27% (338/1221)[KCompressing objects:  28% (342/1221)[KCompressing objects:  29% (355/1221)[KCompressing objects:  30% (367/1221)[KCompressing objects:  31% (379/1221)[KCompressing objects:  32% (391/1221)[KCompressing objects:  33% (403/1221)[KCompressing objects:  34% (416/1221)[KCompressing objects:  35% (428/1221)[KCompressing objects:  36% (440/1221)[KCompressing objects:  37% (452/1221)[KCompressing objects:  38% (464/1221)[KCompressing objects:  39% (477/1221)[KCompressing objects:  40% (489/1221)[KCompressing objects:  41% (501/1221)[KCompressing objects:  42% (513/1221)[KCompressing objects:  43% (526/1221)[KCompressing objects:  44% (538/1221)[KCompressing objects:  45% (550/1221)[KCompressing objects:  46% (562/1221)[KCompressing objects:  47% (574/1221)[KCompressing objects:  48% (587/1221)[KCompressing objects:  49% (599/1221)[KCompressing objects:  50% (611/1221)[KCompressing objects:  51% (623/1221)[KCompressing objects:  51% (630/1221)[KCompressing objects:  52% (635/1221)[KCompressing objects:  53% (648/1221)[KCompressing objects:  54% (660/1221)[KCompressing objects:  55% (672/1221)[KCompressing objects:  56% (684/1221)[KCompressing objects:  57% (696/1221)[KCompressing objects:  58% (709/1221)[KCompressing objects:  59% (721/1221)[KCompressing objects:  60% (733/1221)[KCompressing objects:  61% (745/1221)[KCompressing objects:  62% (758/1221)[KCompressing objects:  63% (770/1221)[KCompressing objects:  64% (782/1221)[KCompressing objects:  65% (794/1221)[KCompressing objects:  66% (806/1221)[KCompressing objects:  67% (819/1221)[KCompressing objects:  68% (831/1221)[KCompressing objects:  69% (843/1221)[KCompressing objects:  70% (855/1221)[KCompressing objects:  71% (867/1221)[KCompressing objects:  72% (880/1221)[KCompressing objects:  72% (890/1221)[KCompressing objects:  73% (892/1221)[KCompressing objects:  74% (904/1221)[KCompressing objects:  75% (916/1221)[KCompressing objects:  76% (928/1221)[KCompressing objects:  77% (941/1221)[KCompressing objects:  78% (953/1221)[KCompressing objects:  79% (965/1221)[KCompressing objects:  80% (977/1221)[KCompressing objects:  81% (990/1221)[KCompressing objects:  81% (995/1221)[KCompressing objects:  82% (1002/1221)[KCompressing objects:  83% (1014/1221)[KCompressing objects:  84% (1026/1221)[KCompressing objects:  85% (1038/1221)[KCompressing objects:  85% (1044/1221)[KCompressing objects:  86% (1051/1221)[KCompressing objects:  87% (1063/1221)[KCompressing objects:  88% (1075/1221)[KCompressing objects:  89% (1087/1221)[KCompressing objects:  89% (1093/1221)[KCompressing objects:  90% (1099/1221)[KCompressing objects:  91% (1112/1221)[KCompressing objects:  92% (1124/1221)[KCompressing objects:  92% (1128/1221)[KCompressing objects:  93% (1136/1221)[KCompressing objects:  93% (1144/1221)[KCompressing objects:  94% (1148/1221)[KCompressing objects:  95% (1160/1221)[KCompressing objects:  95% (1170/1221)[KCompressing objects:  96% (1173/1221)[KCompressing objects:  96% (1180/1221)[KCompressing objects:  97% (1185/1221)[KCompressing objects:  97% (1186/1221)[KCompressing objects:  98% (1197/1221)[KCompressing objects:  98% (1198/1221)[KCompressing objects:  98% (1207/1221)[KCompressing objects:  99% (1209/1221)[KCompressing objects:  99% (1215/1221)[KCompressing objects:  99% (1219/1221)[KCompressing objects: 100% (1221/1221)[KCompressing objects: 100% (1221/1221), done.
-[KWriting objects:   0% (1/1221)[KWriting objects:   1% (13/1221)[KWriting objects:   2% (25/1221)[KWriting objects:   3% (37/1221)[KWriting objects:   4% (49/1221), 2.60 MiB | 5.17 MiB/s[KWriting objects:   5% (62/1221), 2.60 MiB | 5.17 MiB/s[KWriting objects:   6% (74/1221), 2.60 MiB | 5.17 MiB/s[KWriting objects:   7% (86/1221), 2.60 MiB | 5.17 MiB/s[KWriting objects:   8% (98/1221), 5.59 MiB | 4.88 MiB/s[KWriting objects:   9% (110/1221), 5.59 MiB | 4.88 MiB/s[KWriting objects:  10% (123/1221), 5.59 MiB | 4.88 MiB/s[KWriting objects:  11% (135/1221), 5.59 MiB | 4.88 MiB/s[KWriting objects:  12% (147/1221), 5.59 MiB | 4.88 MiB/s[KWriting objects:  13% (159/1221), 9.90 MiB | 5.98 MiB/s[KWriting objects:  14% (171/1221), 9.90 MiB | 5.98 MiB/s[KWriting objects:  15% (184/1221), 9.90 MiB | 5.98 MiB/s[KWriting objects:  15% (190/1221), 9.90 MiB | 5.98 MiB/s[KWriting objects:  16% (196/1221), 9.90 MiB | 5.98 MiB/s[KWriting objects:  17% (208/1221), 12.56 MiB | 5.83 MiB/s[KWriting objects:  18% (220/1221), 12.56 MiB | 5.83 MiB/s[KWriting objects:  19% (232/1221), 12.56 MiB | 5.83 MiB/s[KWriting objects:  20% (245/1221), 12.56 MiB | 5.83 MiB/s[KWriting objects:  21% (257/1221), 12.56 MiB | 5.83 MiB/s[KWriting objects:  22% (269/1221), 12.56 MiB | 5.83 MiB/s[KWriting objects:  23% (281/1221), 15.61 MiB | 5.77 MiB/s[KWriting objects:  23% (285/1221), 15.61 MiB | 5.77 MiB/s[KWriting objects:  24% (294/1221), 15.61 MiB | 5.77 MiB/s[KWriting objects:  25% (306/1221), 15.61 MiB | 5.77 MiB/s[KWriting objects:  26% (318/1221), 18.11 MiB | 5.58 MiB/s[KWriting objects:  27% (330/1221), 18.11 MiB | 5.58 MiB/s[KWriting objects:  28% (342/1221), 18.11 MiB | 5.58 MiB/s[KWriting objects:  29% (355/1221), 18.11 MiB | 5.58 MiB/s[KWriting objects:  30% (367/1221), 20.89 MiB | 5.57 MiB/s[KWriting objects:  30% (378/1221), 20.89 MiB | 5.57 MiB/s[KWriting objects:  31% (379/1221), 20.89 MiB | 5.57 MiB/s[KWriting objects:  32% (391/1221), 20.89 MiB | 5.57 MiB/s[KWriting objects:  33% (403/1221), 20.89 MiB | 5.57 MiB/s[KWriting objects:  34% (416/1221), 24.30 MiB | 5.71 MiB/s[KWriting objects:  35% (428/1221), 24.30 MiB | 5.71 MiB/s[KWriting objects:  36% (440/1221), 24.30 MiB | 5.71 MiB/s[KWriting objects:  37% (452/1221), 24.30 MiB | 5.71 MiB/s[KWriting objects:  38% (464/1221), 27.25 MiB | 5.70 MiB/s[KWriting objects:  39% (477/1221), 27.25 MiB | 5.70 MiB/s[KWriting objects:  40% (489/1221), 27.25 MiB | 5.70 MiB/s[KWriting objects:  40% (493/1221), 27.25 MiB | 5.70 MiB/s[KWriting objects:  41% (501/1221), 27.25 MiB | 5.70 MiB/s[KWriting objects:  42% (513/1221), 27.25 MiB | 5.70 MiB/s[KWriting objects:  43% (526/1221), 27.25 MiB | 5.70 MiB/s[KWriting objects:  44% (538/1221), 31.30 MiB | 6.00 MiB/s[KWriting objects:  45% (550/1221), 31.30 MiB | 6.00 MiB/s[KWriting objects:  46% (562/1221), 31.30 MiB | 6.00 MiB/s[KWriting objects:  47% (574/1221), 33.94 MiB | 6.00 MiB/s[KWriting objects:  47% (578/1221), 33.94 MiB | 6.00 MiB/s[KWriting objects:  48% (587/1221), 33.94 MiB | 6.00 MiB/s[KWriting objects:  49% (599/1221), 33.94 MiB | 6.00 MiB/s[KWriting objects:  50% (611/1221), 33.94 MiB | 6.00 MiB/s[KWriting objects:  51% (623/1221), 37.67 MiB | 5.72 MiB/s[KWriting objects:  52% (635/1221), 37.67 MiB | 5.72 MiB/s[KWriting objects:  53% (648/1221), 37.67 MiB | 5.72 MiB/s[KWriting objects:  54% (660/1221), 37.67 MiB | 5.72 MiB/s[KWriting objects:  54% (664/1221), 37.67 MiB | 5.72 MiB/s[KWriting objects:  55% (672/1221), 41.97 MiB | 6.02 MiB/s[KWriting objects:  56% (684/1221), 41.97 MiB | 6.02 MiB/s[KWriting objects:  57% (696/1221), 41.97 MiB | 6.02 MiB/s[KWriting objects:  58% (709/1221), 41.97 MiB | 6.02 MiB/s[KWriting objects:  59% (721/1221), 44.15 MiB | 5.90 MiB/s[KWriting objects:  60% (733/1221), 44.15 MiB | 5.90 MiB/s[KWriting objects:  61% (745/1221), 44.15 MiB | 5.90 MiB/s[KWriting objects:  62% (758/1221), 44.15 MiB | 5.90 MiB/s[KWriting objects:  63% (770/1221), 44.15 MiB | 5.90 MiB/s[KWriting objects:  63% (776/1221), 46.44 MiB | 5.81 MiB/s[KWriting objects:  64% (782/1221), 47.77 MiB | 5.29 MiB/s[KWriting objects:  64% (791/1221), 50.26 MiB | 4.37 MiB/s[KWriting objects:  65% (794/1221), 50.26 MiB | 4.37 MiB/s[KWriting objects:  65% (802/1221), 51.63 MiB | 3.82 MiB/s[KWriting objects:  66% (806/1221), 52.70 MiB | 3.54 MiB/s[KWriting objects:  67% (819/1221), 52.70 MiB | 3.54 MiB/s[KWriting objects:  68% (831/1221), 53.89 MiB | 3.13 MiB/s[KWriting objects:  68% (832/1221), 53.89 MiB | 3.13 MiB/s[KWriting objects:  69% (843/1221), 54.88 MiB | 2.49 MiB/s[KWriting objects:  70% (855/1221), 55.75 MiB | 2.23 MiB/s[KWriting objects:  71% (867/1221), 56.69 MiB | 2.00 MiB/s[KWriting objects:  71% (875/1221), 57.20 MiB | 1.86 MiB/s[KWriting objects:  72% (880/1221), 57.20 MiB | 1.86 MiB/s[KWriting objects:  72% (891/1221), 59.07 MiB | 1.77 MiB/s[KWriting objects:  73% (892/1221), 59.07 MiB | 1.77 MiB/s[KWriting objects:  73% (903/1221), 59.36 MiB | 1.56 MiB/s[KWriting objects:  74% (904/1221), 59.62 MiB | 1.41 MiB/s[KWriting objects:  74% (913/1221), 59.80 MiB | 1.19 MiB/s[KWriting objects:  75% (916/1221), 60.42 MiB | 1.13 MiB/s[KWriting objects:  75% (927/1221), 60.65 MiB | 1024.00 KiB/s[KWriting objects:  76% (928/1221), 60.65 MiB | 1024.00 KiB/s[KWriting objects:  77% (941/1221), 61.02 MiB | 884.00 KiB/s[KWriting objects:  77% (952/1221), 62.22 MiB | 1.02 MiB/s[KWriting objects:  78% (953/1221), 62.22 MiB | 1.02 MiB/s[KWriting objects:  78% (958/1221), 64.41 MiB | 1.06 MiB/s[KWriting objects:  79% (966/1221), 64.41 MiB | 1.06 MiB/s[KWriting objects:  79% (975/1221), 65.52 MiB | 1.20 MiB/s[KWriting objects:  80% (977/1221), 65.52 MiB | 1.20 MiB/s[KWriting objects:  80% (986/1221), 67.64 MiB | 1.41 MiB/s[KWriting objects:  81% (990/1221), 67.64 MiB | 1.41 MiB/s[KWriting objects:  81% (999/1221), 69.02 MiB | 1.55 MiB/s[KWriting objects:  82% (1002/1221), 69.02 MiB | 1.55 MiB/s[KWriting objects:  83% (1014/1221), 70.09 MiB | 1.70 MiB/s[KWriting objects:  84% (1026/1221), 70.09 MiB | 1.70 MiB/s[KWriting objects:  85% (1038/1221), 71.09 MiB | 1.85 MiB/s[KWriting objects:  85% (1040/1221), 71.09 MiB | 1.85 MiB/s[KWriting objects:  86% (1051/1221), 71.98 MiB | 1.75 MiB/s[KWriting objects:  87% (1063/1221), 71.98 MiB | 1.75 MiB/s[KWriting objects:  87% (1065/1221), 73.30 MiB | 1.89 MiB/s[KWriting objects:  88% (1075/1221), 73.30 MiB | 1.89 MiB/s[KWriting objects:  89% (1087/1221), 74.32 MiB | 1.81 MiB/s[KWriting objects:  89% (1094/1221), 74.32 MiB | 1.81 MiB/s[KWriting objects:  90% (1099/1221), 75.57 MiB | 1.88 MiB/s[KWriting objects:  91% (1112/1221), 75.57 MiB | 1.88 MiB/s[KWriting objects:  92% (1125/1221), 75.57 MiB | 1.88 MiB/s[KWriting objects:  93% (1136/1221), 76.54 MiB | 1.91 MiB/s[KWriting objects:  93% (1139/1221), 76.54 MiB | 1.91 MiB/s[KWriting objects:  94% (1148/1221), 78.00 MiB | 1.80 MiB/s[KWriting objects:  94% (1149/1221), 78.00 MiB | 1.80 MiB/s[KWriting objects:  95% (1160/1221), 79.28 MiB | 1.82 MiB/s[KWriting objects:  96% (1173/1221), 79.28 MiB | 1.82 MiB/s[KWriting objects:  97% (1185/1221), 80.30 MiB | 1.82 MiB/s[KWriting objects:  98% (1197/1221), 80.30 MiB | 1.82 MiB/s[KWriting objects:  99% (1209/1221), 80.30 MiB | 1.82 MiB/s[KWriting objects: 100% (1221/1221), 80.30 MiB | 1.82 MiB/s[KWriting objects: 100% (1221/1221), 80.68 MiB | 2.78 MiB/s, done.
-Total 1221 (delta 353), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/353)[Kremote: Resolving deltas:   6% (23/353)[Kremote: Resolving deltas:  14% (50/353)[Kremote: Resolving deltas:  22% (78/353)[Kremote: Resolving deltas:  30% (107/353)[Kremote: Resolving deltas:  37% (134/353)[Kremote: Resolving deltas:  45% (161/353)[Kremote: Resolving deltas:  53% (188/353)[Kremote: Resolving deltas:  55% (196/353)[Kremote: Resolving deltas:  56% (199/353)[Kremote: Resolving deltas:  57% (202/353)[Kremote: Resolving deltas:  59% (209/353)[Kremote: Resolving deltas:  60% (214/353)[Kremote: Resolving deltas:  66% (235/353)[Kremote: Resolving deltas:  70% (248/353)[Kremote: Resolving deltas:  75% (265/353)[Kremote: Resolving deltas:  76% (269/353)[Kremote: Resolving deltas:  77% (272/353)[Kremote: Resolving deltas:  83% (295/353)[Kremote: Resolving deltas:  88% (312/353)[Kremote: Resolving deltas:  89% (316/353)[Kremote: Resolving deltas:  90% (319/353)[Kremote: Resolving deltas:  93% (330/353)[Kremote: Resolving deltas:  94% (332/353)[Kremote: Resolving deltas:  95% (336/353)[Kremote: Resolving deltas:  96% (339/353)[Kremote: Resolving deltas:  97% (343/353)[Kremote: Resolving deltas:  98% (347/353)[Kremote: Resolving deltas:  99% (352/353)[Kremote: Resolving deltas: 100% (353/353)[Kremote: Resolving deltas: 100% (353/353), completed with 1 local object.[K
-To https://github.com/DSPG-Young-Scholars-Program/dspg20amsoldier.git
-   15e765f..7e20561  master -> master
-]0;/sfs/qumulo/qhome/ads7fg/git/dspg20amsoldier]0;ads7fg@udc-aj40-14c0: /sfs/qumulo/qhome/ads7fg/git/dspg20amsoldier[01;32mads7fg@udc-aj40-14c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/dspg20amsoldier[00m$ ^C
-]0;/sfs/qumulo/qhome/ads7fg/git/dspg20amsoldier]0;ads7fg@udc-aj40-14c0: /sfs/qumulo/qhome/ads7fg/git/dspg20amsoldier[01;32mads7fg@udc-aj40-14c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/dspg20amsoldier[00m$ cd ../Training/
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj40-14c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj40-14c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ cd 05_r-basics/d[K0[1P../Training/03_code_management/
-]0;/sfs/qumulo/qhome/ads7fg/git/Training/03_code_management]0;ads7fg@udc-aj40-14c0: /sfs/qumulo/qhome/ads7fg/git/Training/03_code_management[01;32mads7fg@udc-aj40-14c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/03_code_management[00m$ l
-total 39M
--rw-r--r-- 1 ads7fg users   69 May 28 16:34  DataCamp
-drwxr-sr-x 3 ads7fg users 1.5K May 28 16:32  [0m[01;34mgit_learnr[0m
--rw-r--r-- 1 ads7fg users  39M May 28 16:34 'Intro to Git.pptx'
-]0;/sfs/qumulo/qhome/ads7fg/git/Training/03_code_management]0;ads7fg@udc-aj40-14c0: /sfs/qumulo/qhome/ads7fg/git/Training/03_code_management[01;32mads7fg@udc-aj40-14c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/03_code_management[00m$ cd ../05_r-basics/03_tables-of-data-3-ways/
-]0;/sfs/qumulo/qhome/ads7fg/git/Training/05_r-basics/03_tables-of-data-3-ways]0;ads7fg@udc-aj40-14c0: /sfs/qumulo/qhome/ads7fg/git/Training/05_r-basics/03_tables-of-data-3-ways[01;32mads7fg@udc-aj40-14c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/05_r-basics/03_tables-of-data-3-ways[00m$ l
-total 17M
--rw-r--r-- 1 ads7fg users 727K May 28 16:34  00_3-ways-to-read-csv.html
--rw-r--r-- 1 ads7fg users 5.5K May 28 16:34  00_3-ways-to-read-csv.md
--rw-r--r-- 1 ads7fg users  930 May 28 16:34  00_3-ways-to-read-csv.Rmd
--rw-r--r-- 1 ads7fg users 725K May 28 16:34  01_3-ways-to-subset.html
--rw-r--r-- 1 ads7fg users 3.3K May 28 16:34  01_3-ways-to-subset.md
--rw-r--r-- 1 ads7fg users 2.1K May 28 16:34  01_3-ways-to-subset.Rmd
--rw-r--r-- 1 ads7fg users 723K May 28 16:34  02_3-ways-to-rename-columns.html
--rw-r--r-- 1 ads7fg users 1.7K May 28 16:34  02_3-ways-to-rename-columns.md
--rw-r--r-- 1 ads7fg users  735 May 28 16:34  02_3-ways-to-rename-columns.Rmd
--rw-r--r-- 1 ads7fg users 737K May 28 16:34  03_3-ways-to-group.html
--rw-r--r-- 1 ads7fg users  17K May 28 16:34  03_3-ways-to-group.md
--rw-r--r-- 1 ads7fg users  577 May 28 16:34  03_3-ways-to-group.Rmd
--rw-r--r-- 1 ads7fg users 727K May 28 16:34  04_2-ways-to-pipe.html
--rw-r--r-- 1 ads7fg users 5.3K May 28 16:34  04_2-ways-to-pipe.md
--rw-r--r-- 1 ads7fg users 1.5K May 28 16:34  04_2-ways-to-pipe.Rmd
--rw-r--r-- 1 ads7fg users 722K May 28 16:34  05_3-ways-to-bind-rows.html
--rw-r--r-- 1 ads7fg users 1.4K May 28 16:34  05_3-ways-to-bind-rows.md
--rw-r--r-- 1 ads7fg users  777 May 28 16:34  05_3-ways-to-bind-rows.Rmd
--rw-r--r-- 1 ads7fg users  243 May 28 16:34  06_3-ways-to-profile-consistency.Rmd
--rw-r--r-- 1 ads7fg users 729K May 28 16:34  07_whypipes.html
--rw-r--r-- 1 ads7fg users 6.7K May 28 16:34  07_whypipes.md
--rw-r--r-- 1 ads7fg users 5.5K May 28 16:34  07_whypipes.Rmd
--rw-r--r-- 1 ads7fg users  205 May 28 16:34 'datacamp free tutorials'
--rw-r--r-- 1 ads7fg users  28K May 28 16:34  pigeon-racing.csv
--rw-r--r-- 1 ads7fg users  12M May 28 16:34  [0m[01;31mticket_client.zip[0m
-]0;/sfs/qumulo/qhome/ads7fg/git/Training/05_r-basics/03_tables-of-data-3-ways]0;ads7fg@udc-aj40-14c0: /sfs/qumulo/qhome/ads7fg/git/Training/05_r-basics/03_tables-of-data-3-ways[01;32mads7fg@udc-aj40-14c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/05_r-basics/03_tables-of-data-3-ways[00m$ unzip ticket_client.zip 
-Archive:  ticket_client.zip
-  inflating: 02_tables-of-data-3-ways/ticket_cleint.csv  
-cd ../
-]0;/sfs/qumulo/qhome/ads7fg/git/Training/05_r-basics]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training/05_r-basics[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/05_r-basics[00m$ cd ../
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git pull
-remote: Enumerating objects: 59, done.[K
-remote: Counting objects:   1% (1/59)[Kremote: Counting objects:   3% (2/59)[Kremote: Counting objects:   5% (3/59)[Kremote: Counting objects:   6% (4/59)[Kremote: Counting objects:   8% (5/59)[Kremote: Counting objects:  10% (6/59)[Kremote: Counting objects:  11% (7/59)[Kremote: Counting objects:  13% (8/59)[Kremote: Counting objects:  15% (9/59)[Kremote: Counting objects:  16% (10/59)[Kremote: Counting objects:  18% (11/59)[Kremote: Counting objects:  20% (12/59)[Kremote: Counting objects:  22% (13/59)[Kremote: Counting objects:  23% (14/59)[Kremote: Counting objects:  25% (15/59)[Kremote: Counting objects:  27% (16/59)[Kremote: Counting objects:  28% (17/59)[Kremote: Counting objects:  30% (18/59)[Kremote: Counting objects:  32% (19/59)[Kremote: Counting objects:  33% (20/59)[Kremote: Counting objects:  35% (21/59)[Kremote: Counting objects:  37% (22/59)[Kremote: Counting objects:  38% (23/59)[Kremote: Counting objects:  40% (24/59)[Kremote: Counting objects:  42% (25/59)[Kremote: Counting objects:  44% (26/59)[Kremote: Counting objects:  45% (27/59)[Kremote: Counting objects:  47% (28/59)[Kremote: Counting objects:  49% (29/59)[Kremote: Counting objects:  50% (30/59)[Kremote: Counting objects:  52% (31/59)[Kremote: Counting objects:  54% (32/59)[Kremote: Counting objects:  55% (33/59)[Kremote: Counting objects:  57% (34/59)[Kremote: Counting objects:  59% (35/59)[Kremote: Counting objects:  61% (36/59)[Kremote: Counting objects:  62% (37/59)[Kremote: Counting objects:  64% (38/59)[Kremote: Counting objects:  66% (39/59)[Kremote: Counting objects:  67% (40/59)[Kremote: Counting objects:  69% (41/59)[Kremote: Counting objects:  71% (42/59)[Kremote: Counting objects:  72% (43/59)[Kremote: Counting objects:  74% (44/59)[Kremote: Counting objects:  76% (45/59)[Kremote: Counting objects:  77% (46/59)[Kremote: Counting objects:  79% (47/59)[Kremote: Counting objects:  81% (48/59)[Kremote: Counting objects:  83% (49/59)[Kremote: Counting objects:  84% (50/59)[Kremote: Counting objects:  86% (51/59)[Kremote: Counting objects:  88% (52/59)[Kremote: Counting objects:  89% (53/59)[Kremote: Counting objects:  91% (54/59)[Kremote: Counting objects:  93% (55/59)[Kremote: Counting objects:  94% (56/59)[Kremote: Counting objects:  96% (57/59)[Kremote: Counting objects:  98% (58/59)[Kremote: Counting objects: 100% (59/59)[Kremote: Counting objects: 100% (59/59), done.[K
-remote: Compressing objects:   5% (1/19)[Kremote: Compressing objects:  10% (2/19)[Kremote: Compressing objects:  15% (3/19)[Kremote: Compressing objects:  21% (4/19)[Kremote: Compressing objects:  26% (5/19)[Kremote: Compressing objects:  31% (6/19)[Kremote: Compressing objects:  36% (7/19)[Kremote: Compressing objects:  42% (8/19)[Kremote: Compressing objects:  47% (9/19)[Kremote: Compressing objects:  52% (10/19)[Kremote: Compressing objects:  57% (11/19)[Kremote: Compressing objects:  63% (12/19)[Kremote: Compressing objects:  68% (13/19)[Kremote: Compressing objects:  73% (14/19)[Kremote: Compressing objects:  78% (15/19)[Kremote: Compressing objects:  84% (16/19)[Kremote: Compressing objects:  89% (17/19)[Kremote: Compressing objects:  94% (18/19)[Kremote: Compressing objects: 100% (19/19)[Kremote: Compressing objects: 100% (19/19), done.[K
-[KUnpacking objects:   2% (1/41)[KUnpacking objects:   4% (2/41)[KUnpacking objects:   7% (3/41)[KUnpacking objects:   9% (4/41)[KUnpacking objects:  12% (5/41)[KUnpacking objects:  14% (6/41)[KUnpacking objects:  17% (7/41)[KUnpacking objects:  19% (8/41)remote: Total 41 (delta 22), reused 32 (delta 15), pack-reused 0[K
-[KUnpacking objects:  21% (9/41)[KUnpacking objects:  24% (10/41)[KUnpacking objects:  26% (11/41)[KUnpacking objects:  29% (12/41)[KUnpacking objects:  31% (13/41)[KUnpacking objects:  34% (14/41)[KUnpacking objects:  36% (15/41)[KUnpacking objects:  39% (16/41)[KUnpacking objects:  41% (17/41)[KUnpacking objects:  43% (18/41)[KUnpacking objects:  46% (19/41)[KUnpacking objects:  48% (20/41)[KUnpacking objects:  51% (21/41)[KUnpacking objects:  53% (22/41)[KUnpacking objects:  56% (23/41)[KUnpacking objects:  58% (24/41)[KUnpacking objects:  60% (25/41)[KUnpacking objects:  63% (26/41)[KUnpacking objects:  65% (27/41)[KUnpacking objects:  68% (28/41)[KUnpacking objects:  70% (29/41)[KUnpacking objects:  73% (30/41)[KUnpacking objects:  75% (31/41)[KUnpacking objects:  78% (32/41)[KUnpacking objects:  80% (33/41)[KUnpacking objects:  82% (34/41)[KUnpacking objects:  85% (35/41)[KUnpacking objects:  87% (36/41)[KUnpacking objects:  90% (37/41)[KUnpacking objects:  92% (38/41)[KUnpacking objects:  95% (39/41)[KUnpacking objects:  97% (40/41)[KUnpacking objects: 100% (41/41)[KUnpacking objects: 100% (41/41), done.
-From https://github.com/DSPG-Young-Scholars-Program/Training
-   0a686ed..057a3d6  master     -> origin/master
-Updating 0a686ed..057a3d6
-Fast-forward
- 03_code_management/Intro to Git.pptx                                                       | Bin [31m40584334[m -> [32m40582634[m bytes
- 03_code_management/LearnR_Module                                                           |   1 [32m+[m
- 05_r-basics/00_intro_to_r/introduction_to_R.Rmd                                            |  65 [32m+++++++++++++++[m[31m--------------------[m
- 05_r-basics/00_intro_to_r/introduction_to_R.html                                           | 123 [32m+++++++++++++++++++++++++++++++[m[31m-----------------------------------[m
- 05_r-basics/00_intro_to_r/introduction_to_R.md                                             | 147 [32m+++++++++++++++++++++++++++++++++[m[31m----------------------------------------------[m
- 05_r-basics/00_intro_to_r/introduction_to_R_files/figure-html/unnamed-chunk-13-1.png       | Bin [31m0[m -> [32m6439[m bytes
- 05_r-basics/01_datetimes/080-datetimes.Rmd                                                 |  32 [32m++++++++++[m[31m-------[m
- 05_r-basics/01_datetimes/080-datetimes.html                                                | 138 [32m+++++++++++++++++++++++++[m[31m-------------------------------------------------[m
- 05_r-basics/01_datetimes/080-datetimes.md                                                  | 168 [32m+++++++++++++++++++++++++++++[m[31m-------------------------------------------------------------[m
- 05_r-basics/02_functions-and-control-flow/functions-and-control-flow.Rmd                   |  42 [32m+++++++++++++++[m[31m--------[m
- 05_r-basics/02_functions-and-control-flow/functions-and-control-flow.html                  |  71 [32m++++++++++++[m[31m--------------------------[m
- 05_r-basics/02_functions-and-control-flow/functions-and-control-flow.md                    | 112 [32m+++++++++++++++++++++[m[31m---------------------------------------[m
- 05_r-basics/R Basics/R Basics.Rmd                                                          |  81 [32m++++++++++++++++++++++++++++++++++++++++++++[m
- 05_r-basics/R Basics/R-Basics.html                                                         | 290 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
- 05_r-basics/R Basics/rsconnect/documents/R Basics.Rmd/shinyapps.io/nosferican/R-Basics.dcf |  12 [32m+++++++[m
- 15 files changed, 737 insertions(+), 545 deletions(-)
- create mode 100644 03_code_management/LearnR_Module
- create mode 100644 05_r-basics/00_intro_to_r/introduction_to_R_files/figure-html/unnamed-chunk-13-1.png
- create mode 100644 05_r-basics/R Basics/R Basics.Rmd
- create mode 100644 05_r-basics/R Basics/R-Basics.html
- create mode 100644 05_r-basics/R Basics/rsconnect/documents/R Basics.Rmd/shinyapps.io/nosferican/R-Basics.dcf
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ [K]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ [K]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git commit -m "3 ways update"
-[master 82bd856] 3 ways update
- 11 files changed, 11011109 insertions(+), 1118 deletions(-)
- rewrite .Rproj.user/1D79568D/console06/E9D859A2 (98%)
- rewrite .Rproj.user/1D79568D/console06/INDEX001 (86%)
- create mode 100644 05_r-basics/03_tables-of-data-3-ways/sample.csv
- create mode 100644 05_r-basics/03_tables-of-data-3-ways/sample_medium.csv
- create mode 100644 05_r-basics/03_tables-of-data-3-ways/sample_small.csv
- delete mode 100644 05_r-basics/03_tables-of-data-3-ways/ticket_client.zip
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git push
-error: cannot run rpostback-askpass: No such file or directory
-Username for 'https://github.com': dads2busy
-error: cannot run rpostback-askpass: No such file or directory
-Password for 'https://dads2busy@github.com': 
-[KEnumerating objects: 40, done.
-[KCounting objects:   2% (1/40)[KCounting objects:   5% (2/40)[KCounting objects:   7% (3/40)[KCounting objects:  10% (4/40)[KCounting objects:  12% (5/40)[KCounting objects:  15% (6/40)[KCounting objects:  17% (7/40)[KCounting objects:  20% (8/40)[KCounting objects:  22% (9/40)[KCounting objects:  25% (10/40)[KCounting objects:  27% (11/40)[KCounting objects:  30% (12/40)[KCounting objects:  32% (13/40)[KCounting objects:  35% (14/40)[KCounting objects:  37% (15/40)[KCounting objects:  40% (16/40)[KCounting objects:  42% (17/40)[KCounting objects:  45% (18/40)[KCounting objects:  47% (19/40)[KCounting objects:  50% (20/40)[KCounting objects:  52% (21/40)[KCounting objects:  55% (22/40)[KCounting objects:  57% (23/40)[KCounting objects:  60% (24/40)[KCounting objects:  62% (25/40)[KCounting objects:  65% (26/40)[KCounting objects:  67% (27/40)[KCounting objects:  70% (28/40)[KCounting objects:  72% (29/40)[KCounting objects:  75% (30/40)[KCounting objects:  77% (31/40)[KCounting objects:  80% (32/40)[KCounting objects:  82% (33/40)[KCounting objects:  85% (34/40)[KCounting objects:  87% (35/40)[KCounting objects:  90% (36/40)[KCounting objects:  92% (37/40)[KCounting objects:  95% (38/40)[KCounting objects:  97% (39/40)[KCounting objects: 100% (40/40)[KCounting objects: 100% (40/40), done.
-Delta compression using up to 40 threads
-[KCompressing objects:   5% (1/19)[KCompressing objects:  10% (2/19)[KCompressing objects:  15% (3/19)[KCompressing objects:  21% (4/19)[KCompressing objects:  26% (5/19)[KCompressing objects:  31% (6/19)[KCompressing objects:  36% (7/19)[KCompressing objects:  42% (8/19)[KCompressing objects:  47% (9/19)[KCompressing objects:  52% (10/19)[KCompressing objects:  57% (11/19)[KCompressing objects:  63% (12/19)[KCompressing objects:  68% (13/19)[KCompressing objects:  73% (14/19)[KCompressing objects:  78% (15/19)[KCompressing objects:  84% (16/19)[KCompressing objects:  89% (17/19)[KCompressing objects:  94% (18/19)[KCompressing objects: 100% (19/19)[KCompressing objects: 100% (19/19), done.
-[KWriting objects:   4% (1/22)[KWriting objects:   9% (2/22)[KWriting objects:  13% (3/22)[KWriting objects:  18% (4/22)[KWriting objects:  22% (5/22)[KWriting objects:  27% (6/22)[KWriting objects:  31% (7/22)[KWriting objects:  36% (8/22)[KWriting objects:  40% (9/22)[KWriting objects:  45% (10/22)[KWriting objects:  50% (11/22)[KWriting objects:  54% (12/22)[KWriting objects:  59% (13/22)[KWriting objects:  63% (14/22)[KWriting objects:  68% (15/22)[KWriting objects:  72% (16/22)[KWriting objects:  77% (17/22)[KWriting objects:  81% (18/22)[KWriting objects:  86% (19/22)[KWriting objects:  86% (19/22), 16.00 KiB | 3.00 KiB/s[KWriting objects:  90% (20/22), 3.71 MiB | 1.40 MiB/s[KWriting objects:  95% (21/22), 10.42 MiB | 3.23 MiB/s[KWriting objects: 100% (22/22), 10.42 MiB | 3.23 MiB/s[KWriting objects: 100% (22/22), 11.47 MiB | 3.54 MiB/s, done.
-Total 22 (delta 5), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
-remote: [1;31merror[m: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.[K
-remote: [1;31merror[m: Trace: ec022a5cff50e9ba809d0f9d18f35bb4[K
-remote: [1;31merror[m: See http://git.io/iEPt8g for more information.[K
-remote: [1;31merror[m: File 05_r-basics/03_tables-of-data-3-ways/sample.csv is 127.55 MB; this exceeds GitHub's file size limit of 100.00 MB[K
-To https://github.com/DSPG-Young-Scholars-Program/Training.git
- [31m! [remote rejected][m master -> master (pre-receive hook declined)
-[31merror: failed to push some refs to 'https://github.com/DSPG-Young-Scholars-Program/Training.git'
-[m]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ [K]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ [K]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   .Rproj.user/1D79568D/console06/E9D859A2[m
-	[31mmodified:   .Rproj.user/1D79568D/console06/INDEX001[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ [K]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ [K]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ [K]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git status[2Ppushcommit -m "3 ways update"add -A .[K
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-	[32mmodified:   .Rproj.user/1D79568D/console06/E9D859A2[m
-	[32mmodified:   .Rproj.user/1D79568D/console06/INDEX001[m
-	[32mdeleted:    05_r-basics/03_tables-of-data-3-ways/sample.csv[m
-	[32mdeleted:    05_r-basics/03_tables-of-data-3-ways/sample_medium.csv[m
-	[32mdeleted:    05_r-basics/03_tables-of-data-3-ways/sample_small.csv[m
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   .Rproj.user/1D79568D/console06/E9D859A2[m
-
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git statusadd -A .[2Pstatusadd -A .[2Pstatus[2Ppushcommit -m "3 ways update"
-[master 0bf9901] 3 ways update
- 5 files changed, 42 insertions(+), 11010004 deletions(-)
- delete mode 100644 05_r-basics/03_tables-of-data-3-ways/sample.csv
- delete mode 100644 05_r-basics/03_tables-of-data-3-ways/sample_medium.csv
- delete mode 100644 05_r-basics/03_tables-of-data-3-ways/sample_small.csv
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git commit -m "3 ways update"status[Kadd -A .[2Pstatus[2Ppush
-error: cannot run rpostback-askpass: No such file or directory
-Username for 'https://github.com': dads2busy
-error: cannot run rpostback-askpass: No such file or directory
-Password for 'https://dads2busy@github.com': 
-[KEnumerating objects: 49, done.
-[KCounting objects:   2% (1/49)[KCounting objects:   4% (2/49)[KCounting objects:   6% (3/49)[KCounting objects:   8% (4/49)[KCounting objects:  10% (5/49)[KCounting objects:  12% (6/49)[KCounting objects:  14% (7/49)[KCounting objects:  16% (8/49)[KCounting objects:  18% (9/49)[KCounting objects:  20% (10/49)[KCounting objects:  22% (11/49)[KCounting objects:  24% (12/49)[KCounting objects:  26% (13/49)[KCounting objects:  28% (14/49)[KCounting objects:  30% (15/49)[KCounting objects:  32% (16/49)[KCounting objects:  34% (17/49)[KCounting objects:  36% (18/49)[KCounting objects:  38% (19/49)[KCounting objects:  40% (20/49)[KCounting objects:  42% (21/49)[KCounting objects:  44% (22/49)[KCounting objects:  46% (23/49)[KCounting objects:  48% (24/49)[KCounting objects:  51% (25/49)[KCounting objects:  53% (26/49)[KCounting objects:  55% (27/49)[KCounting objects:  57% (28/49)[KCounting objects:  59% (29/49)[KCounting objects:  61% (30/49)[KCounting objects:  63% (31/49)[KCounting objects:  65% (32/49)[KCounting objects:  67% (33/49)[KCounting objects:  69% (34/49)[KCounting objects:  71% (35/49)[KCounting objects:  73% (36/49)[KCounting objects:  75% (37/49)[KCounting objects:  77% (38/49)[KCounting objects:  79% (39/49)[KCounting objects:  81% (40/49)[KCounting objects:  83% (41/49)[KCounting objects:  85% (42/49)[KCounting objects:  87% (43/49)[KCounting objects:  89% (44/49)[KCounting objects:  91% (45/49)[KCounting objects:  93% (46/49)[KCounting objects:  95% (47/49)[KCounting objects:  97% (48/49)[KCounting objects: 100% (49/49)[KCounting objects: 100% (49/49), done.
-Delta compression using up to 40 threads
-[KCompressing objects:   3% (1/28)[KCompressing objects:   7% (2/28)[KCompressing objects:  10% (3/28)[KCompressing objects:  14% (4/28)[KCompressing objects:  17% (5/28)[KCompressing objects:  21% (6/28)[KCompressing objects:  25% (7/28)[KCompressing objects:  28% (8/28)[KCompressing objects:  32% (9/28)[KCompressing objects:  35% (10/28)[KCompressing objects:  39% (11/28)[KCompressing objects:  42% (12/28)[KCompressing objects:  46% (13/28)[KCompressing objects:  50% (14/28)[KCompressing objects:  53% (15/28)[KCompressing objects:  57% (16/28)[KCompressing objects:  60% (17/28)[KCompressing objects:  64% (18/28)[KCompressing objects:  67% (19/28)[KCompressing objects:  71% (20/28)[KCompressing objects:  75% (21/28)[KCompressing objects:  78% (22/28)[KCompressing objects:  82% (23/28)[KCompressing objects:  85% (24/28)[KCompressing objects:  89% (25/28)[KCompressing objects:  92% (26/28)[KCompressing objects:  96% (27/28)[KCompressing objects: 100% (28/28)[KCompressing objects: 100% (28/28), done.
-[KWriting objects:   3% (1/31)[KWriting objects:   6% (2/31)[KWriting objects:   9% (3/31)[KWriting objects:  12% (4/31)[KWriting objects:  16% (5/31)[KWriting objects:  19% (6/31)[KWriting objects:  22% (7/31)[KWriting objects:  25% (8/31)[KWriting objects:  29% (9/31)[KWriting objects:  32% (10/31)[KWriting objects:  35% (11/31)[KWriting objects:  38% (12/31)[KWriting objects:  41% (13/31)[KWriting objects:  45% (14/31)[KWriting objects:  48% (15/31)[KWriting objects:  51% (16/31)[KWriting objects:  54% (17/31)[KWriting objects:  58% (18/31)[KWriting objects:  64% (20/31)[KWriting objects:  67% (21/31)[KWriting objects:  70% (22/31)[KWriting objects:  74% (23/31)[KWriting objects:  77% (24/31)[KWriting objects:  80% (25/31)[KWriting objects:  83% (26/31)[KWriting objects:  87% (27/31)[KWriting objects:  90% (28/31)[KWriting objects:  90% (28/31), 24.00 KiB | 7.00 KiB/s[KWriting objects:  93% (29/31), 4.13 MiB | 1.57 MiB/s[KWriting objects:  96% (30/31), 4.13 MiB | 1.57 MiB/s[KWriting objects: 100% (31/31), 4.13 MiB | 1.57 MiB/s[KWriting objects: 100% (31/31), 11.47 MiB | 3.72 MiB/s, done.
-Total 31 (delta 10), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/10)[Kremote: Resolving deltas:  10% (1/10)[Kremote: Resolving deltas:  30% (3/10)[Kremote: Resolving deltas:  40% (4/10)[Kremote: Resolving deltas:  60% (6/10)[Kremote: Resolving deltas:  80% (8/10)[Kremote: Resolving deltas: 100% (10/10)[Kremote: Resolving deltas: 100% (10/10), completed with 5 local objects.[K
-remote: [1;31merror[m: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.[K
-remote: [1;31merror[m: Trace: b85a15b915848ff1acf86f58de6e15e7[K
-remote: [1;31merror[m: See http://git.io/iEPt8g for more information.[K
-remote: [1;31merror[m: File 05_r-basics/03_tables-of-data-3-ways/sample.csv is 127.55 MB; this exceeds GitHub's file size limit of 100.00 MB[K
-To https://github.com/DSPG-Young-Scholars-Program/Training.git
- [31m! [remote rejected][m master -> master (pre-receive hook declined)
-[31merror: failed to push some refs to 'https://github.com/DSPG-Young-Scholars-Program/Training.git'
-[m]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git reset --soft HEAD^
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-	[32mmodified:   .Rproj.user/1D79568D/console06/E9D859A2[m
-	[32mmodified:   .Rproj.user/1D79568D/console06/INDEX001[m
-	[32mdeleted:    05_r-basics/03_tables-of-data-3-ways/sample.csv[m
-	[32mdeleted:    05_r-basics/03_tables-of-data-3-ways/sample_medium.csv[m
-	[32mdeleted:    05_r-basics/03_tables-of-data-3-ways/sample_small.csv[m
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   .Rproj.user/1D79568D/console06/E9D859A2[m
-
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git pull
-Already up to date.
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git [[Kpush
-error: cannot run rpostback-askpass: No such file or directory
-Username for 'https://github.com': dads2busy
-error: cannot run rpostback-askpass: No such file or directory
-Password for 'https://dads2busy@github.com': 
-[KEnumerating objects: 40, done.
-[KCounting objects:   2% (1/40)[KCounting objects:   5% (2/40)[KCounting objects:   7% (3/40)[KCounting objects:  10% (4/40)[KCounting objects:  12% (5/40)[KCounting objects:  15% (6/40)[KCounting objects:  17% (7/40)[KCounting objects:  20% (8/40)[KCounting objects:  22% (9/40)[KCounting objects:  25% (10/40)[KCounting objects:  27% (11/40)[KCounting objects:  30% (12/40)[KCounting objects:  32% (13/40)[KCounting objects:  35% (14/40)[KCounting objects:  37% (15/40)[KCounting objects:  40% (16/40)[KCounting objects:  42% (17/40)[KCounting objects:  45% (18/40)[KCounting objects:  47% (19/40)[KCounting objects:  50% (20/40)[KCounting objects:  52% (21/40)[KCounting objects:  55% (22/40)[KCounting objects:  57% (23/40)[KCounting objects:  60% (24/40)[KCounting objects:  62% (25/40)[KCounting objects:  65% (26/40)[KCounting objects:  67% (27/40)[KCounting objects:  70% (28/40)[KCounting objects:  72% (29/40)[KCounting objects:  75% (30/40)[KCounting objects:  77% (31/40)[KCounting objects:  80% (32/40)[KCounting objects:  82% (33/40)[KCounting objects:  85% (34/40)[KCounting objects:  87% (35/40)[KCounting objects:  90% (36/40)[KCounting objects:  92% (37/40)[KCounting objects:  95% (38/40)[KCounting objects:  97% (39/40)[KCounting objects: 100% (40/40)[KCounting objects: 100% (40/40), done.
-Delta compression using up to 40 threads
-[KCompressing objects:   5% (1/19)[KCompressing objects:  10% (2/19)[KCompressing objects:  15% (3/19)[KCompressing objects:  21% (4/19)[KCompressing objects:  26% (5/19)[KCompressing objects:  31% (6/19)[KCompressing objects:  36% (7/19)[KCompressing objects:  42% (8/19)[KCompressing objects:  47% (9/19)[KCompressing objects:  52% (10/19)[KCompressing objects:  57% (11/19)[KCompressing objects:  63% (12/19)[KCompressing objects:  68% (13/19)[KCompressing objects:  73% (14/19)[KCompressing objects:  78% (15/19)[KCompressing objects:  84% (16/19)[KCompressing objects:  89% (17/19)[KCompressing objects:  94% (18/19)[KCompressing objects: 100% (19/19)[KCompressing objects: 100% (19/19), done.
-[KWriting objects:   4% (1/22)[KWriting objects:   9% (2/22)[KWriting objects:  13% (3/22)[KWriting objects:  18% (4/22)[KWriting objects:  22% (5/22)[KWriting objects:  27% (6/22)[KWriting objects:  31% (7/22)[KWriting objects:  36% (8/22)[KWriting objects:  40% (9/22)[KWriting objects:  45% (10/22)[KWriting objects:  50% (11/22)[KWriting objects:  54% (12/22)[KWriting objects:  59% (13/22)[KWriting objects:  63% (14/22)[KWriting objects:  68% (15/22)[KWriting objects:  72% (16/22)[KWriting objects:  77% (17/22)[KWriting objects:  81% (18/22)[KWriting objects:  86% (19/22)[KWriting objects:  86% (19/22), 16.00 KiB | 3.00 KiB/s[KWriting objects:  90% (20/22), 3.88 MiB | 1.48 MiB/s[KWriting objects:  95% (21/22), 10.42 MiB | 3.14 MiB/s[KWriting objects: 100% (22/22), 10.42 MiB | 3.14 MiB/s[KWriting objects: 100% (22/22), 11.47 MiB | 3.44 MiB/s, done.
-Total 22 (delta 5), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
-remote: [1;31merror[m: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.[K
-remote: [1;31merror[m: Trace: 392e4e7679ec14858be6f04fc09027ba[K
-remote: [1;31merror[m: See http://git.io/iEPt8g for more information.[K
-remote: [1;31merror[m: File 05_r-basics/03_tables-of-data-3-ways/sample.csv is 127.55 MB; this exceeds GitHub's file size limit of 100.00 MB[K
-To https://github.com/DSPG-Young-Scholars-Program/Training.git
- [31m! [remote rejected][m master -> master (pre-receive hook declined)
-[31merror: failed to push some refs to 'https://github.com/DSPG-Young-Scholars-Program/Training.git'
-[m]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git pushllstatusreset --soft HEAD^
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git reset --soft HEAD^
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git commit -m "huh"
-[master f9d358e] huh
- 21 files changed, 1969 insertions(+), 1663 deletions(-)
- rewrite .Rproj.user/1D79568D/console06/E9D859A2 (97%)
- rewrite .Rproj.user/1D79568D/console06/INDEX001 (86%)
- create mode 100644 05_r-basics/00_intro_to_r/introduction_to_R_files/figure-html/unnamed-chunk-13-1.png
- delete mode 100644 05_r-basics/03_tables-of-data-3-ways/ticket_client.zip
- create mode 100644 05_r-basics/R Basics/R Basics.Rmd
- create mode 100644 05_r-basics/R Basics/R-Basics.html
- create mode 100644 05_r-basics/R Basics/rsconnect/documents/R Basics.Rmd/shinyapps.io/nosferican/R-Basics.dcf
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git push 
-error: cannot run rpostback-askpass: No such file or directory
-Username for 'https://github.com': dads2busy
-error: cannot run rpostback-askpass: No such file or directory
-Password for 'https://dads2busy@github.com': 
-To https://github.com/DSPG-Young-Scholars-Program/Training.git
- [31m! [rejected]       [m master -> master (non-fast-forward)
-[31merror: failed to push some refs to 'https://github.com/DSPG-Young-Scholars-Program/Training.git'
-[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
-[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
-[33mhint: 'git pull ...') before pushing again.[m
-[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git pull
-hint: Waiting for your editor to close the file... error: cannot run vi: No such file or directory
-error: unable to start editor 'vi'
-Not committing merge; use 'git commit' to complete the merge.
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$  [Kgit commit -m "lost"
-[master 9d8333e] lost
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git pull
-Already up to date.
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 2 commits.
-  (use "git push" to publish your local commits)
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-	[32mmodified:   .Rproj.user/1D79568D/console06/E9D859A2[m
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   .Rproj.user/1D79568D/console06/E9D859A2[m
-
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git commit -m "why"
-[master f44cfbd] why
- 1 file changed, 31 insertions(+)
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj36-2c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj36-2c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git push
-error: cannot run rpostback-askpass: No such file or directory
-Username for 'https://github.com': dads2busy
-error: cannot run rpostback-askpass: No such file or directory
-Password for 'https://dads2busy@github.com': 
-[KEnumerating objects: 62, done.
-[KCounting objects:   2% (1/46)[KCounting objects:   4% (2/46)[KCounting objects:   6% (3/46)[KCounting objects:   8% (4/46)[KCounting objects:  10% (5/46)[KCounting objects:  13% (6/46)[KCounting objects:  15% (7/46)[KCounting objects:  17% (8/46)[KCounting objects:  19% (9/46)[KCounting objects:  21% (10/46)[KCounting objects:  23% (11/46)[KCounting objects:  26% (12/46)[KCounting objects:  28% (13/46)[KCounting objects:  30% (14/46)[KCounting objects:  32% (15/46)[KCounting objects:  34% (16/46)[KCounting objects:  36% (17/46)[KCounting objects:  39% (18/46)[KCounting objects:  41% (19/46)[KCounting objects:  43% (20/46)[KCounting objects:  45% (21/46)[KCounting objects:  47% (22/46)[KCounting objects:  50% (23/46)[KCounting objects:  52% (24/46)[KCounting objects:  54% (25/46)[KCounting objects:  56% (26/46)[KCounting objects:  58% (27/46)[KCounting objects:  60% (28/46)[KCounting objects:  63% (29/46)[KCounting objects:  65% (30/46)[KCounting objects:  67% (31/46)[KCounting objects:  69% (32/46)[KCounting objects:  71% (33/46)[KCounting objects:  73% (34/46)[KCounting objects:  76% (35/46)[KCounting objects:  78% (36/46)[KCounting objects:  80% (37/46)[KCounting objects:  82% (38/46)[KCounting objects:  84% (39/46)[KCounting objects:  86% (40/46)[KCounting objects:  89% (41/46)[KCounting objects:  91% (42/46)[KCounting objects:  93% (43/46)[KCounting objects:  95% (44/46)[KCounting objects:  97% (45/46)[KCounting objects: 100% (46/46)[KCounting objects: 100% (46/46), done.
-Delta compression using up to 40 threads
-[KCompressing objects:   4% (1/23)[KCompressing objects:   8% (2/23)[KCompressing objects:  13% (3/23)[KCompressing objects:  17% (4/23)[KCompressing objects:  21% (5/23)[KCompressing objects:  26% (6/23)[KCompressing objects:  30% (7/23)[KCompressing objects:  34% (8/23)[KCompressing objects:  39% (9/23)[KCompressing objects:  43% (10/23)[KCompressing objects:  47% (11/23)[KCompressing objects:  52% (12/23)[KCompressing objects:  56% (13/23)[KCompressing objects:  60% (14/23)[KCompressing objects:  65% (15/23)[KCompressing objects:  69% (16/23)[KCompressing objects:  73% (17/23)[KCompressing objects:  78% (18/23)[KCompressing objects:  82% (19/23)[KCompressing objects:  86% (20/23)[KCompressing objects:  91% (21/23)[KCompressing objects:  95% (22/23)[KCompressing objects: 100% (23/23)[KCompressing objects: 100% (23/23), done.
-[KWriting objects:   3% (1/26)[KWriting objects:   7% (2/26)[KWriting objects:  11% (3/26)[KWriting objects:  15% (4/26)[KWriting objects:  19% (5/26)[KWriting objects:  23% (6/26)[KWriting objects:  26% (7/26)[KWriting objects:  30% (8/26)[KWriting objects:  34% (9/26)[KWriting objects:  38% (10/26)[KWriting objects:  42% (11/26)[KWriting objects:  46% (12/26)[KWriting objects:  50% (13/26)[KWriting objects:  53% (14/26)[KWriting objects:  57% (15/26)[KWriting objects:  61% (16/26)[KWriting objects:  65% (17/26)[KWriting objects:  69% (18/26)[KWriting objects:  73% (19/26)[KWriting objects:  76% (20/26)[KWriting objects:  80% (21/26)[KWriting objects:  84% (22/26)[KWriting objects:  88% (23/26)[KWriting objects:  92% (24/26)[KWriting objects:  96% (25/26)[KWriting objects: 100% (26/26)[KWriting objects: 100% (26/26), 17.88 KiB | 1.38 MiB/s, done.
-Total 26 (delta 8), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/8)[Kremote: Resolving deltas:  12% (1/8)[Kremote: Resolving deltas:  25% (2/8)[Kremote: Resolving deltas:  50% (4/8)[Kremote: Resolving deltas:  62% (5/8)[Kremote: Resolving deltas:  75% (6/8)[Kremote: Resolving deltas:  87% (7/8)[Kremote: Resolving deltas: 100% (8/8)[Kremote: Resolving deltas: 100% (8/8), completed with 5 local objects.[K
-To https://github.com/DSPG-Young-Scholars-Program/Training.git
-   057a3d6..f44cfbd  master -> master
 git pull
 Already up to date.
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj38-15c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj38-15c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
-cd ..
-]0;/sfs/qumulo/qhome/ads7fg/git]0;ads7fg@udc-aj37-17c0: /sfs/qumulo/qhome/ads7fg/git[01;32mads7fg@udc-aj37-17c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git[00m$ git clone https://github.com/DSPG-Young-Scholars-Program/dspg20CharlottesvilleEMSEquity.git
-Cloning into 'dspg20CharlottesvilleEMSEquity'...
-remote: Enumerating objects: 15, done.[K
-remote: Counting objects:   6% (1/15)[Kremote: Counting objects:  13% (2/15)[Kremote: Counting objects:  20% (3/15)[Kremote: Counting objects:  26% (4/15)[Kremote: Counting objects:  33% (5/15)[Kremote: Counting objects:  40% (6/15)[Kremote: Counting objects:  46% (7/15)[Kremote: Counting objects:  53% (8/15)[Kremote: Counting objects:  60% (9/15)[Kremote: Counting objects:  66% (10/15)[Kremote: Counting objects:  73% (11/15)[Kremote: Counting objects:  80% (12/15)[Kremote: Counting objects:  86% (13/15)[Kremote: Counting objects:  93% (14/15)[Kremote: Counting objects: 100% (15/15)[Kremote: Counting objects: 100% (15/15), done.[K
-remote: Compressing objects:  10% (1/10)[Kremote: Compressing objects:  20% (2/10)[Kremote: Compressing objects:  30% (3/10)[Kremote: Compressing objects:  40% (4/10)[Kremote: Compressing objects:  50% (5/10)[Kremote: Compressing objects:  60% (6/10)[Kremote: Compressing objects:  70% (7/10)[Kremote: Compressing objects:  80% (8/10)[Kremote: Compressing objects:  90% (9/10)[Kremote: Compressing objects: 100% (10/10)[Kremote: Compressing objects: 100% (10/10), done.[K
-remote: Total 15 (delta 0), reused 6 (delta 0), pack-reused 0[K
-[KUnpacking objects:   6% (1/15)[KUnpacking objects:  13% (2/15)[KUnpacking objects:  20% (3/15)[KUnpacking objects:  26% (4/15)[KUnpacking objects:  33% (5/15)[KUnpacking objects:  40% (6/15)[KUnpacking objects:  46% (7/15)[KUnpacking objects:  53% (8/15)[KUnpacking objects:  60% (9/15)[KUnpacking objects:  66% (10/15)[KUnpacking objects:  73% (11/15)[KUnpacking objects:  80% (12/15)[KUnpacking objects:  86% (13/15)[KUnpacking objects:  93% (14/15)[KUnpacking objects: 100% (15/15)[KUnpacking objects: 100% (15/15), done.
-cd Training/11_data_exploration/02_geospatial/spatial_sf_intro/
-]0;/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro]0;ads7fg@udc-aj36-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro[01;32mads7fg@udc-aj36-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro[00m$ l
-total 928K
-drwxr-sr-x 3 ads7fg users 2.0K Jun  5 17:20 [0m[01;34mdata[0m
--rw-r--r-- 1 ads7fg users  920 Jun  5 17:20 [01;31mdb_user_query.csv.gz[0m
--rw-r--r-- 1 ads7fg users 165K Jun  5 17:20 db_user_query.txt
--rw-r--r-- 1 ads7fg users 720K Jun  5 17:20 OverviewCoordinateReferenceSystems.pdf
--rw-r--r-- 1 ads7fg users  882 Jun  5 17:20 set_dbuser_permissions.R
-drwxr-sr-x 3 ads7fg users  512 Jun  5 17:20 [01;34mspatial_r_with_sf_intro_files[0m
--rw-r--r-- 1 ads7fg users 8.2K Jun 22 11:44 spatial_r_with_sf_intro.Rmd
-]0;/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro]0;ads7fg@udc-aj36-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro[01;32mads7fg@udc-aj36-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro[00m$ cd data/
-]0;/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data]0;ads7fg@udc-aj36-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data[01;32mads7fg@udc-aj36-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data[00m$ l
-total 5.5M
--rw-r--r-- 1 ads7fg users  12K Jun  5 17:20 [0m[01;31mcongressional_trump_scores.csv.gz[0m
--rw-r--r-- 1 ads7fg users  30K Jun  5 17:20 cu12.RDS
-drwxr-sr-x 2 ads7fg users 2.0K Jun  5 17:20 [01;34mshapefiles[0m
--rw-r--r-- 1 ads7fg users 5.5M Jun  5 17:20 va_blockgroups_simplified_spdf.RDS
-]0;/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data]0;ads7fg@udc-aj36-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data[01;32mads7fg@udc-aj36-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data[00m$ gunzip congressional_trump_scores.csv.gz 
-cd../../../
-bash: cd../../../: No such file or directory
-]0;/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data[00m$ cd ../
-]0;/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro[00m$ cd ../../../
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git remote -v
-origin	https://github.com/DSPG-Young-Scholars-Program/Training.git (fetch)
-origin	https://github.com/DSPG-Young-Scholars-Program/Training.git (push)
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git remote
-origin
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git remote --help
-warning: failed to exec 'man': No such file or directory
-fatal: no man viewer handled the request
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git remote --help[C[C[C[K[K[K[K[Kh
-usage: git remote [-v | --verbose]
-   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
-   or: git remote rename <old> <new>
-   or: git remote remove <name>
-   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
-   or: git remote [-v | --verbose] show [-n] <name>
-   or: git remote prune [-n | --dry-run] <name>
-   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
-   or: git remote set-branches [--add] <name> <branch>...
-   or: git remote get-url [--push] [--all] <name>
-   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
-   or: git remote set-url --add <name> <newurl>
-   or: git remote set-url --delete <name> <url>
-
-    -v, --verbose         be verbose; must be placed before a subcommand
-
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git remote -h-help[K -v
-origin	https://github.com/DSPG-Young-Scholars-Program/Training.git (fetch)
-origin	https://github.com/DSPG-Young-Scholars-Program/Training.git (push)
-git pull
-remote: Enumerating objects: 37, done.[K
-remote: Counting objects:   2% (1/37)[Kremote: Counting objects:   5% (2/37)[Kremote: Counting objects:   8% (3/37)[Kremote: Counting objects:  10% (4/37)[Kremote: Counting objects:  13% (5/37)[Kremote: Counting objects:  16% (6/37)[Kremote: Counting objects:  18% (7/37)[Kremote: Counting objects:  21% (8/37)[Kremote: Counting objects:  24% (9/37)[Kremote: Counting objects:  27% (10/37)[Kremote: Counting objects:  29% (11/37)[Kremote: Counting objects:  32% (12/37)[Kremote: Counting objects:  35% (13/37)[Kremote: Counting objects:  37% (14/37)[Kremote: Counting objects:  40% (15/37)[Kremote: Counting objects:  43% (16/37)[Kremote: Counting objects:  45% (17/37)[Kremote: Counting objects:  48% (18/37)[Kremote: Counting objects:  51% (19/37)[Kremote: Counting objects:  54% (20/37)[Kremote: Counting objects:  56% (21/37)[Kremote: Counting objects:  59% (22/37)[Kremote: Counting objects:  62% (23/37)[Kremote: Counting objects:  64% (24/37)[Kremote: Counting objects:  67% (25/37)[Kremote: Counting objects:  70% (26/37)[Kremote: Counting objects:  72% (27/37)[Kremote: Counting objects:  75% (28/37)[Kremote: Counting objects:  78% (29/37)[Kremote: Counting objects:  81% (30/37)[Kremote: Counting objects:  83% (31/37)[Kremote: Counting objects:  86% (32/37)[Kremote: Counting objects:  89% (33/37)[Kremote: Counting objects:  91% (34/37)[Kremote: Counting objects:  94% (35/37)[Kremote: Counting objects:  97% (36/37)[Kremote: Counting objects: 100% (37/37)[Kremote: Counting objects: 100% (37/37), done.[K
-remote: Compressing objects:   7% (1/13)[Kremote: Compressing objects:  15% (2/13)[Kremote: Compressing objects:  23% (3/13)[Kremote: Compressing objects:  30% (4/13)[Kremote: Compressing objects:  38% (5/13)[Kremote: Compressing objects:  46% (6/13)[Kremote: Compressing objects:  53% (7/13)[Kremote: Compressing objects:  61% (8/13)[Kremote: Compressing objects:  69% (9/13)[Kremote: Compressing objects:  76% (10/13)[Kremote: Compressing objects:  84% (11/13)[Kremote: Compressing objects:  92% (12/13)[Kremote: Compressing objects: 100% (13/13)[Kremote: Compressing objects: 100% (13/13), done.[K
-[KUnpacking objects:   1% (1/90)[KUnpacking objects:   2% (2/90)[KUnpacking objects:   3% (3/90)[KUnpacking objects:   4% (4/90)[KUnpacking objects:   5% (5/90)[KUnpacking objects:   6% (6/90)[KUnpacking objects:   7% (7/90)[KUnpacking objects:   8% (8/90)[KUnpacking objects:  10% (9/90)[KUnpacking objects:  11% (10/90)[KUnpacking objects:  12% (11/90)[KUnpacking objects:  13% (12/90)[KUnpacking objects:  14% (13/90)[KUnpacking objects:  15% (14/90)[KUnpacking objects:  16% (15/90)[KUnpacking objects:  17% (16/90)[KUnpacking objects:  18% (17/90)[KUnpacking objects:  20% (18/90)[KUnpacking objects:  21% (19/90)[KUnpacking objects:  22% (20/90)[KUnpacking objects:  23% (21/90)[KUnpacking objects:  24% (22/90)[KUnpacking objects:  25% (23/90)[KUnpacking objects:  26% (24/90)[KUnpacking objects:  27% (25/90)[KUnpacking objects:  28% (26/90)[KUnpacking objects:  30% (27/90)[KUnpacking objects:  31% (28/90)[KUnpacking objects:  32% (29/90)[KUnpacking objects:  33% (30/90)[KUnpacking objects:  34% (31/90)[KUnpacking objects:  35% (32/90)[KUnpacking objects:  36% (33/90)[KUnpacking objects:  37% (34/90)[KUnpacking objects:  38% (35/90)[KUnpacking objects:  40% (36/90)[KUnpacking objects:  41% (37/90)[KUnpacking objects:  42% (38/90)[KUnpacking objects:  43% (39/90)[KUnpacking objects:  44% (40/90)[KUnpacking objects:  45% (41/90)[KUnpacking objects:  46% (42/90)[KUnpacking objects:  47% (43/90)[KUnpacking objects:  48% (44/90)[KUnpacking objects:  50% (45/90)[KUnpacking objects:  51% (46/90)[KUnpacking objects:  52% (47/90)[KUnpacking objects:  53% (48/90)[KUnpacking objects:  54% (49/90)[KUnpacking objects:  55% (50/90)[KUnpacking objects:  56% (51/90)[KUnpacking objects:  57% (52/90)[KUnpacking objects:  58% (53/90)[KUnpacking objects:  60% (54/90)[KUnpacking objects:  61% (55/90)[KUnpacking objects:  62% (56/90)[KUnpacking objects:  63% (57/90)[KUnpacking objects:  64% (58/90)[KUnpacking objects:  65% (59/90)[KUnpacking objects:  66% (60/90)[KUnpacking objects:  67% (61/90)[KUnpacking objects:  68% (62/90)[KUnpacking objects:  70% (63/90)[KUnpacking objects:  71% (64/90)[KUnpacking objects:  72% (65/90)[KUnpacking objects:  73% (66/90)[KUnpacking objects:  74% (67/90)[KUnpacking objects:  75% (68/90)[KUnpacking objects:  76% (69/90)[KUnpacking objects:  77% (70/90)[KUnpacking objects:  78% (71/90)[KUnpacking objects:  80% (72/90)[KUnpacking objects:  81% (73/90)[KUnpacking objects:  82% (74/90)[KUnpacking objects:  83% (75/90)[KUnpacking objects:  84% (76/90)[KUnpacking objects:  85% (77/90)[KUnpacking objects:  86% (78/90)[KUnpacking objects:  87% (79/90)[KUnpacking objects:  88% (80/90)[KUnpacking objects:  90% (81/90)[KUnpacking objects:  91% (82/90)[KUnpacking objects:  92% (83/90)[KUnpacking objects:  93% (84/90)[KUnpacking objects:  94% (85/90)[KUnpacking objects:  95% (86/90)[KUnpacking objects:  96% (87/90)remote: Total 90 (delta 25), reused 24 (delta 24), pack-reused 53[K
-[KUnpacking objects:  97% (88/90)[KUnpacking objects:  98% (89/90)[KUnpacking objects: 100% (90/90)[KUnpacking objects: 100% (90/90), done.
-From https://github.com/DSPG-Young-Scholars-Program/Training
-   2cadd51..2ad34ff  master     -> origin/master
-Updating 2cadd51..2ad34ff
-[KUpdating files:  73% (61/83)[KUpdating files:  74% (62/83)[KUpdating files:  75% (63/83)[KUpdating files:  77% (64/83)[KUpdating files:  78% (65/83)[KUpdating files:  79% (66/83)[KUpdating files:  80% (67/83)[KUpdating files:  81% (68/83)[KUpdating files:  83% (69/83)[KUpdating files:  84% (70/83)[KUpdating files:  85% (71/83)[KUpdating files:  86% (72/83)[KUpdating files:  87% (73/83)[KUpdating files:  89% (74/83)[KUpdating files:  90% (75/83)[KUpdating files:  91% (76/83)[KUpdating files:  92% (77/83)[KUpdating files:  93% (78/83)[KUpdating files:  95% (79/83)[KUpdating files:  96% (80/83)[KUpdating files:  97% (81/83)[KUpdating files:  98% (82/83)[KUpdating files: 100% (83/83)[KUpdating files: 100% (83/83), done.
-Fast-forward
- 10_data_preparation/Cleaned_Unsplit_ds.csv                             | 12081 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
- 10_data_preparation/Cleaned_Unsplit_frx.csv                            |  4189 [32m++++++++++++++++++++++++++++++++++++++[m
- 10_data_preparation/Data Linkage (DSPG 2020).pptx                      |   Bin [31m0[m -> [32m743954[m bytes
- 10_data_preparation/Data Restructuring (DSPG 2020).pptx                |   Bin [31m0[m -> [32m371944[m bytes
- 10_data_preparation/Data_Linkage_DSPG_2020.R                           |   215 [32m++[m
- 10_data_preparation/Data_Restructuring_DSPG_2020.R                     |   208 [32m++[m
- 10_data_preparation/schools_2015_DSPG_2020.csv                         |  1083 [32m++++++++++[m
- 10_data_preparation/schools_2016_DSPG_2020.csv                         |  1425 [32m+++++++++++++[m
- 10_data_preparation/schools_2017_DSPG_2020.csv                         |  1642 [32m+++++++++++++++[m
- data/QGIS/ACSDP02_5Y2018_Cleaned.csv                                   |   100 [32m+[m
- data/QGIS/ACSDP02_5Y2018_Original.csv                                  |   102 [32m+[m
- data/QGIS/IA_county.cpg                                                |     1 [32m+[m
- data/QGIS/IA_county.dbf                                                |   Bin [31m0[m -> [32m16459[m bytes
- data/QGIS/IA_county.prj                                                |     1 [32m+[m
- data/QGIS/IA_county.qpj                                                |     1 [32m+[m
- data/QGIS/IA_county.shp                                                |   Bin [31m0[m -> [32m19740[m bytes
- data/QGIS/IA_county.shx                                                |   Bin [31m0[m -> [32m892[m bytes
- data/QGIS/README.md                                                    |    33 [32m+[m
- data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.cpg              |     1 [32m+[m
- data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.dbf              |   Bin [31m0[m -> [32m143047[m bytes
- data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.prj              |     1 [32m+[m
- data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shp              |   Bin [31m0[m -> [32m831804[m bytes
- data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shp.ea.iso.xml   |   273 [32m+++[m
- data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shp.iso.xml      |   544 [32m+++++[m
- data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shx              |   Bin [31m0[m -> [32m6700[m bytes
- data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.cpg              |     1 [32m+[m
- data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.dbf              |   Bin [31m0[m -> [32m525182[m bytes
- data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.prj              |     1 [32m+[m
- data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shp              |   Bin [31m0[m -> [32m1076340[m bytes
- data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shp.ea.iso.xml   |   379 [32m++++[m
- data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shp.iso.xml      |   569 [32m++++++[m
- data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shx              |   Bin [31m0[m -> [32m25860[m bytes
- data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.cpg                |     1 [32m+[m
- data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.dbf                |   Bin [31m0[m -> [32m527301[m bytes
- data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.prj                |     1 [32m+[m
- data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shp                |   Bin [31m0[m -> [32m3674580[m bytes
- data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shp.ea.iso.xml     |   379 [32m++++[m
- data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shp.iso.xml        |   569 [32m++++++[m
- data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shx                |   Bin [31m0[m -> [32m25964[m bytes
- data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.cpg            |     1 [32m+[m
- data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.dbf            |   Bin [31m0[m -> [32m1545[m bytes
- data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.prj            |     1 [32m+[m
- data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shp            |   Bin [31m0[m -> [32m850056[m bytes
- data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shp.ea.iso.xml |   314 [32m+++[m
- data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shp.iso.xml    |   531 [32m+++++[m
- data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shx            |   Bin [31m0[m -> [32m172[m bytes
- data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.cpg              |     1 [32m+[m
- data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.dbf              |   Bin [31m0[m -> [32m242[m bytes
- data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.prj              |     1 [32m+[m
- data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shp              |   Bin [31m0[m -> [32m94304[m bytes
- data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shp.ea.iso.xml   |   119 [32m++[m
- data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shp.iso.xml      |   531 [32m+++++[m
- data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shx              |   Bin [31m0[m -> [32m108[m bytes
- data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.cpg                |     1 [32m+[m
- data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.dbf                |   Bin [31m0[m -> [32m242[m bytes
- data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.prj                |     1 [32m+[m
- data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shp                |   Bin [31m0[m -> [32m495728[m bytes
- data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shp.ea.iso.xml     |   119 [32m++[m
- data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shp.iso.xml        |   531 [32m+++++[m
- data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shx                |   Bin [31m0[m -> [32m108[m bytes
- data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.cpg                |     1 [32m+[m
- data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.dbf                |   Bin [31m0[m -> [32m830[m bytes
- data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.prj                |     1 [32m+[m
- data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shp                |   Bin [31m0[m -> [32m592832[m bytes
- data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shp.ea.iso.xml     |   254 [32m+++[m
- data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shp.iso.xml        |   531 [32m+++++[m
- data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shx                |   Bin [31m0[m -> [32m132[m bytes
- data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.cpg                  |     1 [32m+[m
- data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.dbf                  |   Bin [31m0[m -> [32m9058[m bytes
- data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.prj                  |     1 [32m+[m
- data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shp                  |   Bin [31m0[m -> [32m1394728[m bytes
- data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shp.ea.iso.xml       |   310 [32m+++[m
- data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shp.iso.xml          |   531 [32m+++++[m
- data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shx                  |   Bin [31m0[m -> [32m548[m bytes
- data/QGIS/crashUI2010.csv                                              |  3079 [32m++++++++++++++++++++++++++++[m
- data/QGIS/dataTypes.geojson                                            |    86 [32m+[m
- data/QGIS/vacationStates.cpg                                           |     1 [32m+[m
- data/QGIS/vacationStates.csv                                           |     5 [32m+[m
- data/QGIS/vacationStates.dbf                                           |   Bin [31m0[m -> [32m9058[m bytes
- data/QGIS/vacationStates.prj                                           |     1 [32m+[m
- data/QGIS/vacationStates.qpj                                           |     1 [32m+[m
- data/QGIS/vacationStates.shp                                           |   Bin [31m0[m -> [32m1394728[m bytes
- data/QGIS/vacationStates.shx                                           |   Bin [31m0[m -> [32m548[m bytes
- 83 files changed, 30754 insertions(+)
- create mode 100644 10_data_preparation/Cleaned_Unsplit_ds.csv
- create mode 100644 10_data_preparation/Cleaned_Unsplit_frx.csv
- create mode 100644 10_data_preparation/Data Linkage (DSPG 2020).pptx
- create mode 100644 10_data_preparation/Data Restructuring (DSPG 2020).pptx
- create mode 100644 10_data_preparation/Data_Linkage_DSPG_2020.R
- create mode 100644 10_data_preparation/Data_Restructuring_DSPG_2020.R
- create mode 100644 10_data_preparation/schools_2015_DSPG_2020.csv
- create mode 100644 10_data_preparation/schools_2016_DSPG_2020.csv
- create mode 100644 10_data_preparation/schools_2017_DSPG_2020.csv
- create mode 100644 data/QGIS/ACSDP02_5Y2018_Cleaned.csv
- create mode 100644 data/QGIS/ACSDP02_5Y2018_Original.csv
- create mode 100644 data/QGIS/IA_county.cpg
- create mode 100644 data/QGIS/IA_county.dbf
- create mode 100644 data/QGIS/IA_county.prj
- create mode 100644 data/QGIS/IA_county.qpj
- create mode 100644 data/QGIS/IA_county.shp
- create mode 100644 data/QGIS/IA_county.shx
- create mode 100644 data/QGIS/README.md
- create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.cpg
- create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.dbf
- create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.prj
- create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shp
- create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shp.ea.iso.xml
- create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shp.iso.xml
- create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shx
- create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.cpg
- create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.dbf
- create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.prj
- create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shp
- create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shp.ea.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shp.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shx
- create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.cpg
- create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.dbf
- create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.prj
- create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shp
- create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shp.ea.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shp.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shx
- create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.cpg
- create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.dbf
- create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.prj
- create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shp
- create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shp.ea.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shp.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shx
- create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.cpg
- create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.dbf
- create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.prj
- create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shp
- create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shp.ea.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shp.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shx
- create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.cpg
- create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.dbf
- create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.prj
- create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shp
- create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shp.ea.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shp.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shx
- create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.cpg
- create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.dbf
- create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.prj
- create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shp
- create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shp.ea.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shp.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shx
- create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.cpg
- create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.dbf
- create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.prj
- create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shp
- create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shp.ea.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shp.iso.xml
- create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shx
- create mode 100644 data/QGIS/crashUI2010.csv
- create mode 100644 data/QGIS/dataTypes.geojson
- create mode 100644 data/QGIS/vacationStates.cpg
- create mode 100644 data/QGIS/vacationStates.csv
- create mode 100644 data/QGIS/vacationStates.dbf
- create mode 100644 data/QGIS/vacationStates.prj
- create mode 100644 data/QGIS/vacationStates.qpj
- create mode 100644 data/QGIS/vacationStates.shp
- create mode 100644 data/QGIS/vacationStates.shx
-]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-18c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-18c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-11c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-11c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
