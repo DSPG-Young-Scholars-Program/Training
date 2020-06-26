@@ -1,65 +1,4 @@
 
- create mode 100644 data/original/Methodological Study of the Measurement of Intensity (AMS-195), January 1945/Technical Documentation/AMS-195B_ Measurement of Intensity 01_1945, codebook.AMS195B.CDBK.ascii
- create mode 100644 data/original/Methodological Study of the Measurement of Intensity (AMS-195), January 1945/Technical Documentation/AMS-195C_ Measurement of Intensity 01_1945, codebook.AMS195C.CDBK
- create mode 100644 data/original/Methodological Study of the Measurement of Intensity (AMS-195), January 1945/Technical Documentation/AMS-195C_ Measurement of Intensity 01_1945, codebook.AMS195C.CDBK.ascii
- create mode 100644 data/original/Methodological Study of the Measurement of Intensity (AMS-195), January 1945/Technical Documentation/AMS-195_ Technical Specifications Summary.224.60TSS.pdf
- create mode 100644 data/original/Methodological Study of the Measurement of Intensity (AMS-195), January 1945/Technical Documentation/AMS-195_ Technical documentation.224.60DP.pdf
- create mode 100644 data/original/Methodological Study of the Measurement of Intensity (AMS-195), January 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Methodological Study of the Measurement of Intensity (AMS-215), June 1945/Electronic Records/AMS-215_ Measurement of Intensity 06_1945, data.AMS0215.CLEAN
- create mode 100644 data/original/Methodological Study of the Measurement of Intensity (AMS-215), June 1945/Technical Documentation/AMS-215_ Measurement of Intensity 06_1945, codebook.AMS0215.CDBK
- create mode 100644 data/original/Methodological Study of the Measurement of Intensity (AMS-215), June 1945/Technical Documentation/AMS-215_ Measurement of Intensity 06_1945, codebook.AMS0215.CDBK.ascii
- create mode 100644 data/original/Methodological Study of the Measurement of Intensity (AMS-215), June 1945/Technical Documentation/AMS-215_ Technical Specifications Summary.224.73TSS.pdf
- create mode 100644 data/original/Methodological Study of the Measurement of Intensity (AMS-215), June 1945/Technical Documentation/AMS-215_ Technical documentation.224.73DP.pdf
- create mode 100644 data/original/Methodological Study of the Measurement of Intensity (AMS-215), June 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Non-Commissioned Officer Study (AMS-76), September 1943/Electronic Records/AMS-76_ Non-Commissioned Officer Study  09_1943, data.AMS0076.CLEAN
- create mode 100644 data/original/Non-Commissioned Officer Study (AMS-76), September 1943/Technical Documentation/AMS-76_ Non-Commissioned Officer Study  09_1943, codebook.AMS0076.CDBK
- create mode 100644 data/original/Non-Commissioned Officer Study (AMS-76), September 1943/Technical Documentation/AMS-76_ Non-Commissioned Officer Study  09_1943, codebook.AMS0076.CDBK.ascii
- create mode 100644 data/original/Non-Commissioned Officer Study (AMS-76), September 1943/Technical Documentation/AMS-76_ Technical Specifications Summary.224.12TSS.pdf
- create mode 100644 data/original/Non-Commissioned Officer Study (AMS-76), September 1943/Technical Documentation/AMS-76_ Technical documentation.224.12DP.pdf
- create mode 100644 data/original/Non-Commissioned Officer Study (AMS-76), September 1943/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Officers Miscellaneous Study (AMS-86), December 1943/Electronic Records/AMS-86_ Officers Miscellaneous Study 12_1943, data.AMS86.CLEAN
- create mode 100644 data/original/Officers Miscellaneous Study (AMS-86), December 1943/Technical Documentation/AMS-86 Technical Specifications Summary.224.17TSS.pdf
- create mode 100644 data/original/Officers Miscellaneous Study (AMS-86), December 1943/Technical Documentation/AMS-86_ Officers Miscellaneous Study 12_1943, codebook.AMS0086.CDBK
- create mode 100644 data/original/Officers Miscellaneous Study (AMS-86), December 1943/Technical Documentation/AMS-86_ Officers Miscellaneous Study 12_1943, codebook.AMS0086.CDBK.ascii
- create mode 100644 data/original/Officers Miscellaneous Study (AMS-86), December 1943/Technical Documentation/AMS-86_ Technical documentation.224.17DP.pdf
- create mode 100644 data/original/Officers Miscellaneous Study (AMS-86), December 1943/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Officers Orientation Study (AMS-85), November-December 1943/Electronic Records/AMS-85_ Officers Orientation Study 11-12_1943, data.AMS85.CLEAN
- create mode 100644 data/original/Officers Orientation Study (AMS-85), November-December 1943/Technical Documentation/AMS-85_ Officers Orientation Study 11-12_1943, codebook.AMS0085.CDBK
- create mode 100644 data/original/Officers Orientation Study (AMS-85), November-December 1943/Technical Documentation/AMS-85_ Officers Orientation Study 11-12_1943, codebook.AMS0085.CDBK.ascii
- create mode 100644 data/original/Officers Orientation Study (AMS-85), November-December 1943/Technical Documentation/AMS-85_ Technical Specifications Summary.224.16TSS.pdf
- create mode 100644 data/original/Officers Orientation Study (AMS-85), November-December 1943/Technical Documentation/AMS-85_ Technical documentation.224.16DP.pdf
- create mode 100644 data/original/Officers Orientation Study (AMS-85), November-December 1943/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Officers_ Attitudes toward Redeployment and Demobilization--China-Burma-India (AMS-219), July 1945/Electronic Records/AMS-219A_ Officers_ Attitudes...China-Burma-India, data.AMS219A.CLEAN
- create mode 100644 data/original/Officers_ Attitudes toward Redeployment and Demobilization--China-Burma-India (AMS-219), July 1945/Electronic Records/AMS-219B_ Officers_ Attitudes ...China-Burma-India, data.AMS219B.CLEAN
- create mode 100644 data/original/Officers_ Attitudes toward Redeployment and Demobilization--China-Burma-India (AMS-219), July 1945/Electronic Records/AMS-219C_ Officers_ Attitudes ...China-Burma-India, data.AMS219C.CLEAN
- create mode 100644 data/original/Officers_ Attitudes toward Redeployment and Demobilization--China-Burma-India (AMS-219), July 1945/Technical Documentation/AMS-219A_ Officers_ Attitudes...China-Burma-India, codebook.AMS219A.CDBK
- create mode 100644 data/original/Officers_ Attitudes toward Redeployment and Demobilization--China-Burma-India (AMS-219), July 1945/Technical Documentation/AMS-219A_ Officers_ Attitudes...China-Burma-India, codebook.AMS219A.CDBK.ascii
- create mode 100644 data/original/Officers_ Attitudes toward Redeployment and Demobilization--China-Burma-India (AMS-219), July 1945/Technical Documentation/AMS-219B_ Officers_ Attitudes ...China-Burma-India, codebook.AMS219B.CDBK
- create mode 100644 data/original/Officers_ Attitudes toward Redeployment and Demobilization--China-Burma-India (AMS-219), July 1945/Technical Documentation/AMS-219B_ Officers_ Attitudes ...China-Burma-India, codebook.AMS219B.CDBK.ascii
- create mode 100644 data/original/Officers_ Attitudes toward Redeployment and Demobilization--China-Burma-India (AMS-219), July 1945/Technical Documentation/AMS-219C_ Officers_ Attitudes ...China-Burma-India, codebook.AMS219C.CDBK
- create mode 100644 data/original/Officers_ Attitudes toward Redeployment and Demobilization--China-Burma-India (AMS-219), July 1945/Technical Documentation/AMS-219C_ Officers_ Attitudes ...China-Burma-India, codebook.AMS219C.CDBK.ascii
- create mode 100644 data/original/Officers_ Attitudes toward Redeployment and Demobilization--China-Burma-India (AMS-219), July 1945/Technical Documentation/AMS-219_ Technical Specifications Summary.224.75TSS.pdf
- create mode 100644 data/original/Officers_ Attitudes toward Redeployment and Demobilization--China-Burma-India (AMS-219), July 1945/Technical Documentation/AMS-219_ Technical documentation.224.75DP.pdf
- create mode 100644 data/original/Officers_ Attitudes toward Redeployment and Demobilization--China-Burma-India (AMS-219), July 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Omnibus Attitude Study (AMS-213), May 1945/Electronic Records/AMS-213_ Omnibus Attitude Study 05_1945, data.AMS0213.CLEAN
- create mode 100644 data/original/Omnibus Attitude Study (AMS-213), May 1945/Technical Documentation/AMS-213_ Omnibus Attitude Study 05_1945, codebook.AMS0213.CDBK
- create mode 100644 data/original/Omnibus Attitude Study (AMS-213), May 1945/Technical Documentation/AMS-213_ Omnibus Attitude Study 05_1945, codebook.AMS0213.CDBK.ascii
- create mode 100644 data/original/Omnibus Attitude Study (AMS-213), May 1945/Technical Documentation/AMS-213_ Technical Specifications Summary.224.71TSS.pdf
- create mode 100644 data/original/Omnibus Attitude Study (AMS-213), May 1945/Technical Documentation/AMS-213_ Technical documentation.224.71DP.pdf
- create mode 100644 data/original/Omnibus Attitude Study (AMS-213), May 1945/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-170), October-November 1944/Electronic Records/AMS-170_ Omnibus Study of Attitudes 10-11_1944, data.AMS0170.CLEAN
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-170), October-November 1944/Technical Documentation/AMS-170_ Omnibus Study of Attitudes 10-11_1944, codebook.AMS0170.CDBK
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-170), October-November 1944/Technical Documentation/AMS-170_ Omnibus Study of Attitudes 10-11_1944, codebook.AMS0170.CDBK.ascii
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-170), October-November 1944/Technical Documentation/AMS-170_ Technical Specifications Summary.224.50TSS.pdf
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-170), October-November 1944/Technical Documentation/AMS-170_ Technical documentation.224.50DP.pdf
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-170), October-November 1944/Technical Documentation/American Soldier Surveys_ General Documentation.224.1-84ND.pdf
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Electronic Records/AMS-63A_ Omnibus Study of Attitudes 07_1943, data.AMS63A.CLEAN
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Electronic Records/AMS-63B_ Omnibus Study of Attitudes 07-09_1943, data.AMS63B.CLEAN
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Electronic Records/AMS-63C_ Omnibus Study of Attitudes 07-09_1943, data.AMS063C.CLEAN
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Electronic Records/AMS-63D_ Omnibus Study of Attitudes 07-09_1943, data.AMS63D.CLEAN
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Electronic Records/AMS-63E_ Omnibus Study of Attitudes 07-09_1943, data.AMS63E.CLEAN
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Electronic Records/AMS-63F_ Omnibus Study of Attitudes 07_1943, data.AMS63F.CLEAN
- create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Electronic Records/AMS-63G_ Omnibus Study of Attitudes 07-09_1943, data.AMS63G.CLEAN
  create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63A_ Omnibus Study of Attitudes 07_1943, codebook.AMS063A.CDBK
  create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63A_ Omnibus Study of Attitudes 07_1943, codebook.AMS063A.CDBK.ascii
  create mode 100644 data/original/Omnibus Study of Attitudes (AMS-63), July and July-September 1943/Technical Documentation/AMS-63B_ Omnibus Study of Attitudes 07-09_1943, codebook.AMS063B.CDBK
@@ -1002,3 +941,240 @@ To https://github.com/DSPG-Young-Scholars-Program/Training.git
 git pull
 Already up to date.
 ]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj38-15c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj38-15c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .
+cd ..
+]0;/sfs/qumulo/qhome/ads7fg/git]0;ads7fg@udc-aj37-17c0: /sfs/qumulo/qhome/ads7fg/git[01;32mads7fg@udc-aj37-17c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git[00m$ git clone https://github.com/DSPG-Young-Scholars-Program/dspg20CharlottesvilleEMSEquity.git
+Cloning into 'dspg20CharlottesvilleEMSEquity'...
+remote: Enumerating objects: 15, done.[K
+remote: Counting objects:   6% (1/15)[Kremote: Counting objects:  13% (2/15)[Kremote: Counting objects:  20% (3/15)[Kremote: Counting objects:  26% (4/15)[Kremote: Counting objects:  33% (5/15)[Kremote: Counting objects:  40% (6/15)[Kremote: Counting objects:  46% (7/15)[Kremote: Counting objects:  53% (8/15)[Kremote: Counting objects:  60% (9/15)[Kremote: Counting objects:  66% (10/15)[Kremote: Counting objects:  73% (11/15)[Kremote: Counting objects:  80% (12/15)[Kremote: Counting objects:  86% (13/15)[Kremote: Counting objects:  93% (14/15)[Kremote: Counting objects: 100% (15/15)[Kremote: Counting objects: 100% (15/15), done.[K
+remote: Compressing objects:  10% (1/10)[Kremote: Compressing objects:  20% (2/10)[Kremote: Compressing objects:  30% (3/10)[Kremote: Compressing objects:  40% (4/10)[Kremote: Compressing objects:  50% (5/10)[Kremote: Compressing objects:  60% (6/10)[Kremote: Compressing objects:  70% (7/10)[Kremote: Compressing objects:  80% (8/10)[Kremote: Compressing objects:  90% (9/10)[Kremote: Compressing objects: 100% (10/10)[Kremote: Compressing objects: 100% (10/10), done.[K
+remote: Total 15 (delta 0), reused 6 (delta 0), pack-reused 0[K
+[KUnpacking objects:   6% (1/15)[KUnpacking objects:  13% (2/15)[KUnpacking objects:  20% (3/15)[KUnpacking objects:  26% (4/15)[KUnpacking objects:  33% (5/15)[KUnpacking objects:  40% (6/15)[KUnpacking objects:  46% (7/15)[KUnpacking objects:  53% (8/15)[KUnpacking objects:  60% (9/15)[KUnpacking objects:  66% (10/15)[KUnpacking objects:  73% (11/15)[KUnpacking objects:  80% (12/15)[KUnpacking objects:  86% (13/15)[KUnpacking objects:  93% (14/15)[KUnpacking objects: 100% (15/15)[KUnpacking objects: 100% (15/15), done.
+cd Training/11_data_exploration/02_geospatial/spatial_sf_intro/
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro]0;ads7fg@udc-aj36-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro[01;32mads7fg@udc-aj36-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro[00m$ l
+total 928K
+drwxr-sr-x 3 ads7fg users 2.0K Jun  5 17:20 [0m[01;34mdata[0m
+-rw-r--r-- 1 ads7fg users  920 Jun  5 17:20 [01;31mdb_user_query.csv.gz[0m
+-rw-r--r-- 1 ads7fg users 165K Jun  5 17:20 db_user_query.txt
+-rw-r--r-- 1 ads7fg users 720K Jun  5 17:20 OverviewCoordinateReferenceSystems.pdf
+-rw-r--r-- 1 ads7fg users  882 Jun  5 17:20 set_dbuser_permissions.R
+drwxr-sr-x 3 ads7fg users  512 Jun  5 17:20 [01;34mspatial_r_with_sf_intro_files[0m
+-rw-r--r-- 1 ads7fg users 8.2K Jun 22 11:44 spatial_r_with_sf_intro.Rmd
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro]0;ads7fg@udc-aj36-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro[01;32mads7fg@udc-aj36-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro[00m$ cd data/
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data]0;ads7fg@udc-aj36-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data[01;32mads7fg@udc-aj36-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data[00m$ l
+total 5.5M
+-rw-r--r-- 1 ads7fg users  12K Jun  5 17:20 [0m[01;31mcongressional_trump_scores.csv.gz[0m
+-rw-r--r-- 1 ads7fg users  30K Jun  5 17:20 cu12.RDS
+drwxr-sr-x 2 ads7fg users 2.0K Jun  5 17:20 [01;34mshapefiles[0m
+-rw-r--r-- 1 ads7fg users 5.5M Jun  5 17:20 va_blockgroups_simplified_spdf.RDS
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data]0;ads7fg@udc-aj36-1c1: /sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data[01;32mads7fg@udc-aj36-1c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data[00m$ gunzip congressional_trump_scores.csv.gz 
+cd../../../
+bash: cd../../../: No such file or directory
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro/data[00m$ cd ../
+]0;/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training/11_data_exploration/02_geospatial/spatial_sf_intro[00m$ cd ../../../
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git remote -v
+origin	https://github.com/DSPG-Young-Scholars-Program/Training.git (fetch)
+origin	https://github.com/DSPG-Young-Scholars-Program/Training.git (push)
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git remote
+origin
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git remote --help
+warning: failed to exec 'man': No such file or directory
+fatal: no man viewer handled the request
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git remote --help[C[C[C[K[K[K[K[Kh
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-12c1: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-12c1[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git remote -h-help[K -v
+origin	https://github.com/DSPG-Young-Scholars-Program/Training.git (fetch)
+origin	https://github.com/DSPG-Young-Scholars-Program/Training.git (push)
+git pull
+remote: Enumerating objects: 37, done.[K
+remote: Counting objects:   2% (1/37)[Kremote: Counting objects:   5% (2/37)[Kremote: Counting objects:   8% (3/37)[Kremote: Counting objects:  10% (4/37)[Kremote: Counting objects:  13% (5/37)[Kremote: Counting objects:  16% (6/37)[Kremote: Counting objects:  18% (7/37)[Kremote: Counting objects:  21% (8/37)[Kremote: Counting objects:  24% (9/37)[Kremote: Counting objects:  27% (10/37)[Kremote: Counting objects:  29% (11/37)[Kremote: Counting objects:  32% (12/37)[Kremote: Counting objects:  35% (13/37)[Kremote: Counting objects:  37% (14/37)[Kremote: Counting objects:  40% (15/37)[Kremote: Counting objects:  43% (16/37)[Kremote: Counting objects:  45% (17/37)[Kremote: Counting objects:  48% (18/37)[Kremote: Counting objects:  51% (19/37)[Kremote: Counting objects:  54% (20/37)[Kremote: Counting objects:  56% (21/37)[Kremote: Counting objects:  59% (22/37)[Kremote: Counting objects:  62% (23/37)[Kremote: Counting objects:  64% (24/37)[Kremote: Counting objects:  67% (25/37)[Kremote: Counting objects:  70% (26/37)[Kremote: Counting objects:  72% (27/37)[Kremote: Counting objects:  75% (28/37)[Kremote: Counting objects:  78% (29/37)[Kremote: Counting objects:  81% (30/37)[Kremote: Counting objects:  83% (31/37)[Kremote: Counting objects:  86% (32/37)[Kremote: Counting objects:  89% (33/37)[Kremote: Counting objects:  91% (34/37)[Kremote: Counting objects:  94% (35/37)[Kremote: Counting objects:  97% (36/37)[Kremote: Counting objects: 100% (37/37)[Kremote: Counting objects: 100% (37/37), done.[K
+remote: Compressing objects:   7% (1/13)[Kremote: Compressing objects:  15% (2/13)[Kremote: Compressing objects:  23% (3/13)[Kremote: Compressing objects:  30% (4/13)[Kremote: Compressing objects:  38% (5/13)[Kremote: Compressing objects:  46% (6/13)[Kremote: Compressing objects:  53% (7/13)[Kremote: Compressing objects:  61% (8/13)[Kremote: Compressing objects:  69% (9/13)[Kremote: Compressing objects:  76% (10/13)[Kremote: Compressing objects:  84% (11/13)[Kremote: Compressing objects:  92% (12/13)[Kremote: Compressing objects: 100% (13/13)[Kremote: Compressing objects: 100% (13/13), done.[K
+[KUnpacking objects:   1% (1/90)[KUnpacking objects:   2% (2/90)[KUnpacking objects:   3% (3/90)[KUnpacking objects:   4% (4/90)[KUnpacking objects:   5% (5/90)[KUnpacking objects:   6% (6/90)[KUnpacking objects:   7% (7/90)[KUnpacking objects:   8% (8/90)[KUnpacking objects:  10% (9/90)[KUnpacking objects:  11% (10/90)[KUnpacking objects:  12% (11/90)[KUnpacking objects:  13% (12/90)[KUnpacking objects:  14% (13/90)[KUnpacking objects:  15% (14/90)[KUnpacking objects:  16% (15/90)[KUnpacking objects:  17% (16/90)[KUnpacking objects:  18% (17/90)[KUnpacking objects:  20% (18/90)[KUnpacking objects:  21% (19/90)[KUnpacking objects:  22% (20/90)[KUnpacking objects:  23% (21/90)[KUnpacking objects:  24% (22/90)[KUnpacking objects:  25% (23/90)[KUnpacking objects:  26% (24/90)[KUnpacking objects:  27% (25/90)[KUnpacking objects:  28% (26/90)[KUnpacking objects:  30% (27/90)[KUnpacking objects:  31% (28/90)[KUnpacking objects:  32% (29/90)[KUnpacking objects:  33% (30/90)[KUnpacking objects:  34% (31/90)[KUnpacking objects:  35% (32/90)[KUnpacking objects:  36% (33/90)[KUnpacking objects:  37% (34/90)[KUnpacking objects:  38% (35/90)[KUnpacking objects:  40% (36/90)[KUnpacking objects:  41% (37/90)[KUnpacking objects:  42% (38/90)[KUnpacking objects:  43% (39/90)[KUnpacking objects:  44% (40/90)[KUnpacking objects:  45% (41/90)[KUnpacking objects:  46% (42/90)[KUnpacking objects:  47% (43/90)[KUnpacking objects:  48% (44/90)[KUnpacking objects:  50% (45/90)[KUnpacking objects:  51% (46/90)[KUnpacking objects:  52% (47/90)[KUnpacking objects:  53% (48/90)[KUnpacking objects:  54% (49/90)[KUnpacking objects:  55% (50/90)[KUnpacking objects:  56% (51/90)[KUnpacking objects:  57% (52/90)[KUnpacking objects:  58% (53/90)[KUnpacking objects:  60% (54/90)[KUnpacking objects:  61% (55/90)[KUnpacking objects:  62% (56/90)[KUnpacking objects:  63% (57/90)[KUnpacking objects:  64% (58/90)[KUnpacking objects:  65% (59/90)[KUnpacking objects:  66% (60/90)[KUnpacking objects:  67% (61/90)[KUnpacking objects:  68% (62/90)[KUnpacking objects:  70% (63/90)[KUnpacking objects:  71% (64/90)[KUnpacking objects:  72% (65/90)[KUnpacking objects:  73% (66/90)[KUnpacking objects:  74% (67/90)[KUnpacking objects:  75% (68/90)[KUnpacking objects:  76% (69/90)[KUnpacking objects:  77% (70/90)[KUnpacking objects:  78% (71/90)[KUnpacking objects:  80% (72/90)[KUnpacking objects:  81% (73/90)[KUnpacking objects:  82% (74/90)[KUnpacking objects:  83% (75/90)[KUnpacking objects:  84% (76/90)[KUnpacking objects:  85% (77/90)[KUnpacking objects:  86% (78/90)[KUnpacking objects:  87% (79/90)[KUnpacking objects:  88% (80/90)[KUnpacking objects:  90% (81/90)[KUnpacking objects:  91% (82/90)[KUnpacking objects:  92% (83/90)[KUnpacking objects:  93% (84/90)[KUnpacking objects:  94% (85/90)[KUnpacking objects:  95% (86/90)[KUnpacking objects:  96% (87/90)remote: Total 90 (delta 25), reused 24 (delta 24), pack-reused 53[K
+[KUnpacking objects:  97% (88/90)[KUnpacking objects:  98% (89/90)[KUnpacking objects: 100% (90/90)[KUnpacking objects: 100% (90/90), done.
+From https://github.com/DSPG-Young-Scholars-Program/Training
+   2cadd51..2ad34ff  master     -> origin/master
+Updating 2cadd51..2ad34ff
+[KUpdating files:  73% (61/83)[KUpdating files:  74% (62/83)[KUpdating files:  75% (63/83)[KUpdating files:  77% (64/83)[KUpdating files:  78% (65/83)[KUpdating files:  79% (66/83)[KUpdating files:  80% (67/83)[KUpdating files:  81% (68/83)[KUpdating files:  83% (69/83)[KUpdating files:  84% (70/83)[KUpdating files:  85% (71/83)[KUpdating files:  86% (72/83)[KUpdating files:  87% (73/83)[KUpdating files:  89% (74/83)[KUpdating files:  90% (75/83)[KUpdating files:  91% (76/83)[KUpdating files:  92% (77/83)[KUpdating files:  93% (78/83)[KUpdating files:  95% (79/83)[KUpdating files:  96% (80/83)[KUpdating files:  97% (81/83)[KUpdating files:  98% (82/83)[KUpdating files: 100% (83/83)[KUpdating files: 100% (83/83), done.
+Fast-forward
+ 10_data_preparation/Cleaned_Unsplit_ds.csv                             | 12081 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ 10_data_preparation/Cleaned_Unsplit_frx.csv                            |  4189 [32m++++++++++++++++++++++++++++++++++++++[m
+ 10_data_preparation/Data Linkage (DSPG 2020).pptx                      |   Bin [31m0[m -> [32m743954[m bytes
+ 10_data_preparation/Data Restructuring (DSPG 2020).pptx                |   Bin [31m0[m -> [32m371944[m bytes
+ 10_data_preparation/Data_Linkage_DSPG_2020.R                           |   215 [32m++[m
+ 10_data_preparation/Data_Restructuring_DSPG_2020.R                     |   208 [32m++[m
+ 10_data_preparation/schools_2015_DSPG_2020.csv                         |  1083 [32m++++++++++[m
+ 10_data_preparation/schools_2016_DSPG_2020.csv                         |  1425 [32m+++++++++++++[m
+ 10_data_preparation/schools_2017_DSPG_2020.csv                         |  1642 [32m+++++++++++++++[m
+ data/QGIS/ACSDP02_5Y2018_Cleaned.csv                                   |   100 [32m+[m
+ data/QGIS/ACSDP02_5Y2018_Original.csv                                  |   102 [32m+[m
+ data/QGIS/IA_county.cpg                                                |     1 [32m+[m
+ data/QGIS/IA_county.dbf                                                |   Bin [31m0[m -> [32m16459[m bytes
+ data/QGIS/IA_county.prj                                                |     1 [32m+[m
+ data/QGIS/IA_county.qpj                                                |     1 [32m+[m
+ data/QGIS/IA_county.shp                                                |   Bin [31m0[m -> [32m19740[m bytes
+ data/QGIS/IA_county.shx                                                |   Bin [31m0[m -> [32m892[m bytes
+ data/QGIS/README.md                                                    |    33 [32m+[m
+ data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.cpg              |     1 [32m+[m
+ data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.dbf              |   Bin [31m0[m -> [32m143047[m bytes
+ data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.prj              |     1 [32m+[m
+ data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shp              |   Bin [31m0[m -> [32m831804[m bytes
+ data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shp.ea.iso.xml   |   273 [32m+++[m
+ data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shp.iso.xml      |   544 [32m+++++[m
+ data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shx              |   Bin [31m0[m -> [32m6700[m bytes
+ data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.cpg              |     1 [32m+[m
+ data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.dbf              |   Bin [31m0[m -> [32m525182[m bytes
+ data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.prj              |     1 [32m+[m
+ data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shp              |   Bin [31m0[m -> [32m1076340[m bytes
+ data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shp.ea.iso.xml   |   379 [32m++++[m
+ data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shp.iso.xml      |   569 [32m++++++[m
+ data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shx              |   Bin [31m0[m -> [32m25860[m bytes
+ data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.cpg                |     1 [32m+[m
+ data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.dbf                |   Bin [31m0[m -> [32m527301[m bytes
+ data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.prj                |     1 [32m+[m
+ data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shp                |   Bin [31m0[m -> [32m3674580[m bytes
+ data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shp.ea.iso.xml     |   379 [32m++++[m
+ data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shp.iso.xml        |   569 [32m++++++[m
+ data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shx                |   Bin [31m0[m -> [32m25964[m bytes
+ data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.cpg            |     1 [32m+[m
+ data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.dbf            |   Bin [31m0[m -> [32m1545[m bytes
+ data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.prj            |     1 [32m+[m
+ data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shp            |   Bin [31m0[m -> [32m850056[m bytes
+ data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shp.ea.iso.xml |   314 [32m+++[m
+ data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shp.iso.xml    |   531 [32m+++++[m
+ data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shx            |   Bin [31m0[m -> [32m172[m bytes
+ data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.cpg              |     1 [32m+[m
+ data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.dbf              |   Bin [31m0[m -> [32m242[m bytes
+ data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.prj              |     1 [32m+[m
+ data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shp              |   Bin [31m0[m -> [32m94304[m bytes
+ data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shp.ea.iso.xml   |   119 [32m++[m
+ data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shp.iso.xml      |   531 [32m+++++[m
+ data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shx              |   Bin [31m0[m -> [32m108[m bytes
+ data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.cpg                |     1 [32m+[m
+ data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.dbf                |   Bin [31m0[m -> [32m242[m bytes
+ data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.prj                |     1 [32m+[m
+ data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shp                |   Bin [31m0[m -> [32m495728[m bytes
+ data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shp.ea.iso.xml     |   119 [32m++[m
+ data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shp.iso.xml        |   531 [32m+++++[m
+ data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shx                |   Bin [31m0[m -> [32m108[m bytes
+ data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.cpg                |     1 [32m+[m
+ data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.dbf                |   Bin [31m0[m -> [32m830[m bytes
+ data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.prj                |     1 [32m+[m
+ data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shp                |   Bin [31m0[m -> [32m592832[m bytes
+ data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shp.ea.iso.xml     |   254 [32m+++[m
+ data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shp.iso.xml        |   531 [32m+++++[m
+ data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shx                |   Bin [31m0[m -> [32m132[m bytes
+ data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.cpg                  |     1 [32m+[m
+ data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.dbf                  |   Bin [31m0[m -> [32m9058[m bytes
+ data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.prj                  |     1 [32m+[m
+ data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shp                  |   Bin [31m0[m -> [32m1394728[m bytes
+ data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shp.ea.iso.xml       |   310 [32m+++[m
+ data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shp.iso.xml          |   531 [32m+++++[m
+ data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shx                  |   Bin [31m0[m -> [32m548[m bytes
+ data/QGIS/crashUI2010.csv                                              |  3079 [32m++++++++++++++++++++++++++++[m
+ data/QGIS/dataTypes.geojson                                            |    86 [32m+[m
+ data/QGIS/vacationStates.cpg                                           |     1 [32m+[m
+ data/QGIS/vacationStates.csv                                           |     5 [32m+[m
+ data/QGIS/vacationStates.dbf                                           |   Bin [31m0[m -> [32m9058[m bytes
+ data/QGIS/vacationStates.prj                                           |     1 [32m+[m
+ data/QGIS/vacationStates.qpj                                           |     1 [32m+[m
+ data/QGIS/vacationStates.shp                                           |   Bin [31m0[m -> [32m1394728[m bytes
+ data/QGIS/vacationStates.shx                                           |   Bin [31m0[m -> [32m548[m bytes
+ 83 files changed, 30754 insertions(+)
+ create mode 100644 10_data_preparation/Cleaned_Unsplit_ds.csv
+ create mode 100644 10_data_preparation/Cleaned_Unsplit_frx.csv
+ create mode 100644 10_data_preparation/Data Linkage (DSPG 2020).pptx
+ create mode 100644 10_data_preparation/Data Restructuring (DSPG 2020).pptx
+ create mode 100644 10_data_preparation/Data_Linkage_DSPG_2020.R
+ create mode 100644 10_data_preparation/Data_Restructuring_DSPG_2020.R
+ create mode 100644 10_data_preparation/schools_2015_DSPG_2020.csv
+ create mode 100644 10_data_preparation/schools_2016_DSPG_2020.csv
+ create mode 100644 10_data_preparation/schools_2017_DSPG_2020.csv
+ create mode 100644 data/QGIS/ACSDP02_5Y2018_Cleaned.csv
+ create mode 100644 data/QGIS/ACSDP02_5Y2018_Original.csv
+ create mode 100644 data/QGIS/IA_county.cpg
+ create mode 100644 data/QGIS/IA_county.dbf
+ create mode 100644 data/QGIS/IA_county.prj
+ create mode 100644 data/QGIS/IA_county.qpj
+ create mode 100644 data/QGIS/IA_county.shp
+ create mode 100644 data/QGIS/IA_county.shx
+ create mode 100644 data/QGIS/README.md
+ create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.cpg
+ create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.dbf
+ create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.prj
+ create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shp
+ create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shp.ea.iso.xml
+ create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shp.iso.xml
+ create mode 100644 data/QGIS/cb_2018_19_tract_500k/cb_2018_19_tract_500k.shx
+ create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.cpg
+ create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.dbf
+ create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.prj
+ create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shp
+ create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shp.ea.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shp.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_county_20m/cb_2018_us_county_20m.shx
+ create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.cpg
+ create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.dbf
+ create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.prj
+ create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shp
+ create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shp.ea.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shp.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_county_5m/cb_2018_us_county_5m.shx
+ create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.cpg
+ create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.dbf
+ create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.prj
+ create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shp
+ create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shp.ea.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shp.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_division_5m/cb_2018_us_division_5m.shx
+ create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.cpg
+ create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.dbf
+ create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.prj
+ create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shp
+ create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shp.ea.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shp.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_nation_20m/cb_2018_us_nation_20m.shx
+ create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.cpg
+ create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.dbf
+ create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.prj
+ create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shp
+ create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shp.ea.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shp.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_nation_5m/cb_2018_us_nation_5m.shx
+ create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.cpg
+ create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.dbf
+ create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.prj
+ create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shp
+ create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shp.ea.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shp.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_region_5m/cb_2018_us_region_5m.shx
+ create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.cpg
+ create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.dbf
+ create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.prj
+ create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shp
+ create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shp.ea.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shp.iso.xml
+ create mode 100644 data/QGIS/cb_2018_us_state_5m/cb_2018_us_state_5m.shx
+ create mode 100644 data/QGIS/crashUI2010.csv
+ create mode 100644 data/QGIS/dataTypes.geojson
+ create mode 100644 data/QGIS/vacationStates.cpg
+ create mode 100644 data/QGIS/vacationStates.csv
+ create mode 100644 data/QGIS/vacationStates.dbf
+ create mode 100644 data/QGIS/vacationStates.prj
+ create mode 100644 data/QGIS/vacationStates.qpj
+ create mode 100644 data/QGIS/vacationStates.shp
+ create mode 100644 data/QGIS/vacationStates.shx
+]0;/sfs/qumulo/qhome/ads7fg/git/Training]0;ads7fg@udc-aj37-18c0: /sfs/qumulo/qhome/ads7fg/git/Training[01;32mads7fg@udc-aj37-18c0[00m:[01;34m/sfs/qumulo/qhome/ads7fg/git/Training[00m$ git add -A .

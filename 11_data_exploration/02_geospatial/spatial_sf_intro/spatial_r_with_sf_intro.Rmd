@@ -10,7 +10,7 @@ output:
 
 ## Install Latest ggplot
 ```{r}
-devtools::install_github("tidyverse/ggplot2")
+#devtools::install_github("tidyverse/ggplot2")
 ```
 
 ## Load Libraries
@@ -199,6 +199,7 @@ ggplot(evictions) +
 hospitals <- st_read("https://opendata.arcgis.com/datasets/c56882e5caaa4ebd8e90a29adfaf24d0_0.geojson")
 hospitals_va <- hospitals[hospitals$STATE=="VA",]
 head(hospitals_va)
+class(hospitals_va)
 # plot(hospitals_va[,"TRAUMA"])
 ```
 
